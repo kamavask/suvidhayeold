@@ -20,3 +20,23 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('add_category', [Controller::class, 'add_category']);
+
+Route::get('add_cupons', [Controller::class, 'add_cupons']);
+
+Route::get('add_customer', [Controller::class, 'add_customer']);
+
+Route::get('add_deliveryman', [Controller::class, 'add_deliveryman']);
+
+Route::get('add_employee', [Controller::class, 'add_employee']);
+
+Route::get('add_product', [Controller::class, 'add_product']);
+
+Route::get('add_serviceman', [Controller::class, 'add_serviceman']);
+
+Route::get('add_services', [Controller::class, 'add_services']);
+
+Route::get('add_vendors', [Controller::class, 'add_vendors']);
+
+Route::get('index', [Controller::class, 'index']);
