@@ -15,6 +15,8 @@ class CreateDescriptionsTable extends Migration
     {
         Schema::create('descriptions', function (Blueprint $table) {
             $table->id();
+            $table->string('content')->nullable();
+            $table->string('content_images')->nullable();
             $table->timestamps();
         });
     }

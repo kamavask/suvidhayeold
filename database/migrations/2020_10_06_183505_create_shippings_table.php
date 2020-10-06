@@ -15,6 +15,9 @@ class CreateShippingsTable extends Migration
     {
         Schema::create('shippings', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('description')->nullable();
+            $table->integer('alert_value')->unsigned()->nullable()->default(1);
             $table->timestamps();
         });
     }
