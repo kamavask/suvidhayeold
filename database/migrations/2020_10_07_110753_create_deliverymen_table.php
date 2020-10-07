@@ -15,6 +15,19 @@ class CreateDeliverymenTable extends Migration
     {
         Schema::create('deliverymen', function (Blueprint $table) {
             $table->id();
+            $table->string('delmen_code');
+            $table->string('f_name');
+            $table->string('s_name');
+            $table->string('profile_pic')->nullable();
+            $table->string('phoneno');
+            $table->string('current_designation')->nullable();
+            $table->string('joining_designatiopn')->nullable();
+            $table->string('deliv_comp')->nullable();
+            $table->string('retur_comp')->nullable();
+            $table->string('failed_req')->nullable();
+            $table->string('doj')->nullable();
+            $table->string('dol')->nullable();
+            $table->string('active_starts')->nullable();
             $table->timestamps();
         });
     }

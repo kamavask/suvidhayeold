@@ -15,6 +15,13 @@ class CreateIdproofDocsTable extends Migration
     {
         Schema::create('idproof_docs', function (Blueprint $table) {
             $table->id();
+            $table->string('user_code');
+            $table->string('adhaar_card');
+            $table->string('id_proof2');
+            $table->string('address_proof1');
+            $table->string('address_proof2');
+            $table->string('vehicle1');
+            $table->string('vehicle2');
             $table->timestamps();
         });
     }
