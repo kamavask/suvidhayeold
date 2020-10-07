@@ -16,9 +16,11 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
+
+Route::get('/', [PageController::class, 'homepage']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
