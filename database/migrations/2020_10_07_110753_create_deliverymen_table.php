@@ -14,7 +14,7 @@ class CreateDeliverymenTable extends Migration
     public function up()
     {
         Schema::create('deliverymen', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->string('delmen_code');
             $table->string('f_name');
             $table->string('s_name');
@@ -29,6 +29,7 @@ class CreateDeliverymenTable extends Migration
             $table->string('dol')->nullable();
             $table->string('active_starts')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

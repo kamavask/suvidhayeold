@@ -14,7 +14,7 @@ class CreateVendorsTable extends Migration
     public function up()
     {
         Schema::create('vendors', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->string('vendor_code');
             $table->string('shop_name');
             $table->string('owner_name');
@@ -28,6 +28,7 @@ class CreateVendorsTable extends Migration
             $table->date('doj')->nullable();
             $table->date('dol')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

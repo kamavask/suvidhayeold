@@ -14,7 +14,7 @@ class CreateServicemenTable extends Migration
     public function up()
     {
         Schema::create('servicemen', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->string('servicemen_code')->unique();
             $table->string('f_name');
             $table->string('s_name');
@@ -28,6 +28,7 @@ class CreateServicemenTable extends Migration
             $table->string('dol')->nullable();
             $table->string('active_starts')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
