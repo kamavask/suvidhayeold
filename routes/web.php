@@ -46,11 +46,11 @@ Route::get('index', [Controller::class, 'index']);
 /* ADMIN */
 
 /* STORE */
-Route::get('all_services', [Controller::class, 'all_services']);
+Route::get('all_services', [PageController::class, 'all_services']);
 
-Route::get('homepage', [Controller::class, 'homepage']);
+Route::get('homepage', [PageController::class, 'homepage']);
 
-Route::get('single_product', [Controller::class, 'single_product']);
+Route::get('single_product', [PageController::class, 'single_product']);
 
-Route::get('single_service', [Controller::class, 'single_service']);
+Route::get('single_service', [PageController::class, 'single_service']);
 /* STORE */
