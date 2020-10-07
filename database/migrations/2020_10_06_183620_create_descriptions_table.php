@@ -15,8 +15,10 @@ class CreateDescriptionsTable extends Migration
     {
         Schema::create('descriptions', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('product_id')->nullable();
             $table->string('content')->nullable();
             $table->string('content_images')->nullable();
+            $table->foreign('product_id')->references('id')->on('product');
             $table->timestamps();
         });
     }
