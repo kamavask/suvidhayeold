@@ -22,6 +22,10 @@ class CreateImagesTable extends Migration
             $table->string('multi_img4')->nullable();
             $table->string('multi_img5')->nullable();
             $table->string('multi_img6')->nullable();
+            $table->string('multi_img7')->nullable();
+            $table->string('multi_img8')->nullable();
+            $table->string('multi_img9')->nullable();
+            $table->string('multi_img10')->nullable();
             $table->timestamps();
         });
     }
