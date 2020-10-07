@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('short_desc')->nullable();
             $table->string('specification')->nullable();
             $table->unsignedBigInteger('image_id')->nullable();
+            $table->unsignedBigInteger('variant_id')->nullable();
             $table->string('dimensions')->nullable();
             $table->string('size')->nullable();
             $table->integer('virtual')->nullable()->default(0);
@@ -41,7 +42,8 @@ class CreateProductsTable extends Migration
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('image_id')->references('id')->on('images');
             $table->foreign('tax_id')->references('id')->on('taxes');
-            $table->foreign('shipping_id')->references('id')->on('images');
+            $table->foreign('shipping_id')->references('id')->on('shippings');
+            $table->foreign('variant_id')->references('id')->on('variants');
         });
     }
 
