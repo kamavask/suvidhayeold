@@ -15,6 +15,10 @@ class CreateFlagsTable extends Migration
     {
         Schema::create('flags', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('description');
+            $table->string('color_code');
+            $table->string('property');
             $table->timestamps();
         });
     }
