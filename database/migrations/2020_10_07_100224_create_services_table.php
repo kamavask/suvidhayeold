@@ -17,13 +17,14 @@ class CreateServicesTable extends Migration
             $table->id();
             $table->string('service_code')->nullable();
             $table->string('service_name');
-            $table->string('providers')->nullable();
+            // $table->string('providers')->nullable();
             $table->string('category_id')->nullable();
             $table->string('highlights')->nullable();
             $table->string('short_des')->nullable();
             $table->string('long_des')->nullable();
             $table->string('specifications')->nullable();
             $table->string('availibility')->nullable();
+            $table->string('duration')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
         });
