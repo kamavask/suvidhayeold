@@ -18,7 +18,7 @@ class CreateDescriptionsTable extends Migration
             $table->unsignedBigInteger('product_id')->nullable();
             $table->string('content')->nullable();
             $table->string('content_images')->nullable();
-            $table->foreign('product_id')->references('id')->on('product');
+            $table->foreign('product_id')->references('id')->on('products');
             $table->timestamps();
         });
     }
