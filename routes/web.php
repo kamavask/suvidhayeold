@@ -40,3 +40,37 @@ Route::get('add_services', [Controller::class, 'add_services']);
 Route::get('add_vendors', [Controller::class, 'add_vendors']);
 
 Route::get('index', [Controller::class, 'index']);
+
+Route::get('/add_order', [PageController::class, 'add_order']);
+
+Route::get('/add_offer', [PageController::class, 'add_offer']);
+
+Route::get('/add_taxes', [PageController::class, 'add_taxes']);
+
+Route::get('/add_shipping_class', [PageController::class, 'add_shipping_class']);
+
+Route::get('/show_product', [PageController::class, 'show_product']);
+
+Route::get('/show_service', [PageController::class, 'show_service']);
+
+Route::get('/show_vendor', [PageController::class, 'show_vendor']);
+
+Route::get('/show_servicemen', [PageController::class, 'show_servicemen']);
+
+Route::get('/show_deliveryman', [PageController::class, 'show_deliveryman']);
+
+Route::get('/show_order', [PageController::class, 'show_order']);
+
+Route::get('/show_offer', [PageController::class, 'show_offer']);
+
+Route::get('/show_coupon', [PageController::class, 'show_coupon']);
+
+Route::get('/show_category', [PageController::class, 'show_category']);
+
+
+
+
+
+;
+
+
