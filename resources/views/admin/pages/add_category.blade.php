@@ -25,14 +25,14 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Category Name</b></label>
-                                                    <input type="text" class="form-control" placeholder="Category Name" name="category_name">
+                                                    <input type="text" class="form-control" placeholder="Category Name" name="cat_name">
                                                 </div>
                                             </div>
                                             <div class="col-4">
                                                 <!-- select -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Category Type</b></label>
-                                                    <select class="form-control" name="category_type">
+                                                    <select class="form-control" name="cat_type">
                         					 				<option>Product</option>
                         					 				<option>Service</option>
                         					 			</select>
@@ -41,9 +41,9 @@
                                             <div class="col-4">
                                                 <!-- select -->
                                                 <div class="form-group">
-                                                    <label class="form-label"><b>Parent Category</b></label>
+                                                    <label class="form-label"><b>Parent Category ID</b></label>
                                                     <br>
-                                                    <input list="browsers" class="form-control" name="parent_category" id="browser">
+                                                    <input list="browsers" class="form-control" name="pent_cat_id" id="browser">
                                                     <datalist id="browsers">
                         					 				<option value="Edge">
                         					 				<option value="Firefox">
@@ -57,8 +57,24 @@
                                          <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
-                                                    <label class="form-label"><b>Category Discription</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="Product3 " id="category_desc "></textarea>
+                                                    <label class="form-label"><b>Category Description</b></label>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="cat_desc " id="cat _desc "></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom:1%">
+                                            <div class="col-sm-12">
+                                                <div class="form-group ">
+                                                    <label class="form-label"><b>Slug</b></label>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="slug " id="slug "></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom:1%">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlFile1" class="form-label"><b>Icons</b></label>
+                                                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="icon">
                                                 </div>
                                             </div>
                                         </div>

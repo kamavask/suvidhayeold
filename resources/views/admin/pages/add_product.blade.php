@@ -25,7 +25,7 @@
                                             <div class="col-sm-8">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Product Name</b></label>
-                                                    <input type="text" class="form-control" placeholder="Add Product Name" name="Product1">
+                                                    <input type="text" class="form-control" placeholder="Add Product Name" name="prod_name">
                                                 </div>
                                             </div>
                                             <div class="col-sm-1">
@@ -38,20 +38,26 @@
                                             <div class="col-sm-2">
                                                 <!-- Default switch -->
                                                 <div class="custom-control custom-switch" style="margin-top:35px">
-                                                    <input type="checkbox" class="custom-control-input" id="customSwitches" name="down">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitches" name="downloadable">
                                                     <label class="custom-control-label" for="customSwitches">Downloadable</label>
                                                 </div>
                                             </div>
-
-
-
                                         </div>
 
+                                        <div class="row" style="margin-bottom:1%">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlFile1" class="form-label"><b>Image ID</b></label>
+                                                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image_id">
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="Product2 " id="highlights "></textarea>
+                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights "></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -60,16 +66,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="Product3 " id="s_desc "></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row" style="margin-bottom:1%">
-                                            <div class="col-sm-12">
-                                                <div class="form-group ">
-                                                    <label class="form-label"><b>Long Discription</b></label>
-                                                    <textarea class="form-control " rows="5 " placeholder="Enter Description " name="Product4 " id="l_desc "></textarea>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc "></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -78,7 +75,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Specifications</b></label>
-                                                    <textarea class="form-control " rows="4 " placeholder="Enter Specifications " name="Product5 " id="speci "></textarea>
+                                                    <textarea class="form-control " rows="4 " placeholder="Enter Specifications " name="specification " id="speci "></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,8 +83,8 @@
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
-                                                    <label class="form-label"><b>Providers</b></label>
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="Product6 " id="pro ">
+                                                    <label class="form-label"><b>Brand</b></label>
+                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand " id="pro ">
                                                 </div>
                                             </div>
                                         </div>
@@ -97,14 +94,14 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Weights</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter Weight (e.g.:30 Kg)" name="Product7" id="weight">
+                                                    <input type="text" class="form-control" placeholder="Enter Weight (e.g.:30 Kg)" name="weight" id="weight">
                                                 </div>
                                             </div>
 
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Sizes</b></label>
-                                                    <select class="form-control" name="Product8">
+                                                    <select class="form-control" name="size">
                                                         <option>XS (Extra Small)</option>
                                                         <option>S (Small)</option>
                                                         <option>M (Medium)</option>
@@ -120,7 +117,7 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Dimensions</b></label>
-                                                    <input type="text" class="form-control" placeholder="Length-Bregth-height (e.g.:12cm-4cm-7cm)" name="Product9" id="dimension">
+                                                    <input type="text" class="form-control" placeholder="Length-Bregth-height (e.g.:12cm-4cm-7cm)" name="dimensions" id="dimension">
                                                 </div>
                                             </div>
 
@@ -128,7 +125,7 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Category ID</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter ID" name="Product10" id="Category_ID">
+                                                    <input type="text" class="form-control" placeholder="Enter ID" name="cat_id" id="Category_ID">
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +135,7 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Varient ID</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter ID" name="Product11" id="v_id">
+                                                    <input type="text" class="form-control" placeholder="Enter ID" name="variend_id" id="v_id">
                                                 </div>
                                             </div>
                                         </div>
@@ -154,7 +151,7 @@
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
                                                         </div>
-                                                        <input type="text" class="form-control" placeholder="Enter Price" name="Product12">
+                                                        <input type="text" class="form-control" placeholder="Enter Price" name="r_price">
 
                                                     </div>
                                                 </div>
@@ -167,7 +164,7 @@
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
                                                         </div>
-                                                        <input type="text" class="form-control" placeholder="Enter Price" name="Product13">
+                                                        <input type="text" class="form-control" placeholder="Enter Price" name="s_price">
 
                                                     </div>
                                                 </div>
@@ -178,27 +175,15 @@
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
-                                                    <label class="form-label"><b>Tax Class</b></label>
-                                                    <div class="input-group mb-6">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="Enter Tax Class" name="Product14">
-
-                                                    </div>
+                                                    <label class="form-label"><b>Tax ID</b></label>
+                                                    <input type="text" class="form-control" placeholder="Enter Text ID" name="tax_id" id="tax_id">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
-                                                    <label class="form-label"><b>Shipping Class</b></label>
-                                                    <div class="input-group mb-6">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="Enter Shipping Class" name="Product15">
-
-                                                    </div>
+                                                    <label class="form-label"><b>Shipping ID</b></label>
+                                                    <input type="text" class="form-control" placeholder="Enter Shipping ID" name="shipping_id" id="shipping_id">
                                                 </div>
                                             </div>
                                         </div>
@@ -210,28 +195,21 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>SKU</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter SKU" name="Product16" id="sku">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <!-- text input -->
-                                                <div class="form-group">
-                                                    <label class="form-label"><b>Vendor ID</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter ID" name="Product17" id="vendor">
+                                                    <input type="text" class="form-control" placeholder="Enter SKU" name="sku" id="sku">
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Stock</b></label>
-                                                    <input type="number" class="form-control" placeholder="Enter stock" name="Product18" id="stock">
+                                                    <input type="number" class="form-control" placeholder="Enter stock" name="stock" id="stock">
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Stock Alert</b></label>
-                                                    <input type="number" class="form-control" placeholder="Enter Stock Alert" name="Product19" id="s_alert">
+                                                    <input type="number" class="form-control" placeholder="Enter Stock Alert" name="stock_alert" id="s_alert">
                                                 </div>
                                             </div>
                                         </div>
@@ -240,7 +218,7 @@
                                             <div class="col-sm-3">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Back-Order Options</b></label>
-                                                    <select class="form-control" name="Product20">
+                                                    <select class="form-control" name="backorder">
                                                         <option>option 1</option>
                                                         <option>option 2</option>
                                                         <option>option 3</option>
@@ -253,7 +231,7 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Max Number of order in bulk</b></label>
-                                                    <input type="number" class="form-control" placeholder="Enter Number of Orders" name="Product21" id="bulk">
+                                                    <input type="number" class="form-control" placeholder="Enter Number of Orders" name="bulk_no" id="bulk">
                                                 </div>
                                             </div>
                                         </div>
@@ -266,12 +244,12 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Tags</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter Tags" name="Product22" id="tag">
+                                                    <input type="text" class="form-control" placeholder="Enter Tags" name="tags" id="tag">
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <button class="save-btn hover-btn " type="submit ">Submit</button>
+                                        <button class="save-btn hover-btn " type="submit ">Next Page</button>
                                     </div>
                                 </div>
                             </div>
