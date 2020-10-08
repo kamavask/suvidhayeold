@@ -28,7 +28,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 /* ADMIN */
 Route::get('add_category', [Controller::class, 'add_category']);
 
-Route::get('add_cupons', [Controller::class, 'add_cupons']);
+Route::get('add_coupons', [Controller::class, 'add_coupons']);
 
 Route::get('add_customer', [Controller::class, 'add_customer']);
 
@@ -45,7 +45,6 @@ Route::get('add_services', [Controller::class, 'add_services']);
 Route::get('add_vendors', [Controller::class, 'add_vendors']);
 
 Route::get('index', [Controller::class, 'index']);
-<<<<<<< HEAD
 /* ADMIN */
 
 /* STORE */
@@ -56,7 +55,6 @@ Route::get('single_product', [PageController::class, 'single_product']);
 
 Route::get('single_service', [PageController::class, 'single_service']);
 /* STORE */
-=======
 
 Route::get('/add_order', [PageController::class, 'add_order']);
 
@@ -91,4 +89,3 @@ Route::get('/show_category', [PageController::class, 'show_category']);
 ;
 
 
->>>>>>> Admin_side

@@ -17,9 +17,9 @@ class Controller extends BaseController
         return view('admin.pages.add_category');
     }
 
-    public function add_cupons()
+    public function add_coupons()
     {
-        return view('admin.pages.add_cupons');
+        return view('admin.pages.add_coupons');
     }
 
     public function add_customer()
@@ -70,10 +70,8 @@ class Controller extends BaseController
     {
         return view('admin.pages.index');
     }
-<<<<<<< HEAD
     /* ADMIN */
 
-=======
 
     public function show_category()
     {
@@ -119,5 +117,4 @@ class Controller extends BaseController
     {
         return view('admin.pages.show_vendor');
     }
->>>>>>> Admin_side
 }
