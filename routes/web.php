@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\PageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
+
+Route::get('/', [PageController::class, 'homepage']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
+/* ADMIN */
 Route::get('add_category', [Controller::class, 'add_category']);
 
 Route::get('add_cupons', [Controller::class, 'add_cupons']);
@@ -40,3 +45,14 @@ Route::get('add_services', [Controller::class, 'add_services']);
 Route::get('add_vendors', [Controller::class, 'add_vendors']);
 
 Route::get('index', [Controller::class, 'index']);
+/* ADMIN */
+
+/* STORE */
+Route::get('all_services', [PageController::class, 'all_services']);
+
+Route::get('homepage', [PageController::class, 'homepage']);
+
+Route::get('single_product', [PageController::class, 'single_product']);
+
+Route::get('single_service', [PageController::class, 'single_service']);
+/* STORE */

@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    /* ADMIN */
 
     public function add_category()
     {
@@ -60,4 +61,6 @@ class Controller extends BaseController
     {
         return view('admin.pages.index');
     }
+    /* ADMIN */
+
 }
