@@ -51,10 +51,10 @@ class CreateNewUser implements CreatesNewUsers
 
         $roelid = Role::select('id')->where('name', 'Customer')->first();
 
-        $user->roles()->attach($roelid->id);
+        $user->role()->attach($roelid->id);
     }
 
-    
+
 
     /**
      * Create a personal team for the user.
