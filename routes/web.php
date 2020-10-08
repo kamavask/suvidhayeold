@@ -51,7 +51,6 @@ Route::get('index', [Controller::class, 'index']);
 /* STORE */
 Route::get('all_services', [PageController::class, 'all_services']);
 
-Route::get('homepage', [PageController::class, 'homepage']);
 
 Route::get('single_product', [PageController::class, 'single_product']);
 
