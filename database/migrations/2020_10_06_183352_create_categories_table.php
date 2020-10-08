@@ -22,7 +22,7 @@ class CreateCategoriesTable extends Migration
             $table->string('tags')->nullable();
             $table->string('icon')->nullable();
             $table->unsignedBigInteger('parent_cat_id')->nullable();
-            $table->foreign('parent_cat_id')->references('id')->on('category');
+            $table->foreign('parent_cat_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
