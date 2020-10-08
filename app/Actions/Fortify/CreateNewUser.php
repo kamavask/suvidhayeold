@@ -44,14 +44,15 @@ class CreateNewUser implements CreatesNewUsers
      * Assign role to the user.
      *
      * @param  \App\Models\User  $user
+     * @param  \App\Models\Role  $role
      * @return void
      */
     protected function setRole(User $user)
     {
 
-        $roelid = Role::select('id')->where('name', 'Customer')->first();
+        $roelid = Role::/* select('id')-> */where('name', 'Customer')->first();
 
-        $user->roles()->attach($roelid->id);
+        $user->role()->attach($roelid->id);
     }
 
 
