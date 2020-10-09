@@ -277,7 +277,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="btn btn-primary" type="submit ">Next Page</button>
+                                    <button class="save-btn hover-btn " type="submit ">Next Page</button>
                                 </div>
                             </div>
                         </div>
