@@ -17,10 +17,10 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('prod_code')->nullable();
             $table->string('prod_name')->nullable();
-            $table->unsignedBigInteger('cat_id')->nullable();
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->string('brand')->nullable();
             $table->string('highlight')->nullable();
-            $table->string('short_desc')->nullable();
+            $table->string('short_description')->nullable();
             $table->string('specification')->nullable();
             $table->unsignedBigInteger('image_id')->nullable();
             $table->string('dimensions')->nullable();
@@ -31,19 +31,19 @@ class CreateProductsTable extends Migration
             $table->string('r_price')->nullable();
             $table->string('s_price')->nullable();
             $table->unsignedBigInteger('variant_id')->nullable();
-            $table->string('shy')->nullable();
-            $table->string('stock')->nullable();
-            $table->string('stock_alret')->nullable();
-            $table->string('backorder')->nullable();
-            $table->string('tax_id')->nullable();
-            $table->unsignedBigInteger('shipping_id')->nullable();
-            $table->string('bulk_no')->nullable();
+            $table->string('sku')->nullable();
+            $table->integer('stock')->nullable();
+            $table->integer('stock_alret')->nullable();
+            $table->integer('backorder')->nullable();
+            $table->unsignedBigInteger('tax_id')->nullable();
+            $table->unsignedBigInteger('shipping_classes')->nullable();
+            $table->integer('bulk_order_no')->unsigned()->nullable();
             $table->string('tags')->nullable();
             $table->timestamps();
-            $table->foreign('cat_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('image_id')->references('id')->on('images');
             $table->foreign('tax_id')->references('id')->on('taxes');
-            $table->foreign('shipping_id')->references('id')->on('shippings');
+            $table->foreign('shipping_classes')->references('id')->on('shipping_classes');
         });
     }
 

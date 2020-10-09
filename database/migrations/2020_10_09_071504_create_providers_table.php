@@ -15,6 +15,10 @@ class CreateProvidersTable extends Migration
     {
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('vendor_id')->nullable();
+            $table->bigInteger('product_id')->nullable();
+            $table->foreign('vendor_id')->references('id')->on('vendors');
+            $table->foreign('product_id')->references('id')->on('products');
             $table->timestamps();
         });
     }

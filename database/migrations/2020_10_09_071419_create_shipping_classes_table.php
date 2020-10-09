@@ -15,6 +15,9 @@ class CreateShippingClassesTable extends Migration
     {
         Schema::create('shipping_classes', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('description')->nullable();
+            $table->integer('alert_value')->unsigned()->nullable()->default(1);;
             $table->timestamps();
         });
     }
