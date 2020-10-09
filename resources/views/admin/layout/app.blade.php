@@ -6,29 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description-gambolthemes" content="">
 	<meta name="author-gambolthemes" content="">
-	<title>Gambo Supermarket Admin</title>
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/admin-style.css" rel="stylesheet">
+	<title>test</title>
+	<link href="admin/css/styles.css" rel="stylesheet">
+	<link href="admin/css/admin-style.css" rel="stylesheet">
 	
 	<!-- Vendor Stylesheets -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link href="admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 	
 	<!-- froala Editor Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/froala_editor.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/froala_style.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/code_view.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/colors.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/emoticons.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/image_manager.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/image.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/line_breaker.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/table.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/char_counter.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/video.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/fullscreen.css">
-	<link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/file.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/froala_editor.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/froala_style.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/code_view.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/colors.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/emoticons.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/image_manager.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/image.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/line_breaker.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/table.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/char_counter.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/video.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/fullscreen.css">
+	<link rel="stylesheet" href="admin/vendor/froala_editor_3.1.1/css/plugins/file.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 	
 </head>
@@ -187,39 +187,39 @@
     </div>
 
 <!-- Javascripts -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="admin/js/jquery-3.4.1.min.js"></script>
+<script src="admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="admin/js/scripts.js"></script>
 
 <!-- froala Editor Javascripts -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/froala_editor.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/align.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/code_beautifier.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/code_view.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/colors.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/emoticons.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/draggable.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/font_size.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/font_family.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/image.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/file.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/image_manager.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/line_breaker.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/link.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/lists.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/paragraph_format.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/paragraph_style.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/video.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/table.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/url.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/entities.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/char_counter.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/inline_style.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/save.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/fullscreen.min.js"></script>
-<script type="text/javascript" src="vendor/froala_editor_3.1.1/js/plugins/quote.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/froala_editor.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/align.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/image.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/file.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/link.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/video.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/table.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/url.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/save.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/fullscreen.min.js"></script>
+<script type="text/javascript" src="admin/vendor/froala_editor_3.1.1/js/plugins/quote.min.js"></script>
 <script>
 	(function () {
 	  new FroalaEditor("#edit", {

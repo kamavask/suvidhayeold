@@ -560,7 +560,7 @@ input[type=text] {
 
 .main_logo {
     float: left;
-    width: 125px;
+    width: 70px;
     margin-left: 10px;
 }
 
@@ -573,8 +573,7 @@ input[type=text] {
 }
 
 .search120 {
-    float: left;
-    margin-left: 35px;
+    float: right;
     width: 25%;
 }
 
@@ -599,13 +598,21 @@ input[type=text] {
     color: #002E57 !important;
 }
 
+.srch_sub01 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -38px;
+}
+
 i.icon1 {
-    font-size: 16px !important;
+    text-align: center;
+    font-size: 25px !important;
+    color: #002E57 !important;
 }
 
 .ui.swdh10 {
     font-size: 14px !important;
-    width: 100%;
+    width: 80%;
 }
 
 .ui[class*="left icon"].swdh10.input>input {
@@ -617,8 +624,8 @@ i.icon1 {
 }
 
 .ui.search .prompt {
-    border-radius: .3rem !important;
-    width: 100%;
+    border-radius: .8rem !important;
+    width: 80%;
 }
 
 .header_right {
@@ -630,6 +637,16 @@ i.icon1 {
 .header_right ul li {
     display: inline-block;
     vertical-align: middle;
+}
+
+.upload_list_btn {
+    border-radius: .5rem !important;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    background: #f78700;
+    padding: 10px 30px;
+    text-align: center;
 }
 
 .option_links {
@@ -1026,8 +1043,8 @@ i.icon1 {
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-    background-image: -webkit-linear-gradient(left, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
-    background-image: linear-gradient(to right, rgba(230, 92, 91, 0.9), rgba(245, 93, 44, 0.9));
+    background-image: -webkit-linear-gradient(left, #ED6500, #f78700);
+    background-image: linear-gradient(to right, #ED6500, #f78700);
 }
 
 .cart__btn ins {
@@ -1124,7 +1141,7 @@ i.icon1 {
 
 .cate__btn {
     font-size: 20px;
-    color: #969696 !important;
+    color: #8f91ac !important;
     padding: 20px 20px 19px;
 }
 
@@ -1374,7 +1391,7 @@ i.icon1 {
 }
 
 .cart-total-dil span {
-    color: #969696;
+    color: #8f91ac;
     font-size: 16px;
     margin-left: auto;
     font-weight: 400;
@@ -1542,7 +1559,7 @@ i.icon1 {
 .kggrm-now label {
     padding: 3px;
     cursor: pointer;
-    background: #c7c7c7;
+    background: #969696;
     color: #fff;
     border-radius: 3px;
     font-weight: 600;
@@ -1668,7 +1685,7 @@ i.icon1 {
 }
 
 .cart-item-price span {
-    color: #c7c7c7;
+    color: #969696;
     text-decoration: line-through;
     margin-left: 10px;
     font-weight: 600;
@@ -1764,6 +1781,13 @@ i.icon1 {
 .price-pack-item-body {
     height: 125px;
     width: 100%;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.offer-items-body {
+    height: 12px;
+    width: 50%;
     margin-top: 20px;
     overflow-y: auto;
 }
@@ -1873,7 +1897,7 @@ i.icon1 {
 }
 
 .webproduct {
-    color: #969696;
+    color: #8f91ac;
     padding-left: 3px;
 }
 
@@ -1957,7 +1981,7 @@ i.icon1 {
 .offer-top-text-banner span {
     font-weight: 500;
     font-size: 14px;
-    color: #969696;
+    color: #8f91ac;
     text-align: left;
     line-height: 24px;
 }
@@ -2201,7 +2225,7 @@ span.like-icon {
 .product-text-dt p {
     font-size: 12px;
     font-weight: 500;
-    color: #969696;
+    color: #8f91ac;
     margin-bottom: 0;
     line-height: 24px;
 }
@@ -2229,7 +2253,7 @@ span.like-icon {
 }
 
 .product-price span {
-    color: #c7c7c7;
+    color: #969696;
     text-decoration: line-through;
     margin-left: 10px;
     font-weight: 600;
@@ -2244,7 +2268,7 @@ span.like-icon {
 .cart-icon {
     margin-left: auto;
     font-size: 20px;
-    color: #c7c7c7;
+    color: #969696;
     cursor: pointer;
 }
 
@@ -2571,11 +2595,11 @@ img.download-btn {
     border-radius: 0;
     font-size: 14px;
     font-weight: 500;
-    color: #969696;
+    color: #8f91ac;
 }
 
 .gambo-Breadcrumb .breadcrumb .breadcrumb-item a {
-    color: #969696 !important;
+    color: #8f91ac !important;
 }
 
 .gambo-Breadcrumb .breadcrumb .breadcrumb-item a:hover {
@@ -2795,7 +2819,7 @@ img.download-btn {
 
 .no-stock p span {
     margin-left: 5px;
-    color: #969696;
+    color: #8f91ac;
 }
 
 
@@ -2842,7 +2866,7 @@ img.download-btn {
 .product-now label {
     padding: 5px;
     cursor: pointer;
-    background: #c7c7c7;
+    background: #969696;
     color: #fff;
     border-radius: 3px;
     font-weight: 500;
@@ -2888,7 +2912,7 @@ img.download-btn {
 
 .main-price span {
     margin-left: 10px;
-    color: #969696;
+    color: #8f91ac;
 }
 
 .color-discount {
@@ -5725,7 +5749,7 @@ textarea {
     display: block;
     font-size: 14px;
     font-weight: 400;
-    color: #969696;
+    color: #8f91ac;
     line-height: 26px;
     margin-bottom: 0px;
     float: right;
@@ -6697,7 +6721,7 @@ textarea {
 }
 
 .descp-bll-dt {
-    color: #969696;
+    color: #8f91ac;
 }
 
 .dly-loc {
@@ -6731,4 +6755,30 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     display: inline-block;
+}
+
+.single-service-form-submit-btn {
+    margin-top: 10px;
+    width: 100px;
+    padding: 6px;
+    margin-left: 4px;
+    border: 1px solid #f78700;
+    background: #f78700;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500
+}
+
+.all-services-form-submit-btn {
+    margin-top: 30px;
+    width: 100px;
+    padding: 6px;
+    margin-left: 40px;
+    border: 1px solid #f78700;
+    background: #f78700;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500
 }

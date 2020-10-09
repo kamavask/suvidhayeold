@@ -38,3 +38,13 @@ Route::resources([
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']);
+
+/* STORE ROUTE START */
+Route::get('all_services', [StoreController::class, 'all_services']);
+
+Route::get('homepage', [StoreController::class, 'homepage']);
+
+Route::get('single_product', [StoreController::class, 'single_product']);
+
+Route::get('single_service', [StoreController::class, 'single_service']);
+/* STORE ROUTE END */
