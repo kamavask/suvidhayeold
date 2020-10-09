@@ -41,7 +41,7 @@ class CreateProductsTable extends Migration
             $table->string('tags')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
-            $table->foreign('image_id')->references('id')->on('images');
+            $table->foreign('image_id')->references('id')->on('product_images');
             $table->foreign('tax_id')->references('id')->on('taxes');
             $table->foreign('shipping_classes')->references('id')->on('shipping_classes');
         });
