@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProductController;
 
 
 /*
@@ -85,6 +86,7 @@ Route::get('/show_coupon', [PageController::class, 'show_coupon']);
 
 Route::get('/show_category', [PageController::class, 'show_category']);
 
+<<<<<<< HEAD
 Route::get('add_category', [Controller::class, 'add_category']);
 
 /*  Category End */
@@ -125,3 +127,10 @@ Route::get('/show_servicemen', [PageController::class, 'show_servicemen']);
 
 
 
+=======
+/* Resource ProductController  */
+
+Route::name('product.')->group(function () {
+    Route::resource('/product_dashboard', ProductController::class)->except(['show', 'create']);
+});;
+>>>>>>> 3b2c8fa70fa97b8790e450fac5672ab611f093df

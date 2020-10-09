@@ -16,8 +16,16 @@ class CreateDescriptionsTable extends Migration
         Schema::create('descriptions', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('product_id')->nullable();
-            $table->string('content')->nullable();
-            $table->string('content_images')->nullable();
+            $table->string('content1')->nullable();
+            $table->string('content2')->nullable();
+            $table->string('content3')->nullable();
+            $table->string('content4')->nullable();
+            $table->string('content5')->nullable();
+            $table->string('images1')->nullable();
+            $table->string('images2')->nullable();
+            $table->string('images3')->nullable();
+            $table->string('images4')->nullable();
+            $table->string('images5')->nullable();
             $table->foreign('product_id')->references('id')->on('products');
             $table->timestamps();
         });

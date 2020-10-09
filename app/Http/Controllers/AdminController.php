@@ -4,17 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
     public function index()
     {
-        return view('admin.pages.add_product');
+        //
     }
 
     /**
@@ -24,7 +23,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -35,29 +34,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $prod = new Product;
-        $prod->prod_Name = $request->prod_name;
-        $prod->highlights = $request->highlight;
-        $prod->short_des = $request->short_desc;
-        $prod->brand = $request->specification;
-        //$prod->providers = $req->Product6;
-        $prod->weight = $request->weight;
-        $prod->size = $request->size;
-        $prod->dimensions = $request->dimensions;
-        $prod->category_id = $request->cat_id;
-        $prod->variant_id = $request->variant_id;
-        $prod->r_Price = $request->r_price;
-        $prod->s_Price = $request->s_price;
-        $prod->tax_id = $request->tax_id;
-        $prod->shipping_id = $request->shipping_id;
-        $prod->sku = $request->sku;
-        //$prod->vendor_code = $req->Product17;
-        $prod->stock = $request->stock;
-        $prod->stock_alert = $request->stock_alert;
-        $prod->backorder = $request->backorder;
-        $prod->bulk_no = $request->bulk_no;
-        $prod->tags = $request->tags;
-        $prod->save();
+        //
     }
 
     /**
@@ -68,7 +45,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        return view('admin.pages.show_product')
+        //
     }
 
     /**
@@ -85,15 +62,13 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $req
+     * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $prod_update = Product::all()->find($id);
-
-        $prod_update->save();
+        //
     }
 
     /**
