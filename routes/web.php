@@ -4,7 +4,7 @@ use App\Http\Controllers\AdminPageController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\StoreController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
