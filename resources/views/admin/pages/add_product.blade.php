@@ -1,7 +1,6 @@
 @extends('admin.layout.app')
 @section('content')
 
-
 <div id="layoutSidenav">
     <div id="layoutSidenav_content">
         <main>
@@ -278,7 +277,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="save-btn hover-btn " type="submit ">Next Page</button>
+                                    <button class="btn btn-primary" type="submit ">Next Page</button>
                                 </div>
                             </div>
                         </div>
