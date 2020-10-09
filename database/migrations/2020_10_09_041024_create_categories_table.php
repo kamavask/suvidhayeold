@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('category_name')->nullable();
             $table->string('category_desc')->nullable();
+            $table->string('category_type')->nullable();
             $table->string('slug')->nullable();
             $table->string('tags')->nullable();
             $table->unsignedBigInteger('pent_cat_id')->nullable();

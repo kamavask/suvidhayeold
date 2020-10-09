@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('admin.layout.head')
-<body>
+<body class="sb-nav-fixed">
 
     @include('admin.layout.navbar')
     @include('admin.layout.right_sidebar')
