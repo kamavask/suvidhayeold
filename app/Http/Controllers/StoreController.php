@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class StoreController extends Controller
 
 {
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    
     public function()
     {
         return view('store.pages.all_services');
