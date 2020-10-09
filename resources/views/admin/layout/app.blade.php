@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description-gambolthemes" content="">
 	<meta name="author-gambolthemes" content="">
-	<title>Gambo Supermarket Admin</title>
+	<title>test</title>
 	<link href="admin/css/styles.css" rel="stylesheet">
 	<link href="admin/css/admin-style.css" rel="stylesheet">
 	
