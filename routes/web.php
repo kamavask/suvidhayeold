@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProductController;
 
 
 /*
@@ -82,10 +83,8 @@ Route::get('/show_coupon', [PageController::class, 'show_coupon']);
 
 Route::get('/show_category', [PageController::class, 'show_category']);
 
+/* Resource ProductController  */
 
-
-
-
-;
-
-
+Route::name('product.')->group(function () {
+    Route::resource('/product_dashboard', ProductController::class)->except(['show', 'create']);
+});;
