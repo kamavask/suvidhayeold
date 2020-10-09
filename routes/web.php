@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +23,10 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::resource([
+    'category' => CategoryController::class,
+    'product' => ProductController::class,
+]);
+
+Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']);

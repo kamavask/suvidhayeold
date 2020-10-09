@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.add_category');
     }
 
     /**
@@ -35,7 +35,14 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cat = new Category;
+        $cat->category_name = $request->cat_name;
+        $cat->category_type = $request->cat_type;
+        $cat->pent_cat_id = $request->pent_cat_id;
+        $cat->category_desc = $request->cat_desc;
+        $cat->slug = $request->slug;
+        $cat->tags = $request->tags;
+        //$cat->icon = $request->icon;
     }
 
     /**
@@ -44,9 +51,10 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(/* Category $category */)
     {
-        //
+        $cat = Category::all();
+        return view('admin.pages.show_category', compact('$cat'));
     }
 
     /**
