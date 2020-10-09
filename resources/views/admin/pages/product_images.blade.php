@@ -71,19 +71,146 @@
                                              <!-- text input -->
                                              <div class="form-group">
                                                  <label class="form-label"><b>Multi-Image 2</b></label>
-                                                 <input type="text" class="form-control" placeholder="Content 3" name="content3">
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
                                              </div>
                                          </div>
                                          <div class="col-sm-2"></div>
                                          <div class="col-sm-3">
                                              <div class="form-group">
-                                                 <label for="exampleFormControlFile1" class="form-label"><b>Image 3</b></label>
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
                                                  <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
                                              </div>
                                          </div>
                                      </div>
-
-                                     <button class="save-btn hover-btn " type="submit ">Submit</button>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 3</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 4</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 5</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 6</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 7</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 8</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 9</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                      <div class="row" style="margin-bottom:1%">
+                                         <div class="col-sm-7">
+                                             <!-- text input -->
+                                             <div class="form-group">
+                                                 <label class="form-label"><b>Multi-Image 10</b></label>
+                                                 <input type="text" class="form-control" placeholder="Put Image" name="content3">
+                                             </div>
+                                         </div>
+                                         <div class="col-sm-2"></div>
+                                         <div class="col-sm-3">
+                                             <div class="form-group">
+                                                 <label for="exampleFormControlFile1" class="form-label"><b>Choose File</b></label>
+                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image3">
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <button class="save-btn hover-btn " type="submit ">Upload</button>
                                  </div>
                              </div>
                          </div>
