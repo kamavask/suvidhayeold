@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 @section('content')
-    
+     <body class="sb-nav-fixed">
         <div id="layoutSidenav">
             <div id="layoutSidenav_content">
                 <main>
@@ -102,5 +102,5 @@
             </main>
         </div>
     </div>
-
+</body>
 @endsection
