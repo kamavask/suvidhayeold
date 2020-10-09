@@ -14,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.add_product');
+        //return view('admin.pages.add_product');
     }
 
     /**
@@ -24,8 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.add_product');
-        
+        return view('admin.pages.add_product');        
     }
 
     /**
