@@ -62,7 +62,7 @@
                         </div>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLocations"
                             aria-expanded="false" aria-controls="collapseLocations">
-                            <div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            admin/ <div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
                             Locations
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
