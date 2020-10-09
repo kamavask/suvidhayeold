@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.add_product');        
+        return view('admin.pages.add_product');
     }
 
     /**
@@ -36,30 +36,30 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $prod = new Product;
-        $prod->Product_Name = $req->prod_name;
-        $prod->Virtuals = $req->virtual;
-        $prod->Downloadable = $req->downloadable;
-        $prod->Image_ID = $req->image_id;
-        $prod->Highlights = $req->highlights;
-        $prod->Short_Desc = $req->s_desc;
-        $prod->Specifications = $req->specification;
-        $prod->Brand = $req->brand;
-        $prod->Weights = $req->weight;
-        $prod->Sizes = $req->size;
-        $prod->Dimensions = $req->dimension;
-        $prod->Category_ID = $req->cat_id;
-        $prod->Varient_ID = $req->varient_id;
-        $prod->Regular_Price = $req->r_price;
-        $prod->Sales_Price = $req->s_price;
-        $prod->Tax_ID = $req->tax_id;
-        $prod->Shipping_ID = $req->shippin_id;
-        $prod->SKU = $req->sku;
-        $prod->Stock = $req->stock;
-        $prod->Stock_Alert = $req->stock_alert;
-        $prod->Backorder_Options = $req->backorder;
-        $prod->Bulk_Order = $req->bulk_no;
-        $prod->Tags = $req->tags;
-        $emp->save();
+        $prod->Product_Name = $request->prod_name;
+        $prod->Virtuals = $request->virtual;
+        $prod->Downloadable = $request->downloadable;
+        $prod->Image_ID = $request->image_id;
+        $prod->Highlights = $request->highlights;
+        $prod->Short_Desc = $request->s_desc;
+        $prod->Specifications = $request->specification;
+        $prod->Brand = $request->brand;
+        $prod->Weights = $request->weight;
+        $prod->Sizes = $request->size;
+        $prod->Dimensions = $request->dimension;
+        $prod->Category_ID = $request->cat_id;
+        $prod->Varient_ID = $request->varient_id;
+        $prod->Regular_Price = $request->r_price;
+        $prod->Sales_Price = $request->s_price;
+        $prod->Tax_ID = $request->tax_id;
+        $prod->Shipping_ID = $request->shippin_id;
+        $prod->SKU = $request->sku;
+        $prod->Stock = $request->stock;
+        $prod->Stock_Alert = $request->stock_alert;
+        $prod->Backorder_Options = $request->backorder;
+        $prod->Bulk_Order = $request->bulk_no;
+        $prod->Tags = $request->tags;
+        $prod->save();
     }
 
     /**
