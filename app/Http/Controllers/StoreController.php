@@ -8,23 +8,23 @@ class StoreController extends Controller
 
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    
-    public function()
+
+    public function all_services()
     {
         return view('store.pages.all_services');
     }
 
-    public function()
+    public function homepage()
     {
         return view('store.pages.homepage');
     }
 
-    public function()
+    public function single_product()
     {
         return view('store.pages.single_product');
     }
 
-    public function()
+    public function single_service()
     {
         return view('store.pages.single_service');
     }
