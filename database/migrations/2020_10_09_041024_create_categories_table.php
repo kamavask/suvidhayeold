@@ -20,7 +20,7 @@ class CreateCategoriesTable extends Migration
             $table->string('slug')->nullable();
             $table->string('tags')->nullable();
             $table->unsignedBigInteger('pent_cat_id')->nullable();
-            $table->foreign('pent_cat_id')->references('id')->on('category');
+            $table->foreign('pent_cat_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
