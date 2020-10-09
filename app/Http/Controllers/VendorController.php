@@ -14,7 +14,7 @@ class VendorController extends Controller
      */
     public function index()
     {
-        //
+         return view('admin.pages.add_vendors');
     }
 
     /**
@@ -46,7 +46,7 @@ class VendorController extends Controller
      */
     public function show(Vendor $vendor)
     {
-        //
+        return view('admin.pages.show_vendors');
     }
 
     /**

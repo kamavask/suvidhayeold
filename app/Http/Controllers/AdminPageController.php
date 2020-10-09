@@ -12,18 +12,30 @@ class AdminPageController extends Controller
         {
             //
         }
-    
+
     /*  taxes end */
 
     /*  shipping Start */
+
+    public function show_shipping_class()
+    {
+        return view('admin.pages.show_shipping_class');
+    }
 
     /*  shipping End */
 
     /*  provider Start */
 
+
+    
     /*  provider End */
 
     /*  descriptin Start */
+
+    public function description()
+    {
+        return view('admin.pages.description');
+    }
 
     /*  descriptin Start */
 
