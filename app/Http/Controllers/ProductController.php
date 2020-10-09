@@ -11,9 +11,10 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
-        //
+        return view('admin.pages.add_product')
     }
 
     /**

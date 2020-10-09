@@ -1,14 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-<<<<<<< HEAD
 
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     //
-=======
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -38,5 +36,4 @@ class PageController extends Controller
     {
         return view('store.pages.single_service');
     }
->>>>>>> Frontend_side
 }
