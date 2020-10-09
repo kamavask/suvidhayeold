@@ -1,0 +1,1 @@
+sonali, copy image uploading form in this blade file.

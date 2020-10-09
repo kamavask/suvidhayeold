@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
@@ -58,6 +59,8 @@ class ProductController extends Controller
         $prod->bulk_no = $request->bulk_no;
         $prod->tags = $request->tags;
         $prod->save();
+
+        return view('admin.pages.product_images');
     }
 
     /**
