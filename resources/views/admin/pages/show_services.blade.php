@@ -1,4 +1,4 @@
-@extends('Dashboard.layout.app')
+@extends('admin.layout.app')
 @section('content')
        <body class="sb-nav-fixed">
         <div id="layoutSidenav">

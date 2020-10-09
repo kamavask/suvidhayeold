@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('Dashboard.layout.app')
 @section('content')
 
 <body class="sb-nav-fixed">
@@ -27,8 +27,7 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Service name</b></label>
-                                                    <input type="text" class="form-control" placeholder="Service Name"
-                                                        id="Service_name" name="service_name">
+                                                    <input type="text" class="form-control" placeholder="Service Name" id="Service_name" name="service_name">
                                                 </div>
                                             </div>
 
@@ -39,16 +38,14 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Providers</b></label>
-                                                    <input type="text" class="form-control" placeholder="Providers"
-                                                        name="providers" id="Providers">
+                                                    <input type="text" class="form-control" placeholder="Providers" name="providers" id="Providers">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Category ID</b></label>
-                                                    <input type="text" class="form-control" placeholder="Category ID"
-                                                        name="category_ID" id="Category_ID">
+                                                    <input type="text" class="form-control" placeholder="Category ID" name="category_ID" id="Category_ID">
                                                 </div>
                                             </div>
                                         </div>
@@ -58,9 +55,7 @@
                                                 <!-- textarea -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Short Description</b></label>
-                                                    <textarea class="form-control" rows="3"
-                                                        placeholder="Short Discription..." id="Short_desc"
-                                                        name="short_desc"></textarea>
+                                                    <textarea class="form-control" rows="3" placeholder="Short Discription..." id="Short_desc" name="short_desc"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -70,9 +65,7 @@
                                                 <!-- textarea -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Long Description</b></label>
-                                                    <textarea class="form-control" rows="5"
-                                                        placeholder="Long Description..." id="Long_desc"
-                                                        name="long_desc"></textarea>
+                                                    <textarea class="form-control" rows="5" placeholder="Long Discription..." id="Long_desc" name="long_desc"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,8 +75,7 @@
                                                 <!-- textarea -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Specification</b></label>
-                                                    <textarea class="form-control" rows="5" id="speci"
-                                                        placeholder="Specification..." name="speci"></textarea>
+                                                    <textarea class="form-control" rows="5" id="speci" placeholder="Specification..." name="speci"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,8 +85,7 @@
                                                 <!-- textarea -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <textarea class="form-control" rows="2" id="highlights"
-                                                        placeholder="Highlights..." name="high"></textarea>
+                                                    <textarea class="form-control" rows="2" id="highlights" placeholder="Highlights..." name="high"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -105,9 +96,15 @@
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
-                                                    <label class="form-label"><b>Duration(in minutes)</b></label>
-                                                    <input type="text" class="form-control" placeholder="Title"
-                                                        id="duration" name="duration">
+                                                    <label class="form-label"><b>Start Time</b></label>
+                                                    <input type="text" class="form-control" placeholder="Title" id="Start_Time" name="startime">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- text input -->
+                                                <div class="form-group">
+                                                    <label class="form-label"><b>End Time</b></label>
+                                                    <input type="text" class="form-control" placeholder="Title" name="endtime">
                                                 </div>
                                             </div>
                                         </div>
