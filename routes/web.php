@@ -28,6 +28,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     'category' => CategoryController::class,
     'product' => ProductController::class,
 ]); */
+
+Route::resources([
+    'product' => ProductController::class,
+    'category' => CategoryController::class,
+]);
+
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
 
