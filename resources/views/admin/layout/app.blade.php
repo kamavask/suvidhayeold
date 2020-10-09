@@ -187,9 +187,9 @@
     </div>
 
 <!-- Javascripts -->
-<script src="admin/js/jquery-3.4.1.min.js') }}"></script>
-<script src="admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="admin/js/scripts.js') }}"></script>
+<script src="{{ asset('admin/js/jquery-3.4.1.min.js') }}"></script>
+<script src="{{ asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('admin/js/scripts.js') }}"></script>
 
 <!-- froala Editor Javascripts -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js') }}"></script>
