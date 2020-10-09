@@ -11,10 +11,10 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+
     public function index()
     {
-        return view('admin.pages.add_product')
+        
     }
 
     /**
@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.add_product');
     }
 
     /**
@@ -46,7 +46,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('admin.pages.show_product')
     }
 
     /**
