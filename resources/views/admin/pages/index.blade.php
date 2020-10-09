@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
-@section('content')
-	
+   @section('content')
+			 
        
         <div id="layoutSidenav">
             <div id="layoutSidenav_content">
@@ -168,8 +168,10 @@
                         </div>
                     </div>
                 </main>
-            </div>
-        </div>      
-   
-@endsection
+              </div>
+        </div>
+      
+	
+ 
+	 @endsection
 
