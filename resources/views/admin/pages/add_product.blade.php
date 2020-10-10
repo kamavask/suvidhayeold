@@ -250,11 +250,11 @@
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Back-Order Options</b></label>
                                                     <select class="form-control" name="backorder">
-                                                        <option>option 1</option>
-                                                        <option>option 2</option>
-                                                        <option>option 3</option>
-                                                        <option>option 4</option>
-                                                        <option>option 5</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
                                                     </select>
                                                 </div>
                                             </div>
