@@ -2,6 +2,7 @@
 @section('content')
 
 <form method="POST" action="{{ route('product.store') }}">
+    @csrf
     <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
