@@ -40,15 +40,20 @@ class ProductController extends Controller
         $prod->virtual = $request->virtual;
         $prod->downloadable = $request->downloadable;
         $prod->image_id = $request->image_id;
+<<<<<<< HEAD
         $prod->highlights = $request->highlight;
         $prod->short_description = $request->s_desc;
+=======
+        $prod->highlight = $request->highlight;
+        $prod->short_description = $request->short_desc;
+>>>>>>> e43904b5d43c8061eb39b32eaa44472be0a655a2
         $prod->specification = $request->specification;
         $prod->brand = $request->brand;
         $prod->weight = $request->weight;
         $prod->size = $request->size;
         $prod->dimensions = $request->dimension;
         $prod->category_id = $request->cat_id;
-        $prod->variant_id = $request->varient_id;
+        $prod->variant_id = $request->variant_id;
         $prod->r_price = $request->r_price;
         $prod->s_price = $request->s_price;
         $prod->tax_id = $request->tax_id;
