@@ -6,23 +6,23 @@ use Illuminate\Http\Request;
 
 class AdminPageController extends Controller
 {
-                                                        /* Admin base Start */
+    /* Admin base Start */
 
     /**
      * Show the admin dashboard home page.
-    */
+     */
     public function view_dashboard()
     {
-        return view('admin.pages.dashboard_home');
+        return view('admin.pages.index');
     }
 
-                                                        /* Admin base End */
+    /* Admin base End */
     /*  taxes Start */
 
-        public function create()
-        {
-            //
-        }
+    public function create()
+    {
+        //
+    }
 
     /*  taxes end */
 
@@ -38,7 +38,7 @@ class AdminPageController extends Controller
     /*  provider Start */
 
 
-    
+
     /*  provider End */
 
     /*  descriptin Start */
@@ -49,6 +49,4 @@ class AdminPageController extends Controller
     }
 
     /*  descriptin Start */
-
-
 }

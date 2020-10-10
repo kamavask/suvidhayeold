@@ -72,7 +72,7 @@
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link sub_nav_link" href="show_product">All Products</a>
-                                <a class="nav-link sub_nav_link" href="add_product">Add New</a>
+                                <a class="nav-link sub_nav_link" href="product.create">Add New</a>
                                 <a class="nav-link sub_nav_link" href="edit_product">Edit</a>
                                 {{-- <a class="nav-link sub_nav_link" href="post_tags.html">Tags</a> --}}
                             </nav>
