@@ -74,7 +74,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return view('admin.pages.show_product');
+        return view('store.pages.single_product');
     }
 
     /**
