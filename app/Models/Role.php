@@ -9,10 +9,11 @@ class Role extends Model
 {
     use HasFactory;
 
-    protected $table = "roles";
+    //protected $table = "roles";
 
     public function users()
-        {
-            return $this->belongsToMany('App\Models\User', 'role_users');
-        }
+    {
+        //return $this->belongsToMany('App\Models\User', 'role_users');
+        return $this->belongsToMany('App\Models\User');
+    }
 }
