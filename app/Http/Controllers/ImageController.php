@@ -21,12 +21,12 @@ class ImageController extends Controller
         $prod_img = new ProductImage;
 
         $prod_img->def_img = $path1;
-        $prod_img->multi_img1 = $path2;
+        /* $prod_img->multi_img1 = $path2;
         $prod_img->multi_img2 = $path3;
         $prod_img->multi_img3 = $path4;
         $prod_img->multi_img4 = $path5;
         $prod_img->multi_img5 = $path6;
-        $prod_img->multi_img6 = $path7;
+        $prod_img->multi_img6 = $path7; */
         $prod_img->save();
     }
 }
