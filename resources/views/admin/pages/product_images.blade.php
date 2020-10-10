@@ -12,7 +12,7 @@
 						<li class="breadcrumb-item"><a href="products.html">Product Images</a></li>
 						<li class="breadcrumb-item active">Add Product Images</li>
 					</ol>
-					@if ($product==NULL)
+					@if ($p_id==NULL)
 					<div class="col-sm-4">
 						<!-- text input -->
 						<div class="form-group">
