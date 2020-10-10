@@ -1,7 +1,7 @@
 @extends('admin.layout.app')
 @section('content')
 
-<form method="POST" action="/product/store">
+<form method="POST" action="product">
     <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
