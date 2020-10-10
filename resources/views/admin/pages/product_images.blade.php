@@ -163,5 +163,5 @@
 
 
 @php
-dd($product);
+dd($product->id);
 @endphp
