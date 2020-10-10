@@ -40,7 +40,7 @@ class ProductController extends Controller
         $prod->virtual = $request->virtual;
         $prod->downloadable = $request->downloadable;
         $prod->image_id = $request->image_id;
-        $prod->highlight = $request->highlights;
+        $prod->highlights = $request->highlight;
         $prod->short_description = $request->s_desc;
         $prod->specification = $request->specification;
         $prod->brand = $request->brand;
