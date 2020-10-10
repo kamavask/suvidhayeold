@@ -36,7 +36,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $prod = new Product;
-        $prod->Product_Name = $request->prod_name;
+        $prod->prod_Name = $request->prod_name;
         $prod->Virtuals = $request->virtual;
         $prod->Downloadable = $request->downloadable;
         $prod->Image_ID = $request->image_id;
