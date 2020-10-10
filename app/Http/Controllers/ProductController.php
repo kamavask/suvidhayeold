@@ -61,7 +61,8 @@ class ProductController extends Controller
         $prod->tags = $request->tags;
         $prod->save();
 
-        return $prod;
+        $current_id = $prod->id;
+        return $current_id;
     }
 
     /**
