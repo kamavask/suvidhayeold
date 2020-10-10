@@ -1,7 +1,7 @@
 @extends('admin.layout.app')
 @section('content')
 
-<body class="sb-nav-fixed">
+
     <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
@@ -59,7 +59,8 @@
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-6">
                                                 <div class="form-group">
-                                                    <label for="exampleFormControlFile1" class="form-label"><b>Put Image</b></label>
+                                                    <label for="exampleFormControlFile1" class="form-label"><b>Put
+                                                            Image</b></label>
                                                     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="put_image">
                                                 </div>
                                             </div>
@@ -99,6 +100,6 @@
             </main>
         </div>
     </div>
-</body>
+
 
 @endsection

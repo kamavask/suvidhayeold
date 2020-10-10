@@ -1,8 +1,7 @@
 @extends('admin.layout.app')
 @section('content')
 
-<form method="POST" action="{{ route('product.store') }}">
-    @csrf
+
     <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
@@ -50,7 +49,7 @@
                                             </div>
                                         </div>
 
-                                        {{-- <div class="row" style="margin-bottom:1%">
+                                        <div class="row" style="margin-bottom:1%">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="exampleFormControlFile1" class="form-label"><b>Image
@@ -59,7 +58,7 @@
                                                         id="exampleFormControlFile1" name="image_id">
                                                 </div>
                                             </div>
-                                        </div> --}}
+                                        </div>
 
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
@@ -282,7 +281,7 @@
                                             </div>
 
                                         </div>
-                                        <input type="submit" value="Submit">
+                                        <button class="save-btn hover-btn " type="submit ">Next Page</button>
                                     </div>
                                 </div>
                             </div>
@@ -292,7 +291,6 @@
             </main>
         </div>
     </div>
-</form>
 
 
 @endsection

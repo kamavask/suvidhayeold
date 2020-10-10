@@ -1,9 +1,8 @@
 @extends('admin.layout.app')
 @section('content')
 
-<form>
-    @csrf
-     <div id="layoutSidenav">
+
+    <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
@@ -63,7 +62,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="submit ">Submit</button>
+                                        <button class="save-btn hover-btn " type="submit ">Submit</button>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +72,6 @@
             </main>
         </div>
     </div>
-</form>
-   
  
 @endsection
             
