@@ -60,8 +60,8 @@ class ProductController extends Controller
         $prod->bulk_order_no = $request->bulk_no;
         $prod->tags = $request->tags;
         $prod->save();
-
-        return view('admin.pages.product_images')->with('product', $prod);
+        dd($prod);
+        //return view('admin.pages.product_images')->with('product', $prod);
     }
 
     /**
