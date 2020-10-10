@@ -12,25 +12,7 @@
 						<li class="breadcrumb-item"><a href="products.html">Product Images</a></li>
 						<li class="breadcrumb-item active">Add Product Images</li>
 					</ol>
-					<h2>{{$product->id}}</h2>
-					<br>
-					<h2>{{$product->prod_name}}</h2>
-					<div class="col-sm-4">
-						<!-- text input -->
-						<div class="form-group">
-							<label class="form-label"><b>Product ID</b></label>
-							<input type="text" class="form-control" placeholder="prod_id" name="prod_id">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<!-- text input -->
-						<div class="form-group">
-							<label class="form-label"><b>Product Name</b></label>
-							<input type="text" class="form-control" placeholder="prod_name" name="prod_name"
-								default="{{$product->prod_name}}">
-						</div>
-					</div>
-					@else
+					@if ($product===NULL)
 					<div class="col-sm-4">
 						<!-- text input -->
 						<div class="form-group">
@@ -45,6 +27,24 @@
 							<input type="text" class="form-control" placeholder="prod_name" name="prod_name">
 						</div>
 					</div>
+					@else
+					<div class="col-sm-4">
+						<!-- text input -->
+						<div class="form-group">
+							<label class="form-label"><b>Product ID</b></label>
+							<input type="text" class="form-control" placeholder="prod_id" name="prod_id" default="{{$product->id}}">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<!-- text input -->
+						<div class="form-group">
+							<label class="form-label"><b>Product Name</b></label>
+							<input type="text" class="form-control" placeholder="prod_name" name="prod_name"
+								default="{{$product->prod_name}}">
+						</div>
+					</div>
+
+
 					@endif
 
 					<div class="row">
