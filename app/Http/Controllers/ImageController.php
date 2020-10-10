@@ -10,13 +10,13 @@ class ImageController extends Controller
     public function store_prod_images(REQUEST $request)
     {
         $path1 = $request->file('def_img')->store('public');
-        $path2 = $request->file('multi1')->store('public');
+        /* $path2 = $request->file('multi1')->store('public');
         $path3 = $request->file('multi2')->store('public');
         $path4 = $request->file('multi3')->store('public');
         $path5 = $request->file('multi4')->store('public');
         $path6 = $request->file('multi5')->store('public');
         $path7 = $request->file('multi6')->store('public');
-
+ */
 
         $prod_img = new ProductImage;
 
