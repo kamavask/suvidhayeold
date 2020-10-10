@@ -15,7 +15,7 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('prod_code')->nullable();
+            $table->string('prod_code')->nullable(); 
             $table->string('prod_name')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->string('brand')->nullable();
@@ -33,17 +33,17 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('variant_id')->nullable();
             $table->string('sku')->nullable();
             $table->integer('stock')->nullable();
-            $table->integer('stock_alret')->nullable();
+            $table->integer('stock_alert')->nullable();
             $table->integer('backorder')->nullable();
             $table->unsignedBigInteger('tax_id')->nullable();
-            $table->unsignedBigInteger('shipping_classes')->nullable();
+            $table->unsignedBigInteger('shipping_id')->nullable();
             $table->integer('bulk_order_no')->unsigned()->nullable();
             $table->string('tags')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('image_id')->references('id')->on('product_images');
             $table->foreign('tax_id')->references('id')->on('taxes');
-            $table->foreign('shipping_classes')->references('id')->on('shipping_classes');
+            $table->foreign('shipping_id')->references('id')->on('shipping_classes');
         });
     }
 
