@@ -16,14 +16,14 @@
 					<div class="col-sm-4">
 						<!-- text input -->
 						<div class="form-group">
-							<label class="form-label"><b>Product ID</b></label>
+							<label class="form-label"><b>Product ID{{$product->id}}</b></label>
 							<input type="text" class="form-control" placeholder="prod_id" name="prod_id" value="{{$product->id}}">
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<!-- text input -->
 						<div class="form-group">
-							<label class="form-label"><b>Product Name</b></label>
+							<label class="form-label"><b>Product Name{{$product->prod_name}}</b></label>
 							<input type="text" class="form-control" placeholder="prod_name" name="prod_name"
 								value="{{$product->prod_name}}">
 						</div>

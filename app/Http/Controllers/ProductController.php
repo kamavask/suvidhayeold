@@ -61,7 +61,9 @@ class ProductController extends Controller
         $prod->tags = $request->tags;
         $prod->save();
 
-        return view('admin.pages.product_images')->with('product', $prod);
+        $product = $prod;
+
+        return view('admin.pages.product_images')->with('product', $product);
     }
 
     /**
