@@ -50,7 +50,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row" style="margin-bottom:1%">
+                                        {{-- <div class="row" style="margin-bottom:1%">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="exampleFormControlFile1" class="form-label"><b>Image
@@ -59,7 +59,7 @@
                                                         id="exampleFormControlFile1" name="image_id">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
@@ -248,14 +248,10 @@
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-3">
                                                 <div class="form-group">
-                                                    <label class="form-label"><b>Back-Order Options</b></label>
-                                                    <select class="form-control" name="backorder">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
+                                                    <label class="form-label"><b>Back-Order Number</b></label>
+                                                    <input type="number" class="form-control"
+                                                        placeholder="Enter backorder number" name="backorder"
+                                                        id="backorder">
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
