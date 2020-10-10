@@ -1,5 +1,5 @@
 @extends('admin.layout.app')
-{{--@section('content')
+@section('content')
 <form method="POST" action="/upload_prod_image" enctype="multipart/form-data">
 	@csrf
 	<div id="layoutSidenav">
@@ -12,34 +12,34 @@
 						<li class="breadcrumb-item"><a href="products.html">Product Images</a></li>
 						<li class="breadcrumb-item active">Add Product Images</li>
 					</ol>
-					@if ($product==NULL)
+				@if ($product->id==NULL)
 					<div class="col-sm-4">
 						<!-- text input -->
 						<div class="form-group">
-							<label class="form-label"><b>Product ID{{$product->id}}</b></label>
-<input type="text" class="form-control" placeholder="prod_id" name="prod_id" value="{{$product->id}}">
-</div>
-</div>
-<div class="col-sm-4">
-	<!-- text input -->
-	<div class="form-group">
-		<label class="form-label"><b>Product Name{{$product->prod_name}}</b></label>
-		<input type="text" class="form-control" placeholder="prod_name" name="prod_name" value="{{$product->prod_name}}">
-	</div>
-</div>
-@else
-<div class="col-sm-4">
-	<!-- text input -->
-	<div class="form-group">
-		<label class="form-label"><b>Product ID</b></label>
-		<input type="text" class="form-control" placeholder="prod_id" name="prod_id">
-	</div>
-</div>
-<div class="col-sm-4">
+							<label class="form-label"><b>Product ID</b></label>
+							<input type="text" class="form-control" placeholder="prod_id" name="prod_id">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<!-- text input -->
+						<div class="form-group">
+							<label class="form-label"><b>Product Name</b></label>
+							<input type="text" class="form-control" placeholder="prod_name" name="prod_name">
+						</div>
+					</div>
+				@else
+					<div class="col-sm-4">
+						<!-- text input -->
+						<div class="form-group">
+							<label class="form-label"><b>Product ID</b></label>
+							<input type="text" class="form-control" placeholder="prod_id" name="prod_id" value="{{$product->id}}">
+						</div>
+					</div>
+				<div class="col-sm-4">
 	<!-- text input -->
 	<div class="form-group">
 		<label class="form-label"><b>Product name</b></label>
-		<input type="text" class="form-control" placeholder="prod_name" name="prod_name">
+		<input type="text" class="form-control" placeholder="prod_name" name="prod_name" value="{{$product->prod_name}}">
 	</div>
 </div>
 @endif
@@ -159,8 +159,4 @@
 </div>
 </div>
 </form>
-@endsection --}}
-
-@section('content')
-<h1>{{$product->id}}</h1>
 @endsection
