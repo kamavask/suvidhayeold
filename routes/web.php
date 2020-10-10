@@ -37,7 +37,7 @@ Route::resources([
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
 
-Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']);
+Route::get('/view_dashboard', [AdminPageController::class, 'view_dashboard']);
 
 /* STORE ROUTE START */
 Route::get('all_services', [StoreController::class, 'all_services']);
