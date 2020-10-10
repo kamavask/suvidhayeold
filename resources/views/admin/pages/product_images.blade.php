@@ -32,7 +32,7 @@
 						<!-- text input -->
 						<div class="form-group">
 							<label class="form-label"><b>Product ID</b></label>
-							<input type="text" class="form-control" placeholder="prod_id" name="prod_id" default="{{$p->id}}">
+							<input type="text" class="form-control" placeholder="prod_id" name="prod_id" default="1">
 						</div>
 						{{-- </div>
 					<div class="col-sm-4">
