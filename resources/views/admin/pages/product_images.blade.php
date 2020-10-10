@@ -1,5 +1,5 @@
-{{-- @extends('admin.layout.app')
-@section('content')
+@extends('admin.layout.app')
+{{--@section('content')
 <form method="POST" action="/upload_prod_image" enctype="multipart/form-data">
 	@csrf
 	<div id="layoutSidenav">
@@ -161,7 +161,6 @@
 </form>
 @endsection --}}
 
-
-@php
-dd($product->id);
-@endphp
+@section('content')
+<h1>{{$product->id}}</h1>
+@endsection
