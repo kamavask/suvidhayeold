@@ -36,29 +36,29 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $prod = new Product;
-        $prod->prod_Name = $request->prod_name;
-        $prod->Virtuals = $request->virtual;
-        $prod->Downloadable = $request->downloadable;
-        $prod->Image_ID = $request->image_id;
-        $prod->Highlights = $request->highlights;
-        $prod->Short_Desc = $request->s_desc;
-        $prod->Specifications = $request->specification;
-        $prod->Brand = $request->brand;
-        $prod->Weights = $request->weight;
-        $prod->Sizes = $request->size;
-        $prod->Dimensions = $request->dimension;
-        $prod->Category_ID = $request->cat_id;
-        $prod->Varient_ID = $request->varient_id;
-        $prod->Regular_Price = $request->r_price;
-        $prod->Sales_Price = $request->s_price;
-        $prod->Tax_ID = $request->tax_id;
-        $prod->Shipping_ID = $request->shippin_id;
-        $prod->SKU = $request->sku;
-        $prod->Stock = $request->stock;
-        $prod->Stock_Alert = $request->stock_alert;
-        $prod->Backorder_Options = $request->backorder;
-        $prod->Bulk_Order = $request->bulk_no;
-        $prod->Tags = $request->tags;
+        $prod->prod_name = $request->prod_name;
+        $prod->virtual = $request->virtual;
+        $prod->downloadable = $request->downloadable;
+        $prod->image_id = $request->image_id;
+        $prod->highlight = $request->highlights;
+        $prod->short_description = $request->s_desc;
+        $prod->specification = $request->specification;
+        $prod->brand = $request->brand;
+        $prod->weight = $request->weight;
+        $prod->size = $request->size;
+        $prod->dimensions = $request->dimension;
+        $prod->category_id = $request->cat_id;
+        $prod->variant_id = $request->varient_id;
+        $prod->r_price = $request->r_price;
+        $prod->s_price = $request->s_price;
+        $prod->tax_id = $request->tax_id;
+        $prod->shipping_id = $request->shipping_id;
+        $prod->sku = $request->sku;
+        $prod->stock = $request->stock;
+        $prod->stock_alert = $request->stock_alert;
+        $prod->backorder = $request->backorder;
+        $prod->bulk_order_no = $request->bulk_no;
+        $prod->tags = $request->tags;
         $prod->save();
     }
 
