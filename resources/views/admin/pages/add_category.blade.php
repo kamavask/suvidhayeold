@@ -1,7 +1,8 @@
 @extends('admin.layout.app')
 @section('content')
 
-
+<form method="POST" action="{{route('category.store')}}">
+    @csrf
     <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
@@ -62,7 +63,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="save-btn hover-btn " type="submit ">Submit</button>
+                                        <input type="submit" value="Submit">
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +73,7 @@
             </main>
         </div>
     </div>
- 
+</form>
 @endsection
             
 
