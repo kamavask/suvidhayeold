@@ -250,7 +250,7 @@
             </nav>
         </div>
     </div>
-
+    @yield('content')
     <!-- Javascripts -->
     <script src="{{ asset('admin/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
