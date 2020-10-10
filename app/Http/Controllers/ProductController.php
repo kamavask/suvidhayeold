@@ -40,13 +40,8 @@ class ProductController extends Controller
         $prod->virtual = $request->virtual;
         $prod->downloadable = $request->downloadable;
         $prod->image_id = $request->image_id;
-<<<<<<< HEAD
-        $prod->highlights = $request->highlight;
-        $prod->short_description = $request->s_desc;
-=======
         $prod->highlight = $request->highlight;
         $prod->short_description = $request->short_desc;
->>>>>>> e43904b5d43c8061eb39b32eaa44472be0a655a2
         $prod->specification = $request->specification;
         $prod->brand = $request->brand;
         $prod->weight = $request->weight;
@@ -65,6 +60,8 @@ class ProductController extends Controller
         $prod->bulk_order_no = $request->bulk_no;
         $prod->tags = $request->tags;
         $prod->save();
+
+        return $prod;
     }
 
     /**
