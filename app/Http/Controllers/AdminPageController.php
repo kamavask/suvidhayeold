@@ -13,7 +13,7 @@ class AdminPageController extends Controller
      */
     public function view_dashboard()
     {
-        return view('admin.pages.index');
+        return view('admin.pages.dashboard_home');
     }
 
     /* Admin base End */
