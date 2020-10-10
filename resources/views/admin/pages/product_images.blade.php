@@ -161,6 +161,5 @@
 </form>
 @endsection --}}
 
-@section('content')
+
 <h1>{{$product->id}}</h1>
-@endsection
