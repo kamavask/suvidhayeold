@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminPageController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
@@ -47,4 +48,6 @@ Route::get('homepage', [StoreController::class, 'homepage']);
 Route::get('single_product', [StoreController::class, 'single_product']);
 
 Route::get('single_service', [StoreController::class, 'single_service']);
+
+Route::get('upload_prod_image', [ImageController::class, 'store_prod_images']);
 /* STORE ROUTE END */
