@@ -5,6 +5,7 @@ namespace App\Actions\Fortify;
 use App\Models\Team;
 use App\Models\User;
 use App\Models\Role;
+use App\Models\Role_User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -53,7 +54,7 @@ class CreateNewUser implements CreatesNewUsers
         /* $roelid = Role::select('id')->where('name', 'Customer')->first();
 
         $user->roles()->attach($roelid->id); */
-        $r_u = new Role_user();
+        $r_u = new Role_User();
         $r_u->user_id = $user->id;
         $r_u->role_id = 7;
         $r_u->save();
