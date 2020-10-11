@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Description extends Model
 {
     use HasFactory;
+
+    public function products()
+    {
+        return $this->belongsTo('App\Models\Product');
+    }
 }
