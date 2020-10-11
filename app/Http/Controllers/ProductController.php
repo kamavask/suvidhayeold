@@ -74,8 +74,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {/* 
-        $product = Product::where('id', $product)-first();
-        return view('store.pages.single_product'); */
+        //$product = Product::where('id', $product)-first();
+        //return view('store.pages.single_product'); */
         dd($product);
     }
 
