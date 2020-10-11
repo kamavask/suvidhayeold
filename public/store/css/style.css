@@ -2925,7 +2925,6 @@ img.download-btn {
 }
 
 .color-discount:after {
-    content: '-';
     margin-left: 20px;
     color: #002E57;
 }
