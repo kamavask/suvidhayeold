@@ -50,9 +50,13 @@ class CreateNewUser implements CreatesNewUsers
     protected function setRole(User $user)
     {
 
-        $roelid = Role::/* select('id')-> */where('name', 'Customer')->first();
+        /* $roelid = Role::select('id')->where('name', 'Customer')->first();
 
-        $user->roles()->attach($roelid->id);
+        $user->roles()->attach($roelid->id); */
+        $r_u = new Role_user();
+        $r_u->user_id = $user->id;
+        $r_u->role_id = 7;
+        $r_u->save();
     }
 
 
