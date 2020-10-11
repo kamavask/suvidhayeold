@@ -1,8 +1,8 @@
 ﻿
     @extends('store.layout.app')
     @section('content')
-         <div class="wrapper">
-        <div class="gambo-Breadcrumb">
+    <div class="wrapper">
+        {{-- <div class="gambo-Breadcrumb">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="all-product-grid">
             <div class="container">
                 <div class="row">
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="col-lg-8 col-md-8">
                                     <div class="product-dt-right">
-                                        <h2>Grape Fruit Turkey</h2>
+                                        <h2>{{$product->prod_name}}</h2>
                                         <div class="no-stock">
                                             <p class="pd-no">Product No.<span>12345</span></p>
                                             <p class="stock-qty">Available<span>(Instock)</span></p>
@@ -85,10 +85,10 @@
                                         <div class="product-group-dt">
                                             <ul>
                                                 <li>
-                                                    <div class="main-price color-discount">Discount Price<span>$15</span></div>
+                                                    <div class="main-price mrp-price"><span>Rs.{{$product->r_price}}</span></div>
                                                 </li>
                                                 <li>
-                                                    <div class="main-price mrp-price">MRP Price<span>$18</span></div>
+                                                    <div class="main-price color-discount"><span>Rs.{{$product->s_price}}</span></div>
                                                 </li>
                                             </ul>
                                             <ul class="gty-wish-share">
@@ -109,12 +109,24 @@
                                             </ul>
                                         </div>
                                         <h4>HIGHLIGHTS</h4>
-                                        <ul class="pp-descp">
+                                        {{-- <ul class="pp-descp">
                                             <li>6 GB RAM | 128 GB ROM</li>
                                             <li>16.94cm(6.67inch) Display</li>
                                             <li>48 MP + 8 MP + 16 MP | 16 MP Front Camera</li>
                                             <li>4000 mAH Battery</li>
                                             <li>1 year manufacturer warrenty for device and 6 month manufacturer warrenty for inbox accessories including batteries from the data of purchase </li>
+                                        </ul> --}}
+                                        <ul class="pp-descp">
+                                            @php
+                                                $hlraw = $product->highlight;
+                                                $hlarray = explode('|', $hlraw);
+
+                                                for ($i=0; $i <count($hlarray); $i++) { 
+                                                   echo "<li>$hlarray[$i]</li>";
+                                                }
+                                                
+
+                                            @endphp
                                         </ul>
                                         <div class="pdp-details">
                                             <ul>
