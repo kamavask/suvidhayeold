@@ -15,7 +15,7 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('prod_code')->nullable(); 
+            $table->string('prod_code')->nullable();
             $table->string('prod_name')->nullable()->unique();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->string('brand')->nullable();
@@ -30,7 +30,7 @@ class CreateProductsTable extends Migration
             $table->boolean('downloadable')->nullable();
             $table->string('r_price')->nullable();
             $table->string('s_price')->nullable();
-            $table->unsignedBigInteger('variant_id')->nullable();
+            $table->integer('variant_id')->nullable();
             $table->string('sku')->nullable();
             $table->integer('stock')->nullable();
             $table->integer('stock_alert')->nullable();
