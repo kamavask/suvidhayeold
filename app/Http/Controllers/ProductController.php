@@ -73,8 +73,10 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Product $product)
-    {
-        return view('store.pages.single_product');
+    {/* 
+        $product = Product::where('id', $product)-first();
+        return view('store.pages.single_product'); */
+        dd($product);
     }
 
     /**
