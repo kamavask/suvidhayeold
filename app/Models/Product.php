@@ -18,4 +18,19 @@ class Product extends Model
     {
         return $this->hasMany('App\Models\Description');
     }
+
+    public function taxes()
+    {
+        return $this->belongsTo('App\Models\Tax');
+    }
+
+    public function shippingclasses()
+    {
+        return $this->belongsTo('App\Models\ShippingClass');
+    }
+
+    public function product_images()
+    {
+        return $this->hasOne('App\Models\ProductImage');
+    }
 }
