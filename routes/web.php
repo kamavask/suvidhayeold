@@ -55,4 +55,18 @@ Route::get('homepage', [PageController::class, 'homepage']);
 Route::get('single_product', [PageController::class, 'single_product']);
 
 Route::get('single_service', [PageController::class, 'single_service']);
+
+Route::get('checkout', [PageController::class, 'checkout']);
+
+Route::get('faq', [PageController::class, 'faq']);
+
+Route::get('forgot_password', [PageController::class, 'forgot_password']);
+
+Route::get('order_placed', [PageController::class, 'order_placed']);
+
+Route::get('shop_grid', [PageController::class, 'shop_grid']);
+
+Route::get('sign_in', [PageController::class, 'sign_in']);
+
+Route::get('sign_up', [PageController::class, 'sign_up']);
 /* STORE */
