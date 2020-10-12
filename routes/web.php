@@ -19,7 +19,7 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('store.pages.homepage');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
