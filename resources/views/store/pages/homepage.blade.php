@@ -8,12 +8,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="owl-carousel offers-banner owl-theme">
-                           @for ($i = 1; $i <=7; $i++)
                             <div class="item">
                                 <div class="offer-item">
                                     <div class="offer-item-img">
                                         <div class="gambo-overlay"></div>
-                                        <img src="store/images/offers/offer ($i).jpg" alt="">
+                                        <img src="store/images/offers/offer (1).jpg" alt="">
                                     </div>
                                     <div class="offer-text-dt">
                                         <div class="offer-top-text-banner">
@@ -25,7 +24,86 @@
                                     </div>
                                 </div>
                             </div>
-                           @endfor
+                            <div class="item">
+                                <div class="offer-item">
+                                    <div class="offer-item-img">
+                                        <div class="gambo-overlay"></div>
+                                        <img src="store/images/offers/offer (2).jpg" alt="">
+                                    </div>
+                                    <div class="offer-text-dt">
+                                        <div class="offer-top-text-banner">
+                                            <p>6% Off</p>
+                                            <div class="top-text-1">Buy More & Save More</div>
+                                            <span>Fresh Vegetables</span>
+                                        </div>
+                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="offer-item">
+                                    <div class="offer-item-img">
+                                        <div class="gambo-overlay"></div>
+                                        <img src="store/images/offers/offer (3).jpg" alt="">
+                                    </div>
+                                    <div class="offer-text-dt">
+                                        <div class="offer-top-text-banner">
+                                            <p>6% Off</p>
+                                            <div class="top-text-1">Buy More & Save More</div>
+                                            <span>Fresh Vegetables</span>
+                                        </div>
+                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="offer-item">
+                                    <div class="offer-item-img">
+                                        <div class="gambo-overlay"></div>
+                                        <img src="store/images/offers/offer (4).jpg" alt="">
+                                    </div>
+                                    <div class="offer-text-dt">
+                                        <div class="offer-top-text-banner">
+                                            <p>6% Off</p>
+                                            <div class="top-text-1">Buy More & Save More</div>
+                                            <span>Fresh Vegetables</span>
+                                        </div>
+                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="offer-item">
+                                    <div class="offer-item-img">
+                                        <div class="gambo-overlay"></div>
+                                        <img src="store/images/offers/offer (5).jpg" alt="">
+                                    </div>
+                                    <div class="offer-text-dt">
+                                        <div class="offer-top-text-banner">
+                                            <p>6% Off</p>
+                                            <div class="top-text-1">Buy More & Save More</div>
+                                            <span>Fresh Vegetables</span>
+                                        </div>
+                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="offer-item">
+                                    <div class="offer-item-img">
+                                        <div class="gambo-overlay"></div>
+                                        <img src="store/images/offers/offer (6).jpg" alt="">
+                                    </div>
+                                    <div class="offer-text-dt">
+                                        <div class="offer-top-text-banner">
+                                            <p>6% Off</p>
+                                            <div class="top-text-1">Buy More & Save More</div>
+                                            <span>Fresh Vegetables</span>
+                                        </div>
+                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
