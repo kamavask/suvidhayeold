@@ -8,12 +8,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="owl-carousel offers-banner owl-theme">
-                           @for ($i = 0; $i <=15; $i++)
+                           @for ($i = 1; $i <=7; $i++)
                             <div class="item">
                                 <div class="offer-item">
                                     <div class="offer-item-img">
                                         <div class="gambo-overlay"></div>
-                                        <img src="store/images/banners/offer-1.jpg" alt="">
+                                        <img src="store/images/offers/offer ($i).jpg" alt="">
                                     </div>
                                     <div class="offer-text-dt">
                                         <div class="offer-top-text-banner">
