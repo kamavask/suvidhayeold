@@ -88,22 +88,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="offer-item">
-                                    <div class="offer-item-img">
-                                        <div class="gambo-overlay"></div>
-                                        <img src="store/images/offers/offer (6).jpg" alt="">
-                                    </div>
-                                    <div class="offer-text-dt">
-                                        <div class="offer-top-text-banner">
-                                            <p>6% Off</p>
-                                            <div class="top-text-1">Buy More & Save More</div>
-                                            <span>Fresh Vegetables</span>
-                                        </div>
-                                        <a href="#" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
