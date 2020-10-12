@@ -266,7 +266,7 @@
 
 @extends('admin.layout.app')
 @section('content')
-<div class="row">
+<div class="row ">
     <div class="col-lg-6 col-md-6">
         <div class="card card-static-2 mb-30">
             <div class="card-title-2">
