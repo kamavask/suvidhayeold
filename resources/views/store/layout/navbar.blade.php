@@ -2,11 +2,11 @@
 		<div class="top-header-group">
 			<div class="top-header">
 				<div class="res_main_logo">
-					<a href="/"><img src="store\main_images\logo\suvidhaye_logo.png" alt=""></a>
+					<a href="/"><img src="store\main_images\logo\white_title.jpg" alt=""></a>
 				</div>
 				<div class="main_logo" id="logo">
-					<a href="/"><img src="store\main_images\logo\suvidhaye_logo.png" alt=""></a></a>
-					<a href="/"><img class="logo-inverse" src="store\main_images\logo\suvidhaye_logo.png" alt=""></a>
+					<a href="/"><img src="store\main_images\logo\white_title.jpg" alt=""></a></a>
+					<a href="/"><img class="logo-inverse" src="store\main_images\logo\black_title.jpg" alt=""></a>
 				</div>
 				{{-- <div class="select_location">
 					<div class="ui inline dropdown loc-title">
