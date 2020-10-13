@@ -1,17 +1,17 @@
- <script src="admin/js/jquery-3.4.1.min.js"></script>
-    <script src="admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="admin/vendor/tail.select/js/tail.select-full.min.js"></script>
-    <script src="admin/js/scripts.js"></script>
+ <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/tail.select/js/tail.select-full.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script>
         tail.select(".select");
     </script>
 
-    	<script src="admin/vendor/chart/highcharts.js"></script>
-		<script src="admin/vendor/chart/exporting.js"></script>
-		<script src="admin/vendor/chart/export-data.js"></script>
-		<script src="admin/vendor/chart/accessibility.js"></script>
-        <script src="admin/js/scripts.js"></script>
-        <script src="admin/js/chart.js"></script>
+    	<script src="vendor/chart/highcharts.js"></script>
+		<script src="vendor/chart/exporting.js"></script>
+		<script src="vendor/chart/export-data.js"></script>
+		<script src="vendor/chart/accessibility.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/chart.js"></script>
 
         
        
