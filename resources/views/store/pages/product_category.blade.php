@@ -75,9 +75,9 @@
 												$prod_name_raw = $item->prod_name;
 												$prodname = explode(',', $prod_name_raw);
 												
-												for ($i=0; $i <count($hlarray); $i++) 
+												for ($i=0; $i <count($prodname); $i++) 
 												{ 
-													echo $prodname;
+													echo $prodname[$i];
                         }
 										@endphp
 									</h4>
