@@ -51,7 +51,7 @@
 							<div class="col-lg-3 col-md-6">
 								<div class="product-item mb-30">
 									<a href="single_product" class="product-img">
-										<img src="images/product/img-1.jpg" alt="">
+									<img src="/storage/images/products/{{$item->prod_name}}" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">
 												@php
