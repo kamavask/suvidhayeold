@@ -8,3 +8,4 @@
 <script src="{{ asset('store/js/custom.js')}}"></script>
 <script src="{{ asset('store/js/offset_overlay.js')}}"></script>
 <script src="{{ asset('store/js/night-mode.js')}}"></script>
+
