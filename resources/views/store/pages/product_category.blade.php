@@ -73,7 +73,7 @@
 										{{-- {{$item->prod_name}} --}}
 										@php
 												$prod_name_raw = $item->prod_name;
-												$prodname = explode(',', $prodname);
+												$prodname = explode(',', $prod_name_raw);
 												echo $prodname;
 										@endphp
 									</h4>
