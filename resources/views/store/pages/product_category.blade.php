@@ -61,7 +61,7 @@
 
 													$percent = ( $s_price / $r_price ) * $multi;
 
-													echo $percent "%";
+													echo $percent . " %";
 												@endphp
 											</span>
 											<span class="like-icon" title="wishlist"></span>
