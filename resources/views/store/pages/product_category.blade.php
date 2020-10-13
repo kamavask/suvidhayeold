@@ -77,7 +77,7 @@
 												
 												for ($i=0; $i <count($prodname); $i++) 
 												{ 
-													echo $prodname[$i];
+													echo $prodname[$i] "<br>";
                         }
 										@endphp
 									</h4>
