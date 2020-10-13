@@ -69,7 +69,14 @@
 									</a>
 									<div class="product-text-dt">
 										<p>Available<span>(In Stock)</span></p>
-									<h4>{{$item->prod_name}}</h4>
+									<h4>
+										{{-- {{$item->prod_name}} --}}
+										@php
+												$prod_name_raw = $item->prod_name;
+												$prodname = explode(',', $hlraw);
+												echo $prodname;
+										@endphp
+									</h4>
 										<div class="product-price">{{$item->s_price}} <span>{{$item->r_price}} </span></div>
 										<div class="qty-cart">
 											<div class="quantity buttons_added">
