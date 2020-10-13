@@ -74,7 +74,11 @@
 										@php
 												$prod_name_raw = $item->prod_name;
 												$prodname = explode(',', $prod_name_raw);
-												echo $prodname;
+												
+												for ($i=0; $i <count($hlarray); $i++) 
+												{ 
+													echo $prodname;
+                        }
 										@endphp
 									</h4>
 										<div class="product-price">{{$item->s_price}} <span>{{$item->r_price}} </span></div>
