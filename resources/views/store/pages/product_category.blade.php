@@ -59,7 +59,7 @@
 													$s_price = $item->s_price;
 													$multi = 100;
 													$percent = ( $s_price / $r_price ) * $multi;
-													echo $percent;
+													echo $r_price;
 												@endphp
 											</span>
 											<span class="like-icon" title="wishlist"></span>
