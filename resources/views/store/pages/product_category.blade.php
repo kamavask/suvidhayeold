@@ -57,8 +57,8 @@
 												@php
 													$r_price = $item->r_price;
 													$s_price = $item->s_price;
-
-													$percent = ($s_price/$r_price) * "100";
+													$multi = 100;
+													$percent = ( $s_price / $r_price ) * $multi;
 													echo $percent;
 												@endphp
 											</span>
