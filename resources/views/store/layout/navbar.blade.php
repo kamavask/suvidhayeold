@@ -64,7 +64,7 @@
 				<div class="header_right">
 					<ul>
 						<li>
-							<a href="#" class="offer-link"><i class="uil uil-phone-alt"></i>1800-000-000</a>
+							<a href="#" class="offer-link"><i class="uil uil-phone-alt"></i></a>
 						</li>
 						<li>
 							<a href="offers" class="offer-link"><i class="uil uil-gift"></i>Offers</a>
@@ -111,7 +111,7 @@
 						<button class="navbar-toggler menu_toggle_btn" type="button" data-target="#navbarSupportedContent"><i class="uil uil-bars"></i></button>
 						<div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu" id="navbarSupportedContent">
 						 	<ul class="navbar-nav main_nav align-self-stretch">
-							 <li class="nav-item"><a href="/" class="nav-link active" title="Home">Home</a></li>
+							 <li class="nav-item"><a href="/" class="nav-link active" title="Home">Welcome To <span>Suvidhaye</span></a></li>
 									{{--<li class="nav-item"><a href="shop_grid" class="nav-link new_item" title="New Products">New Products</a></li>
 								<li class="nav-item"><a href="shop_grid" class="nav-link" title="Featured Products">Featured Products</a></li>
 								<li class="nav-item">
