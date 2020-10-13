@@ -23,5 +23,5 @@ class Controller extends BaseController
     {
         return view('store.pages.product_category');
     }
-}
+
 }
