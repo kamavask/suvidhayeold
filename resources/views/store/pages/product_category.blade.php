@@ -55,8 +55,8 @@
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">
 												@php
-													$r_price = {{$item->r_price}};
-													$s_price = {{$item->s_price}};
+													$r_price = $item->r_price;
+													$s_price = $item->s_price;
 
 													$percent = ($s_price/$r_price) * "100";
 													echo $percent;
