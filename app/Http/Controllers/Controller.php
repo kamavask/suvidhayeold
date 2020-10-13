@@ -18,4 +18,10 @@ class Controller extends BaseController
         $prod = Product::all();
         return view('test')->with('prod', $prod);
     }
+
+    public  function product_category()
+    {
+        return view('store.pages.product_category');
+    }
+}
 }

@@ -52,5 +52,7 @@ Route::get('single_service', [StoreController::class, 'single_service']);
 
 Route::get('prodtest', [Controller::class, 'product_test']);
 
+Route::get('product_category', [Controller::class, 'product_category']);
+
 Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
 /* STORE ROUTE END */
