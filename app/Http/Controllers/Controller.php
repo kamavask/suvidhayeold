@@ -21,7 +21,8 @@ class Controller extends BaseController
 
     public  function product_category()
     {
-        return view('store.pages.product_category');
+        $product = Product::all();
+        return view('store.pages.product_category')->with('product', $product);
     }
 
 }
