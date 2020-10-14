@@ -575,7 +575,7 @@ input[type=text] {
 .search120 {
     float: left;
     margin-left: 35px;
-    width: 25%;
+    width: 35%;
 }
 
 .main_logo img {
@@ -2183,6 +2183,7 @@ span.like-icon {
 
 .product-img img {
     width: 100%;
+    height: 200px;
     transition: transform .5s ease;
 }
 
