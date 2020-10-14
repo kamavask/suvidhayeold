@@ -15,7 +15,11 @@ class CreateFlagProductTable extends Migration
     {
         Schema::create('flag_product', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('flag_id')->nullable();
+            $table->unsignedBigInteger('product_id')->nullable();
             $table->timestamps();
+            $table->foreign('flag_id')->references('id')->on('flags');
+            $table->foreign('product_id')->references('id')->on('products');
         });
     }
 
