@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\BulkUploadController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
@@ -35,6 +36,10 @@ Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
 ]);
+
+Route::get('bulk/category', [BulkUploadController::class, 'show_category']);
+
+Route::post('bulk/category', [BulkUploadController::class, 'upload_category']);
 
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
