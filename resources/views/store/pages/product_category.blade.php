@@ -61,7 +61,7 @@
 
 													$multi = 100;
 
-													$percent = ( $subtract / $r_price ) * $multi;
+													$percent = ( $subtranct / $r_price ) * $multi;
 
 													echo $percent . " %";
 												@endphp
