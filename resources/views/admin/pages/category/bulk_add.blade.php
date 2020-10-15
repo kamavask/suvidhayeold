@@ -14,7 +14,7 @@
                 </div>
                 <div class="card-body-table">
                   <div class="news-content-right pd-20">
-                    <form action="">
+                    <form action="bulk/category" method="POST">
                       <div class="row" style="margin-bottom:1%">
                         <div class="col-12">
                           <div class="form-group">
