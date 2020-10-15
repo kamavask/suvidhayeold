@@ -9,7 +9,7 @@
 					<div class="col-md-12">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+								<li class="breadcrumb-item"><a href="/">Home</a></li>
 								<li class="breadcrumb-item active" aria-current="page">Vegetables & Fruits</li>
 							</ol>
 						</nav>
@@ -57,9 +57,11 @@
 												@php
 													$r_price = $item->r_price;
 													$s_price = $item->s_price;
+													$subtranct = $r_price - $s_price;
+
 													$multi = 100;
 
-													$percent = ( $s_price / $r_price ) * $multi;
+													$percent = ( $subtract / $r_price ) * $multi;
 
 													echo $percent . " %";
 												@endphp
