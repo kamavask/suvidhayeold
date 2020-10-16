@@ -1,7 +1,7 @@
 @extends('store.layout.app')
 @section('content')
     <!-- Cart Sidebar Offset Start-->
-<div class="bs-canvas bs-canvas-left position-fixed bg-cart h-100">
+<div class="bs-canvas  position-fixed bg-cart h-100">
     <div class="bs-canvas-header side-cart-header p-3 ">
         <div class="d-inline-block  main-cart-title">My Cart <span>(2 Items)</span></div>
         <button type="button" class="bs-canvas-close close" aria-label="Close"><i class="uil uil-multiply"></i></button>
