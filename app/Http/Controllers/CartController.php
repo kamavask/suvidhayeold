@@ -35,8 +35,8 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        $cartitem = Cart::add($request->id, $request->name, /* $request->price */ 2000, 1)
-            ->associate('App\Models\Product');
+        $cartitem = Cart::add($request->id, $request->name, /* $request->price */ 2000, 1);
+        /* ->associate('App\Models\Product'); */
 
         dd($cartitem);
 
