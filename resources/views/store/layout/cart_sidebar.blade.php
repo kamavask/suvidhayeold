@@ -120,7 +120,7 @@
         <div class="cart-total-dil saving-total ">
             <h4>Subtotal</h4>
             <span>{{Cart::subtotal()}}</span>
-            <span>{{Cart::tax()}}</span>
+            <span>{{Cart::tax()  }}</span>
         </div>
         <div class="main-total-cart">
             <h2>Total</h2>

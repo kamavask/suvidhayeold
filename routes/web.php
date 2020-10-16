@@ -65,7 +65,3 @@ Route::get('product_category', [Controller::class, 'product_category']);
 
 Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
 /* STORE ROUTE END */
-
-Route::get('/product', function () {
-    return view('store.pages.single_product');
-});

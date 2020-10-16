@@ -63,7 +63,7 @@ class ProductController extends Controller
 
         $product = $prod;
 
-        return view('admin.pages.product_images')/* ->with('product', $product) */; 
+        return view('admin.pages.product_images')/* ->with('product', $product) */;
     }
 
     /**
@@ -76,7 +76,7 @@ class ProductController extends Controller
     {
         $prod = $product;
         return view('store.pages.single_product')
-            ->with('product', $prod);   
+            ->with('product', $prod);
     }
 
     /**
