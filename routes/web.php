@@ -38,7 +38,7 @@ Route::resources([
     'category' => CategoryController::class,
 ]);
 
-Route::resource('cart', CartController::class);
+Route::resource('cart', CartController::class)->name('cart');
 
 Route::get('empty', function () {
     Cart::destroy();
