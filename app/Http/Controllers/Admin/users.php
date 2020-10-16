@@ -3,11 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 class users extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +20,8 @@ class users extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+        return view('admin.users.index')->with('users', $users);
     }
 
     /**
@@ -58,7 +64,16 @@ class users extends Controller
      */
     public function edit(User $user)
     {
-        //
+        if (Gate::denies('edit-users')) {
+            return redirect(route('admin.users.index'));
+        }
+
+        $roles = Role::all();
+
+        return view('admin.users.edit')->with([
+            'user' => $user,
+            'roles' => $roles,
+        ]);
     }
 
     /**
@@ -70,7 +85,9 @@ class users extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $user->roles()->sync($request->roles);
+
+        return redirect()->route('admin.users.index');
     }
 
     /**
@@ -81,6 +98,9 @@ class users extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->roles()->detach();
+        $user->delete();
+
+        return redirect()->route('admin.users.index');
     }
 }

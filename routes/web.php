@@ -28,6 +28,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function () {
+    Route::resource('/users', UsersController::class)->except(['show', 'create', 'store']);
+});
+
 /* Route::resource([
     'category' => CategoryController::class,
     'product' => ProductController::class,

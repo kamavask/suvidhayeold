@@ -28,14 +28,27 @@ class CreateNewUser implements CreatesNewUsers
         ])->validate();
 
         return DB::transaction(function () use ($input) {
-            return tap(User::create([
-                'name' => $input['name'],
-                'email' => $input['email'],
-                'password' => Hash::make($input['password']),
-            ]), function (User $user) {
+            return tap(
+                User::create([
+                    'name' => $input['name'],
+                    'email' => $input['email'],
+                    'password' => Hash::make($input['password']),
+                ]), /* function (User $user) {
                 $this->createTeam($user);
-            });
+            } */
+                function (User $user) {
+                    $this->role_user($user);
+                }
+            );
         });
+    }
+
+    public function role_user(User $user)
+    {
+        $r_u = new Role_user();
+        $r_u->user_id = $user->id;
+        $r_u->role_id = 7;
+        $r_u->save();
     }
 
     /**
@@ -44,12 +57,12 @@ class CreateNewUser implements CreatesNewUsers
      * @param  \App\Models\User  $user
      * @return void
      */
-    protected function createTeam(User $user)
+    /* protected function createTeam(User $user)
     {
         $user->ownedTeams()->save(Team::forceCreate([
             'user_id' => $user->id,
-            'name' => explode(' ', $user->name, 2)[0]."'s Team",
+            'name' => explode(' ', $user->name, 2)[0] . "'s Team",
             'personal_team' => true,
         ]));
-    }
+    } */
 }
