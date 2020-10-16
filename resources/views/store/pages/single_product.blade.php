@@ -89,6 +89,7 @@
                                             <li>
                                                 <div class="main-price color-discount">
                                                     <span>Rs.{{$product->s_price}}</span></div>
+                                                {{$product->s_price}}
                                             </li>
                                         </ul>
                                         <ul class="gty-wish-share">
