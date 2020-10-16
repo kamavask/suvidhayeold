@@ -40,7 +40,7 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
-    'category' => CartController::class,
+    'cart' => CartController::class,
 ]);
 
 Route::get('empty', function () {
