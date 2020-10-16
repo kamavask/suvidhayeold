@@ -40,15 +40,14 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
+    'cart' => CartController::class,
 ]);
-
-Route::resource('cart', CartController::class);
 
 Route::get('empty', function () {
     Cart::destroy();
 });
 
-Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
+//Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
