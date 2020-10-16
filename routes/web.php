@@ -1,12 +1,14 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
+use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,7 +36,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
+    'cart' => CartController::class,
 ]);
+
+Route::get('empty', function () {
+    Cart::destroy();
+});
+
+Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
