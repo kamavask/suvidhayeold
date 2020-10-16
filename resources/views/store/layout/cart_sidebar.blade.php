@@ -138,4 +138,3 @@
     <div class="spacer"></div>
     <a href="{{ route('shop.index')}}">Continue Shopping</a>
 </div>
-<!-- Cart Sidebar Offsetl End-->
