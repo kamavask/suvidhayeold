@@ -67,5 +67,5 @@ Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
 /* STORE ROUTE END */
 
 Route::get('/product', function () {
-    return view('store.pages.single_product.blade.php');
+    return view('store.pages.single_product');
 });
