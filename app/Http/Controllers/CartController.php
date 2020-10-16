@@ -36,10 +36,10 @@ class CartController extends Controller
     public function store(Request $request)
     {
 
-        dd($request->s_price);
-        $cartitem = Cart::add($request->id, $request->name, $request->price, 1);
+        // dd($request->s_price);
+        $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
         /* ->associate('App\Models\Product'); */
-
+        dd($cartitem);
         //return redirect()->route('cart')->with('success_message', 'Item added to your cart');
     }
 
