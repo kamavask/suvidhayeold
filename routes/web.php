@@ -36,8 +36,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
-    'cart' => CartController::class,
 ]);
+
+Route::resource('cart', CartController::class);
 
 Route::get('empty', function () {
     Cart::destroy();
