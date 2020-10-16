@@ -79,7 +79,7 @@
                                 <span>$16</span>
                             </div>
                             <div class="payment-secure">
-                                <button class="payment-secure-btn" style="width:100%; height: 100%; padding: 20px;">
+                                <button class="payment-secure-btn">
 																	<i class="uil uil-padlock"></i>Secure checkout
 																</button>
                             </div>
