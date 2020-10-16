@@ -38,7 +38,7 @@ Route::resources([
     'category' => CategoryController::class,
 ]);
 
-Route::name('cart.')->group(function () {
+Route::name('cart')->group(function () {
     Route::resource('/cart', CartController::class);
 });
 
