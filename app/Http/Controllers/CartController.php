@@ -36,7 +36,7 @@ class CartController extends Controller
     public function store(Request $request)
     {
 
-        dd($request->price);
+        dd($request->s_price);
         $cartitem = Cart::add($request->id, $request->name, $request->price, 1);
         /* ->associate('App\Models\Product'); */
 

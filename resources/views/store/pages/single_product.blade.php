@@ -113,7 +113,7 @@
                                                 <input type="hidden" name="name" value="{{$product->prod_name}}">
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
-                                                <input type="hidden" name="price" value="{{$product->s_price}}">
+                                                <input type="hidden" name="s_price" value="{{$product->s_price}}">
                                                 <li><button class="add-cart-btn hover-btn"><i
                                                             class="uil uil-shopping-cart-alt"></i>Add to Cart</button>
                                                 </li>
