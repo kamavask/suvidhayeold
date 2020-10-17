@@ -76,7 +76,7 @@
 					<li class="ui dropdown">
 						<a href="#" class="opts_account">
 							<img src="images/avatar/img-5.jpg" alt="">
-							user name
+							{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>
 						</a>
 						<div class="menu dropdown_account">
