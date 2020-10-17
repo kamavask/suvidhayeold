@@ -104,7 +104,12 @@
 									class="uil uil-location-point icon__1"></i>My Address</a>
 							<a href="offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
 							{{-- <a href="faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a> --}}
-							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
+							@auth
+								<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
+								<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
+							@else
+                <a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>							
+              @endif
 						</div>
 					</li>
 				</ul>
