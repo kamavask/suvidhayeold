@@ -75,8 +75,17 @@
 					</li>
 					<li class="ui dropdown">
 						<a href="#" class="opts_account">
+							{{-- @if ({{ Auth::user()->name}} =)
+									
+							@else
+									
+							@endif --}}
 							<img src="images/avatar/img-5.jpg" alt="">
-							{{ Auth::user()->name}}
+							@php
+									
+									dd({{ Auth::user()->name}});
+							@endphp
+
 							<i class="uil uil-angle-down"></i>
 						</a>
 						<div class="menu dropdown_account">
