@@ -41,11 +41,11 @@
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
-                <div class="flex items-center justify-end mt-4">
-                  <a class="underline text-sm text-gray-600 hover:text-gray-900" style="padding-right: 60px" href="{{ route('register') }}">
+            
+                  <a class="underline text-sm text-gray-600 hover:text-gray-900" style="padding-left: 80px" href="{{ route('register') }}">
                     {{ __('register now') }}
                   </a>
-                </div>
+            
                 <x-jet-button class="ml-4">
                     {{ __('Login') }}
                 </x-jet-button>
