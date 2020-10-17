@@ -14,14 +14,28 @@
                 </div>
                 <div class="card-body-table">
                   <div class="news-content-right pd-20">
-                    <form action="">
-                     	<label class="form-label">Upload File</label>
-												<div class="input-group">
-													<div class="custom-file">
-														<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
-														<label class="custom-file-label" for="inputGroupFile04">Choose Your File</label>
-													</div>
-												</div>
+                    <form action="/bulk/product" method="POST" enctype="multipart/form-data">
+                    @csrf
+                      <div class="row" style="margin-bottom:1%">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <h2>{{session('status')}}</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" style="margin-bottom:1%">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="exampleFormControlFile1" class="form-label"><b>Upload Data File</b></label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file">
+                          </div>
+                        </div>
+                      </div>
+                      @if ($errors->has('file'))
+                          <span>
+                          <strong>{{$errors->first(file)}}</strong>
+                          </span>
+                      @endif
                       <button class="save-btn hover-btn " type="submit ">Submit</button>
                     </form>
                   </div>
@@ -35,3 +49,5 @@
   </div>
 </body>  
 @endsection
+
+
