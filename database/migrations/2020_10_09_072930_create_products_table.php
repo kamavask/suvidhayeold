@@ -37,7 +37,7 @@ class CreateProductsTable extends Migration
             $table->integer('backorder')->nullable();
             $table->unsignedBigInteger('tax_id')->nullable();
             $table->unsignedBigInteger('shipping_id')->nullable();
-            $table->integer('bulk_order_no')->unsigned()->nullable();
+            $table->integer('bulk_order_no')->nullable();
             $table->string('tags')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
