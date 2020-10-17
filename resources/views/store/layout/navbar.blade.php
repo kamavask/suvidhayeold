@@ -75,17 +75,17 @@
 					</li>
 					<li class="ui dropdown">
 						<a href="#" class="opts_account">
-							{{-- @if ({{ Auth::user()->name}} =)
-									
-							@else
-									
-							@endif --}}
+							@auth
 							<img src="images/avatar/img-5.jpg" alt="">
-							@php
-									
-									dd(Auth::user()->name);
-							@endphp
-
+								{{ Auth::user()->name}}
+							<i class="uil uil-angle-down"></i>
+							@else
+                <img src="images/avatar/img-5.jpg" alt="">
+								Login/signup
+							<i class="uil uil-angle-down"></i>							
+              @endif
+							<img src="images/avatar/img-5.jpg" alt="">
+							{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>
 						</a>
 						<div class="menu dropdown_account">
