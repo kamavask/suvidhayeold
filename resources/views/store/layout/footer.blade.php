@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <ul class="call-email-alt">
-            <li><a href="#" class="callemail"><i class="uil uil-dialpad-alt"></i>1800-000-000</a></li>
-            <li><a href="#" class="callemail"><i class="uil uil-envelope-alt"></i>info@gambosupermarket.com</a></li>
+            <li><a href="#" class="callemail"><i class="uil uil-dialpad-alt"></i>3590646</a></li>
+            <li><a href="#" class="callemail"><i class="uil uil-envelope-alt"></i>suvidhaye.jbp@com</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-sm-6">
@@ -51,7 +51,7 @@
             <ul>
               <li><a href="about_us">About US</a></li>
               <li><a href="shop_grid">Featured Products</a></li>
-              <li><a href="offers">Offers</a></li>
+              {{-- <li><a href="offers">Offers</a></li> --}}
               <li><a href="our_blog">Blog</a></li>
               <li><a href="faq">Faq</a></li>
               <li><a href="career">Careers</a></li>
@@ -59,7 +59,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6">
+     {{--    <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="second-row-item">
             <h4>Top Cities</h4>
             <ul>
@@ -73,7 +73,7 @@
               <li><a href="#">Chandigrah</a></li>
             </ul>
           </div>
-        </div>
+        </div> --}}
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="second-row-item-app">
             <h4>Download App</h4>
@@ -126,11 +126,11 @@
               <li><a href="contact_us">Contact</a></li>
               <li><a href="privacy_policy">Privacy Policy</a></li>
               <li><a href="term_and_conditions">Term & Conditions</a></li>
-              <li><a href="refund_and_return_policy">Refund & Return Policy</a></li>
+              <li><a href="refund_and_return_policy">Refund & Exchange Policy</a></li>
             </ul>
           </div>
           <div class="copyright-text">
-            <i class="uil uil-copyright"></i>Copyright 2020 <b>Gambolthemes</b> . All rights reserved
+            <i class="uil uil-copyright"></i>Copyright 2020 <b>Developed By Mavask</b> . All rights reserved
           </div>
         </div>
       </div>

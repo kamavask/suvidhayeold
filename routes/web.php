@@ -1,7 +1,11 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+<<<<<<< HEAD
 use App\Http\Controllers\CartController;
+=======
+use App\Http\Controllers\BulkUploadController;
+>>>>>>> bulk_upload
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
@@ -43,11 +47,17 @@ Route::resources([
     'cart' => CartController::class,
 ]);
 
+<<<<<<< HEAD
 Route::get('empty', function () {
     Cart::destroy();
 });
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
+=======
+Route::get('bulk/category', [BulkUploadController::class, 'show_category']);
+
+Route::post('bulk/category', [BulkUploadController::class, 'upload_category']);
+>>>>>>> bulk_upload
 
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
