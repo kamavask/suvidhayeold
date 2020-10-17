@@ -64,7 +64,7 @@
 			<div class="header_right">
 				<ul>
 					<li>
-						<a href="tel:8989007801" class="offer-link"><i class="uil uil-phone-alt"></i>8989007801</a>
+						<a href="tel:7024027407" class="offer-link"><i class="uil uil-phone-alt"></i>7024027407</a>
 					</li>
 					<li>
 						<a href="offers" class="offer-link"><i class="uil uil-gift"></i>Offers</a>
