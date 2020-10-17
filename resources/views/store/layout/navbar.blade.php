@@ -80,7 +80,7 @@
 								{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>
 							@else
-								Login/signup
+								Login / signup
 							<i class="uil uil-angle-down"></i>							
               @endif
 						</a>
