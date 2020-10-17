@@ -49,9 +49,9 @@ Route::get('empty', function () {
 });
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
-Route::get('bulk/category', [BulkUploadController::class, 'show_category']);
+Route::get('bulk/category', [BulkUploadController::class, 'show_bulk_category']);
 
-Route::post('bulk/category', [BulkUploadController::class, 'upload_category']);
+Route::post('bulk/category', [BulkUploadController::class, 'upload_bulk_category']);
 
 /* 
 Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
