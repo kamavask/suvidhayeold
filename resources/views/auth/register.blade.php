@@ -2,7 +2,7 @@
     <x-jet-authentication-card>
         <x-slot name="logo">
             {{-- <x-jet-authentication-card-logo /> --}}
-           <img src="{{ asset('store/images/logo/white.jpg') }}" alt="">
+           <img src="{{ asset('store/images/logo/white.jpg') }}" alt="logo" style="width: 200px;">
             <h2>Suvidhaye</h2>
         </x-slot>
 
