@@ -10,4 +10,9 @@ class BulkUploadController extends Controller
     {
         return view('admin.pages.category.bulk_add');
     }
+
+    public function upload_category(Request $request)
+    {
+       dd($request->all());
+    }
 }

@@ -14,14 +14,13 @@
                 </div>
                 <div class="card-body-table">
                   <div class="news-content-right pd-20">
-                    <form action="">
+                    <form action="bulk/category" method="POST">
                       <div class="row" style="margin-bottom:1%">
                         <div class="col-12">
-                          <div class="content">
-                            <div class="box">
-                              <input type="file" name="category_bulk" id="upload_bulf_btn" class="save-btn hover-btn" {{-- data-multiple-caption="{count} files selected" multiple  --}}/>
-                              <label for="upload_bulf_btn"><span>Choose a file</span></label>
-                    				</div>
+                          <div class="form-group">
+                            <label for="exampleFormControlFile1" class="form-label"><b>Upload Data File</b></label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="icon">
+                          </div>
                         </div>
                       </div>
                       <button class="save-btn hover-btn " type="submit ">Submit</button>
