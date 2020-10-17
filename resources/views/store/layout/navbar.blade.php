@@ -77,12 +77,12 @@
 						<a href="#" class="opts_account">
 							@auth
 							<img src="images/avatar/img-5.jpg" alt="">
-								{{ Auth::user()->name}}
+							{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>
 							@else
-								Login / signup
-							<i class="uil uil-angle-down"></i>							
-              @endif
+							Login / signup
+							<i class="uil uil-angle-down"></i>
+							@endif
 						</a>
 						<div class="menu dropdown_account">
 							<div class="night_mode_switch__btn">
@@ -104,12 +104,12 @@
 							<a href="offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
 							{{-- <a href="faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a> --}}
 							@auth
-								<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
+							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
 							@else
-								<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
-								<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
-                							
-              @endif
+							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
+							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
+
+							@endif
 						</div>
 					</li>
 				</ul>
@@ -120,7 +120,16 @@
 		<div class="sub-header">
 			<div class="ui dropdown">
 				<a href="/upload_list" class="category_drop hover-btn" data-toggle="modal" data-target="#category_model"
-					title="Categories"><i class="fa fa-arrow-up"></i><span class="cate__icon">Upload Your list</span></a>
+					title="Categories"><i class="fa fa-arrow-up"></i><span class="cate__icon">Upload Your list
+						<label class="form-label">Category Image*</label>
+						<div class="input-group">
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="inputGroupFile04"
+									aria-describedby="inputGroupFileAddon04">
+								<label class="custom-file-label" for="inputGroupFile04">Choose Image</label>
+							</div>
+						</div>
+					</span></a>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-light py-3">
 				<div class="container-fluid">
