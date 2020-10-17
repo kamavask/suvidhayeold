@@ -53,7 +53,12 @@ Route::get('empty', function () {
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
-route::get('/logout', [AuthController::class, 'logout']);
+//route::get('/logout', [AuthController::class, 'logout']);
+
+Route::get('/', function () {
+    Auth::logout();
+    return redirect('/');
+});
 
 Route::get('bulk/category', [BulkUploadController::class, 'show_bulk_category']);
 
