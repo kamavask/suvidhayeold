@@ -57,7 +57,7 @@ class CategoryController extends Controller
     public function show(/* Category $category */)
     {
         $cat = Category::all();
-        return view('admin.pages.show_category', compact('$cat'));
+        return view('admin.pages.category.show_category', compact('$cat'));
     }
 
     /**
