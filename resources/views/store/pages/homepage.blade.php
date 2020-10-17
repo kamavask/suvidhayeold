@@ -222,13 +222,13 @@
                             <div class="item ">
                                 <div class="product-item ">
                                     <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html " class="product-img ">
-                                        <img src="store/images/product/img-1.jpg " alt=" ">
+                                        <img src="store/images/odders/bigsaleonglass.jpg" alt=" ">
                                         <div class="product-absolute-options ">
                                             <span class="offer-badge-1 ">6% off</span>
                                             <span class="like-icon " title="wishlist "></span>
                                         </div>
                                     </a>
-                                    <div class="product-text-dt ">
+                                    <div class="product-text-d ">
                                         <p>Available<span>(In Stock)</span></p>
                                         <h4>Product Title Here</h4>
                                         <div class="product-price ">$12 <span>$15</span></div>
@@ -282,7 +282,7 @@
                     </div>
                     <div class="col-md-12 ">
                         <a href="# " class="code-offer-item ">
-                            <img src="store/images/best-offers/offer-4.jpg " alt=" ">
+                            <img src="store/images/odders/bigsaleonglass.jpg" alt=" ">
                         </a>
                     </div>
                 </div>
