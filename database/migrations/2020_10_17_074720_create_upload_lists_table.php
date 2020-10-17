@@ -15,7 +15,10 @@ class CreateUploadListsTable extends Migration
     {
         Schema::create('upload_lists', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->string('list')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

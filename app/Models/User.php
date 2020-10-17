@@ -90,4 +90,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Models\Order');
     } */
+
+    public function uploadlist()
+    {
+        return $this->belongsTo('App\Models\UploadList');
+    }
 }
