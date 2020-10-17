@@ -36,7 +36,7 @@
                 </a>
 
                 <x-jet-button class="ml-4">
-                    {{ __('Register') }}
+                    {{ __('Register Now!') }}
                 </x-jet-button>
             </div>
         </form>
