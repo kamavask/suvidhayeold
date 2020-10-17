@@ -80,7 +80,6 @@
 								{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>
 							@else
-                <img src="images/avatar/img-5.jpg" alt="">
 								Login/signup
 							<i class="uil uil-angle-down"></i>							
               @endif
