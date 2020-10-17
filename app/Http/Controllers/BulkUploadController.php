@@ -8,13 +8,13 @@ use App\Models\Product;
 
 class BulkUploadController extends Controller
 {
-    public function show_category()
+    public function show_bulk_category()
     {
         return view('admin.pages.category.bulk_add');
     }
 
 
-    public function upload_category(Request $request)
+    public function upload_bulk_category(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'file' => 'required',
@@ -49,13 +49,13 @@ class BulkUploadController extends Controller
         return redirect()->back();
     }
 
-    public function show_product()
+    public function show_bulk_product()
     {
         return view('admin.pages.product.bulk_add');
     }
 
 
-    public function upload_product(Request $request)
+    public function upload_bulk_product(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'file' => 'required',
