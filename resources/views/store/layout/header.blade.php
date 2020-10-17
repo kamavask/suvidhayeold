@@ -81,12 +81,10 @@
                                     </span>
                                 </a>
                             </div>
-                            {{-- @can('access-dashboard') --}}
-                            @if(auth()->user()->profile->can('access-dashboard'))
+                            {{-- @can('access-dashboard')
                             <a href="/dashboard" class="item channel_item"><i
                                     class="uil uil-apps icon__1"></i>Dashbaord</a>
-                            {{-- @endcan --}}
-                            @endif
+                            @endcan --}}
                             <a href="dashboard_my_orders.html" class="item channel_item"><i
                                     class="uil uil-box icon__1"></i>My Orders</a>
                             <a href="dashboard_my_wishlist.html" class="item channel_item"><i
