@@ -83,7 +83,7 @@
 							<img src="images/avatar/img-5.jpg" alt="">
 							@php
 									
-									dd({{ Auth::user()->name}});
+									dd(Auth::user()->name);
 							@endphp
 
 							<i class="uil uil-angle-down"></i>
