@@ -29,7 +29,7 @@ Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/d
     return view('admin.pages.index');
 })->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
 })->name('home');
 
