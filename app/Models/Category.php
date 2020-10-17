@@ -9,6 +9,10 @@ class Category extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+    'category_name', 'category_desc', 'category_type', 'slug', 'tags', 'pent_cat_id', 'created_at', 'updated_at'
+    ];
+
     public function products()
     {
         return $this->hasMany('App\Models\Product');
