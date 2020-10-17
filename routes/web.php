@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\BulkUploadController;
 use App\Http\Controllers\CategoryController;
@@ -52,7 +53,7 @@ Route::get('empty', function () {
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
-route::get('/logout', [AuthConntroller::class, 'logout']);
+route::get('/logout', [AuthController::class, 'logout']);
 
 Route::get('bulk/category', [BulkUploadController::class, 'show_bulk_category']);
 
