@@ -274,7 +274,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 ">
                         <a href="# " class="best-offer-item offr-none ">
-                            <img src="store/images/best-offers/offer-3.jpg " alt=" ">
+                            <img src="images/offers/big-orrange-sale.jpg" alt=" ">
                             <div class="cmtk_dt ">
                                 <div class="product_countdown-timer offer-counter-text " data-countdown="2021/01/06 "></div>
                             </div>
