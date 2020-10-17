@@ -1,144 +1,100 @@
 @extends('store.layout.app')
 @section('content')
-    <!-- Cart Sidebar Offset Start-->
-<div class="bs-canvas  position-fixed bg-cart h-100">
-    <div class="bs-canvas-header side-cart-header p-3 ">
-        <div class="d-inline-block  main-cart-title">My Cart <span>(2 Items)</span></div>
-        <button type="button" class="bs-canvas-close close" aria-label="Close"><i class="uil uil-multiply"></i></button>
-    </div>
-    <div>
-        @if(session()->has('success_messgae'))
-        <div class="alert alert-success">
-            {{ session()->get('success_message') }}
-        </div>
-        @endif
 
-        @if(count($errors)>0)
-        <div class="alert alert-danger">
-            <ul>
-                @foreach($errors->all() as $error)
-                <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
+<div class="wrapper">
+        <!--<div class="gambo-Breadcrumb">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Checkout</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div> 
+        </div>-->
+        <div class="all-product-grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="pdpt-bg mt-0">
+                            <div class="pdpt-title">
+                                <h4>Order Summary</h4>
+                            </div>
+                            <div class="right-cart-dt-body">
+                                <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
+                                    <div class="cart-product-img">
+                                        <img src="images/product/img-11.jpg" alt="">
+                                        <div class="offer-badge">4% OFF</div>
+                                        <div style="text-align: center; padding-top: 10px;">
+                                            <div class="quantity buttons_added">
+                                                <input type="button" value="-" class="minus minus-btn">
+                                                <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
+                                                <input type="button" value="+" class="plus plus-btn">
+                                                <button style="border: none; background: none; margin-left: 30px;padding: 10px; font-size: 16px; ">Save For Later</button>
 
-        @if(Cart::count() > 0)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <h2>Product Title Here</h2>
+                                        <p>Delivery by Fri Oct 23 | Free₹40</p>
+                                        <!-- <div class="cart-item-price">Delivery by Fri Oct 23 | Free₹40
+																					<span>$18</span></div> -->
+                                        <button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
+                                        <div class="cart-item-price">
 
-        <h2>{{Cart::count() }} item(s) in Shopping Cart</h2>
+                                            <div class="cart-item-price">$100 <span>$15</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-    </div>
-    <div class="bs-canvas-body">
-        <div class="cart-top-total">
-            <div class="cart-total-dil">
-                <h4>Gambo Super Market</h4>
-                <span>$34</span>
-            </div>
-            <div class="cart-total-dil pt-2">
-                <h4>Delivery Charges</h4>
-                <span>$1</span>
-            </div>
-        </div>
-        <div class="side-cart-items">
-            <div class="cart-item">
-                <div class="cart-product-img">
-                    <img src="store/images/product/img-1.jpg" alt="">
-                    <div class="offer-badge">6% OFF</div>
-                </div>
-                <div class="cart-text">
-                    <h4>Product Title Here</h4>
-                    <div class="cart-radio">
-                        <ul class="kggrm-now">
-                            <li>
-                                <input type="radio" id="a1" name="cart1">
-                                <label for="a1">0.50</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="a2" name="cart1">
-                                <label for="a2">1kg</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="a3" name="cart1">
-                                <label for="a3">2kg</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="a4" name="cart1">
-                                <label for="a4">3kg</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="qty-group">
-                        <div class="quantity buttons_added">
-                            <input type="button" value="-" class="minus minus-btn">
-                            <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-                            <input type="button" value="+" class="plus plus-btn">
                         </div>
-                        <div class="cart-item-price">$10 <span>$15</span></div>
                     </div>
-                    <form action="{{route('cart.destroy',$item->rowId) }}" method="POST">
-                        {{csrf_field()}}
-                        {{method_field('DELETE')}}
-                        <button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="cart-item">
-                <div class="cart-product-img">
-                    <img src="store/images/product/img-2.jpg" alt="">
-                    <div class="offer-badge">6% OFF</div>
-                </div>
-                <div class="cart-text">
-                    <h4>Product Title Here</h4>
-                    <div class="cart-radio">
-                        <ul class="kggrm-now">
-                            <li>
-                                <input type="radio" id="a5" name="cart2">
-                                <label for="a5">0.50</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="a6" name="cart2">
-                                <label for="a6">1kg</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="a7" name="cart2">
-                                <label for="a7">2kg</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="qty-group">
-                        <div class="quantity buttons_added">
-                            <input type="button" value="-" class="minus minus-btn">
-                            <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-                            <input type="button" value="+" class="plus plus-btn">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="pdpt-bg mt-0">
+                            <div class="pdpt-title">
+                                <h4>Cart total</h4>
+                            </div>
+                            <div class="total-checkout-group">
+                                <div class="cart-total-dil">
+                                    <h4>Gambo Super Market</h4>
+                                    <span>$15</span>
+                                </div>
+                                <div class="cart-total-dil pt-3">
+                                    <h4>Delivery Charges</h4>
+                                    <span>$1</span>
+                                </div>
+                            </div>
+                            <div class="cart-total-dil saving-total ">
+                                <h4>Total Saving</h4>
+                                <span>$3</span>
+                            </div>
+                            <div class="main-total-cart">
+                                <h2>Total</h2>
+                                <span>$16</span>
+                            </div>
+                            <div class="payment-secure">
+                                <button class="payment-secure-btn">
+																	<i class="uil uil-padlock"></i>Secure checkout
+																</button>
+                            </div>
                         </div>
-                        <div class="cart-item-price">$24 <span>$30</span></div>
+                        <a href="#" class="promo-link45">Have a promocode?</a>
+                        <div class="checkout-safety-alerts">
+                            <p><i class="uil uil-sync"></i>100% Replacement Guarantee</p>
+                            <p><i class="uil uil-check-square"></i>100% Genuine Products</p>
+                            <p><i class="uil uil-shield-check"></i>Secure Payments</p>
+                        </div>
                     </div>
-                    <button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bs-canvas-footer">
-        <div class="cart-total-dil saving-total ">
-            <h4>Subtotal</h4>
-            <span>{{Cart::subtotal()}}</span>
-            <span>{{Cart::tax()  }}</span>
-        </div>
-        <div class="main-total-cart">
-            <h2>Total</h2>
-            <span>{{Cart::total()}}</span>
-        </div>
-        <div class="checkout-cart">
-            <a href="#" class="promo-code">Have a promocode?</a>
-            <a href="#" class="cart-checkout-btn hover-btn">Proceed to Checkout</a>
-        </div>
-    </div>
 
-    @else
-
-    <h3>No items in the Cart !</h3>
-    <div class="spacer"></div>
-    <a href="{{ route('shop.index')}}">Continue Shopping</a>
-</div>
 @endsection
 

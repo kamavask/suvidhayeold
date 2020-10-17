@@ -3355,10 +3355,17 @@ label.control-label {
 
 .payment-secure {
     text-align: center;
-    padding: 20px;
     font-weight: 500;
     font-size: 14px;
     color: #2b2f4c;
+}
+
+.payment-secure-btn {
+    background-color: #f55d2c;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
 .checkout-safety-alerts {
