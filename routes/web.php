@@ -39,10 +39,6 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
     Route::resource('/users', UsersController::class)->except(['show', 'create', 'store']);
 });
 
-/* Route::resource([
-    'category' => CategoryController::class,
-    'product' => ProductController::class,
-]); */
 
 Route::resources([
     'product' => ProductController::class,
@@ -55,6 +51,8 @@ Route::get('empty', function () {
 });
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
+
+route::get('/logout', [AuthConntroller::class, 'logout']);
 
 Route::get('bulk/category', [BulkUploadController::class, 'show_bulk_category']);
 
