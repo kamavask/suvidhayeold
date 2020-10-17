@@ -84,9 +84,6 @@
 								Login/signup
 							<i class="uil uil-angle-down"></i>							
               @endif
-							<img src="images/avatar/img-5.jpg" alt="">
-							{{ Auth::user()->name}}
-							<i class="uil uil-angle-down"></i>
 						</a>
 						<div class="menu dropdown_account">
 							<div class="night_mode_switch__btn">
