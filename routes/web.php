@@ -29,6 +29,12 @@ Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/d
     return view('admin.pages.index');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/dashboard', function () {
+    return view('store.pages.homepage');
+})->name('home');
+
+
+
 Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function () {
     Route::resource('/users', UsersController::class)->except(['show', 'create', 'store']);
 });
