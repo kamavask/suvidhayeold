@@ -264,12 +264,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 ">
                         <a href="# " class="best-offer-item ">
-                            <img src="images/offers/yes-we-are-open.jpg" alt=" ">
+                            <img src="images/offers/white-logo.jpg " alt=" ">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 ">
                         <a href="# " class="best-offer-item ">
-                            <img src="images/offers/white-logo.jpg " alt=" ">
+                            <img src="images/offers/yes-we-are-open.jpg" alt=" ">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 ">
