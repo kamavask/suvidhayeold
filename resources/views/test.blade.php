@@ -7,7 +7,7 @@
   <title>Test Page</title>
 </head>
 <body>
-    @foreach ($features as $item)
+    @foreach ($flag as $item)
         
     @endforeach
 </body>
