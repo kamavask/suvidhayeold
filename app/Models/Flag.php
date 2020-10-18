@@ -11,6 +11,6 @@ class Flag extends Model
 
     public function product()
     {
-        return $this->belongsToMany('App\Models\Product', 'flag_product');
+        return $this->belongsToMany('App\Models\Product');
     }
 }

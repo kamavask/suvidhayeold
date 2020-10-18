@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Product;
 use App\Models\Flag;
+use App\Models\Role;
 
 
 class Controller extends BaseController
@@ -17,8 +18,8 @@ class Controller extends BaseController
     public  function test()
     {
         //$features = Product::all();
-        $flag = Flag::find(1);
-        return view('test')->with('flag', $flag);
+        $flag = flag::find(1)->Product;
+        return view('test')->with('featured',  $flag);
     }
 
     public  function product_category()
