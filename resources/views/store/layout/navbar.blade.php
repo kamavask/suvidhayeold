@@ -5,7 +5,7 @@
 				<a href="/"><img src="store\images\logo\white_title.jpg" alt=""></a>
 			</div>
 			<div class="main_logo" id="logo">
-				<a href="/"><img src="store\images\logo\white_title.jpg" alt=""></a></a>
+				<a href="/"><img src="store\images\logo\white.png" alt=""></a></a>
 				<a href="/"><img class="logo-inverse" src="store\images\logo\black_title.jpg" alt=""></a>
 			</div>
 			{{-- <div class="select_location">
@@ -64,7 +64,7 @@
 			<div class="header_right">
 				<ul>
 					<li>
-						<a href="tel:8989007801" class="offer-link"><i class="uil uil-phone-alt"></i>8989007801</a>
+						<a href="tel:7024027407" class="offer-link"><i class="uil uil-phone-alt"></i>7024027407</a>
 					</li>
 					<li>
 						<a href="offers" class="offer-link"><i class="uil uil-gift"></i>Offers</a>
@@ -76,7 +76,24 @@
 					<li class="ui dropdown">
 						<a href="#" class="opts_account">
 							@auth
-							<img src="images/avatar/img-5.jpg" alt="">
+							{{-- <img src="src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}"> --}}
+
+							@if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                            <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                                <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                            </button>
+                        @else
+                            <button class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                <div>{{ Auth::user()->name }}</div>
+
+                                <div class="ml-1">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </button>
+                        @endif
+
 							{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>
 							@else
@@ -104,10 +121,10 @@
 							<a href="offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
 							{{-- <a href="faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a> --}}
 							@auth
-							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
+							<a href="/logout" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
 							@else
-							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
-							<a href="" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
+							<a href="/login" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
+							<a href="/register" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
 
 							@endif
 						</div>
@@ -122,13 +139,6 @@
 				<a href="/upload_list" class="category_drop hover-btn" data-toggle="modal" data-target="#category_model"
 					title="Categories"><i class="fa fa-arrow-up"></i><span class="cate__icon">Upload Your list</span>
 					{{-- <label class="form-label">Category Image*</label> --}}
-					<div class="input-group">
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="inputGroupFile04"
-								aria-describedby="inputGroupFileAddon04">
-							<label class="custom-file-label" for="inputGroupFile04">Choose Image</label>
-						</div>
-					</div>
 				</a>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-light py-3">

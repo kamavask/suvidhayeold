@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\BulkUploadController;
 use App\Http\Controllers\CategoryController;
@@ -29,6 +30,10 @@ Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/d
     return view('admin.pages.index');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
+    return view('dashboard');
+})->name('old-dashboard');
+
 Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
 })->name('home');
@@ -39,10 +44,6 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
     Route::resource('/users', UsersController::class)->except(['show', 'create', 'store']);
 });
 
-/* Route::resource([
-    'category' => CategoryController::class,
-    'product' => ProductController::class,
-]); */
 
 Route::resources([
     'product' => ProductController::class,
@@ -55,6 +56,8 @@ Route::get('empty', function () {
 });
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
+
+route::get('/logout', [AuthController::class, 'logout']);
 
 Route::get('bulk/category', [BulkUploadController::class, 'show_bulk_category']);
 
