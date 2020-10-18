@@ -17,7 +17,7 @@ class Controller extends BaseController
     public  function test()
     {
         //$features = Product::all();
-        $flag = App\Models\User::find(1);
+        $flag = Flag::find(1);
         return view('test')->with('prod', $flag);
     }
 
