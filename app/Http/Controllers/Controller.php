@@ -18,7 +18,7 @@ class Controller extends BaseController
     {
         //$features = Product::all();
         $flag = Flag::find(1);
-        return view('test')->with('prod', $flag);
+        return view('test')->with('flag', $flag);
     }
 
     public  function product_category()
