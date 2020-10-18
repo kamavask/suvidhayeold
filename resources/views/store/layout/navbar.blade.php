@@ -122,13 +122,6 @@
 				<a href="/upload_list" class="category_drop hover-btn" data-toggle="modal" data-target="#category_model"
 					title="Categories"><i class="fa fa-arrow-up"></i><span class="cate__icon">Upload Your list</span>
 					{{-- <label class="form-label">Category Image*</label> --}}
-					<div class="input-group">
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="inputGroupFile04"
-								aria-describedby="inputGroupFileAddon04">
-							<label class="custom-file-label" for="inputGroupFile04">Choose Image</label>
-						</div>
-					</div>
 				</a>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-light py-3">
