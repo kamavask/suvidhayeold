@@ -80,7 +80,7 @@ Route::get('single_product', [StoreController::class, 'single_product']);
 
 Route::get('single_service', [StoreController::class, 'single_service']);
 
-Route::get('prodtest', [Controller::class, 'product_test']);
+Route::get('prodtest', [Controller::class, 'test']);
 
 Route::get('product_category', [Controller::class, 'product_category']);
 

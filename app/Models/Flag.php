@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Flag extends Model
 {
     use HasFactory;
+
+    public function product()
+    {
+        return $this->belongsToMany('App\Models\Product', 'flag_product');
+    }
 }

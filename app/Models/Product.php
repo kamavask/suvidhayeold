@@ -37,4 +37,9 @@ class Product extends Model
     {
         return $this->hasOne('App\Models\ProductImage');
     }
+
+    public function flags()
+    {
+        return $this->belongsToMany('App\Models\Flag', 'flag_product');
+    }
 }

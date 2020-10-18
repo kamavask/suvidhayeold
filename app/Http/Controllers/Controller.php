@@ -7,16 +7,18 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Product;
+use App\Models\Flag;
 
 
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public  function product_test()
+    public  function test()
     {
-        $prod = Product::all();
-        return view('test')->with('prod', $prod);
+        //$features = Product::all();
+        $flag = App\Models\User::find(1);
+        return view('test')->with('prod', $flag);
     }
 
     public  function product_category()
