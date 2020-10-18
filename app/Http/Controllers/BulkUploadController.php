@@ -99,7 +99,7 @@ class BulkUploadController extends Controller
                 //'tax_id' => $row['tax_id'],
                 //'shipping_id' => $row['shipping_id'],
                 'bulk_order_no'    => $row['bulk_order_no'],
-                'tags' => $row['tags'],
+                'tags' => $row['tags']
                 //'created_at' => $row['created_at'],
                 //'updated_at' => $row['updated_at'],
 
