@@ -2234,6 +2234,9 @@ span.like-icon {
     line-height: 24px;
     text-align: center;
     color: #2b2f4c;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-price {
