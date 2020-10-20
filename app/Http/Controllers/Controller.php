@@ -25,7 +25,7 @@ class Controller extends BaseController
     public  function product_category()
     {
         $product = Product::all();
-        $prod_random = $product->shuffle()
+        $prod_random = $product->shuffle();
         return view('store.pages.product_category')->with('product', $prod_random);
     }
 
