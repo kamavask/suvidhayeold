@@ -560,7 +560,7 @@ input[type=text] {
 
 .main_logo {
     float: left;
-    width: 125px;
+    width: 150px;
     margin-left: 10px;
 }
 
@@ -574,8 +574,8 @@ input[type=text] {
 
 .search120 {
     float: left;
-    margin-left: 35px;
-    width: 35%;
+    margin-left: 63px;
+    width: 39%;
 }
 
 .main_logo img {
@@ -2234,6 +2234,9 @@ span.like-icon {
     line-height: 24px;
     text-align: center;
     color: #2b2f4c;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-price {

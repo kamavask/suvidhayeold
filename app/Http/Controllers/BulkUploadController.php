@@ -34,6 +34,8 @@ class BulkUploadController extends Controller
             $row = array_combine($header, $row);
 
             Category::create([
+                'id' => $row['id'],
+
                 'category_name' => $row['category_name'],
                 //'category_desc' => $row['category_desc'],
                 'category_type' => $row['category_type'],

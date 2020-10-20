@@ -69,30 +69,19 @@
 											<span class="like-icon" title="wishlist"></span>
 										</div>
 									</a>
-									<div class="product-text-dt">
-										<p>Available<span>(In Stock)</span></p>
-									<h4>
-										{{-- {{$item->prod_name}} --}}
-										@php
-												$prod_name_raw = $item->prod_name;
-												$prodname = explode(',', $prod_name_raw);
-												
-												for ($i=0; $i <count($prodname); $i++) 
-												{ 
-													echo $prodname[$i]. "<br>";
-                        }
-										@endphp
-									</h4>
-										<div class="product-price">{{$item->s_price}} <span>{{$item->r_price}} </span></div>
-										<div class="qty-cart">
-											<div class="quantity buttons_added">
-												<input type="button" value="-" class="minus minus-btn">
-												<input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-												<input type="button" value="+" class="plus plus-btn">
-											</div>
-											<span class="cart-icon"><i class="uil uil-shopping-cart-alt"></i></span>
-										</div>
-									</div>
+									<div class="product-text-dt ">
+                    <p>Available<span>(In Stock)</span></p>
+                    <h4>{{$item->prod_name}}</h4>
+                      <div class="product-price ">{{$item->s_price}}<span>{{$item->r_price}}</span></div>
+                      <div class="qty-cart ">
+                        <div class="quantity buttons_added ">
+                          <input type="button " value="- " class="minus minus-btn ">
+                          <input type="number " step="1 " name="quantity " value="1 " class="input-text qty text ">
+                          <input type="button " value="+ " class="plus plus-btn ">
+                        </div>
+                      <span class="cart-icon "><i class="uil uil-shopping-cart-alt "></i></span>
+                    </div>
+                  </div>
 								</div>
 							</div>
 						@endforeach
