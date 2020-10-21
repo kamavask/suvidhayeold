@@ -34,4 +34,6 @@ class Controller extends BaseController
         return view('search-test');
     }
 
+    
+
 }
