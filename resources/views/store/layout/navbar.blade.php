@@ -54,8 +54,12 @@
 			<div class="search120">
 				<div class="ui search">
 					<div class="ui icon input swdh10">
-						<input class="prompt srch10" type="text" placeholder="Search for products..">
-						<a href="" class="srch_sub01">
+						<form>
+                            <div class="form-group">
+                                <input class="prompt srch10 form-control typeahead" type="text" placeholder="Search for products..">
+                                <i class='uil uil-search-alt icon icon1'></i>
+                            </div>
+                        </form>
 							<i class='uil uil-search-alt icon icon1'></i>
 						</a>
 					</div>
