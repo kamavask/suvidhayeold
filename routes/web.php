@@ -12,6 +12,10 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\SearchController;
 use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +29,11 @@ use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 
 Route::get('/', function () {
     return view('store.pages.homepage');
+});
+
+Route::get('/emails', function () {
+    Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
+    return "Mail sent successfully";
 });
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/dashboard', function () {
