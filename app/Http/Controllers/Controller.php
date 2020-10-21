@@ -29,4 +29,9 @@ class Controller extends BaseController
         return view('store.pages.product_category')->with('product', $prod_random);
     }
 
+    public function search_test()
+    {
+        return view('search-test');
+    }
+
 }
