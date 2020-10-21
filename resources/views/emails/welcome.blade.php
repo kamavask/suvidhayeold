@@ -1,10 +1,10 @@
 @component('mail::message')
-# Introduction
+# Welcome to Suvidhaye
 
 The body of your message.
 
-@component('mail::button', ['url' => ''])
-Button Text
+@component('mail::button', ['url' => 'http://suvidhaye.in/'])
+Visit Suvidhaye
 @endcomponent
 
 Thanks,<br>

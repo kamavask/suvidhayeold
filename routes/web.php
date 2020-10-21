@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
 use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
+use App\Mail\WelcomeMail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +26,10 @@ use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 
 Route::get('/', function () {
     return view('store.pages.homepage');
+});
+
+Route::get('/emails', function () {
+    return new WelcomeMail();
 });
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/dashboard', function () {
