@@ -28,6 +28,6 @@ class WelcomeMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('enails.welcome');
+        return $this->markdown('emails.welcome');
     }
 }
