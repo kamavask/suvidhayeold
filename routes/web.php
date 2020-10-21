@@ -12,6 +12,7 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
 use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,7 @@ Route::get('/', function () {
 });
 
 Route::get('/emails', function () {
+    Mail::to('kamavask@gmail.com')->send(new WelcomeMail());
     return new WelcomeMail();
 });
 
