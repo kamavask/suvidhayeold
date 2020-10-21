@@ -10,6 +10,7 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SearchController;
 use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 /*
 |--------------------------------------------------------------------------
@@ -85,4 +86,6 @@ Route::get('prodtest', [Controller::class, 'test']);
 Route::get('product_category', [Controller::class, 'product_category']);
 
 Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
+
+Route::get('/main_public_search', [SearchController::class, 'main_public_search'])->name('main_public_search');
 /* STORE ROUTE END */

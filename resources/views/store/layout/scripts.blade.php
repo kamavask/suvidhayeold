@@ -5,8 +5,20 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
   integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 <script src="/vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js" integrity="sha512-HWlJyU4ut5HkEj0QsK/IxBCY55n5ZpskyjVlAoV9Z7XQwwkqXoYdCIC93/htL3Gu5H3R4an/S0h2NXfbZk3g7w==" crossorigin="anonymous"></script>
 <script src="/vendor/semantic/semantic.min.js"></script>
 <script src="/js/jquery.countdown.min.js"></script>
 <script src="/js/custom.js"></script>
 <script src="/js/offset_overlay.js"></script>
 <script src="/js/night-mode.js"></script>
+<script>
+    var path = "{{route('main_public_search')}}";
+
+    $('input.typeahead').typeahead({
+      source: function(terms,process){
+        return $.get(path,{terms:terms},function(data){
+          return process(data);
+        });
+      }
+    });
+</script>
