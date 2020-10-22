@@ -9,7 +9,7 @@ variety of <strong>PRODUCTS
 easier with
 Suvidhaye.
 
-|| हर सुविधाएं आपके घर तक ||
+<strong>|| हर सुविधाएं आपके घर तक ||</strong>
 
 
 
