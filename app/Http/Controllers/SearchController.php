@@ -11,7 +11,7 @@ class SearchController extends Controller
     public function main_public_search(Request $request)
     {
         $data = Product::select("prod_name")
-            ->where("prod_name", "LIKE", "%{{$request->terms}}%")
+            ->where("prod_name", "LIKE", "%{$request->terms}%")
             ->get();
         
             return response()->json($data);
