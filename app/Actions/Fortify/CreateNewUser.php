@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -39,6 +41,9 @@ class CreateNewUser implements CreatesNewUsers
             } */
                 function (User $user) {
                     $this->role_user($user);
+                },
+                function (User $user) {
+                    Mail::to($user->email)->send(new WelcomeMail());
                 }
             );
         });
