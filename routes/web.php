@@ -31,14 +31,14 @@ Route::get('/', function () {
     return view('store.pages.homepage');
 });
 
-Route::get('/emails', function () {
+/* Route::get('/emails', function () {
     Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
     return "Mail sent successfully";
-});
+}); */
 
-Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/dashboard', function () {
-    return view('admin.pages.index');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', function () {
+    return view('store.pages.homepage');
+});
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');

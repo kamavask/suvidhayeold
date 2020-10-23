@@ -42,9 +42,14 @@ class CreateNewUser implements CreatesNewUsers
                 function (User $user) {
                     $this->role_user($user);
                 },
-                function (User $user) {
+                /* function (User $user) {
                     Mail::to($user->email)->send(new WelcomeMail());
-                }
+                }, */
+                function (User $user) {
+                    return redirect()->action(
+                        [AdminPageController::class, 'checkauth'],
+                    );
+                },
             );
         });
     }
