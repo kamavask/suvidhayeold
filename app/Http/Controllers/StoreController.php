@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Flag;
+
 
 class StoreController extends Controller
 
@@ -16,7 +18,8 @@ class StoreController extends Controller
 
     public function homepage()
     {
-        return view('store.pages.homepage');
+        $flag = flag::find(1)->Product;
+        return view('store.pages.homepage')->with('featured',  $flag);
     }
 
     public function single_product()
