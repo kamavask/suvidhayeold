@@ -38,7 +38,7 @@ Route::get('/', [StoreController::class, 'homepage']);
     return "Mail sent successfully";
 }); */
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'check')->name('home');
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'checkauth')->name('home');
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
