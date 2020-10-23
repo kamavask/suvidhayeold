@@ -27,9 +27,11 @@ use Illuminate\Support\Facades\Mail;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('store.pages.homepage');
-});
+}); */
+
+Route::get('/', [StoreController::class, 'homepage']);
 
 Route::get('/emails', function () {
     Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());

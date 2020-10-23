@@ -225,18 +225,15 @@
                                         <img src="/storage/images/products/{{$item->prod_name}}" alt=" ">
                                         <div class="product-absolute-options ">
                                             <span class="offer-badge-1">
-											                      	@php
-											                      		$r_price = $item->r_price;
-											                      		$s_price = $item->s_price;
-											                      		$subtranct = $r_price - $s_price;
-
-											                      		$multi = 100;
-
-											                      		$percent = ( $subtranct / $r_price ) * $multi;
-
-											                      		echo $percent . " %";
-											                      	@endphp
-											                      </span>
+											    @php
+											    	$r_price = $item->r_price;
+											    	$s_price = $item->s_price;
+											    	$subtranct = $r_price - $s_price;
+											    	$multi = 100;
+											    	$percent = ( $subtranct / $r_price ) * $multi;
+											    	echo $percent . " %";
+											    @endphp
+											</span>
                                             <span class="like-icon " title="wishlist "></span>
                                         </div>
                                     </a>
