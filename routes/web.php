@@ -37,8 +37,12 @@ Route::get('/', [StoreController::class, 'homepage']);
     Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
     return "Mail sent successfully";
 }); */
+/* 
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'checkauth')->name('home'); */
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'checkauth')->name('home');
+Route::get('/home', function () {
+    return redirect('/');
+});
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
