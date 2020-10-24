@@ -9,7 +9,7 @@ use App\Models\Flag;
 class StoreController extends Controller
 
 {
-    
+
 
     public function all_services()
     {

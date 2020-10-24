@@ -33,22 +33,24 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', [StoreController::class, 'homepage']);
 
-Route::get('/emails', function () {
+/* Route::get('/emails', function () {
     Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
     return "Mail sent successfully";
-});
+}); */
+/* 
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'checkauth')->name('home'); */
 
-Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/dashboard', function () {
-    return view('admin.pages.index');
-})->name('dashboard');
+Route::get('/home', function () {
+    return redirect('/');
+});
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
 })->name('old-dashboard');
 
-Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
+/* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
-})->name('home');
+})->name('home'); */
 
 
 
