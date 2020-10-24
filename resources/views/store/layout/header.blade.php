@@ -46,9 +46,10 @@
             <div class="search120">
                 <div class="ui search">
                     <div class="ui left icon input swdh10">
-                        <form>
+                        <form class="form-inline my-2 my-lg-0" type="get" action="{{url('/search')}}">
                             <div class="form-group">
-                                <input class="prompt srch10 form-control typeahead" type="text" placeholder="Search for products..">
+                                <input class="prompt srch10 form-control typeahead" type="search" name="query"
+                                    placeholder="Search for products..">
                                 <i class='uil uil-search-alt icon icon1'></i>
                             </div>
                         </form>

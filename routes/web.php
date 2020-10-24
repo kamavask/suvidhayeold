@@ -104,5 +104,7 @@ Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
 
 Route::get('/main_public_search', [SearchController::class, 'main_public_search'])->name('main_public_search');
 
+Route::get('search', [SearchController::class, 'search']);
+
 
 /* STORE ROUTE END */
