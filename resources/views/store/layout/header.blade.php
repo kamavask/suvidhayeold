@@ -50,7 +50,8 @@
                             <div class="form-group">
                                 <input class="prompt srch10 form-control typeahead" type="search" name="query"
                                     placeholder="Search for products..">
-                                <i class='uil uil-search-alt icon icon1'></i>
+                                <i><button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button></i>
+                                {{-- <i class='uil uil-search-alt icon icon1'></i> --}}
                             </div>
                         </form>
                     </div>
