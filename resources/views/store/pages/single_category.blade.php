@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <h1>{{$category->category_name}}</h1>
+  @foreach($category as $cat)
+  <h1>{{$cat->category_name}}</h1>
 </body>
 
 </html>
