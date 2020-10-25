@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+  <h1>{{$category->category_name}}</h1>
 </body>
 
 </html>
