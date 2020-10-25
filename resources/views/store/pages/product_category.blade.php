@@ -2,7 +2,12 @@
 
 @section('content')
 
-<div class="wrapper">
+<div>
+	@foreach($category as $cat)
+	<h1>{{$cat->category_name}}</h1>
+</div>
+
+{{-- <div class="wrapper">
 		<div class="gambo-Breadcrumb">
 			<div class="container">
 				<div class="row">
@@ -52,48 +57,48 @@
 								<div class="product-item mb-30">
 									<a href="single_product" class="product-img">
 									<img src="/storage/images/products/{{$item->prod_name}}.jpg" alt="">
-										<div class="product-absolute-options">
-											<span class="offer-badge-1">
-												@php
-													$r_price = $item->r_price;
-													$s_price = $item->s_price;
-													$subtranct = $r_price - $s_price;
+<div class="product-absolute-options">
+	<span class="offer-badge-1">
+		@php
+		$r_price = $item->r_price;
+		$s_price = $item->s_price;
+		$subtranct = $r_price - $s_price;
 
-													$multi = 100;
+		$multi = 100;
 
-													$percent = ( $subtranct / $r_price ) * $multi;
+		$percent = ( $subtranct / $r_price ) * $multi;
 
-													echo $percent . " %";
-												@endphp
-											</span>
-											<span class="like-icon" title="wishlist"></span>
-										</div>
-									</a>
-									<div class="product-text-dt ">
-                    <p>Available<span>(In Stock)</span></p>
-                    <h4>{{$item->prod_name}}</h4>
-                      <div class="product-price ">{{$item->s_price}}<span>{{$item->r_price}}</span></div>
-                      <div class="qty-cart ">
-                        <div class="quantity buttons_added ">
-                          <input type="button " value="- " class="minus minus-btn ">
-                          <input type="number " step="1 " name="quantity " value="1 " class="input-text qty text ">
-                          <input type="button " value="+ " class="plus plus-btn ">
-                        </div>
-                      <span class="cart-icon "><i class="uil uil-shopping-cart-alt "></i></span>
-                    </div>
-                  </div>
-								</div>
-							</div>
-						@endforeach
-						<div class="col-md-12">
-							<div class="more-product-btn">
-								<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		echo $percent . " %";
+		@endphp
+	</span>
+	<span class="like-icon" title="wishlist"></span>
+</div>
+</a>
+<div class="product-text-dt ">
+	<p>Available<span>(In Stock)</span></p>
+	<h4>{{$item->prod_name}}</h4>
+	<div class="product-price ">{{$item->s_price}}<span>{{$item->r_price}}</span></div>
+	<div class="qty-cart ">
+		<div class="quantity buttons_added ">
+			<input type="button " value="- " class="minus minus-btn ">
+			<input type="number " step="1 " name="quantity " value="1 " class="input-text qty text ">
+			<input type="button " value="+ " class="plus plus-btn ">
 		</div>
+		<span class="cart-icon "><i class="uil uil-shopping-cart-alt "></i></span>
 	</div>
-    
+</div>
+</div>
+</div>
+@endforeach
+<div class="col-md-12">
+	<div class="more-product-btn">
+		<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> --}}
+
 @endsection

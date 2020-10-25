@@ -24,6 +24,6 @@ class SearchController extends Controller
         $category = Category::where('category_name', 'LIKE', '%' . $search_text . '%')->get();
 
         // dd($products);
-        return view('store.pages.single_category', compact('category'));
+        return view('store.pages.product_category', compact('category'));
     }
 }
