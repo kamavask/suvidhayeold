@@ -56,11 +56,10 @@
 					<div class="ui icon input swdh10">
 						{{-- <form>
               <div class="form-group"> --}}
-						{{-- <input class="prompt srch10 form-control typeahead" type="text" placeholder="Search for products..">
-									<i class='uil uil-search-alt icon icon1'></i> --}}
 						<form class="form-inline my-2 my-lg-0" type="get" action="{{url('/search')}}">
-							<input type="text" class="form-control mr-sm-2" name="query" type="search" placeholder="search..." />
-							<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+							<input class="prompt srch10 form-control typeahead" name="query" type="text"
+								placeholder="Search for products..">
+							<i class='uil uil-search-alt icon icon1'></i>
 						</form>
 						{{-- </div>
             </form> --}}
