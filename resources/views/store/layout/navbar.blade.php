@@ -55,13 +55,14 @@
 				<div class="ui search">
 					<div class="ui icon input swdh10">
 						<form type="get" action="{{url('/search')}}">
-							<input class="prompt srch10 form-control typeahead" name="query" type="text"
-								placeholder="Search for products..">
+							<input class="prompt srch10" name="query" type="text" placeholder="Search for products..">
 							<i class='uil uil-search-alt icon icon1'></i>
 						</form>
 					</div>
 				</div>
 			</div>
+
+			
 			<div class="header_right">
 				<ul>
 					<li>
