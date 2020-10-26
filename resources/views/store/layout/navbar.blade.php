@@ -54,15 +54,11 @@
 			<div class="search120">
 				<div class="ui search">
 					<div class="ui icon input swdh10">
-						{{-- <form>
-              <div class="form-group"> --}}
-						<form class="form-inline my-2 my-lg-0" type="get" action="{{url('/search')}}">
+						<form type="get" action="{{url('/search')}}">
 							<input class="prompt srch10 form-control typeahead" name="query" type="text"
 								placeholder="Search for products..">
 							<i class='uil uil-search-alt icon icon1'></i>
 						</form>
-						{{-- </div>
-            </form> --}}
 					</div>
 				</div>
 			</div>
