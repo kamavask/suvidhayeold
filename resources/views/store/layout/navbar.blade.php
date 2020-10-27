@@ -54,7 +54,7 @@
 			<div class="search120">
 				<div class="ui search">
 					<div class="ui icon input swdh10">
-						<form type="get" action="{{url('/search')}}">
+						<form class="ui icon input swdh10" type="get" action="{{url('/search')}}">
 							<input class="prompt srch10" name="query" type="text" placeholder="Search for products..">
 							<i class='uil uil-search-alt icon icon1'></i>
 						</form>
