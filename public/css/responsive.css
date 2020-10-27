@@ -7,6 +7,7 @@
     }
     .search120 {
         /* display: none; */
+        width: 25% !important;
         margin-left: 0 !important;
     }
     .option_links {
