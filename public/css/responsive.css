@@ -41,9 +41,9 @@
         display: inline-block;
         margin-left: 10px;
     }
-    .main_logo {
+    /* .main_logo {
         display: none;
-    }
+    }*/
     .blog_logo {
         display: block !important;
         width: 125px !important;
@@ -265,9 +265,9 @@
     .opts_account .user__name {
         display: none;
     }
-    .main_logo {
+    /* .main_logo {
         display: none;
-    }
+    }*/
     .blog_logo {
         display: block !important;
     }
@@ -275,9 +275,9 @@
         display: inline-block;
         margin-left: 10px;
     }
-    .main_logo {
+    /* .main_logo {
         display: none;
-    }
+    }*/
     .select_location {
         margin-left: 10px;
     }
