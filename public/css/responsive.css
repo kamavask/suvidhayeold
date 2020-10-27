@@ -6,8 +6,7 @@
         width: 110px !important;
     }
     .search120 {
-        /* display: none; */
-        width: 25% !important;
+        display: none;
         margin-left: 0 !important;
     }
     .option_links {
@@ -260,8 +259,7 @@
         margin-left: 10px !important;
     }
     .search120 {
-        /* display: none; */
-        width: 25% !important;
+        display: none;
         margin-left: 0 !important;
     }
     .opts_account .user__name {
@@ -441,8 +439,7 @@
         margin-left: 10px !important;
     }
     .search120 {
-        /* display: none; */
-        width: 25% !important;
+        display: none;
         margin-left: 0 !important;
     }
     .opts_account .user__name {
