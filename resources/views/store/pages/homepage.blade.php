@@ -114,7 +114,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-1.svg " alt=" ">
                                     </div>
-                                    <h4>Vegetables & Fruits</h4>
+                                    <h4 class="title_name">Vegetables & Fruits</h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -122,7 +122,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-2.svg " alt=" ">
                                     </div>
-                                    <h4> Grocery & Staples </h4>
+                                    <h4 class="title_name"> Grocery & Staples </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -130,7 +130,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-3.svg " alt=" ">
                                     </div>
-                                    <h4> Dairy & Eggs </h4>
+                                    <h4 class="title_name"> Dairy & Eggs </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -138,7 +138,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-4.svg " alt=" ">
                                     </div>
-                                    <h4> Beverages </h4>
+                                    <h4 class="title_name"> Beverages </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -146,7 +146,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-5.svg " alt=" ">
                                     </div>
-                                    <h4> Snacks </h4>
+                                    <h4 class="title_name"> Snacks </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -154,7 +154,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-6.svg " alt=" ">
                                     </div>
-                                    <h4> Home Care </h4>
+                                    <h4 class="title_name"> Home Care </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -162,7 +162,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-7.svg " alt=" ">
                                     </div>
-                                    <h4> Noodles & Sauces </h4>
+                                    <h4 class="title_name"> Noodles & Sauces </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -170,7 +170,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-8.svg " alt=" ">
                                     </div>
-                                    <h4> Personal Care </h4>
+                                    <h4 class="title_name"> Personal Care </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -178,7 +178,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-9.svg " alt=" ">
                                     </div>
-                                    <h4> Pet Care </h4>
+                                    <h4 class="title_name"> Pet Care </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -186,7 +186,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-10.svg " alt=" ">
                                     </div>
-                                    <h4> Meat & Seafood </h4>
+                                    <h4 class="title_name"> Meat & Seafood </h4>
                                 </a>
                             </div>
                             <div class="item ">
@@ -194,7 +194,7 @@
                                     <div class="cate-img ">
                                         <img src="store/images/category/icon-11.svg " alt=" ">
                                     </div>
-                                    <h4> Electronics </h4>
+                                    <h4 class="title_name"> Electronics </h4>
                                 </a>
                             </div>
                         </div>
