@@ -34,6 +34,8 @@ class BulkUploadController extends Controller
             $row = array_combine($header, $row);
 
             Category::create([
+                'id' => $row['id'],
+
                 'category_name' => $row['category_name'],
                 //'category_desc' => $row['category_desc'],
                 'category_type' => $row['category_type'],
@@ -75,7 +77,7 @@ class BulkUploadController extends Controller
             $row = array_combine($header, $row);
 
             Product::create([
-                'id' => $row['id'],
+                ///* 'id' => $row['id'], */
                 //'prod_code' => $row['prod_code'],
                 'prod_name' => $row['prod_name'],
                 //'category_id' => $row['category_id'],

@@ -25,7 +25,15 @@ class Controller extends BaseController
     public  function product_category()
     {
         $product = Product::all();
-        return view('store.pages.product_category')->with('product', $product);
+        $prod_random = $product->shuffle();
+        return view('store.pages.product_category')->with('product', $prod_random);
     }
+
+    public function search_test()
+    {
+        return view('search-test');
+    }
+
+    
 
 }

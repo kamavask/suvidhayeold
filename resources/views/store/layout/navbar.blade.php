@@ -54,13 +54,15 @@
 			<div class="search120">
 				<div class="ui search">
 					<div class="ui icon input swdh10">
-						<input class="prompt srch10" type="text" placeholder="Search for products..">
-						<a href="" class="srch_sub01">
+						<form class="ui icon input swdh10" type="get" action="{{url('/search')}}">
+							<input class="prompt srch10" name="query" type="text" placeholder="Search for products..">
 							<i class='uil uil-search-alt icon icon1'></i>
-						</a>
+						</form>
 					</div>
 				</div>
 			</div>
+
+			
 			<div class="header_right">
 				<ul>
 					<li>
@@ -79,21 +81,23 @@
 							{{-- <img src="src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}"> --}}
 
 							@if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                            <button class="user-avatar-ui">
-                                <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
-                            </button>
-                        @else
-														<button
-														class="user-avatar-ui">
-                                <div>{{ Auth::user()->name }}</div>
+							<button class="user-avatar-ui">
+								<img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}"
+									alt="{{ Auth::user()->name }}" />
+							</button>
+							@else
+							<button class="user-avatar-ui">
+								<div>{{ Auth::user()->name }}</div>
 
-                                <div class="ml-1">
-                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                            </button>
-                        @endif
+								<div class="ml-1">
+									<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path fill-rule="evenodd"
+											d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+											clip-rule="evenodd" />
+									</svg>
+								</div>
+							</button>
+							@endif
 
 							{{ Auth::user()->name}}
 							<i class="uil uil-angle-down"></i>

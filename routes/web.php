@@ -10,7 +10,12 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SearchController;
 use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,21 +27,30 @@ use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('store.pages.homepage');
-});
+}); */
 
-Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/dashboard', function () {
-    return view('admin.pages.index');
-})->name('dashboard');
+Route::get('/', [StoreController::class, 'homepage']);
+
+/* Route::get('/emails', function () {
+    Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
+    return "Mail sent successfully";
+}); */
+/* 
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'checkauth')->name('home'); */
+
+Route::get('/home', function () {
+    return redirect('/');
+});
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
 })->name('old-dashboard');
 
-Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
+/* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
-})->name('home');
+})->name('home'); */
 
 
 
@@ -82,7 +96,15 @@ Route::get('single_service', [StoreController::class, 'single_service']);
 
 Route::get('prodtest', [Controller::class, 'test']);
 
+Route::get('searchtest', [Controller::class, 'search_test']);
+
 Route::get('product_category', [Controller::class, 'product_category']);
 
 Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
+
+Route::get('/main_public_search', [SearchController::class, 'main_public_search'])->name('main_public_search');
+
+Route::get('search', [SearchController::class, 'search']);
+
+
 /* STORE ROUTE END */

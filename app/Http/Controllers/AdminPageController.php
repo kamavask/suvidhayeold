@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminPageController extends Controller
 {
@@ -49,4 +50,10 @@ class AdminPageController extends Controller
     }
 
     /*  descriptin Start */
+
+    public function checkauth()
+    {
+        //$user = Auth::user();
+        return view('store.pages.homepage');
+    }
 }
