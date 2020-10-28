@@ -62,7 +62,10 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
-    'cart' => CartController::class,
+]);
+
+Route::resource('cart', CartController::class)->names([
+    'cart' => 'cart.index'
 ]);
 
 Route::get('empty', function () {
