@@ -62,7 +62,7 @@
 				</div>
 			</div>
 
-			
+
 			<div class="header_right">
 				<ul>
 					<li>
@@ -200,7 +200,7 @@
 						class="uil uil-apps"></i></a>
 			</div>
 			<div class="header_cart order-1">
-				<a href="#" class="cart__btn hover-btn pull-bs-canvas-left" title="Cart"><i
+				<a href="{{ route('cart.index') }}" class="cart__btn hover-btn pull-bs-canvas-left" title="Cart"><i
 						class="uil uil-shopping-cart-alt"></i><span>Cart</span><ins>2</ins><i class="uil uil-angle-down"></i></a>
 			</div>
 			<div class="search__icon order-1">
