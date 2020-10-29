@@ -24,7 +24,7 @@
 		<link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
 		<link href="{{asset('vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
 		<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="{{assert('vendor/semantic/semantic.min.css')}}">	
+		<link rel="stylesheet" type="text/css" href="{{asset('vendor/semantic/semantic.min.css')}}">	
 		
 	</head>
 
@@ -1130,15 +1130,15 @@
 	<!-- Footer End -->
 
 	<!-- Javascripts -->
-	<script src="{{asser('js/jquery-3.3.1.min.js')}}"></script>
-	<script src="{{asser('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{asser('vendor/OwlCarousel/owl.carousel.js')}}"></script>
-	<script src="{{asser('vendor/semantic/semantic.min.js')}}"></script>
-	<script src="{{asser('js/jquery.countdown.min.js')}}"></script>
-	<script src="{{asser('js/custom.js')}}"></script>
-	<script src="{{asser('js/product.thumbnail.slider.js')}}"></script>
-	<script src="{{asser('js/offset_overlay.js')}}"></script>
-	<script src="{{asser('js/night-mode.js')}}"></script>
+	<script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+	<script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{asset('vendor/OwlCarousel/owl.carousel.js')}}"></script>
+	<script src="{{asset('vendor/semantic/semantic.min.js')}}"></script>
+	<script src="{{asset('js/jquery.countdown.min.js')}}"></script>
+	<script src="{{asset('js/custom.js')}}"></script>
+	<script src="{{asset('js/product.thumbnail.slider.js')}}"></script>
+	<script src="{{asset('js/offset_overlay.js')}}"></script>
+	<script src="{{asset('js/night-mode.js')}}"></script>
 	
 	
 </body>
