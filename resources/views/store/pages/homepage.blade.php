@@ -221,7 +221,7 @@
                             @foreach ($featured as $item)
                               <div class="item ">
                                 <div class="product-item ">
-                                    <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html " class="product-img ">
+                                <a href="/product/{{$item->id}}" class="product-img ">
                                         <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
                                         <div class="product-absolute-options ">
                                             <span class="offer-badge-1">
