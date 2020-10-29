@@ -262,8 +262,8 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                <span class="cart-icon "><i
-                                                        class="uil uil-shopping-cart-alt "></i></span>
+                                                <button><span class="cart-icon "><i
+                                                            class="uil uil-shopping-cart-alt "></i></span></button>
                                             </form>
                                         </div>
                                     </div>
