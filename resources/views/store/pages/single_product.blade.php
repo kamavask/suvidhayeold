@@ -89,7 +89,6 @@
                                             <li>
                                                 <div class="main-price color-discount">
                                                     <span>Rs.{{$product->s_price}}</span></div>
-                                                {{$product->s_price}}
                                             </li>
                                         </ul>
                                         <ul class="gty-wish-share">
@@ -114,8 +113,11 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$product->s_price}}">
-                                                <li><button class="add-cart-btn hover-btn"><i
-                                                            class="uil uil-shopping-cart-alt"></i>Add to Cart</button>
+                                                <li>
+                                                    <button class="add-cart-btn hover-btn">
+                                                        <i class="uil uil-shopping-cart-alt"></i>
+                                                        Add to Cart
+                                                    </button>
                                                 </li>
                                             </form>
                                             <li><button class="order-btn hover-btn">Order Now</button></li>
