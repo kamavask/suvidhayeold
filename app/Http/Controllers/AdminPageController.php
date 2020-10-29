@@ -56,4 +56,44 @@ class AdminPageController extends Controller
         //$user = Auth::user();
         return view('store.pages.homepage');
     }
+
+    public function add_cupon()
+    {
+        return view('admin.pages.add_cupon');
+    }
+
+    public function add_customer()
+    {
+        return view('admin.pages.add_customer');
+    }
+
+    public function add_deliverymen()
+    {
+        return view('admin.pages.add_deliverymen');
+    }
+
+    public function add_employee()
+    {
+        return view('admin.pages.add_employee');
+    }
+
+    public function add_offer()
+    {
+        return view('admin.pages.add_offer');
+    }
+
+    public function add_order()
+    {
+        return view('admin.pages.add_order');
+    }
+
+    public function add_servicemen()
+    {
+        return view('admin.pages.add_servicemen');
+    }
+
+    public function add_services()
+    {
+        return view('admin.pages.add_services');
+    }
 }
