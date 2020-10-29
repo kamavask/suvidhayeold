@@ -244,9 +244,9 @@
                                             --}}
                                             <input type="hidden" name="s_price" value="{{$item->s_price}}">
 
-                                            <input type="submit" <span class="cart-icon">
-                                            <i class="uil uil-shopping-cart-alt "></i>
-                                            </span>/>
+                                            <span class="cart-icon">
+                                                <i class="uil uil-shopping-cart-alt "></i>
+                                            </span>
 
                                         </form>
 
