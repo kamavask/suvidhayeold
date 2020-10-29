@@ -85,6 +85,24 @@ Route::get('/view_dashbord', [AdminPageController::class, 'view_dashboard']); */
 
 Route::get('/view_dashboard', [AdminPageController::class, 'view_dashboard']);
 
+Route::get('/add_cupon', [AdminPageController::class, 'add_cupon']);
+
+Route::get('/add_customer', [AdminPageController::class, 'add_customer']);
+
+Route::get('/add_deliverymen', [AdminPageController::class, 'add_deliverymen']);
+
+Route::get('/add_employee', [AdminPageController::class, 'add_employee']);
+
+Route::get('/add_offer', [AdminPageController::class, 'add_offer']);
+
+Route::get('/add_order', [AdminPageController::class, 'add_order']);
+
+Route::get('/add_servicemen', [AdminPageController::class, 'add_servicemen']);
+
+Route::get('/add_services', [AdminPageController::class, 'add_services']);
+
+
+
 /* STORE ROUTE START */
 Route::get('all_services', [StoreController::class, 'all_services']);
 
