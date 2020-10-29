@@ -25,30 +25,30 @@
                             <div class="col-lg-4 col-md-4">
                                 <div id="sync1" class="owl-carousel owl-theme">
                                     <div class="item">
-                                        <img src="store/images/product/big-1.jpg" alt="">
+                                        <img src="/store/images/product/big-1.jpg" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="store/images/product/big-2.jpg" alt="">
+                                        <img src="/store/images/product/big-2.jpg" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="store/images/product/big-3.jpg" alt="">
+                                        <img src="/store/images/product/big-3.jpg" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="store/images/product/big-4.jpg" alt="">
+                                        <img src="/store/images/product/big-4.jpg" alt="">
                                     </div>
                                 </div>
                                 <div id="sync2" class="owl-carousel owl-theme">
                                     <div class="item">
-                                        <img src="store/images/product/big-1.jpg" alt="">
+                                        <img src="/store/images/product/big-1.jpg" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="store/images/product/big-2.jpg" alt="">
+                                        <img src="/store/images/product/big-2.jpg" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="store/images/product/big-3.jpg" alt="">
+                                        <img src="/store/images/product/big-3.jpg" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="store/images/product/big-4.jpg" alt="">
+                                        <img src="/store/images/product/big-4.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,6 @@
                                             <li>
                                                 <div class="main-price color-discount">
                                                     <span>Rs.{{$product->s_price}}</span></div>
-                                                {{$product->s_price}}
                                             </li>
                                         </ul>
                                         <ul class="gty-wish-share">
@@ -114,8 +113,11 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$product->s_price}}">
-                                                <li><button class="add-cart-btn hover-btn"><i
-                                                            class="uil uil-shopping-cart-alt"></i>Add to Cart</button>
+                                                <li>
+                                                    <button class="add-cart-btn hover-btn">
+                                                        <i class="uil uil-shopping-cart-alt"></i>
+                                                        Add to Cart
+                                                    </button>
                                                 </li>
                                             </form>
                                             <li><button class="order-btn hover-btn">Order Now</button></li>
@@ -175,7 +177,7 @@
                         <div class="cart-item border_radius">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="cart-product-img">
-                                <img src="store/images/product/img-6.jpg" alt="">
+                                <img src="/store/images/product/img-6.jpg" alt="">
                                 <div class="offer-badge">4% OFF</div>
                             </a>
                             <div class="cart-text">
@@ -214,7 +216,7 @@
                         <div class="cart-item border_radius">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="cart-product-img">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                                 <div class="offer-badge">6% OFF</div>
                             </a>
                             <div class="cart-text">
@@ -249,7 +251,7 @@
                         <div class="cart-item border_radius">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="cart-product-img">
-                                <img src="store/images/product/img-5.jpg" alt="">
+                                <img src="/store/images/product/img-5.jpg" alt="">
                             </a>
                             <div class="cart-text">
                                 <h4>Product Title Here</h4>
@@ -441,7 +443,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3">
                             <div class="item">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -474,7 +476,7 @@
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div class="item">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -487,7 +489,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3">
                             <div class="item">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -520,7 +522,7 @@
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div class="item">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -533,7 +535,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3">
                             <div class="item">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -566,7 +568,7 @@
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <div class="item">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -596,7 +598,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-1.jpg" alt="">
+                                <img src="/store/images/product/img-1.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">6% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -622,7 +624,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">2% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -648,7 +650,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-3.jpg" alt="">
+                                <img src="/store/images/product/img-3.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">5% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -674,7 +676,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-4.jpg" alt="">
+                                <img src="/store/images/product/img-4.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">3% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -700,7 +702,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-5.jpg" alt="">
+                                <img src="/store/images/product/img-5.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">2% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -726,7 +728,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-6.jpg" alt="">
+                                <img src="/store/images/product/img-6.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">2% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -752,7 +754,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-7.jpg" alt="">
+                                <img src="/store/images/product/img-7.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">1% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -778,7 +780,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-8.jpg" alt="">
+                                <img src="/store/images/product/img-8.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">3% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1068,7 +1070,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-1.jpg" alt="">
+                                <img src="/store/images/product/img-1.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">6% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1094,7 +1096,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-2.jpg" alt="">
+                                <img src="/store/images/product/img-2.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">2% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1120,7 +1122,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-3.jpg" alt="">
+                                <img src="/store/images/product/img-3.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">5% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1146,7 +1148,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-4.jpg" alt="">
+                                <img src="/store/images/product/img-4.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">3% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1172,7 +1174,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-5.jpg" alt="">
+                                <img src="/store/images/product/img-5.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">2% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1198,7 +1200,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-6.jpg" alt="">
+                                <img src="/store/images/product/img-6.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">2% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1224,7 +1226,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-7.jpg" alt="">
+                                <img src="/store/images/product/img-7.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">1% off</span>
                                     <span class="like-icon" title="wishlist"></span>
@@ -1250,7 +1252,7 @@
                         <div class="product-item">
                             <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                 class="product-img">
-                                <img src="store/images/product/img-8.jpg" alt="">
+                                <img src="/store/images/product/img-8.jpg" alt="">
                                 <div class="product-absolute-options">
                                     <span class="offer-badge-1">3% off</span>
                                     <span class="like-icon" title="wishlist"></span>

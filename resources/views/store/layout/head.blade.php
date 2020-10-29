@@ -22,6 +22,7 @@
   <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
   <!-- Vendor Stylesheets -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
@@ -34,6 +35,5 @@
     @media{
       width: 
     }
-  </style> --}}
-
+  </style> --}}	
 </head>

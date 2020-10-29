@@ -201,7 +201,7 @@
 			</div>
 			<div class="header_cart order-1">
 				<a href="{{ url('/cart') }}" class="cart__btn hover-btn" title="Cart"><i
-						class="uil uil-shopping-cart-alt"></i><span>Cart</span><ins>2</ins><i class="uil uil-angle-down"></i></a>
+						class="uil uil-shopping-cart-alt"></i><span>Cart</span><ins>{{-- add value is customer cart contain any and how many  --}}</ins><i class="uil uil-angle-down"></i></a>
 			</div>
 			<div class="search__icon order-1">
 				<a href="#" class="search__btn hover-btn" data-toggle="modal" data-target="#search_model" title="Search"><i
