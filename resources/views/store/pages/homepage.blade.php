@@ -234,22 +234,21 @@
                                             </span>
                                             <span class="like-icon " title="wishlist "></span>
                                         </div>
-                                        <div>
-                                            <form action="{{ route('cart.store') }}" method="POST">
-                                                {{-- {{ csrf_field() }} --}}
-                                                {{ csrf_field() }}
-                                                <input type="hidden" name="id" value="{{$item->id}}">
-                                                <input type="hidden" name="name" value="{{$item->prod_name}}">
-                                                {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
-                                                --}}
-                                                <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                <button>
-                                                    <span class="cart-icon">
-                                                        <i class="uil uil-shopping-cart-alt "></i>
-                                                    </span>
-                                                </button>
-                                            </form>
-                                        </div>
+
+                                        <form action="{{ route('cart.store') }}" method="POST">
+                                            {{-- {{ csrf_field() }} --}}
+                                            {{ csrf_field() }}
+                                            <input type="hidden" name="id" value="{{$item->id}}">
+                                            <input type="hidden" name="name" value="{{$item->prod_name}}">
+                                            {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
+                                            --}}
+                                            <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                            <button>
+                                                <span class="cart-icon">
+                                                    <i class="uil uil-shopping-cart-alt "></i>
+                                                </span>
+                                            </button>
+                                        </form>
 
                                 </div>
                             </div>
