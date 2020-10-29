@@ -65,6 +65,10 @@ Route::resources([
     'cart' => CartController::class,
 ]);
 
+/* Route::resource('cart', CartController::class)->names([
+    'cart' => 'cart.index'
+]);
+ */
 Route::get('empty', function () {
     Cart::destroy();
 });
