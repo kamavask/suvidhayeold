@@ -241,9 +241,10 @@
                                     <p>Available<span>(In Stock)</span></p>
                                     <h4>{{$item->prod_name}}</h4>
                                     @if($item->s_price = $item->r_price)
-                                    <div class="product-price ">{{$item->s_price}}</div>
+                                    <div class="product-price ">₹ {{$item->s_price}}</div>
                                     @else
-                                    <div class="product-price ">{{$item->s_price}}<span>{{$item->r_price}}</span></div>
+                                    <div class="product-price ">₹ {{$item->s_price}}<span>₹ {{$item->r_price}}</span>
+                                    </div>
                                     @endif
                                     <div class="qty-cart ">
                                         <div class="quantity buttons_added ">
