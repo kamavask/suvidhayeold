@@ -38,9 +38,10 @@ class CartController extends Controller
 
         // dd($request->s_price);
         $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
+        dd($cartitem);
         /* ->associate('App\Models\Product'); */
 
-        return redirect()->route('cart.index')->with('success_message', 'Item added to your cart');
+        //return redirect()->route('cart.index')->with('success_message', 'Item added to your cart');
     }
 
     /**
