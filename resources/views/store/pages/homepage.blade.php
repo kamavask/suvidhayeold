@@ -241,9 +241,10 @@
                                     <p>Available<span>(In Stock)</span></p>
                                     <h4>{{$item->prod_name}}</h4>
                                     @if($item->s_price = $item->r_price)
-                                    <div class="product-price ">{{$item->s_price}}</div>
+                                    <div class="product-price ">₹ {{$item->s_price}}</div>
                                     @else
-                                    <div class="product-price ">{{$item->s_price}}<span>{{$item->r_price}}</span></div>
+                                    <div class="product-price ">₹ {{$item->s_price}}<span>₹ {{$item->r_price}}</span>
+                                    </div>
                                     @endif
                                     <div class="qty-cart ">
                                         <div class="quantity buttons_added ">
@@ -261,8 +262,8 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                <span class="cart-icon "><i
-                                                        class="uil uil-shopping-cart-alt "></i></span>
+                                                <button><span class="cart-icon "><i
+                                                            class="uil uil-shopping-cart-alt "></i></span></button>
                                             </form>
                                         </div>
                                     </div>
