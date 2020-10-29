@@ -243,11 +243,11 @@
                                             {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                             --}}
                                             <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                            <button>
-                                                <span class="cart-icon">
-                                                    <i class="uil uil-shopping-cart-alt "></i>
-                                                </span>
-                                            </button>
+
+                                            <input type="submit" <span class="cart-icon">
+                                            <i class="uil uil-shopping-cart-alt "></i>
+                                            </span>/>
+
                                         </form>
 
                                 </div>
