@@ -263,11 +263,11 @@
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
                                                 @auth
-                                                {{ Auth::user()->id}}
+                                                    <input type="hidden" name="userid" value="{{ Auth::user()->id }}">
                                                 @else
-                                                0
+                                                
                                                 @endif
-                                                <input type="hidden" name="userid" value="{{ Auth::user()->id }}">
+                                                
                                                 <button><span class="cart-icon "><i
                                                             class="uil uil-shopping-cart-alt "></i></span></button>
                                             </form>
