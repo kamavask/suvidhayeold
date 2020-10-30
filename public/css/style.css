@@ -2119,7 +2119,16 @@ span.like-icon {
 	align-items: center;
 	margin-top: 17px;
 }
+/* custom add */
 
+.cart-btn-short{
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    font-size: 20px;
+    color: #c7c7c7;
+	cursor: pointer;
+}
 .cart-icon {
     margin-left: auto;
     font-size: 20px;
