@@ -43,8 +43,7 @@ class CartController extends Controller
         $cartItem = Cart::add($request->id, $request->name, $request->s_price, 1);
 
         $test = Cart::store($request->userid);
-        dd($test);
-        //return redirect()->route('cart.index')->with('success_message', $cartitem);
+        return redirect()->route('cart.index')->with('success_message', $cartitem);
     }
 
     /**
