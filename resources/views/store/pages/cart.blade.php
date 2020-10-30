@@ -107,7 +107,6 @@
                 <h3>No items in the cart !</h3>
                 @endif
             </div>
-            {{dd($success_message)}}
         </div>
     </div>
 </div>
