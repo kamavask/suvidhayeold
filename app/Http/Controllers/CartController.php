@@ -43,7 +43,7 @@ class CartController extends Controller
         $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
 
         $test = Cart::store($request->userid);
-        return redirect()->route('cart.index')->with('cart', $cartitem);
+        return redirect()->route('cart.index')->compact('cartitem');
     }
 
     /**
