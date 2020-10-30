@@ -262,7 +262,7 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="price" value="{{$item->s_price}}">
-                                                <input type="hidden" name="price" value="1">
+                                                <input type="hidden" name="quantity" value="1">
                                                 <button><span class="cart-icon "><i
                                                             class="uil uil-shopping-cart-alt "></i></span></button>
                                             </form>
