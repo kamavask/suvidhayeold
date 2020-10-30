@@ -28,7 +28,7 @@ return [
 
     'database' => [
 
-        'connection' => null,
+        'connection' => 'mysql',
 
         'table' => 'shopping_cart',
 
