@@ -253,7 +253,7 @@
                                                 class="input-text qty text ">
                                             <input type="button " value="+ " class="plus plus-btn ">
                                         </div>
-                                        <div>
+                                        <div class="cart-icon-div ">
                                             <form action="{{ route('cart.store') }}" method="POST">
                                                 {{-- {{ csrf_field() }} --}}
                                                 {{ csrf_field() }}
