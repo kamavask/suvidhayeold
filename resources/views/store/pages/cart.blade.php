@@ -107,9 +107,6 @@
                 <h3>No items in the cart !</h3>
                 @endif
             </div>
-            @foreach($cartitem as $cart)
-            {{$cart->name}}
-            @endforeach
         </div>
     </div>
 </div>
