@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                                 <div class="cart-text">
-                                    <h2>$item->model->prod_name</h2>
+                                    <h2>$item->prod_name</h2>
                                     {{-- <p>Delivery by Fri Oct 23 | Free₹40</p> --}}
                                     <!-- <div class="cart-item-price">Delivery by Fri Oct 23 | Free₹40
 																					<span>$18</span></div> -->
@@ -54,7 +54,7 @@
                                             class="uil uil-multiply"></i></button>
                                     <div class="cart-item-price">
 
-                                        <div class="cart-item-price">$item->model->s_price{{-- <span>$15</span> --}}
+                                        <div class="cart-item-price">$item->s_price{{-- <span>$15</span> --}}
                                         </div>
                                     </div>
                                 </div>
