@@ -239,7 +239,7 @@
                                 </a>
                                 <div class="product-text-dt ">
                                     <p>Available<span>(In Stock)</span></p>
-                                    <h4>{{$item->prod_name}}</h4>
+                                    <h4 class="title_name">{{$item->prod_name}}</h4>
                                     @if($item->s_price = $item->r_price)
                                     <div class="product-price ">₹ {{$item->s_price}}</div>
                                     @else
