@@ -268,8 +268,11 @@
                                                 
                                                 @endif
                                                 
-                                                <button><span class="cart-icon "><i
-                                                            class="uil uil-shopping-cart-alt "></i></span></button>
+                                                <button>
+                                                    <span class="cart-icon ">
+                                                        <i class="uil uil-shopping-cart-alt "></i>
+                                                    </span>
+                                                </button>
                                             </form>
                                         </div>
                                     </div>
