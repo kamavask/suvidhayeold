@@ -47,8 +47,10 @@
 			</div>
 			<div class="product-list-view">
 				<div class="row">
-					@foreach ($category as $item)
-					<div class="item ">
+                <div class="col-md-12 ">
+                    <div class="owl-carousel featured-slider owl-theme ">
+                        @foreach ($featured as $item)
+                        <div class="item ">
                             <div class="product-item ">
                                 <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html "
                                     class="product-img ">
@@ -109,7 +111,8 @@
                                 </div>
                             </div>
                         </div>
-					@endforeach
+                        @endforeach
+                    </div>
 					<div class="col-md-12">
 						<div class="more-product-btn">
 							<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
