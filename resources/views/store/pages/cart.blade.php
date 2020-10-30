@@ -21,15 +21,18 @@
             <div class="row">
                 <div class="col-lg-8 col-md-7">
                     @if(Cart::count()>0)
-                    <h2>{{Cart::count}} item(s) in Shopping Cart</h2>
+                    <h2>{{Cart::count()}} item(s) in Shopping Cart</h2>
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Order Summary</h4>
                         </div>
                         <div class="right-cart-dt-body">
                             @foreach(Cart::content() as $item)
-                            <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
-                                <div class="cart-product-img">
+                            <?php
+                            var_dump(Cart::content());
+                            ?>
+                            <div class="cart-product-img">
+                                <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
                                     <img src="images/product/img-11.jpg" alt="">
                                     {{-- <div class="offer-badge">4% OFF</div> --}}
                                     <div style="text-align: center; padding-top: 10px;">
