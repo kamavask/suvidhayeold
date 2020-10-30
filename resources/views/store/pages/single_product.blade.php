@@ -10,21 +10,21 @@
 		<title>Gambo - Single Product View</title>
 		
 		<!-- Favicon Icon -->
-		<link rel="icon" type="image/png" href="images/fav.png">
+		<link rel="icon" type="image/png" href="store/images/fav.png">
 		
 		<!-- Stylesheets -->
 		<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<link href='{{asset('vendor/unicons-2.0.1/css/unicons.css')}}' rel='stylesheet'>
-		<link href="{{asset('css/style.css')}}" rel="stylesheet">
-		<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
-		<link href="{{asset('css/night-mode.css')}}" rel="stylesheet">
+		<link href='{{asset('store/vendor/unicons-2.0.1/css/unicons.css')}}' rel='stylesheet'>
+		<link href="{{asset('store/css/style.css')}}" rel="stylesheet">
+		<link href="{{asset('store/css/responsive.css')}}" rel="stylesheet">
+		<link href="{{asset('store/css/night-mode.css')}}" rel="stylesheet">
 		
 		<!-- Vendor Stylesheets -->
-		<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-		<link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
-		<link href="{{asset('vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
-		<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="{{asset('vendor/semantic/semantic.min.css')}}">	
+		<link href="{{asset('store/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+		<link href="{{asset('store/vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
+		<link href="{{asset('store/vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
+		<link href="{{asset('store/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{asset('store/vendor/semantic/semantic.min.css')}}">	
 		
 	</head>
 
@@ -55,7 +55,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-1.svg" alt="">
+									<img src="store/images/category/icon-1.svg" alt="">
 								</div>
 								<div class="text"> Fruits and Vegetables </div>
 							</a>
@@ -63,7 +63,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-2.svg" alt="">
+									<img src="store/images/category/icon-2.svg" alt="">
 								</div>
 								<div class="text"> Grocery & Staples </div>
 							</a>
@@ -71,7 +71,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-3.svg" alt="">
+									<img src="store/images/category/icon-3.svg" alt="">
 								</div>
 								<div class="text"> Dairy & Eggs </div>
 							</a>
@@ -79,7 +79,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-4.svg" alt="">
+									<img src="store/images/category/icon-4.svg" alt="">
 								</div>
 								<div class="text"> Beverages </div>
 							</a>
@@ -87,7 +87,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-5.svg" alt="">
+									<img src="store/images/category/icon-5.svg" alt="">
 								</div>
 								<div class="text"> Snacks </div>
 							</a>
@@ -95,7 +95,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-6.svg" alt="">
+									<img src="store/images/category/icon-6.svg" alt="">
 								</div>
 								<div class="text"> Home Care </div>
 							</a>
@@ -103,7 +103,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-7.svg" alt="">
+									<img src="store/images/category/icon-7.svg" alt="">
 								</div>
 								<div class="text"> Noodles & Sauces </div>
 							</a>
@@ -111,7 +111,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-8.svg" alt="">
+									<img src="store/images/category/icon-8.svg" alt="">
 								</div>
 								<div class="text"> Personal Care </div>
 							</a>
@@ -119,7 +119,7 @@
 						<li>
 							<a href="#" class="single-cat-item">
 								<div class="icon">
-									<img src="images/category/icon-9.svg" alt="">
+									<img src="store/images/category/icon-9.svg" alt="">
 								</div>
 								<div class="text"> Pet Care </div>
 							</a>
@@ -150,7 +150,7 @@
 					<div class="search-by-cat">
                         <a href="#" class="single-cat">
                             <div class="icon">
-								<img src="images/category/icon-1.svg" alt="">
+								<img src="store/images/category/icon-1.svg" alt="">
                             </div>
                             <div class="text">
                                 Fruits and Vegetables
@@ -158,49 +158,49 @@
                         </a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-2.svg" alt="">
+								<img src="store/images/category/icon-2.svg" alt="">
 							</div>
 							<div class="text"> Grocery & Staples </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-3.svg" alt="">
+								<img src="store/images/category/icon-3.svg" alt="">
 							</div>
 							<div class="text"> Dairy & Eggs </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-4.svg" alt="">
+								<img src="store/images/category/icon-4.svg" alt="">
 							</div>
 							<div class="text"> Beverages </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-5.svg" alt="">
+								<img src="store/images/category/icon-5.svg" alt="">
 							</div>
 							<div class="text"> Snacks </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-6.svg" alt="">
+								<img src="store/images/category/icon-6.svg" alt="">
 							</div>
 							<div class="text"> Home Care </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-7.svg" alt="">
+								<img src="store/images/category/icon-7.svg" alt="">
 							</div>
 							<div class="text"> Noodles & Sauces </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-8.svg" alt="">
+								<img src="store/images/category/icon-8.svg" alt="">
 							</div>
 							<div class="text"> Personal Care </div>
 						</a>
 						<a href="#" class="single-cat">
 							<div class="icon">
-								<img src="images/category/icon-9.svg" alt="">
+								<img src="store/images/category/icon-9.svg" alt="">
 							</div>
 							<div class="text"> Pet Care </div>
 						</a>
@@ -230,7 +230,7 @@
 			<div class="side-cart-items">
 				<div class="cart-item">
 					<div class="cart-product-img">
-						<img src="images/product/img-1.jpg" alt="">
+						<img src="store/images/product/img-1.jpg" alt="">
 						<div class="offer-badge">6% OFF</div>
 					</div>
 					<div class="cart-text">
@@ -269,7 +269,7 @@
 				</div>
 				<div class="cart-item">
 					<div class="cart-product-img">
-						<img src="images/product/img-2.jpg" alt="">
+						<img src="store/images/product/img-2.jpg" alt="">
 						<div class="offer-badge">6% OFF</div>
 					</div>
 					<div class="cart-text">
@@ -324,11 +324,11 @@
 		<div class="top-header-group">
 			<div class="top-header">
 				<div class="res_main_logo">
-					<a href="index.html"><img src="images/dark-logo-1.svg" alt=""></a>
+					<a href="index.html"><img src="store/images/dark-logo-1.svg" alt=""></a>
 				</div>
 				<div class="main_logo" id="logo">
-					<a href="index.html"><img src="images/logo.svg" alt=""></a>
-					<a href="index.html"><img class="logo-inverse" src="images/dark-logo.svg" alt=""></a>
+					<a href="index.html"><img src="store/images/logo.svg" alt=""></a>
+					<a href="index.html"><img class="logo-inverse" src="store/images/dark-logo.svg" alt=""></a>
 				</div>
 				<div class="select_location">
 					<div class="ui inline dropdown loc-title">
@@ -397,7 +397,7 @@
 						</li>	
 						<li class="ui dropdown">
 							<a href="#" class="opts_account">
-								<img src="images/avatar/img-5.jpg" alt="">
+								<img src="store/images/avatar/img-5.jpg" alt="">
 								<span class="user__name">John Doe</span>
 								<i class="uil uil-angle-down"></i>
 							</a>
@@ -513,30 +513,30 @@
 								<div class="col-lg-4 col-md-4">
 									<div id="sync1" class="owl-carousel owl-theme">
 										<div class="item">
-											<img src="images/product/big-1.jpg" alt="">
+											<img src="store/images/product/big-1.jpg" alt="">
 										</div>
 										<div class="item">
-											<img src="images/product/big-2.jpg" alt="">
+											<img src="store/images/product/big-2.jpg" alt="">
 										</div>
 										<div class="item">
-											<img src="images/product/big-3.jpg" alt="">
+											<img src="store/images/product/big-3.jpg" alt="">
 										</div>
 										<div class="item">
-											<img src="images/product/big-4.jpg" alt="">
+											<img src="store/images/product/big-4.jpg" alt="">
 										</div>
 									</div>
 									<div id="sync2" class="owl-carousel owl-theme">
 										<div class="item">
-											<img src="images/product/big-1.jpg" alt="">
+											<img src="store/images/product/big-1.jpg" alt="">
 										</div>
 										<div class="item">
-											<img src="images/product/big-2.jpg" alt="">
+											<img src="store/images/product/big-2.jpg" alt="">
 										</div>
 										<div class="item">
-											<img src="images/product/big-3.jpg" alt="">
+											<img src="store/images/product/big-3.jpg" alt="">
 										</div>
 										<div class="item">
-											<img src="images/product/big-4.jpg" alt="">
+											<img src="store/images/product/big-4.jpg" alt="">
 										</div>
 									</div>
 								</div>
@@ -627,7 +627,7 @@
 							<div class="pdpt-body scrollstyle_4">
 								<div class="cart-item border_radius">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="cart-product-img">
-										<img src="images/product/img-6.jpg" alt="">
+										<img src="store/images/product/img-6.jpg" alt="">
 										<div class="offer-badge">4% OFF</div>
 									</a>
 									<div class="cart-text">
@@ -664,7 +664,7 @@
 								</div>
 								<div class="cart-item border_radius">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="cart-product-img">
-										<img src="images/product/img-2.jpg" alt="">
+										<img src="store/images/product/img-2.jpg" alt="">
 										<div class="offer-badge">6% OFF</div>
 									</a>
 									<div class="cart-text">
@@ -697,7 +697,7 @@
 								</div>
 								<div class="cart-item border_radius">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="cart-product-img">
-										<img src="images/product/img-5.jpg" alt="">
+										<img src="store/images/product/img-5.jpg" alt="">
 									</a>
 									<div class="cart-text">
 										<h4>Product Title Here</h4>
@@ -792,7 +792,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-1.jpg" alt="">
+										<img src="store/images/product/img-1.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">6% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -816,7 +816,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-2.jpg" alt="">
+										<img src="store/images/product/img-2.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">2% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -840,7 +840,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-3.jpg" alt="">
+										<img src="store/images/product/img-3.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">5% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -864,7 +864,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-4.jpg" alt="">
+										<img src="store/images/product/img-4.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">3% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -888,7 +888,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-5.jpg" alt="">
+										<img src="store/images/product/img-5.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">2% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -912,7 +912,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-6.jpg" alt="">
+										<img src="store/images/product/img-6.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">2% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -936,7 +936,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-7.jpg" alt="">
+										<img src="store/images/product/img-7.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">1% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -960,7 +960,7 @@
 							<div class="item">
 								<div class="product-item">
 									<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-										<img src="images/product/img-8.jpg" alt="">
+										<img src="store/images/product/img-8.jpg" alt="">
 										<div class="product-absolute-options">
 											<span class="offer-badge-1">3% off</span>
 											<span class="like-icon" title="wishlist"></span>
@@ -1069,8 +1069,8 @@
 						<div class="second-row-item-app">
 							<h4>Download App</h4>
 							<ul>
-								<li><a href="#"><img class="download-btn" src="images/download-1.svg" alt=""></a></li>
-								<li><a href="#"><img class="download-btn" src="images/download-2.svg" alt=""></a></li>
+								<li><a href="#"><img class="download-btn" src="store/images/download-1.svg" alt=""></a></li>
+								<li><a href="#"><img class="download-btn" src="store/images/download-2.svg" alt=""></a></li>
 							</ul>
 						</div>
 						<div class="second-row-item-payment">
@@ -1078,19 +1078,19 @@
 							<div class="footer-payments">
 								<ul id="paypal-gateway" class="financial-institutes">
 									<li class="financial-institutes__logo">
-									  <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-6.svg">
+									  <img alt="Visa" title="Visa" src="store/images/footer-icons/pyicon-6.svg">
 									</li>
 									<li class="financial-institutes__logo">
-									  <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-1.svg">
+									  <img alt="Visa" title="Visa" src="store/images/footer-icons/pyicon-1.svg">
 									</li>
 									<li class="financial-institutes__logo">
-									  <img alt="MasterCard" title="MasterCard" src="images/footer-icons/pyicon-2.svg">
+									  <img alt="MasterCard" title="MasterCard" src="store/images/footer-icons/pyicon-2.svg">
 									</li>
 									<li class="financial-institutes__logo">
-									  <img alt="American Express" title="American Express" src="images/footer-icons/pyicon-3.svg">
+									  <img alt="American Express" title="American Express" src="store/images/footer-icons/pyicon-3.svg">
 									</li>
 									<li class="financial-institutes__logo">
-									  <img alt="Discover" title="Discover" src="images/footer-icons/pyicon-4.svg">
+									  <img alt="Discover" title="Discover" src="store/images/footer-icons/pyicon-4.svg">
 									</li>
 								</ul>
 							</div>
@@ -1130,15 +1130,15 @@
 	<!-- Footer End -->
 
 	<!-- Javascripts -->
-	<script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-	<script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{asset('vendor/OwlCarousel/owl.carousel.js')}}"></script>
-	<script src="{{asset('vendor/semantic/semantic.min.js')}}"></script>
-	<script src="{{asset('js/jquery.countdown.min.js')}}"></script>
-	<script src="{{asset('js/custom.js')}}"></script>
-	<script src="{{asset('js/product.thumbnail.slider.js')}}"></script>
-	<script src="{{asset('js/offset_overlay.js')}}"></script>
-	<script src="{{asset('js/night-mode.js')}}"></script>
+	<script src="{{asset('store/js/jquery-3.3.1.min.js')}}"></script>
+	<script src="{{asset('store/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{asset('store/vendor/OwlCarousel/owl.carousel.js')}}"></script>
+	<script src="{{asset('store/vendor/semantic/semantic.min.js')}}"></script>
+	<script src="{{asset('store/js/jquery.countdown.min.js')}}"></script>
+	<script src="{{asset('store/js/custom.js')}}"></script>
+	<script src="{{asset('store/js/product.thumbnail.slider.js')}}"></script>
+	<script src="{{asset('store/js/offset_overlay.js')}}"></script>
+	<script src="{{asset('store/js/night-mode.js')}}"></script>
 	
 	
 </body>
