@@ -107,7 +107,7 @@
                 <h3>No items in the cart !</h3>
                 @endif
             </div>
-            {{dd($cart)}}
+            {{var_dump($cart)}}
         </div>
     </div>
 </div>
