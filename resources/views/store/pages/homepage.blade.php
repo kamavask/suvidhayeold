@@ -268,7 +268,7 @@
                                                 
                                                 @endif
                                                 
-                                                <button>
+                                                <button class="cart-btn-short ">
                                                     <span class="cart-icon ">
                                                         <i class="uil uil-shopping-cart-alt "></i>
                                                     </span>
