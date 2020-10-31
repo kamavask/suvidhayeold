@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\ADashboardController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\BulkUploadController;
@@ -47,6 +48,16 @@ Route::get('/home', function () {
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::prefix('/admin/pages')->name('admin.pages')
+    ->middleware('auth:sanctum', 'verified', 'can:manage-dashboard')
+    ->group(function()
+    {
+    Route::get('/index', [ADashboardController::class, 'show_index']);
+    //Route::get('/index', [ADeshboardController::class, 'show_index']);
+    }
+    );
+
 
 /* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
