@@ -50,7 +50,7 @@ Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/o
 })->name('dashboard');
 
 Route::prefix('/admin/pages')->name('admin.pages')
-    ->middleware('auth:sanctum', 'verified', 'can:manage-dashboard')
+    ->middleware('auth:sanctum', 'verified', 'can:access-dashboard')
     ->group(function()
     {
     Route::get('/index', [ADashboardController::class, 'show_index']);
