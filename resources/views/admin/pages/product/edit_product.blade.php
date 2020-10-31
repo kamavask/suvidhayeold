@@ -9,13 +9,13 @@
                     <ol class="breadcrumb mb-30">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="products.html">Products</a></li>
-                        <li class="breadcrumb-item active">Add Product</li>
+                        <li class="breadcrumb-item active">Edit Product</li>
                     </ol>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="card card-static-2 mb-30">
                                 <div class="card-title-1">
-                                    <h4>Add New Product</h4>
+                                    <h4>Edit New Product</h4>
                                 </div>
                                 <div class="card-body-table">
                                     <div class="news-content-right pd-20">
@@ -261,110 +261,3 @@
 
 
 @endsection 
-
-
-{{-- @extends('admin.layout.app')
-@section('content')
-<div class="row ">
-    <div class="col-lg-6 col-md-6">
-        <div class="card card-static-2 mb-30">
-            <div class="card-title-2">
-                <h4>Add New Product</h4>
-            </div>
-            <div class="card-body-table">
-                <div class="news-content-right pd-20">
-                    <div class="form-group">
-                        <label class="form-label">Name*</label>
-                        <input type="text" class="form-control" placeholder="Category Name">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Category*</label>
-                        <select id="categtory" name="categtory" class="form-control">
-                            <option selected>--Select Category--</option>
-                            <option value="1">Fruits & Vegetables</option>
-                            <option value="2">Grocery & Staples</option>
-                            <option value="3">Dairy & Eggs</option>
-                            <option value="4">Beverages</option>
-                            <option value="5">Snacks</option>
-                            <option value="6">Home Care</option>
-                            <option value="7">Noodles & Sauces</option>
-                            <option value="8">Personal Care</option>
-                            <option value="9">Pet Care</option>
-                            <option value="10">Meat & Seafood</option>
-                            <option value="11">Electronics</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">MRP*</label>
-                        <input type="text" class="form-control" placeholder="$0">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Discount MRP*</label>
-                        <input type="text" class="form-control" placeholder="$0">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Status*</label>
-                        <select id="status" name="status" class="form-control">
-                            <option selected>Active</option>
-                            <option value="1">Inactive</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Description*</label>
-                        <div class="card card-editor">
-                            <div class="content-editor">
-                                <div id='edit'></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Category Image*</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
-                                <label class="custom-file-label" for="inputGroupFile04">Choose Image</label>
-                            </div>
-                        </div>
-                        <div class="add-cate-img-1">
-                            <img src="{{asset('admin/images/product/img-11.css')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">More Image*</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputGroupFile05" aria-describedby="inputGroupFileAddon05">
-                                <label class="custom-file-label" for="inputGroupFile05">Choose Image</label>
-                            </div>
-                        </div>
-                        <ul class="add-produc-imgs">
-                            <li>
-                                <div class="add-cate-img-1">
-                                    <img src="{{asset('admin/images/product/big-1.css')}}" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="add-cate-img-1">
-                                    <img src="{{asset('admin/images/product/big-2.css')}}" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="add-cate-img-1">
-                                    <img src="{{asset('admin/images/product/big-3.css')}}" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="add-cate-img-1">
-                                    <img src="{{asset('admin/images/product/big-4.css')}}" alt="">
-                                </div>
-                            </li>
-	                    </ul>
-                    </div>
-                    <button class="save-btn hover-btn" type="submit">Add New Product</button>
-                </div> 
-            </div>
-        </div>
-    </div>
-</div>
-
-@endsection --}}
