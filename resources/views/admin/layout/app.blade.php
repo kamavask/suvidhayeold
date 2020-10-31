@@ -7,12 +7,12 @@
 	<meta name="description-gambolthemes" content="">
 	<meta name="author-gambolthemes" content="">
 	<title>Suvidhaye</title>
-	<link href="{{asset('css/styles.css')}}" rel="stylesheet">
-	<link href="{{asset('css/admin-style.css')}}" rel="stylesheet">
+	<link href="/admin/css/styles.css" rel="stylesheet">
+	<link href="/admin/css/admin-style.css" rel="stylesheet">
 	
 	<!-- Vendor Stylesheets -->
-	<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+	<link href="/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 	
 </head>
 
@@ -37,13 +37,13 @@
             @yield('content')
 
           </div>
-    <script src="{{asset('admin/js/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-		<script src="{{asset('admin/vendor/chart/highcharts.js')}}"></script>
-		<script src="{{asset('admin/vendor/chart/exporting.js')}}"></script>
-		<script src="{{asset('admin/vendor/chart/export-data.js')}}"></script>
-		<script src="{{asset('admin/vendor/chart/accessibility.js')}}"></script>
-    <script src="{{asset('admin/js/scripts.js')}}"></script>
-    <script src="{{asset('admin/js/chart.js')}}"></script>       
+    <script src="/admin/js/jquery-3.4.1.min.js"></script>
+    <script src="/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="/admin/vendor/chart/highcharts.js"></script>
+		<script src="/admin/vendor/chart/exporting.js"></script>
+		<script src="/admin/vendor/chart/export-data.js"></script>
+		<script src="/admin/vendor/chart/accessibility.js"></script>
+    <script src="/admin/js/scripts.js"></script>
+    <script src="/admin/js/chart.js"></script>       
   </body>
 </html>
