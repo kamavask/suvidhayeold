@@ -17,7 +17,7 @@
                                 <div class="card-title-1">
                                     <h4>Edit Category</h4>
                                 </div>
-                            <form method="post" action="{{action('ProductController@update' , $id)}}">
+                            <form method="post" action="{{action('CategoryController@update' , $id)}}">
                                 {{csrf_field()}}
                                 <input type="hidden" name="_method" value="PATCH" />
                                     <div class="card-body-table">

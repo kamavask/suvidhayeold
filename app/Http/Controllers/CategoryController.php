@@ -42,7 +42,7 @@ class CategoryController extends Controller
         $cat->category_desc = $request->cat_desc;
         $cat->slug = $request->slug;
         $cat->tags = $request->tags;
-        //$cat->icon = $request->icon;
+        $cat->icon = $request->icon;
         $cat->save();
 
         //return view('')
@@ -68,7 +68,8 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        $cat = Category::find($id);
+        return view('admin.pages.category.edit_category' , compact('cat' , 'id'));
     }
 
     /**
@@ -81,9 +82,23 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $this->validate($request, [
-            'cat_name'
-        ])
-    }
+            'cat_name'  => 'required' ,
+            'cat_type'  => 'required' ,
+            'pent_cat_id'  => 'required' ,
+            'cat_desc'  => 'required' ,
+            'slug'  => 'required' ,
+            'icon'  => 'required'
+        ]);
+        $cat = Category::find($id);
+        $cat ->category_name = $request->get('cat_name');
+        $cat->category_type = $request->get('cat_type');
+        $cat->pent_cat_id = $request->get('pent_cat_id');
+        $cat->category_desc = $request->get('cat_desc');
+        $cat->slug = $request->get('slug');
+        $cat->icon = $request->get('icon');
+        $cat->save();
+        return redirect()->route('admin.pages.category.add_category')->with('success', 'Data Updated');
+    }   
 
     /**
      * Remove the specified resource from storage.
