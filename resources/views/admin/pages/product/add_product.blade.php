@@ -135,7 +135,7 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Varient ID</b></label>
-                                                    <input type="text" class="form-control" placeholder="Enter ID" name="variend_id" id="v_id">
+                                                    <input type="text" class="form-control" placeholder="Enter ID" name="variant_id" id="v_id">
                                                 </div>
                                             </div>
                                         </div>
