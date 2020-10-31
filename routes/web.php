@@ -55,6 +55,11 @@ Route::prefix('/admin/pages')->name('admin.pages')
     {
     Route::get('/index', [ADashboardController::class, 'show_index']);
     Route::get('/product/add', [ProductController::class, 'create']);
+    Route::resources([
+    'product' => ProductController::class,
+    'category' => CategoryController::class,
+    //'cart' => CartController::class,
+        ]);
     }
     );
 
@@ -70,11 +75,11 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 });
 
 
-Route::resources([
+/* Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
     'cart' => CartController::class,
-]);
+]); */
 
 /* Route::resource('cart', CartController::class)->names([
     'cart' => 'cart.index'
