@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\SearchController;
-use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 
@@ -85,9 +84,7 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
     'cart' => 'cart.index'
 ]);
  */
-Route::get('empty', function () {
-    Cart::destroy();
-});
+
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
