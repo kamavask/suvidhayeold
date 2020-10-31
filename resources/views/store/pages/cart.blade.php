@@ -20,10 +20,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
-                    {{$test1=Cart::count()}}
-                    {{$test2=Cart::content()}}
 
-                    {{--                     @if(Cart::count()>0)
+
+                    @if(Cart::count()>0)
                     <h2>{{Cart::count()}} item(s) in Shopping Cart</h2>
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
@@ -61,7 +60,7 @@
                             @endforeach
                         </div>
 
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-5">
                     <div class="pdpt-bg mt-0">
@@ -99,9 +98,9 @@
                         <p><i class="uil uil-shield-check"></i>Secure Payments</p>
                     </div>
                 </div>
-                {{--  @else
+                @else
                 <h3>No items in the cart !</h3>
-                @endif --}}
+                @endif
             </div>
         </div>
     </div>
