@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.add_product');
+        return view('admin.pages.product.add_product');
     }
 
     /**
