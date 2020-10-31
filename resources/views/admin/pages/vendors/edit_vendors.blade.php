@@ -1,7 +1,6 @@
 @extends('admin.layout.app')
 @section('content')
 
-
     <div id="layoutSidenav">
         <div id="layoutSidenav_content">
             <main>
@@ -10,13 +9,13 @@
                     <ol class="breadcrumb mb-30">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="shops.html">Shops</a></li>
-                        <li class="breadcrumb-item active">Add Vendors</li>
+                        <li class="breadcrumb-item active">Edit Vendors</li>
                     </ol>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="card card-static-2 mb-30">
                                 <div class="card-title-1">
-                                    <h4>Add Vendors</h4>
+                                    <h4>Edit Vendors</h4>
                                 </div>
                                 <div class="card-body-table">
                                     <div class="news-content-right pd-20">

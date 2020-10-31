@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.add_product');
+        return view('admin.pages.product.add_product');
     }
 
     /**
@@ -46,7 +46,7 @@ class ProductController extends Controller
         $prod->brand = $request->brand;
         $prod->weight = $request->weight;
         $prod->size = $request->size;
-        $prod->dimensions = $request->dimension;
+        $prod->dimensions = $request->dimensions;
         $prod->category_id = $request->cat_id;
         $prod->variant_id = $request->variant_id;
         $prod->r_price = $request->r_price;
