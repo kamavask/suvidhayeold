@@ -57,7 +57,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Category Description</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="cat_desc " id="cat _desc "></textarea>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="cat_desc" id="cat _desc "></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Slug</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="slug " id="slug "></textarea>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="slug" id="slug "></textarea>
                                                 </div>
                                             </div>
                                         </div>
