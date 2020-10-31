@@ -239,7 +239,7 @@
                                 </a>
                                 <div class="product-text-dt ">
                                     <p>Available<span>(In Stock)</span></p>
-                                    <h4>{{$item->prod_name}}</h4>
+                                    <h4 class="title_name">{{$item->prod_name}}</h4>
                                     @if($item->s_price = $item->r_price)
                                     <div class="product-price ">₹ {{$item->s_price}}</div>
                                     @else
@@ -253,7 +253,7 @@
                                                 class="input-text qty text ">
                                             <input type="button " value="+ " class="plus plus-btn ">
                                         </div>
-                                        <div>
+                                        <div class="cart-icon-div ">
                                             <form action="{{ route('cart.store') }}" method="POST">
                                                 {{-- {{ csrf_field() }} --}}
                                                 {{ csrf_field() }}
@@ -262,8 +262,17 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                <span class="cart-icon "><i
-                                                        class="uil uil-shopping-cart-alt "></i></span>
+                                                @auth
+                                                    <input type="hidden" name="userid" value="{{ Auth::user()->id }}">
+                                                @else
+                                                
+                                                @endif
+                                                
+                                                <button class="cart-btn-short ">
+                                                    <span class="cart-icon ">
+                                                        <i class="uil uil-shopping-cart-alt "></i>
+                                                    </span>
+                                                </button>
                                             </form>
                                         </div>
                                     </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\ADashboardController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\BulkUploadController;
@@ -46,7 +47,22 @@ Route::get('/home', function () {
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
-})->name('old-dashboard');
+})->name('dashboard');
+
+Route::prefix('/admin/pages')->name('admin.pages')
+    ->middleware('auth:sanctum', 'verified', 'can:access-dashboard')
+    ->group(function()
+    {
+    Route::get('/index', [ADashboardController::class, 'show_index']);
+    Route::get('/product/add', [ProductController::class, 'create']);
+    Route::resources([
+    'product' => ProductController::class,
+    'category' => CategoryController::class,
+    //'cart' => CartController::class,
+        ]);
+    }
+    );
+
 
 /* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
@@ -59,11 +75,11 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 });
 
 
-Route::resources([
+/* Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
     'cart' => CartController::class,
-]);
+]); */
 
 /* Route::resource('cart', CartController::class)->names([
     'cart' => 'cart.index'

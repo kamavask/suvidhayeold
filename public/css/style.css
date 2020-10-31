@@ -560,7 +560,7 @@ input[type=text] {
 
 .main_logo {
     float: left;
-    width: 150px;
+    width: 125px;
     margin-left: 10px;
 }
 
@@ -574,8 +574,8 @@ input[type=text] {
 
 .search120 {
     float: left;
-    margin-left: 63px;
-    width: 39%;
+    margin-left: 35px;
+    width: 25%;
 }
 
 .main_logo img {
@@ -597,12 +597,6 @@ input[type=text] {
     background: #f7f7f7 !important;
     border: 0 !important;
     color: #2b2f4c !important;
-}
-
-.srch_sub01 {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: -38px;
 }
 
 i.icon1 {
@@ -721,15 +715,6 @@ i.icon1 {
     border: 1px solid #fff;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
     margin-left: 0;
-}
-
-.user-avatar-ui {
-    width: 30px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    margin-left: 0;
-    bottom: none !important;
 }
 
 .opts_account .user__name {
@@ -2192,7 +2177,6 @@ span.like-icon {
 
 .product-img img {
     width: 100%;
-    height: 200px;
     transition: transform .5s ease;
 }
 
@@ -2234,9 +2218,6 @@ span.like-icon {
     line-height: 24px;
     text-align: center;
     color: #2b2f4c;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .product-price {
@@ -2260,11 +2241,30 @@ span.like-icon {
     margin-top: 17px;
 }
 
+
+/* custom add */
+
+.cart-btn-short {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    font-size: 20px;
+    color: #c7c7c7;
+    cursor: pointer;
+}
+
 .cart-icon {
     margin-left: auto;
     font-size: 20px;
     color: #c7c7c7;
     cursor: pointer;
+}
+
+.cart-icon-div {
+    margin-left: auto;
+    /* font-size: 20px;
+    color: #c7c7c7;
+    cursor: pointer; */
 }
 
 .cart-icon:hover {
@@ -3367,17 +3367,10 @@ label.control-label {
 
 .payment-secure {
     text-align: center;
+    padding: 20px;
     font-weight: 500;
     font-size: 14px;
     color: #2b2f4c;
-}
-
-.payment-secure-btn {
-    background-color: #f55d2c;
-    border: none;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
 }
 
 .checkout-safety-alerts {

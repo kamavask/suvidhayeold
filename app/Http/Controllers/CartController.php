@@ -37,10 +37,13 @@ class CartController extends Controller
     {
 
         // dd($request->s_price);
-        $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
-        /* ->associate('App\Models\Product'); */
+        /* $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1); */
+        /* dd($cartitem); */
 
-        return redirect()->route('cart.index')->with('success_message', 'Item added to your cart');
+        $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
+
+        $test = Cart::store($request->userid);
+        return redirect()->route('cart.index')->with('success_message', 'Item is added to your cart');
     }
 
     /**

@@ -20,18 +20,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
+                    <div>
+                        @if(session()->has('success_message'))
+                        <div class="alert alert-success">
+                            {{session()->get('success_message')}}
+                        </div>
+                        @endif
+
+                        @if(count($errors) >0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                    </div>
+
                     @if(Cart::count()>0)
-                    <h2>{{Cart::count}} item(s) in Shopping Cart</h2>
+                    <h2>{{Cart::count()}} item(s) in Shopping Cart</h2>
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Order Summary</h4>
                         </div>
                         <div class="right-cart-dt-body">
                             @foreach(Cart::content() as $item)
-                            <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
-                                <div class="cart-product-img">
+                            <div class="cart-product-img">
+                                <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
                                     <img src="images/product/img-11.jpg" alt="">
-                                    {{-- <div class="offer-badge">4% OFF</div> --}}
                                     <div style="text-align: center; padding-top: 10px;">
                                         <div class="quantity buttons_added">
                                             <input type="button" value="-" class="minus minus-btn">
@@ -46,15 +63,12 @@
                                     </div>
                                 </div>
                                 <div class="cart-text">
-                                    <h2>$item->model->prod_name</h2>
-                                    {{-- <p>Delivery by Fri Oct 23 | Free₹40</p> --}}
-                                    <!-- <div class="cart-item-price">Delivery by Fri Oct 23 | Free₹40
-																					<span>$18</span></div> -->
+                                    <h2>$item->prod_name</h2>
                                     <button type="button" class="cart-close-btn"><i
                                             class="uil uil-multiply"></i></button>
                                     <div class="cart-item-price">
 
-                                        <div class="cart-item-price">$item->model->s_price{{-- <span>$15</span> --}}
+                                        <div class="cart-item-price">$item->s_price
                                         </div>
                                     </div>
                                 </div>
