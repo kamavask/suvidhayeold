@@ -80,7 +80,9 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $this->validate($request, [
+            'cat_name'
+        ])
     }
 
     /**
