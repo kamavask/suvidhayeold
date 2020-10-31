@@ -46,7 +46,7 @@ Route::get('/home', function () {
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');
-})->name('old-dashboard');
+})->name('dashboard');
 
 /* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
