@@ -54,7 +54,7 @@ Route::prefix('/admin/pages')->name('admin.pages')
     ->group(function()
     {
     Route::get('/index', [ADashboardController::class, 'show_index']);
-    //Route::get('/index', [ADeshboardController::class, 'show_index']);
+    Route::get('/product/add', [ProductController::class, 'create']);
     }
     );
 
