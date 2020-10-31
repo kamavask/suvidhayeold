@@ -99,9 +99,9 @@
                         <p><i class="uil uil-shield-check"></i>Secure Payments</p>
                     </div>
                 </div>
-                @else
+                {{--  @else
                 <h3>No items in the cart !</h3>
-                @endif
+                @endif --}}
             </div>
         </div>
     </div>
