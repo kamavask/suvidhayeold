@@ -7,12 +7,12 @@
 	<meta name="description-gambolthemes" content="">
 	<meta name="author-gambolthemes" content="">
 	<title>Suvidhaye</title>
-	<link href="{{asset('css/styles.css')}}" rel="stylesheet">
-	<link href="{{asset('css/admin-style.css')}}" rel="stylesheet">
+	<link href="{{asset('admin/css/styles.css')}}" rel="stylesheet">
+	<link href="{{asset('admin/css/admin-style.css')}}" rel="stylesheet">
 	
 	<!-- Vendor Stylesheets -->
-	<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+	<link href="{{asset('admin/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
 	
 </head>
 
