@@ -28,9 +28,6 @@
                         </div>
                         <div class="right-cart-dt-body">
                             @foreach(Cart::content() as $item)
-                            <?php
-                            var_dump(Cart::content());
-                            ?>
                             <div class="cart-product-img">
                                 <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
                                     <img src="images/product/img-11.jpg" alt="">
