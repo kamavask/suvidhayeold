@@ -32,7 +32,7 @@
         </li>
       </ul>
   </nav>
-      @include('admin.layout.right_sidebar')  
+      @include('admin.layout.sidebar')  
 
             @yield('content')
 
