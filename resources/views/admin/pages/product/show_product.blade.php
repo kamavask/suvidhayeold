@@ -59,6 +59,7 @@
 														<th>Short Description</th>
 														<th>MRP</th>
 														<th>Sale Price</th>
+														<th>Edit</th>
 													</tr>
 												</thead>
 												<tbody>
