@@ -1,5 +1,8 @@
 <nav class="sb-topnav navbar navbar-expand navbar-light bg-clr">
-    <a class="navbar-brand logo-brand" href="index.html">{{config('app.name')}}</a>
+    <a class="navbar-brand logo-brand" href="index.html">
+        <img src="favicon-32x32.png" alt="">
+        {{config('app.name')}}
+    </a>
       <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
       <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/index.html" class="frnt-link"><i class="fas fa-external-link-alt"></i>Home</a>
       <ul class="navbar-nav ml-auto mr-md-0">
