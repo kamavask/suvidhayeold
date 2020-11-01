@@ -68,11 +68,9 @@
 														<td>1</td>
 														<td>Area Name Here</td>
 														<td>Ludhiana</td>
+														<td>Ludhiana</td>
 														<td><span class="badge-item badge-status">Active</span></td>
 														<td class="action-btns">
-															<a href="#" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
-                                                        </td>
-                                                        <td class="action-btns">
 															<a href="#" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
 														</td>
 													</tr>
