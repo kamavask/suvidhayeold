@@ -14,7 +14,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user fa-fw"></i>
-                <i class="fas fa-user fa-fw"></i>
+                <div>{{ Auth::user()->name }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                 <a class="dropdown-item admin-dropdown-item" href="edit_profile.html">
