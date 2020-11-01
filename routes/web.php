@@ -53,7 +53,9 @@ Route::prefix('/admin/pages')->name('admin.pages')
     ->group(function()
     {
     Route::get('/index', [ADashboardController::class, 'show_index']);
+
     Route::get('/product/add', [ProductController::class, 'create']);
+    
     Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
@@ -74,11 +76,11 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 });
 
 
-/* Route::resources([
+Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
-    'cart' => CartController::class,
-]); */
+    //'cart' => CartController::class,
+])->only(['show']);
 
 /* Route::resource('cart', CartController::class)->names([
     'cart' => 'cart.index'
@@ -88,7 +90,7 @@ Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(fu
 
 //Route::delete('cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
-route::get('/logout', [AuthController::class, 'logout']);
+route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('bulk/category', [BulkUploadController::class, 'show_bulk_category']);
 
