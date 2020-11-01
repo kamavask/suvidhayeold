@@ -78,7 +78,7 @@
 											</table>
 										</div>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="card-title-2">
 								        {{$show_prod->links()}}
 							        </div>
 								</div>
