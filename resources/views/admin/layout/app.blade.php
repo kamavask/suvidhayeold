@@ -7,8 +7,8 @@
 </head>
 
 <body class="sb-nav-fixed">
-  <div id="layoutSidenav">
   @include('admin.layout.navbar')
+    <div id="layoutSidenav">
       @include('admin.layout.sidebar')  
 
         @yield('content')
