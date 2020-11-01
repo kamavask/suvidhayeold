@@ -64,11 +64,11 @@
 												<tbody>
                                                     @foreach ($show_prod as $item)
                                                         <tr>
-														    <td>1</td>
-														    <td>Area Name Here</td>
-														    <td>Ludhiana</td>
-														    <td>Ludhiana</td>
-														    <td><span class="badge-item badge-status">Active</span></td>
+                                                        <td>{{$item->id}}</td>
+														    <td>{{$item->prod_name}}</td>
+														    <td>{{$item->short_description}}</td>
+														    <td>{{$item->r_price}}</td>
+														    <td>{{$item->s_price}}</td>
 														    <td class="action-btns">
 															    <a href="#" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
 														    </td>
