@@ -1,7 +1,7 @@
 @extends('admin.layout.app')
 @section('content')
 
-    <div id="layoutSidenav">
+
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
@@ -260,7 +260,7 @@
                 </div>
             </main>
         </div>
-    </div>   
+      
 
 
 @endsection 

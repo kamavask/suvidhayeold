@@ -6,18 +6,19 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Dashboard
                     </a>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
-                        aria-expanded="false" aria-controls="collapseProducts">
+                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
+                        aria-expanded="false" aria-controls="collapsProducts">
                         <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
                         Products
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                    <div class="collapse" id="collapseProducts" aria-labelledby="headingOne"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link sub_nav_link" href="show_product">All Products</a>
-                            <a class="nav-link sub_nav_link" href="add_product">Add New</a>
-                            <a class="nav-link sub_nav_link" href="edit_product">Edit</a>
+                            <a class="nav-link sub_nav_link" href="show_employee">All Products</a>
+                            <a class="nav-link sub_nav_link" href="add_employee">Add Product</a>
+                            <a class="nav-link sub_nav_link" href="edit_employee">Edit</a>
+                            <a class="nav-link sub_nav_link" href="delete_employee">Delete Product</a>
                             {{-- <a class="nav-link sub_nav_link" href="post_tags.html">Tags</a> --}}
                         </nav>
                     </div>
@@ -43,7 +44,7 @@
                         Services
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseLocations" aria-labelledby="headingTwo"
+                    <div class="collapse" id="collapseServices" aria-labelledby="headingTwo"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_service">All Services</a>
@@ -71,7 +72,7 @@
                         Providers
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseShops" aria-labelledby="headingTwo"
+                    <div class="collapse" id="collapseVendors" aria-labelledby="headingTwo"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_vendor">All Vendors</a>
@@ -100,7 +101,7 @@
                         Servicemen
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseServiceman" aria-labelledby="headingTwo"
+                    <div class="collapse" id="collapseServicemen" aria-labelledby="headingTwo"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_servicemen">All servicemen</a>
@@ -161,7 +162,7 @@
                         Coupons
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseProducts" aria-labelledby="headingTwo"
+                    <div class="collapse" id="collapseCoupons" aria-labelledby="headingTwo"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_coupon">All coupons</a>
