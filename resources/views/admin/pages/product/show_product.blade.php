@@ -77,12 +77,12 @@
 												</tbody>
 											</table>
 										</div>
-									</div>
+                                    </div>
+                                    <div class="col-lg-12">
+								        {{$show_prod->links()}}
+							        </div>
 								</div>
                             </div>
-                            <div class="col-lg-12">
-								{{$show_prod->links()}}
-							</div>
                         </div>
                     </div>
                 
