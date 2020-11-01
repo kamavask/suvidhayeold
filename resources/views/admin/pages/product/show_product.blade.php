@@ -55,11 +55,11 @@
 													<tr>
 														<th style="width:60px"><input type="checkbox" class="check-all"></th>
 														<th style="width:60px">ID</th>
-														<th>Product Name</th>
+                                                        <th style="width:160px">ID</th>
+                                                        <th>Product Name</th>
 														<th>Short Description</th>
 														<th>MRP</th>
 														<th>Sale Price</th>
-														<th>Edit</th>
 													</tr>
 												</thead>
 												<tbody>
