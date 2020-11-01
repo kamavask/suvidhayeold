@@ -80,7 +80,7 @@ Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
     //'cart' => CartController::class,
-])->only(['show']);
+]);
 
 /* Route::resource('cart', CartController::class)->names([
     'cart' => 'cart.index'
