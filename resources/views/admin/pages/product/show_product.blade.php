@@ -81,7 +81,7 @@
 								</div>
                             </div>
                             <div class="col-lg-12">
-								{{$show_prod->onEachSide(5)->links()}}
+								{{$show_prod->links()}}
 							</div>
                         </div>
                     </div>
