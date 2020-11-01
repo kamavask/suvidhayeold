@@ -154,7 +154,7 @@
                     </div>
                 </footer>
             </div>
-
+{{-- 
 <div class="col-lg-12 col-md-12">
     <div class="card card-static-2 mt-30 mb-30">
         <div class="card-title-2">
@@ -268,6 +268,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 @endsection
