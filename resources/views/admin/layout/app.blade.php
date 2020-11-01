@@ -10,8 +10,12 @@
   @include('admin.layout.navbar')
     <div id="layoutSidenav">
       @include('admin.layout.sidebar')  
-
-        @yield('content')
+      <div id="layoutSidenav_content">
+          <main>
+            @yield('content')
+          </main>
+        @include('admin.layout.footer')
+      </div>
     </div>
     @include('admin.layout.scripts') 
   </body>
