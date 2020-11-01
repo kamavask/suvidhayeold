@@ -17,7 +17,8 @@
                                 <div class="card-title-1">
                                     <h4>Add Category</h4>
                                 </div>
-                                <div class="card-body-table">
+                              <form action="" method="POST">
+                                    <div class="card-body-table">
                                     <div class="news-content-right pd-20">
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-4">
@@ -80,6 +81,7 @@
                                         <button class="save-btn hover-btn " type="submit ">Submit</button>
                                     </div>
                                 </div>
+                              </form>
                             </div>
                         </div>
                     </div>
