@@ -1,4 +1,4 @@
-<head>
+{{-- <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,4 +30,17 @@
     <link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/fullscreen.css">
     <link rel="stylesheet" href="vendor/froala_editor_3.1.1/css/plugins/file.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
-</head>
+</head> --}}
+
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description-gambolthemes" content="">
+	<meta name="author-gambolthemes" content="">
+	<title>Suvidhaye</title>
+	<link href="/admin/css/styles.css" rel="stylesheet">
+	<link href="/admin/css/admin-style.css" rel="stylesheet">
+	
+	<!-- Vendor Stylesheets -->
+	<link href="/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">

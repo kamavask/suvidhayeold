@@ -6761,5 +6761,10 @@ textarea {
     text-overflow: ellipsis;
 }
 
+.user-avatar-ui {
+    border: none;
+    background: transparent;
+}
+
 
 /* CUSTOM EDITED SECTION END */
