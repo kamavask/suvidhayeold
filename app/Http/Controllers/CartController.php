@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Melihovv\ShoppingCart\Facades\ShoppingCart as Cart;
 
 class CartController extends Controller
 {
@@ -40,10 +39,10 @@ class CartController extends Controller
         /* $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1); */
         /* dd($cartitem); */
 
-        $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
+        /* $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
 
         $test = Cart::store($request->userid);
-        return redirect()->route('cart.index')->with('success_message', 'Item is added to your cart');
+        return redirect()->route('cart.index')->with('success_message', 'Item is added to your cart'); */
     }
 
     /**
@@ -88,8 +87,8 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        Cart::remove($id);
+       /*  Cart::remove($id);
 
-        return back()->with('success_message', 'Item has been removed');
+        return back()->with('success_message', 'Item has been removed'); */
     }
 }

@@ -147,7 +147,7 @@ class ProductController extends Controller
         $prod->stock = $request->get('stock');
         $prod->stock_alert = $request->get('stock_alert');
         $prod->backorder = $request->get('backorder');
-        $prod->bulk_order_no = $request->('bulk_no');
+        $prod->bulk_order_no = $request->get('bulk_no');
         $prod->tags = $request->get('tags');
         $prod->save();
         return redirect()->route('admin.pages.product.add_product')->with('success', 'Data Updated');
