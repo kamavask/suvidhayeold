@@ -13,6 +13,6 @@
 
         @yield('content')
     </div>
-         
+    @include('admin.layout.scripts') 
   </body>
 </html>
