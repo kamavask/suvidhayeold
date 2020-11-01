@@ -78,7 +78,7 @@
 											</table>
 										</div>
                                     </div>
-                                    <div class="card-title-2">
+                                    <div class="table-paginate">
 								        {{$show_prod->links()}}
 							        </div>
 								</div>

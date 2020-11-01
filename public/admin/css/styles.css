@@ -977,3 +977,16 @@ body {
 .sb-sidenav-light .sb-sidenav-footer {
     background-color: #e9ecef;
 }
+
+.table-paginate{
+    border-top: solid;
+    border-right: none;
+    border-left: none;
+    border-width: 2px;
+    border-color: #c1c1c1;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0 !important;
+    border-bottom: 0;
+    padding: 15px 20px;
+}
