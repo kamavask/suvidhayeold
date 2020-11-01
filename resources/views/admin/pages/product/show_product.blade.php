@@ -46,7 +46,7 @@
 							<div class="col-lg-12 col-md-12">
 								<div class="card card-static-2 mt-30 mb-30">
 									<div class="card-title-2">
-										<h4>All Areas</h4>
+										<h4>All Products</h4>
 									</div>
 									<div class="card-body-table">
 										<div class="table-responsive">
@@ -55,10 +55,10 @@
 													<tr>
 														<th style="width:60px"><input type="checkbox" class="check-all"></th>
 														<th style="width:60px">ID</th>
-														<th>Name</th>
-														<th>Location</th>
-														<th>Status</th>
-														<th>Action</th>
+														<th>Product Name</th>
+														<th>Short Description</th>
+														<th>MRP</th>
+														<th>Sale Price</th>
 													</tr>
 												</thead>
 												<tbody>
