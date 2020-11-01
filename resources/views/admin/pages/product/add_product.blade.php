@@ -16,7 +16,7 @@
                             <div class="card-title-1">
                                 <h4>Add New Product</h4>
                             </div>
-                            <form action="{{route('product.store')}}" method="POST">
+                            <form action="{{route('admin.pages.product.store')}}" method="POST">
                             <div class="card-body-table">
                                 <div class="news-content-right pd-20">
                                     <h3 style="text-decoration: underline;">Product Basic Details</h3>
