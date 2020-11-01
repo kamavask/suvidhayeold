@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 @section('content')
-     <div id="layoutSidenav">
+   
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
@@ -15,7 +15,8 @@
                                 <div class="card-title-1">
                                     <h4>Add New Order</h4>
                                 </div>
-                                <div class="card-body-table">
+                                <form action="" method="POST">
+                                    <div class="card-body-table">
                                     <div class="news-content-right pd-20">
                                         <h3 style="text-decoration: underline;">Order Basic Details</h3>
                                         <div class="row" style="margin-bottom:1%">
@@ -124,12 +125,13 @@
                                         <button class="save-btn hover-btn " type="submit ">Submit</button>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
-    </div>   
+     
 
 @endsection
