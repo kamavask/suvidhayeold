@@ -55,11 +55,11 @@
 													<tr>
 														<th style="width:60px"><input type="checkbox" class="check-all"></th>
 														<th style="width:60px">ID</th>
-                                                        <th style="width:160px">ID</th>
-                                                        <th>Product Name</th>
-														<th>Short Description</th>
+                                                        <th style="width:160px">Product Name</th>
+                                                        <th style="width:160px">Short Description</th>
 														<th>MRP</th>
 														<th>Sale Price</th>
+														<th>Edit</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -78,6 +78,7 @@
 														<td><input type="checkbox" class="check-item" name="ids[]" value="6"></td>
 														<td>2</td>
 														<td>Area Name Here</td>
+														<td>Chandigarh</td>
 														<td>Chandigarh</td>
 														<td><span class="badge-item badge-status">Active</span></td>
 														<td class="action-btns">
