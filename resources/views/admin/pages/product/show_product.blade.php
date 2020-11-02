@@ -56,8 +56,8 @@
 														<th style="width:60px">ID</th>
                                                         <th style="width:160px">Product Name</th>
                                                         <th style="width:160px">Short Description</th>
-														<th>MRP</th>
-														<th>Sale Price</th>
+														<th style="width:160px">MRP</th>
+														<th style="width:160px">Sale Price</th>
 														<th>Edit</th>
 													</tr>
 												</thead>
