@@ -44,14 +44,14 @@
                                             </div>
                                         </div>
 
-                                        <div class="row" style="margin-bottom:1%">
+                                       {{--  <div class="row" style="margin-bottom:1%">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="exampleFormControlFile1" class="form-label"><b>Image ID</b></label>
                                                     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image_id">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                       
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
@@ -71,7 +71,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row" style="margin-bottom:1%">
+                                       {{--  <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Specifications</b></label>
@@ -79,7 +79,7 @@
                                                 </div>
                                             </div>
                                         </div>
-
+ --}}
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
@@ -98,7 +98,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-sm-6">
+                                          {{--   <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Sizes</b></label>
                                                     <select class="form-control" name="size">
@@ -110,16 +110,16 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="row" style="margin-bottom:1%">
-                                            <div class="col-sm-6">
+                                          {{--   <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Dimensions</b></label>
                                                     <input type="text" class="form-control" placeholder="Length-Bregth-height (e.g.:12cm-4cm-7cm)" name="dimensions" id="dimension">
                                                 </div>
-                                            </div>
+                                            </div> --}}
 
                                             <div class="col-sm-6">
                                                 <!-- text input -->
@@ -130,7 +130,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row" style="margin-bottom:1%">
+                                        {{-- <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
@@ -138,7 +138,7 @@
                                                     <input type="text" class="form-control" placeholder="Enter ID" name="variant_id" id="v_id">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <hr>
                                         <h3 style="text-decoration: underline;">Pricing and Tax</h3>
@@ -171,7 +171,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row" style="margin-bottom:1%">
+                                     {{--    <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
@@ -186,7 +186,7 @@
                                                     <input type="text" class="form-control" placeholder="Enter Shipping ID" name="shipping_id" id="shipping_id">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <hr>
                                         <h3 style="text-decoration: underline;">Vendor And Stock Details</h3>
@@ -215,7 +215,7 @@
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
-                                            <div class="col-sm-3">
+                                           {{--  <div class="col-sm-3">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Back-Order Options</b></label>
                                                     <select class="form-control" name="backorder">
@@ -226,7 +226,7 @@
                                                         <option>option 5</option>
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                             <div class="col-sm-3">
                                                 <!-- text input -->
                                                 <div class="form-group">
