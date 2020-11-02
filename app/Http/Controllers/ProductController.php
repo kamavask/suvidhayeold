@@ -30,9 +30,8 @@ class ProductController extends Controller
     public function create()
     {
         $all_category = Category::all(['category_name']);
-        return $all_category;
-        //return view('admin.pages.product.add_product')
-        //->with('show_category', $all_category);
+        return view('admin.pages.product.add_product')
+        ->with('show_category', $all_category);
     }
 
     /**
