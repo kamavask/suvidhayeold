@@ -14,7 +14,7 @@
                             <div class="card-title-1">
                                 <h4>Add New Product</h4>
                             </div>
-                            <form action="{{route('admin.pagesproduct.store')}}" method="POST">
+                            <form action="{{route('admin.pages.product.store')}}" method="POST">
                                 @csrf
                             <div class="card-body-table">
                                 <div class="news-content-right pd-20">
