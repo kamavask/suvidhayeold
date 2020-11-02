@@ -90,7 +90,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $prod = Product::find($id);
-        return view('admin.pages.category.edit_product', compact('prod', 'id'));
+        return view('admin.pages.category.edit_product', ['data' =>$prod]);
     }
 
     /**
@@ -127,7 +127,7 @@ class ProductController extends Controller
             'bulk_no' => 'required',
             'tags' => 'required'
         ]);
-        $prod = Product::find($id);
+        $prod = Product::find(request ->id);
         $prod->prod_name = $request->get('prod_name');
         $prod->virtual = $request->get('virtual');
         $prod->downloadable = $request->get('downloadable');
