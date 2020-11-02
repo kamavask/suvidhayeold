@@ -95,4 +95,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\Models\UploadList');
     }
+
+    public function products()
+    {
+        return $this->belongsToMany('App\Models\Product');
+    }
 }
