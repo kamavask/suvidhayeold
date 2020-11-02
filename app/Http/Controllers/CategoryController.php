@@ -14,7 +14,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        // return view('admin.pages.add_category');
+        $cat = $category;
+        return view('store.pages.single_product')
+        ->with('category', $cat);
     }
 
     /**
@@ -68,8 +70,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        $cat = Category::find($id);
-        return view('admin.pages.category.edit_category' , compact('cat' , 'id'));
+      
     }
 
     /**
