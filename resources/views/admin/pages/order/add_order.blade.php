@@ -49,14 +49,26 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Subtotal</b></label>
-                                                    <input type="number" class="form-control" placeholder="Enter Amount" name="subtotal" id="subtotal">
+                                                    <div class="input-group mb-6">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Enter Amount" name="subtotal" id="subtotal">
+
+                                                    </div>
                                                 </div>
                                             </div>
                                              <div class="col-sm-3">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Grand Total</b></label>
-                                                    <input type="number" class="form-control" placeholder="Enter Amount" name="grand_total" id="grand_total">
+                                                    <div class="input-group mb-6">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Enter Amount" name="grand_total" id="grand_total">
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +94,13 @@
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Due Amount</b></label>
-                                                    <input type="number" class="form-control" placeholder="Enter Amount" name="due_amount" id="due_amount">
+                                                    <div class="input-group mb-6">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="fas fa-rupee-sign"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Enter Amount" name="due_amount" id="due_amount">
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

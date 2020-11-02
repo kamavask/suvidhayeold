@@ -47,11 +47,10 @@
 			</div>
 			<div class="product-list-view">
 				<div class="row">
-                <div class="col-md-12 ">
-                    <div class="owl-carousel featured-slider owl-theme ">
+                <div class="col-lg-3 col-md-6">
                         @foreach ($category as $item)
                         <div class="item ">
-                            <div class="product-item ">
+                            <div class="product-item mb-30 ">
                                 <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html "
                                     class="product-img ">
                                     <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
