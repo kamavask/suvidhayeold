@@ -17,9 +17,8 @@ class ProductController extends Controller
     public function index()
     {
         $all_products = Product::paginate(20);
-        $all_category = Category::all();
+        
         return view('admin.pages.product.show_product')
-        ->with('category', $all_category)
         ->with('show_prod', $all_products);
     }
 
@@ -30,7 +29,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.product.add_product');
+        $all_category = Category::all(['id']);
+        //return view('admin.pages.product.add_product')
+        //->with('show_category', $all_category);
     }
 
     /**
