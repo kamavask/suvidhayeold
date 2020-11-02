@@ -130,7 +130,7 @@
                                                 <div class="bulk-section mt-30">
 									                <div class="input-group">
 										                <select id="select1" name="action" class="form-control">
-                                                            @foreach ($category as $item)
+                                                            @foreach ($show_category as $item)
                                                                 <option>{{$item->category_name}}</option>
                                                             @endforeach
                                                             
