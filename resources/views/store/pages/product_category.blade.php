@@ -47,7 +47,7 @@
 			</div>
 			<div class="product-list-view">
 				<div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-3 col-md-6">
                         @foreach ($category as $item)
                         <div class="item ">
                             <div class="product-item mb-30 ">
