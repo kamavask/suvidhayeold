@@ -42,7 +42,7 @@ class CartController extends Controller
             'product_id' => $request->get('prod_id'),
         ]);
 
-        return redirect()->route('/')->with('success_message', "Item is added to your cart");
+        return redirect()->route('home')->with('success_message', "Item is added to your cart");
     }
 
     /**
