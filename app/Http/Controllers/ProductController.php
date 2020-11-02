@@ -102,7 +102,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $this->validate($request, [
+       /*  $this->validate($request, [
             'prod_name' => 'required',
             'virtual' => 'required',
             'downloadable' => 'required',
@@ -152,7 +152,7 @@ class ProductController extends Controller
         $prod->bulk_order_no = $request->get('bulk_no');
         $prod->tags = $request->get('tags');
         $prod->save();
-        return redirect()->route('admin.pages.product.add_product')->with('success', 'Data Updated');
+        return redirect()->route('admin.pages.product.add_product')->with('success', 'Data Updated'); */
     }
 
     /**
