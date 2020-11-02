@@ -1,9 +1,6 @@
 @extends('admin.layout.app')
 @section('content')
-
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="container-fluid">
+    <div class="container-fluid">
                     <h2 class="mt-30 page-title">Services</h2>
                     <ol class="breadcrumb mb-30">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
@@ -113,10 +110,5 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
-        </div>
-  
-
-
+    </div>
 @endsection

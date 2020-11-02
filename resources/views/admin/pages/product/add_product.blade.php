@@ -88,7 +88,7 @@
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-12">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Weights</b></label>
@@ -107,8 +107,8 @@
                                                         <option>XL (Extra Large)</option>
                                                     </select>
                                                 </div>
-                                            </div>
-                                        </div> --}}
+                                            </div> --}}
+                                        </div> 
 
                                         <div class="row" style="margin-bottom:1%">
                                           {{--   <div class="col-sm-6">
@@ -119,7 +119,7 @@
                                                 </div>
                                             </div> --}}
 
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-12">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Category ID</b></label>
@@ -225,7 +225,7 @@
                                                     </select>
                                                 </div>
                                             </div> --}}
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-12">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Max Number of order in bulk</b></label>
