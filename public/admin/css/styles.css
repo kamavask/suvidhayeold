@@ -990,3 +990,9 @@ body {
     border-bottom: 0;
     padding: 15px 20px;
 }
+
+.table-description{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
