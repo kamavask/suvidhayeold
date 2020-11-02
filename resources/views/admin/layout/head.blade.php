@@ -39,6 +39,7 @@
 <meta name="author-gambolthemes" content="">
 <title>Suvidhaye</title>
 <link rel="stylesheet" href="/old/css/app.css">
+
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 <link href="/admin/css/styles.css" rel="stylesheet">

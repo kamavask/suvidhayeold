@@ -121,10 +121,25 @@
 
                                             <div class="col-sm-12">
                                                 <!-- text input -->
-                                                <div class="form-group">
-                                                    <label class="form-label"><b>Category ID</b></label>
+                                                {{-- <div class="form-group">
+                                                    <label class="form-label"><b>Category</b></label>
                                                     <input type="text" class="form-control" placeholder="Enter ID" name="cat_id" id="Category_ID">
-                                                </div>
+
+                                                </div> --}}
+
+                                                <div class="bulk-section mt-30">
+									                <div class="input-group">
+										                <select id="select1" name="action" class="form-control">
+                                                            @foreach ($category as $item)
+                                                                <option>{{$item->category_name}}</option>
+                                                            @endforeach
+                                                            
+											                {{-- <option value="1">Active</option>
+											                <option value="2">Inactive</option>
+											                <option value="3">Delete</option> --}}
+										                </select>
+										            </div>
+								                </div>
                                             </div>
                                         </div>
 
