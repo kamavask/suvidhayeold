@@ -107,8 +107,8 @@
                                                         <option>XL (Extra Large)</option>
                                                     </select>
                                                 </div>
-                                            </div>
-                                        </div> --}}
+                                            </div> --}}
+                                        </div> 
 
                                         <div class="row" style="margin-bottom:1%">
                                           {{--   <div class="col-sm-6">
