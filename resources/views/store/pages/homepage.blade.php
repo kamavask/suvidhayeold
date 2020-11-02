@@ -276,10 +276,11 @@
                                             <form action="{{route('customer.pages.cart.store')}}" method="POST">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="prod_id" value="{{$item->id}}">
-                                                <input type="hidden" name="name" value="{{$item->prod_name}}">
+                                                {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
-                                                <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                                {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                                --}}
                                                 <button class="cart-btn-short ">
                                                     <span class="cart-icon ">
                                                         <i class="uil uil-shopping-cart-alt "></i>
