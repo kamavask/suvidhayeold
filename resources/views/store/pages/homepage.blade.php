@@ -273,7 +273,7 @@
                                             <input type="button " value="+ " class="plus plus-btn ">
                                         </div>
                                         <div class="cart-icon-div ">
-                                            <form action="{{ route('cart.store')}}" method="POST">
+                                            <form action="{{route('cart.store')}}" method="POST">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="prod_id" value="{{$item->id}}">
                                                 <input type="hidden" name="name" value="{{$item->prod_name}}">
