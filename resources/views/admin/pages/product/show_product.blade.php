@@ -53,11 +53,11 @@
 											<table class="table ucp-table table-hover">
 												<thead>
 													<tr>
-														<th style="width:60px">ID</th>
-                                                        <th style="width:160px">Product Name</th>
-                                                        <th style="width:160px">Short Description</th>
-														<th style="width:160px">MRP</th>
-														<th style="width:160px">Sale Price</th>
+														<th style="width:70px">ID</th>
+                                                        <th style="width:330px">Product Name</th>
+                                                        <th style="width:630px">Short Description</th>
+														<th style="width:125px">MRP</th>
+														<th style="width:125px">Sale Price</th>
 														<th>Edit</th>
 													</tr>
 												</thead>
@@ -66,7 +66,7 @@
                                                         <tr>
                                                         <td>{{$item->id}}</td>
 														    <td>{{$item->prod_name}}</td>
-														    <td>{{$item->short_description}}</td>
+														    <td class="table-description">{{$item->short_description}}</td>
 														    <td>{{$item->r_price}}</td>
 														    <td>{{$item->s_price}}</td>
 														    <td class="action-btns">
