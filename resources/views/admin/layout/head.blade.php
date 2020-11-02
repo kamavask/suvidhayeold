@@ -37,7 +37,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description-gambolthemes" content="">
 	<meta name="author-gambolthemes" content="">
-    <title>Suvidhaye</title>
+    {{-- <title>Suvidhaye</title> --}}
     <link rel="stylesheet" href="/old/css/app.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
 	<link href="/admin/css/styles.css" rel="stylesheet">
