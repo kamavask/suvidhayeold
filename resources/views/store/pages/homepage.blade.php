@@ -257,17 +257,17 @@
                                             <form action="{{-- {{ route('cart.store') }} --}}" method="POST">
                                                 {{-- {{ csrf_field() }} --}}
                                                 {{ csrf_field() }}
-                                                <input type="hidden" name="id" value="{{$item->id}}">
+                                                <input type="hidden" name="prod_id" value="{{$item->id}}">
                                                 <input type="hidden" name="name" value="{{$item->prod_name}}">
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
                                                 @auth
-                                                    <input type="hidden" name="userid" value="{{ Auth::user()->id }}">
+                                                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                                                 @else
-                                                
+
                                                 @endif
-                                                
+
                                                 <button class="cart-btn-short ">
                                                     <span class="cart-icon ">
                                                         <i class="uil uil-shopping-cart-alt "></i>

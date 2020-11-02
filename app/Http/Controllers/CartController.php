@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ShoppingCart;
+use App\Models\User;
+use App\Models\Product;
 
 class CartController extends Controller
 {
@@ -23,7 +26,6 @@ class CartController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -34,15 +36,12 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
+        ShoppingCart::updateOrCreate([
+            'user_id' => $request->get('user_id'),
+            'product_id' => $request->get('product_id'),
+        ]);
 
-        // dd($request->s_price);
-        /* $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1); */
-        /* dd($cartitem); */
-
-        /* $cartitem = Cart::add($request->id, $request->name, $request->s_price, 1);
-
-        $test = Cart::store($request->userid);
-        return redirect()->route('cart.index')->with('success_message', 'Item is added to your cart'); */
+        return view('popup');
     }
 
     /**
@@ -53,7 +52,10 @@ class CartController extends Controller
      */
     public function show($id)
     {
-        //
+        //dd($id);
+        $cartitem = ShoppingCart::where('user_id', $id)->get();
+        //dd($cartitem);
+        return view('cart', compact('cartitem'));
     }
 
     /**
@@ -87,8 +89,5 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-       /*  Cart::remove($id);
-
-        return back()->with('success_message', 'Item has been removed'); */
     }
 }

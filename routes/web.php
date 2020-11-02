@@ -50,19 +50,23 @@ Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/o
 
 Route::prefix('/admin/pages')->name('admin.pages')
     ->middleware('auth:sanctum', 'verified', 'can:access-dashboard')
-    ->group(function()
-    {
-    Route::get('/index', [ADashboardController::class, 'show_index']);
+    ->group(function () {
+        Route::get('/index', [ADashboardController::class, 'show_index']);
 
-    Route::get('/product/add', [ProductController::class, 'create']);
-    
-    Route::resources([
-    'product' => ProductController::class,
-    'category' => CategoryController::class,
-    //'cart' => CartController::class,
+        Route::get('/product/add', [ProductController::class, 'create']);
+
+        Route::resources([
+            'product' => ProductController::class,
+            'category' => CategoryController::class,
+            //'cart' => CartController::class,
         ]);
-    }
-    );
+    });
+
+Route::name('cart')
+    ->middleware('auth:sanctum', 'verified')
+    ->group(function () {
+        Route::resources('cart', CartController::class);
+    });
 
 
 /* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
