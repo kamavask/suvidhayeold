@@ -47,7 +47,7 @@
 			</div>
 			<div class="product-list-view">
 				<div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-md-12">
                         @foreach ($category as $item)
                         <div class="item ">
                             <div class="product-item mb-30 ">
@@ -98,7 +98,7 @@
                                                 @else
                                                 
                                                 @endif
-                                                
+                                            
                                                 <button class="cart-btn-short ">
                                                     <span class="cart-icon ">
                                                         <i class="uil uil-shopping-cart-alt "></i>
