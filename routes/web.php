@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Mail;
     return view('store.pages.homepage');
 }); */
 
-Route::get('/', [StoreController::class, 'homepage']);
+Route::get('/', [StoreController::class, 'homepage'])->name('home');
 
 /* Route::get('/emails', function () {
     Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
@@ -152,3 +152,7 @@ Route::get('search', [SearchController::class, 'search']);
 
 
 /* STORE ROUTE END */
+
+Route::get('edit/{id}', 'ProductController@edit');
+
+Route::post('edit', 'ProductController@update');

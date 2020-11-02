@@ -14,9 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $cat = $category;
-        return view('store.pages.single_product')
-        ->with('category', $cat);
+        $all_category = Category::paginate(20);
+        return view('admin.pages.category.show_catgory')->with('show_cat', $all_category);
     }
 
     /**

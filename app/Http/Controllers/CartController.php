@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\ShoppingCart;
 use App\Models\User;
 use App\Models\Product;
@@ -37,11 +38,11 @@ class CartController extends Controller
     public function store(Request $request)
     {
         ShoppingCart::updateOrCreate([
-            'user_id' => $request->get('user_id'),
-            'product_id' => $request->get('product_id'),
+            'user_id' => Auth::user()->id,
+            'product_id' => $request->get('prod_id'),
         ]);
 
-        return redirect()->route('/')->with('success_message', "Item is added to your cart");
+        return redirect()->route('home')->with('success_message', "Item is added to your cart");
     }
 
     /**
