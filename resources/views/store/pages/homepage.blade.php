@@ -100,6 +100,25 @@
             <div class="row ">
                 <div class="col-md-12 ">
                     <div class="main-title-tt ">
+
+                        <div>
+                            @if(session()->has('success_message'))
+                            <div class="alert alert-success">
+                                {{session()->get('success_message')}}
+                            </div>
+                            @endif
+
+                            @if(count($errors) >0)
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+                        </div>
+
                         <div class="main-title-left ">
                             <span>Shop By</span>
                             <h2>Categories</h2>
@@ -254,20 +273,14 @@
                                             <input type="button " value="+ " class="plus plus-btn ">
                                         </div>
                                         <div class="cart-icon-div ">
-                                            <form action="{{-- {{ route('cart.store') }} --}}" method="POST">
-                                                {{-- {{ csrf_field() }} --}}
+                                            <form action="{{ route('cart.store')}}" method="POST">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="prod_id" value="{{$item->id}}">
                                                 <input type="hidden" name="name" value="{{$item->prod_name}}">
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                @auth
                                                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
-                                                @else
-
-                                                @endif
-
                                                 <button class="cart-btn-short ">
                                                     <span class="cart-icon ">
                                                         <i class="uil uil-shopping-cart-alt "></i>
