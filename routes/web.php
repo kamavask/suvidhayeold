@@ -58,14 +58,17 @@ Route::prefix('/admin/pages')->name('admin.pages')
         Route::resources([
             'product' => ProductController::class,
             'category' => CategoryController::class,
-            //'cart' => CartController::class,
         ]);
     });
 
-Route::name('cart')
+Route::prefix('/customer/pages')->name('customer.pages')
     ->middleware('auth:sanctum', 'verified')
     ->group(function () {
-        Route::resources('cart', CartController::class);
+        Route::resources([
+            'product' => ProductController::class,
+            'category' => CategoryController::class,
+            'cart' => CartController::class,
+        ]);
     });
 
 
