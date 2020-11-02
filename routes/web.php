@@ -152,3 +152,7 @@ Route::get('search', [SearchController::class, 'search']);
 
 
 /* STORE ROUTE END */
+
+Route::get('edit/{id}', 'ProductController@edit');
+
+Route::post('edit', 'ProductController@update');
