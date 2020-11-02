@@ -39,7 +39,7 @@ class CartController extends Controller
     {
         ShoppingCart::updateOrCreate([
             'user_id' => Auth::user()->id,
-            'product_id' => $request->get('product_id'),
+            'product_id' => $request->get('prod_id'),
         ]);
 
         return redirect()->route('/')->with('success_message', "Item is added to your cart");
