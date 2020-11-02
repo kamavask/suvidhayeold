@@ -66,7 +66,7 @@
                                                         <tr>
                                                         <td>{{$item->id}}</td>
 														    <td>{{$item->prod_name}}</td>
-														    <td>{{$item->short_description}}</td>
+														    <td class="table-description">{{$item->short_description}}</td>
 														    <td>{{$item->r_price}}</td>
 														    <td>{{$item->s_price}}</td>
 														    <td class="action-btns">
