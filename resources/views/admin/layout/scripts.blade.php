@@ -53,11 +53,23 @@
         })()
     </script> --}}
 
-    <script src="{{asset('/admin/js/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{asset('/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/highcharts.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/exporting.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/export-data.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/accessibility.js')}}"></script>
-    <script src="{{asset('/admin/js/scripts.js')}}"></script>
-    <script src="{{asset('/admin/js/chart.js')}}"></script>  
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="{{asset('/admin/js/jquery-3.4.1.min.js')}}"></script>
+<script src="{{asset('/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/highcharts.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/exporting.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/export-data.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/accessibility.js')}}"></script>
+<script src="{{asset('/admin/js/scripts.js')}}"></script>
+<script src="{{asset('/admin/js/chart.js')}}"></script>
+<script type="text/javascript">
+    $("#nameid").select2({
+                    placeholder: "Select a Name",
+                    allowClear: true
+                });
+</script>
+
+{{-- https://www.youtube.com/watch?v=-OpcPKI7_yE --}}
+
+{{--  --}}
