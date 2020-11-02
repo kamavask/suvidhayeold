@@ -37,7 +37,7 @@ class CartController extends Controller
     public function store(Request $request)
     {
         ShoppingCart::updateOrCreate([
-            'user_id' => $request->get('user_id'),
+            'user_id' => Auth::user()->id,
             'product_id' => $request->get('product_id'),
         ]);
 

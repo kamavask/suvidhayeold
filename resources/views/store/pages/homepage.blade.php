@@ -280,7 +280,6 @@
                                                 {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                                 --}}
                                                 <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                                                 <button class="cart-btn-short ">
                                                     <span class="cart-icon ">
                                                         <i class="uil uil-shopping-cart-alt "></i>
