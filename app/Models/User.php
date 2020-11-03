@@ -98,6 +98,6 @@ class User extends Authenticatable
 
     public function products()
     {
-        return $this->belongsToMany('App\Models\Product');
+        return $this->belongsToMany('App\Models\Product', 'shopping_carts');
     }
 }
