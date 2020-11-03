@@ -55,7 +55,7 @@ class CartController extends Controller
     {
         //dd($id);
         // $cartitem = ShoppingCart::where('user_id', $id)->get();
-        $cartitem = ShoppingCart::where('user_id', $id)->get()->Product;
+        $cartitem = ShoppingCart::where('user_id', $id)->Product;
         //dd($cartitem);
         //return view('cart', compact('cartitem'));
 
