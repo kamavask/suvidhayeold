@@ -54,9 +54,13 @@ class CartController extends Controller
     public function show($id)
     {
         //dd($id);
-        $cartitem = ShoppingCart::where('user_id', $id)->get();
+        // $cartitem = ShoppingCart::where('user_id', $id)->get();
+        $cartitem = ShoppingCart::where('user_id', $id)->get()->Product;
         //dd($cartitem);
-        return view('cart', compact('cartitem'));
+        //return view('cart', compact('cartitem'));
+
+        //$flag = flag::find(1)->Product;
+        return view('cart')->with('cartitem',  $cartitem);
     }
 
     /**
