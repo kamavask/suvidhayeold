@@ -42,8 +42,8 @@ class CategoryController extends Controller
         $cat->pent_cat_id = $request->pent_cat_id;
         $cat->category_desc = $request->cat_desc;
         $cat->slug = $request->slug;
-        $cat->tags = $request->tags;
-        $cat->icon = $request->icon;
+        //$cat->tags = $request->tags;
+        //$cat->icon = $request->icon;
         $cat->save();
 
         //return view('')
