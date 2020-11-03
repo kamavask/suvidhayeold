@@ -22,14 +22,12 @@ class ADashboardController extends Controller
      {
       $query = $request->get('query');
       $data = DB::table('categories')
-        ->where('country_name', 'LIKE', "%{$query}%")
+        ->where('category_name', 'LIKE', "%{$query}%")
         ->get();
       $output = '<ul class="dropdown-menu" style="display:block; position:relative">';
       foreach($data as $row)
       {
-       $output .= '
-       <li><a href="#">'.$row->country_name.'</a></li>
-       ';
+       $output .= ' <li><a href="#">' .$row->category.' </a> </li>';
       }
       $output .= '</ul>';
       echo $output;
