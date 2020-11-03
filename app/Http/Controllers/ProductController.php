@@ -42,12 +42,10 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->virtual);
-        dd($request->downloadable);
-        /* $prod = new Product;
+        $prod = new Product;
         $prod->prod_name = $request->prod_name;
-        $prod->virtual = $request->virtual;
-        $prod->downloadable = $request->downloadable;
+        $prod->virtual = 0;
+        $prod->downloadable = 0;
         //$prod->image_id = $request->image_id;
         $prod->highlight = $request->highlight;
         $prod->short_description = $request->short_desc;
