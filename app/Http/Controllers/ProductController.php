@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 
@@ -16,7 +17,9 @@ class ProductController extends Controller
     public function index()
     {
         $all_products = Product::paginate(20);
-        return view('admin.pages.product.show_product')->with('show_prod', $all_products);
+        
+        return view('admin.pages.product.show_product')
+        ->with('show_prod', $all_products);
     }
 
     /**
@@ -26,7 +29,9 @@ class ProductController extends Controller
      */
     public function create()
     {
+        
         return view('admin.pages.product.add_product');
+        
     }
 
     /**

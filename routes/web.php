@@ -48,13 +48,14 @@ Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/o
     return view('dashboard');
 })->name('dashboard');
 
-Route::prefix('/admin/pages')->name('admin.pages')
+Route::prefix('/admin/pages')->name('admin.pages.')
     ->middleware('auth:sanctum', 'verified', 'can:access-dashboard')
     ->group(function () {
         Route::get('/index', [ADashboardController::class, 'show_index']);
 
-        Route::get('/product/add', [ProductController::class, 'create']);
+        Route::get('/test_add_product', [ADashboardController::class, 'test_add_product']);
 
+        Route::post('/autocomplete/fetch', [ADashboardController::class, 'fetch'])->name('autocomplete.fetch');
         Route::resources([
             'product' => ProductController::class,
             'category' => CategoryController::class,
