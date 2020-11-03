@@ -29,9 +29,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $all_category = Category::all();
+        
         return view('admin.pages.product.add_product')
-        ->with('show_category', $all_category);
+        
     }
 
     /**
