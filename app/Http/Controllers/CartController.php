@@ -60,7 +60,7 @@ class CartController extends Controller
         //return view('cart', compact('cartitem'));
 
         //$flag = flag::find(1)->Product;
-        return view('cart')->with('cartitem',  $cartitem);
+        return view('cart')->compact('cartitem');
     }
 
     /**
