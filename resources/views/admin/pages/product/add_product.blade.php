@@ -130,13 +130,13 @@
                                                 <div class="bulk-section mt-30">
 									                <div class="input-group">
 										                <select id="select1" name="action" class="form-control">
-                                                            @foreach ($show_category as $item)
+                                                            {{-- @foreach ($show_category as $item)
                                                                 <option>{{$item->category_name}}</option>
-                                                            @endforeach
+                                                            @endforeach --}}
                                                             
-											                {{-- <option value="1">Active</option>
+											                <option value="1">Active</option>
 											                <option value="2">Inactive</option>
-											                <option value="3">Delete</option> --}}
+											                <option value="3">Delete</option> 
 										                </select>
 										            </div>
 								                </div>
