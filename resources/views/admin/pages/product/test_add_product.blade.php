@@ -130,15 +130,18 @@
                                                 <div class="bulk-section mt-30">
 									                <div class="input-group">
                                                         <label class="form-label"><b>Category</b></label>
-										                <select id="select1" name="action" class="form-control">
+										                {{-- <select id="select1" name="action" class="form-control">
                                                             {{-- @foreach ($show_category as $item)
                                                                 <option>{{$item->category_name}}</option>
                                                             @endforeach --}}
                                                             
-											                <option value="1">Active</option>
+											                {{--<option value="1">Active</option>
 											                <option value="2">Inactive</option>
 											                <option value="3">Delete</option> 
-										                </select>
+                                                        </select> --}}
+                                                        <input type="text" name="country_name" id="country_name" class="form-control input-lg" placeholder="Enter Country Name" />
+                                                        <div id="countryList">
+                                                        </div>
 										            </div>
 								                </div>
                                             </div>

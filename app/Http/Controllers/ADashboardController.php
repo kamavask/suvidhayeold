@@ -21,7 +21,7 @@ class ADashboardController extends Controller
      if($request->get('query'))
      {
       $query = $request->get('query');
-      $data = DB::table('apps_countries')
+      $data = DB::table('categories')
         ->where('country_name', 'LIKE', "%{$query}%")
         ->get();
       $output = '<ul class="dropdown-menu" style="display:block; position:relative">';
