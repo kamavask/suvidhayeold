@@ -10,4 +10,11 @@ class ADashboardController extends Controller
     {
         return view('admin.pages.index');
     }
+
+    public function test_add_product()
+    {
+        
+        return view('admin.pages.product.test_add_product');
+        
+    }
 }
