@@ -54,7 +54,8 @@ Route::prefix('/admin/pages')->name('admin.pages.')
         Route::get('/index', [ADashboardController::class, 'show_index']);
 
         Route::get('/test_add_product', [ADashboardController::class, 'test_add_product']);
-        
+
+        Route::post('/autocomplete/fetch', [ADashboardController::class, 'fetch'])->name('autocomplete.fetch');
         Route::resources([
             'product' => ProductController::class,
             'category' => CategoryController::class,
