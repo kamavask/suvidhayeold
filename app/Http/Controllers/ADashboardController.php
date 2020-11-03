@@ -13,8 +13,6 @@ class ADashboardController extends Controller
 
     public function test_add_product()
     {
-        
         return view('admin.pages.product.test_add_product');
-        
     }
 }
