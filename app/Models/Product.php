@@ -47,4 +47,9 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Models\User');
     }
+
+    public function shoppingcart()
+    {
+        return $this->belongsToMany('App\Models\ShoppingCart');
+    }
 }
