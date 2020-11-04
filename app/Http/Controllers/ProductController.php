@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 
@@ -17,9 +16,7 @@ class ProductController extends Controller
     public function index()
     {
         $all_products = Product::paginate(20);
-        
-        return view('admin.pages.product.show_product')
-        ->with('show_prod', $all_products);
+        return view('admin.pages.product.show_product')->with('show_prod', $all_products);
     }
 
     /**
@@ -29,9 +26,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        
         return view('admin.pages.product.add_product');
-        
     }
 
     /**
@@ -42,36 +37,37 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $prod = new Product;
+
+        dd($request->highlight)
+        /* $prod = new Product;
         $prod->prod_name = $request->prod_name;
-        $prod->virtual = 0;
-        $prod->downloadable = 0;
-        //$prod->image_id = $request->image_id;
-        $prod->highlight = $request->highlight;
-        $prod->short_description = $request->short_desc;
-        $prod->specification = $request->specification; 
-        $prod->brand = $request->brand;
-        $prod->weight = $request->weight;
-        //$prod->size = $request->size; 
-        $prod->dimensions = $request->dimensions;
+        //$prod->virtual = $request->virtual;
+        //$prod->downloadable = $request->downloadable;
+        /* $prod->image_id = $request->image_id; */
+      /*   $prod->highlight = $request->highlight;
+        $prod->short_description = $request->short_desc; */
+        /* $prod->specification = $request->specification; */
+       /*  $prod->brand = $request->brand;
+        $prod->weight = $request->weight; */
+        /* $prod->size = $request->size; */
+        /* $prod->dimensions = $request->dimensions;
         $prod->category_id = $request->cat_id;
-        //$prod->variant_id = $request->variant_id;
-        $prod->r_price = $request->r_price;
-        $prod->s_price = $request->s_price;
-        //$prod->tax_id = $request->tax_id;
-        //$prod->shipping_id = $request->shipping_id;
+        $prod->variant_id = $request->variant_id; */
+      /*   $prod->r_price = $request->r_price;
+        $prod->s_price = $request->s_price; */
+       /*  $prod->tax_id = $request->tax_id;
+        $prod->shipping_id = $request->shipping_id;  */
         //$prod->sku = $request->sku;
-        $prod->stock = $request->stock;
-        $prod->stock_alert = $request->stock_alert;
-        $prod->backorder = $request->backorder;
-        $prod->bulk_order_no = $request->bulk_no;
-        $prod->tags = $request->tags;
-        $prod->save();
+       /*  $prod->stock = $request->stock;
+        $prod->stock_alert = $request->stock_alert; */
+        //$prod->backorder = $request->backorder;
+        //$prod->bulk_order_no = $request->bulk_no;
+        //$prod->tags = $request->tags;
+       /*  $prod->save();
 
-        $product = $prod;
+        $product = $prod;  */
 
-        
-        return view('admin.pages.product.add_product');
+        return view('admin.pages.product_images')/* ->with('product', $product) */;
     }
 
     /**
