@@ -42,7 +42,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $prod = new Product;
+        dd($request->brand);
+        /* $prod = new Product;
         $prod->prod_name = $request->prod_name;
         $prod->virtual = 0;
         $prod->downloadable = 0;
@@ -71,7 +72,7 @@ class ProductController extends Controller
         $product = $prod;
 
         
-        return view('admin.pages.product.add_product');
+        return view('admin.pages.product.add_product'); */
     }
 
     /**
