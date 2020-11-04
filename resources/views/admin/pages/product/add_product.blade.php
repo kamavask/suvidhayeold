@@ -55,7 +55,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights "></textarea>
+                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights" name="highlight" id="highlights"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,7 +64,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc "></textarea>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description" name="short_desc" id="s_desc "></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Brand</b></label>
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand " id="pro ">
+                                                    <input type="text " class="form-control " placeholder="Enter Provider Code" name="brand " id="pro">
                                                 </div>
                                             </div>
                                         </div>
