@@ -67,7 +67,7 @@ class ProductController extends Controller
 
        // $product = $prod;  
 
-        return view('admin.pages.product_images')/* ->with('product', $product) */;
+        //return view('admin.pages.product_images')/* ->with('product', $product) */;
   }
 
     /**
