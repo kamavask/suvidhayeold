@@ -71,7 +71,7 @@ class ProductController extends Controller
         $product = $prod;
 
         
-        return view('admin.pages.product.add_product'); */
+        return view('admin.pages.product.add_product');
     }
 
     /**
