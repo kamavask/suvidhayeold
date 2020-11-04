@@ -96,8 +96,8 @@ class User extends Authenticatable
         return $this->belongsTo('App\Models\UploadList');
     }
 
-    public function products()
+    public function product()
     {
-        return $this->belongsToMany('App\Models\Product')->using('App\Models\ShoppingCart');
+        return $this->belongsToMany('App\Models\Product', 'shopping_carts');
     }
 }
