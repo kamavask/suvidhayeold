@@ -45,6 +45,11 @@ class Product extends Model
 
     public function users()
     {
-        return $this->belongsToMany('App\Models\User');
+        return $this->belongsToMany('App\Models\User')->using('App\Models\ShoppingCart');
     }
+
+    /* public function shoppingcart()
+    {
+        return $this->belongsToMany('App\Models\ShoppingCart');
+    } */
 }

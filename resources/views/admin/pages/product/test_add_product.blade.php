@@ -55,7 +55,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights" name="highlight" id="highlights"></textarea>
+                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights "></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,12 +64,12 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description" name="short_desc" id="s_desc "></textarea>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc "></textarea>
                                                 </div>
                                             </div>
                                         </div>
 
-                                       <div class="row" style="margin-bottom:1%">
+                                       {{--  <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Specifications</b></label>
@@ -77,15 +77,12 @@
                                                 </div>
                                             </div>
                                         </div>
+ --}}
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Brand</b></label>
-<<<<<<< HEAD
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code" name="brand " id="pro">
-=======
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand" id="pro ">
->>>>>>> 805ccc78d89d7701f31b36e8c4f7af3919ae8674
+                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand " id="pro ">
                                                 </div>
                                             </div>
                                         </div>
@@ -114,39 +111,43 @@
                                         </div> 
 
                                         <div class="row" style="margin-bottom:1%">
-                                            <div class="col-sm-6">
+                                          {{--   <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Dimensions</b></label>
                                                     <input type="text" class="form-control" placeholder="Length-Bregth-height (e.g.:12cm-4cm-7cm)" name="dimensions" id="dimension">
                                                 </div>
-                                            </div>
+                                            </div> --}}
 
                                             <div class="col-sm-12">
                                                 <!-- text input -->
-                                                <div class="form-group">
+                                                {{-- <div class="form-group">
                                                     <label class="form-label"><b>Category</b></label>
                                                     <input type="text" class="form-control" placeholder="Enter ID" name="cat_id" id="Category_ID">
 
-                                                </div>
-                                                {{-- <div class="bulk-section mt-30">
+                                                </div> --}}
+
+                                                <div class="bulk-section mt-30">
 									                <div class="input-group">
                                                         <label class="form-label"><b>Category</b></label>
-										                <select id="select1" name="action" class="form-control">
-                                                            @foreach ($show_category as $item)
+										                {{-- <select id="select1" name="action" class="form-control">
+                                                            {{-- @foreach ($show_category as $item)
                                                                 <option>{{$item->category_name}}</option>
-                                                            @endforeach
+                                                            @endforeach --}}
                                                             
-											                <option value="1">Active</option>
+											                {{--<option value="1">Active</option>
 											                <option value="2">Inactive</option>
 											                <option value="3">Delete</option> 
-										                </select>
+                                                        </select> --}}
+                                                        <input type="text" name="country_name" id="country_name" class="form-control input-lg" placeholder="Enter Country Name" />
+                                                        <div id="countryList">
+                                                        </div>
 										            </div>
-								                </div> --}}
+								                </div>
                                             </div>
                                         </div>
 
-                                        <div class="row" style="margin-bottom:1%">
+                                        {{-- <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-6">
                                                 <!-- text input -->
                                                 <div class="form-group">
@@ -154,7 +155,7 @@
                                                     <input type="text" class="form-control" placeholder="Enter ID" name="variant_id" id="v_id">
                                                 </div>
                                             </div>
-                                        </div> 
+                                        </div> --}}
 
                                         <hr>
                                         <h3 style="text-decoration: underline;">Pricing and Tax</h3>
@@ -231,7 +232,7 @@
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
-            <div class="col-sm-3">
+                                           {{--  <div class="col-sm-3">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Back-Order Options</b></label>
                                                     <select class="form-control" name="backorder">
@@ -242,7 +243,7 @@
                                                         <option>option 5</option>
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                             <div class="col-sm-12">
                                                 <!-- text input -->
                                                 <div class="form-group">
@@ -269,7 +270,7 @@
                                 </div>
                             </div>
                             </form>
-                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>

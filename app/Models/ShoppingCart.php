@@ -12,4 +12,9 @@ class ShoppingCart extends Model
     protected $fillable = [
         'id', 'user_id', 'product_id'
     ];
+
+    public function product()
+    {
+        return $this->belongsToMany('App\Models\Product');
+    }
 }

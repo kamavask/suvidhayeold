@@ -53,11 +53,51 @@
         })()
     </script> --}}
 
-    <script src="{{asset('/admin/js/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{asset('/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/highcharts.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/exporting.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/export-data.js')}}"></script>
-	<script src="{{asset('/admin/vendor/chart/accessibility.js')}}"></script>
-    <script src="{{asset('/admin/js/scripts.js')}}"></script>
-    <script src="{{asset('/admin/js/chart.js')}}"></script>  
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="{{asset('/admin/js/jquery-3.4.1.min.js')}}"></script>
+<script src="{{asset('/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/highcharts.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/exporting.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/export-data.js')}}"></script>
+<script src="{{asset('/admin/vendor/chart/accessibility.js')}}"></script>
+<script src="{{asset('/admin/js/scripts.js')}}"></script>
+<script src="{{asset('/admin/js/chart.js')}}"></script>
+<script type="text/javascript">
+    $("#select1").select2({
+                    placeholder: "Select",
+                    allowClear: true
+                });
+</script>
+
+<script>
+$(document).ready(function(){
+
+ $('#country_name').keyup(function(){ 
+        var query = $(this).val();
+        if(query != '')
+        {
+         var _token = $('input[name="_token"]').val();
+         $.ajax({
+          url:"{{ route('admin.pages.autocomplete.fetch') }}",
+          method:"POST",
+          data:{query:query, _token:_token},
+          success:function(data){
+           $('#categoryList').fadeIn();  
+                    $('#categoryList').html(data);
+          }
+         });
+        }
+    });
+
+    $(document).on('click', 'li', function(){  
+        $('#category_name').val($(this).text());  
+        $('#countryList').fadeOut();  
+    });  
+
+});
+</script>
+
+{{-- https://www.youtube.com/watch?v=-OpcPKI7_yE --}}
+
+{{--  --}}

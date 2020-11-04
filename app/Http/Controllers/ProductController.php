@@ -37,7 +37,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $prod = new Product;
+
+        dd($request->highlight)
+        /* $prod = new Product;
         $prod->prod_name = $request->prod_name;
         //$prod->virtual = $request->virtual;
         //$prod->downloadable = $request->downloadable;
@@ -63,7 +65,7 @@ class ProductController extends Controller
         //$prod->tags = $request->tags;
         $prod->save();
 
-        $product = $prod;
+        $product = $prod; */
 
         return view('admin.pages.product_images')/* ->with('product', $product) */;
     }
