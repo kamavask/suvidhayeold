@@ -200,7 +200,7 @@
 						class="uil uil-apps"></i></a>
 			</div>
 			<div class="header_cart order-1">
-				<a href="{{route('customer.pages.cart',Auth::user()->id)}}"> class="cart__btn hover-btn"
+				<a href="{!!route('customer.pages.cart',Auth::user()->id)!!}"> class="cart__btn hover-btn"
 					title="Cart"><i
 						class="uil uil-shopping-cart-alt"></i><span>Cart</span><ins>{{-- add value is customer cart contain any and how many  --}}</ins><i
 						class=" uil uil-angle-down"></i></a>
