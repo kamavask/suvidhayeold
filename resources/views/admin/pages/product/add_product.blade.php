@@ -26,7 +26,7 @@
                                                     <input type="text" class="form-control" placeholder="Add Product Name" name="prod_name">
                                                 </div>
                                             </div>
-                                            <div class="col-sm-1">
+                                            <div class="col-sm-2">
                                                 <!-- Default checked -->
                                                 <div class="custom-control custom-switch" style="margin-top: 35px;">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch1" name="virtual">
@@ -227,7 +227,7 @@
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
-            <div class="col-sm-3">
+                                            <div class="col-sm-3">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Back-Order Options</b></label>
                                                     <select class="form-control" name="backorder">
