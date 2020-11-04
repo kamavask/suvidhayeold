@@ -61,7 +61,7 @@
                     </div> --}}
                     <div>
                         @foreach($cartitem as $item)
-                        <a href="{{route('product'),$item->product_id}}">{{$item->prod_name}}</a>
+                        {{-- <a href="{{route('product'),$item->product_id}}"> --}}{{$item->prod_name}}</a>
                         <br>
                         @endforeach
                     </div>
