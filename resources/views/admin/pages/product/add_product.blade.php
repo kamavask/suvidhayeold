@@ -81,7 +81,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Brand</b></label>
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand " id="pro ">
+                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand" id="pro ">
                                                 </div>
                                             </div>
                                         </div>
