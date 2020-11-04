@@ -1,7 +1,6 @@
 <nav class="sb-topnav navbar navbar-expand navbar-light bg-clr">
     <a class="navbar-brand logo-brand" href="index.html">
-        <img src="/store/images/logo/white.png" alt="">
-        {{config('app.name')}}
+        <img style="width: 200px;" src="/store/images/logo/white.png" alt="">
     </a>
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
