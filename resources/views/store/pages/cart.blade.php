@@ -20,14 +20,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
-                    {{--    @if(Cart::count()>0)
+                    @if(Cart::count()>0)
                     <h2>{{Cart::count()}} item(s) in Shopping Cart</h2>
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Order Summary</h4>
                         </div>
                         <div class="right-cart-dt-body">
-                            @foreach(Cart::content() as $item)
+                            @foreach($cartitem as $item)
                             <div class="cart-product-img">
                                 <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
                                     <img src="images/product/img-11.jpg" alt="">
@@ -45,12 +45,12 @@
                                     </div>
                                 </div>
                                 <div class="cart-text">
-                                    <h2>$item->prod_name</h2>
+                                    <h2>{{$item->prod_name}}</h2>
                                     <button type="button" class="cart-close-btn"><i
                                             class="uil uil-multiply"></i></button>
                                     <div class="cart-item-price">
 
-                                        <div class="cart-item-price">$item->s_price
+                                        <div class="cart-item-price">{{$item->s_price}}
                                         </div>
                                     </div>
                                 </div>
@@ -58,15 +58,15 @@
                             @endforeach
                         </div>
 
-                    </div> --}}
-                    <div>
+                    </div>
+                    {{-- <div>
                         @foreach($cartitem as $item)
                         <a href="{{route('product'),$item->product_id}}">{{$item->prod_name}}</a>
-                        <br>
-                        @endforeach
-                    </div>
+                    <br>
+                    @endforeach
                 </div>
-                {{-- <div class="col-lg-4 col-md-5">
+            </div> --}}
+            {{-- <div class="col-lg-4 col-md-5">
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Cart total</h4>
@@ -102,12 +102,12 @@
                         <p><i class="uil uil-shield-check"></i>Secure Payments</p>
                     </div>
                 </div> --}}
-                {{-- @else
+            {{-- @else
                 <h3>No items in the cart !</h3>
                 @endif --}}
-            </div>
         </div>
     </div>
+</div>
 </div>
 
 @endsection
