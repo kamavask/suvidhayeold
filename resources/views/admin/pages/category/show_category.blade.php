@@ -8,7 +8,7 @@
         </ol>
         <div class="row justify-content-between">
 			<div class="col-lg-12">
-				<a href="/admin/pages/category" class="add-btn hover-btn">Add New</a>
+				<a href="add_area.html" class="add-btn hover-btn">Add New</a>
 			</div>
 			<div class="col-lg-3 col-md-4">
 				<div class="bulk-section mt-30">

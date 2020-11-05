@@ -61,7 +61,7 @@
                     <div class="collapse" id="collapseCategories" aria-labelledby="headingTwo"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link sub_nav_link" href="show_category">All Categories</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/category">All Categories</a>
                             <a class="nav-link sub_nav_link" href="add_category">Add Category</a>
                             <a class="nav-link sub_nav_link" href="edit_category">Edit Category</a>
                         </nav>
