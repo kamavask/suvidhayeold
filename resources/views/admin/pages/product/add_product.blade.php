@@ -73,7 +73,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Specifications</b></label>
-                                                    <textarea class="form-control " rows="4" placeholder="Enter Specifications " name="specification " id="speci"></textarea>
+                                                    <textarea class="form-control " rows="4" placeholder="Enter Specifications " name="specification" id="speci"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -81,7 +81,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Brand</b></label>
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code" name="brand " id="pro">
+                                                    <input type="text " class="form-control " placeholder="Enter Provider Code" name="brand" id="pro">
                                                 </div>
                                             </div>
                                         </div>
