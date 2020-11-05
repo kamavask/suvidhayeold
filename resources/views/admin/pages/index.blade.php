@@ -1,7 +1,5 @@
 @extends('admin.layout.app')
    @section('content')
-		<div id="layoutSidenav_content">
-                <main>
                     <div class="container-fluid">
                         <h2 class="mt-30 page-title">Dashboard</h2>
                         <ol class="breadcrumb mb-30">
@@ -162,20 +160,8 @@
 									</div>
 								</div>
 							</div>
-                        </div>
-                    </div>
-                </main>
-                <footer class="py-4 bg-footer mt-auto">
-                    <div class="container-fluid">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted-1">© 2020 <b>Gambo Supermarket</b>. by <a href="https://themeforest.net/user/gambolthemes">Gambolthemes</a></div>
-                            <div class="footer-links">
-                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/privacy_policy.html">Privacy Policy</a>
-                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/term_and_conditions.html">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </div>
+          </div>
+    
 	 @endsection
 
