@@ -70,7 +70,7 @@
 														    <td>{{$item->r_price}}</td>
 														    <td>{{$item->s_price}}</td>
 														    <td class="action-btns">
-															    <a href="#" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
+															    <a href="/admin/pages/product/{{$item->id}}/edit" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
 														    </td>
 													    </tr>    
                                                     @endforeach
