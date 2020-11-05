@@ -1,45 +1,45 @@
 @extends('admin.layout.app')
    @section('content')
-  		<div class="container-fluid">
-        <h2 class="mt-30 page-title">Dashboard</h2>
-        	<ol class="breadcrumb mb-30">
-          	<li class="breadcrumb-item active">Dashboard</li>
-          </ol>
-        <div class="row">
-          	<div class="col-xl-3 col-md-6">
-            	<div class="dashboard-report-card purple">
-								<div class="card-content">
-									<span class="card-title">Order Pending</span>
-									<span class="card-count">2</span>
-								</div>
-								<div class="card-media">
-									<i class="fab fa-rev"></i>
-								</div>
-              </div>
-            </div>
-          <div class="col-xl-3 col-md-6">
-						<div class="dashboard-report-card red">
-							<div class="card-content">
-								<span class="card-title">Order Cancel</span>
-								<span class="card-count">0</span>
-							</div>
-							<div class="card-media">
-								<i class="far fa-times-circle"></i>
-							</div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6">
-          	<div class="dashboard-report-card info">
-							<div class="card-content">
-								<span class="card-title">Order Process</span>
-								<span class="card-count">5</span>
-								<div>
+                    <div class="container-fluid">
+                        <h2 class="mt-30 page-title">Dashboard</h2>
+                        <ol class="breadcrumb mb-30">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="dashboard-report-card purple">
+									<div class="card-content">
+										<span class="card-title">Order Pending</span>
+										<span class="card-count">2</span>
+									</div>
+									<div class="card-media">
+										<i class="fab fa-rev"></i>
+									</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+								<div class="dashboard-report-card red">
+									<div class="card-content">
+										<span class="card-title">Order Cancel</span>
+										<span class="card-count">0</span>
+									</div>
+									<div class="card-media">
+										<i class="far fa-times-circle"></i>
+									</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="dashboard-report-card info">
+									<div class="card-content">
+										<span class="card-title">Order Process</span>
+										<span class="card-count">5</span>
+									</div>
 									<div class="card-media">
 										<i class="fas fa-sync-alt rpt_icon"></i>
 									</div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
 								<div class="dashboard-report-card success">
 									<div class="card-content">
 										<span class="card-title">Today Income</span>
@@ -48,8 +48,8 @@
 									<div class="card-media">
 										<i class="fas fa-money-bill rpt_icon"></i>
 									</div>
-                </div>
-            	</div>
+                                </div>
+                            </div>
 							<div class="col-xl-12 col-md-12">
 								<div class="card card-static-1 mb-30">
 									<div class="card-body">
@@ -162,7 +162,6 @@
 							</div>
             </div>
           </div>
-				</div>
-  		</div>
+    
 	 @endsection
 
