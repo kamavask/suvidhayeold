@@ -15,7 +15,7 @@ class CategoryController extends Controller
     public function index()
     {
         $all_category = Category::paginate(20);
-        return view('admin.pages.category.show_catgory')->with('show_cat', $all_category);
+        return view('admin.pages.category.show_category')->with('show_cat', $all_category);
     }
 
     /**
