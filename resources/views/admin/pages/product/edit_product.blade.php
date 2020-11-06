@@ -257,6 +257,8 @@
 
  --}}
    
-{{$data->prod_name}}
+@php
+    dd($data);
+@endphp
 
 {{-- @endsection  --}}
