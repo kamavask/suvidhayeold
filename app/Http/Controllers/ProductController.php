@@ -44,7 +44,7 @@ class ProductController extends Controller
         /* $prod->image_id = $request->image_id;  */
         $prod->highlight = $request->highlight;
         $prod->short_description = $request->short_desc; 
-        /* $prod->specification = $request->specification;  */
+        $prod->specification = $request->specification;
         $prod->brand = $request->brand;
         $prod->weight = $request->weight; 
         /* $prod->size = $request->size; */ 
