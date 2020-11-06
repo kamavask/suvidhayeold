@@ -1,6 +1,6 @@
-@extends('admin.layout.app')
+{{-- @extends('admin.layout.app')
 @section('content')
-    {{-- <div class="container-fluid">
+ --}}    {{-- <div class="container-fluid">
         <h2 class="mt-30 page-title">Products</h2>
         <ol class="breadcrumb mb-30">
             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
@@ -257,6 +257,6 @@
 
  --}}
    
-{{$prod_name}}
+{{$data->prod_name}}
 
-@endsection 
+{{-- @endsection  --}}
