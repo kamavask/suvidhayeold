@@ -20,8 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
-                    @if(Cart::count()>0)
-                    <h2>{{Cart::count()}} item(s) in Shopping Cart</h2>
+                    {{-- @for() --}}
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Order Summary</h4>
