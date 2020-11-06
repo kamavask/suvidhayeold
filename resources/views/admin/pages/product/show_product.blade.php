@@ -61,15 +61,15 @@
 								</tr>
 							</thead>
 							<tbody>
-  	            @foreach ($show_prod as $product)
+  	            @foreach ($show_prod as $item)
   	              <tr>
-  	            	  <td>{{$product->id}}</td>
-									  <td>{{$product->prod_name}}</td>
-									  <td>{{$product->short_description}}</td>
-									  <td>{{$product->r_price}}</td>
-									  <td>{{$product->s_price}}</td>
+  	            	  <td>{{$item->id}}</td>
+									  <td>{{$item->prod_name}}</td>
+									  <td>{{$item->short_description}}</td>
+									  <td>{{$item->r_price}}</td>
+									  <td>{{$item->s_price}}</td>
 									  <td class="action-btns">
-									   <a href="/admin/pages/product/{{$product}}/edit" class="edit-btn"><i class="fas fa-edit"></i>Edit</a>
+									   <a href="/admin/pages/product/{{$item->id}}/edit" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
 									  </td>
 								  </tr>    
   	            @endforeach
