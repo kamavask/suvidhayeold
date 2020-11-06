@@ -90,7 +90,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $prod = Product::find($product);
-        return view('admin.pages.category.edit_product', ['data' =>$data]);
+        return view('admin.pages.category.edit_product', ['data' =>$prod]);
     }
 
     /**
