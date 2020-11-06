@@ -256,8 +256,8 @@
                 </div>
 
  --}}
-@foreach ($collection as $item)
+@foreach ($data as $item)
     
-{{$data->prod_name}}
+{{$item->prod_name}}
 @endforeach
 @endsection 
