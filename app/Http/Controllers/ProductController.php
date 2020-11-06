@@ -91,7 +91,7 @@ class ProductController extends Controller
     {
         $prod = $product;
         /* $prod = Product::where('id', '1')->first(); */
-         return view('admin.pages.product.edit_product')->with('data' , $prod);
+         return view('admin.pages.product.edit_product')->with('prod' , $prod);
     }
 
     /**
