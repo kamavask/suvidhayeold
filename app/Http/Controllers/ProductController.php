@@ -89,7 +89,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        $prod = Product::/* find($product) */where('id', $product)->first();
+        $prod = Product::where('id', $product)->first();
         /* return view('admin.pages.product.edit_product')->with('data' , $prod); */
         dd($prod);
     }
