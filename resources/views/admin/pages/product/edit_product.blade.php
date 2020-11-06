@@ -1,34 +1,30 @@
-@extends('admin.layout.app')
+{{-- @extends('admin.layout.app')
 @section('content')
-
-
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="container-fluid">
-                    <h2 class="mt-30 page-title">Products</h2>
-                    <ol class="breadcrumb mb-30">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="products.html">Products</a></li>
-                        <li class="breadcrumb-item active">Edit Product</li>
-                    </ol>
-                     <form method="POST" action="/edit">
-                                @csrf
-                                <input type="hidden" name="_method" value="PATCH" />
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="card card-static-2 mb-30">
-                                <div class="card-title-1">
-                                    <h4>Edit New Product</h4>
-                                </div>
-                                <div class="card-body-table">
-                                    <div class="news-content-right pd-20">
-                                        <h3 style="text-decoration: underline;">Product Basic Details</h3>
-                                        <div class="row" style="margin-bottom:1%">
-                                            <div class="col-sm-8">
-                                                <div class="form-group">
-                                                    <label class="form-label"><b>Product Name</b></label>
+ --}}    {{-- <div class="container-fluid">
+        <h2 class="mt-30 page-title">Products</h2>
+        <ol class="breadcrumb mb-30">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+            <li class="breadcrumb-item active">Edit Product</li>
+        </ol>
+        <form method="POST" action="/edit">
+            @csrf
+            <input type="hidden" name="_method" value="PATCH" />
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="card card-static-2 mb-30">
+                        <div class="card-title-1">
+                          <h4>Edit New Product</h4>
+                        </div>
+                        <div class="card-body-table">
+                            <div class="news-content-right pd-20">
+                                <h3 style="text-decoration: underline;">Product Basic Details</h3>
+                                    <div class="row" style="margin-bottom:1%">
+                                        <div class="col-sm-8">
+                                            <div class="form-group">
+                                                <label class="form-label"><b>Product Name</b></label>
                                                 <input type="text" class="form-control" placeholder="Add Product Name" name="prod_name" value="{{prod->prod_name}}">
-                                                </div>
+                                            </div>
                                             </div>
                                             <div class="col-sm-1">
                                                 <!-- Default checked -->
@@ -258,9 +254,11 @@
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
-      
 
+ --}}
+   
+@php
+    dd($data);
+@endphp
 
-@endsection 
+{{-- @endsection  --}}
