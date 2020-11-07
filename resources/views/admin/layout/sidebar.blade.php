@@ -15,7 +15,7 @@
                     <div class="collapse" id="collapseProducts" aria-labelledby="headingOne"
                         data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link sub_nav_link" href="show_employee">All Products</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/product">All Products</a>
                             <a class="nav-link sub_nav_link" href="add_employee">Add Product</a>
                             <a class="nav-link sub_nav_link" href="edit_employee">Edit</a>
                             <a class="nav-link sub_nav_link" href="delete_employee">Delete Product</a>
