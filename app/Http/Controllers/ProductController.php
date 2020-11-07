@@ -44,18 +44,18 @@ class ProductController extends Controller
         /* $prod->image_id = $request->image_id;  */
         $prod->highlight = $request->highlight;
         $prod->short_description = $request->short_desc; 
-        /* $prod->specification = $request->specification;  */
+        $prod->specification = $request->specification;
         $prod->brand = $request->brand;
         $prod->weight = $request->weight; 
         /* $prod->size = $request->size; */ 
         /* $prod->dimensions = $request->dimensions; */
-        /* $prod->category_id = $request->cat_id; */
+        $prod->category_id = $request->cat_id;
         /* $prod->variant_id = $request->variant_id;  */
         $prod->r_price = $request->r_price;
         $prod->s_price = $request->s_price; 
         /* $prod->tax_id = $request->tax_id; */
         /* $prod->shipping_id = $request->shipping_id;  */ 
-        $prod->sku = $request->sku;
+        //$prod->sku = $request->sku;
         $prod->stock = $request->stock;
         $prod->stock_alert = $request->stock_alert; 
         $prod->backorder = $request->backorder;
@@ -63,9 +63,7 @@ class ProductController extends Controller
         $prod->tags = $request->tags;
         $prod->save();
 
-        $product = $prod;  
-
-        return view('admin.pages.product.add_product') ->with('product', $product) ;
+        return view('admin.pages.product.add_product');
   }
 
     /**
@@ -89,8 +87,9 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        $prod = Product::find($id);
-        return view('admin.pages.category.edit_product', ['data' =>$data]);
+        $prod = $product;
+        /* $prod = Product::where('id', '1')->first(); */
+         return view('admin.pages.product.edit_product')->with('prod' , $prod);
     }
 
     /**
