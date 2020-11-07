@@ -202,9 +202,14 @@
                         title="Categories"><i class="uil uil-apps"></i></a>
                 </div>
                 <div class="header_cart order-1">
-                    <a class="cart__btn hover-btn pull-bs-canvas-left" href="{{route('cart')}}" title="Cart">
-                        <i class="uil uil-shopping-cart-alt"></i><span>Cart</span><ins>2</ins>
-                        <i class="uil uil-angle-down"></i></a>
+                    {{-- <a class="cart__btn hover-btn pull-bs-canvas-left" href="{{route('cart')}}" title="Cart"> --}}
+                        <i class="uil uil-shopping-cart-alt"></i>
+                            <span>
+                                Cart
+                            </span>
+                            <ins>2</ins>
+                        <i class="uil uil-angle-down"></i>
+                    {{-- </a> --}}
                 </div>
                 <div class="search__icon order-1">
                     <a href="#" class="search__btn hover-btn" data-toggle="modal" data-target="#search_model"
