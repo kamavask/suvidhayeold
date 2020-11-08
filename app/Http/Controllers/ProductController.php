@@ -101,7 +101,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $data = Product::find($req->id);
+        $prod = Product::find($req->id);
         $prod->prod_name = $request->get('prod_name');
         $prod->virtual = $request->get('virtual');
         $prod->downloadable = $request->get('downloadable');
