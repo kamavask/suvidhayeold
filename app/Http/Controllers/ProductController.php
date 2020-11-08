@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
-use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductController extends Controller
 {
@@ -15,8 +15,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $show_prod = Product::paginate(20);
-        return view('admin.pages.product.show_product')->with('show_prod', $show_prod);
+        $show_prod = Product::Paginate(20);
+        return view('admin.pages.product.show_product' )->with('show_prod', $show_prod );
     }
 
     /**
