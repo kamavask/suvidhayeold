@@ -19,9 +19,9 @@ class CreateProductsTable extends Migration
             $table->string('prod_name')->nullable()->unique();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->string('brand')->nullable();
-            $table->string('highlight')->nullable();
-            $table->string('short_description')->nullable();
-            $table->string('specification')->nullable();
+            $table->mediumText('highlight')->nullable();
+            $table->mediumText('short_description')->nullable();
+            $table->longText('specification')->nullable();
             $table->unsignedBigInteger('image_id')->nullable();
             $table->string('dimensions')->nullable();
             $table->string('weight')->nullable();
