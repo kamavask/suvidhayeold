@@ -101,7 +101,33 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-       /*  $this->validate($request, [
+        $data = Product::find($req->id);
+        $prod->prod_name = $request->get('prod_name');
+        $prod->virtual = $request->get('virtual');
+        $prod->downloadable = $request->get('downloadable');
+        $prod->image_id = $request->get('image_id');
+        $prod->highlight = $request->get('highlight');
+        $prod->short_description = $request->get('short_desc');
+        $prod->specification = $request->get('specification');
+        $prod->brand = $request->get('brand');
+        $prod->weight = $request->get('weight');
+        $prod->size = $request->get('size');
+        $prod->dimensions = $request->get('dimensions');
+        $prod->category_id = $request->get('cat_id');
+        $prod->variant_id = $request->get('variant_id');
+        $prod->r_price = $request->get('r_price');
+        $prod->s_price = $request->get('s_price');
+        $prod->tax_id = $request->get('tax_id');
+        $prod->shipping_id = $request->get('shipping_id');
+        $prod->sku = $request->get('sku');
+        $prod->stock = $request->get('stock');
+        $prod->stock_alert = $request->get('stock_alert');
+        $prod->backorder = $request->get('backorder');
+        $prod->bulk_order_no = $request->get('bulk_no');
+        $prod->tags = $request->get('tags');
+        $prod->save();
+        return redirect()->route('admin.pages.product.add_product')->with('success', 'Data Updated');
+      /*  $this->validate($request, [
             'prod_name' => 'required',
             'virtual' => 'required',
             'downloadable' => 'required',
@@ -152,6 +178,7 @@ class ProductController extends Controller
         $prod->tags = $request->get('tags');
         $prod->save();
         return redirect()->route('admin.pages.product.add_product')->with('success', 'Data Updated'); */
+
     }
 
     /**
