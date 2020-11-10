@@ -19,9 +19,9 @@ class CreateProductsTable extends Migration
             $table->string('prod_name')->nullable()->unique();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->string('brand')->nullable();
-            $table->string('highlight')->nullable();
-            $table->string('short_description')->nullable();
-            $table->string('specification')->nullable();
+            $table->mediumText('highlight')->nullable();
+            $table->longText('short_description')->nullable();
+            $table->longText('specification')->nullable();
             $table->unsignedBigInteger('image_id')->nullable();
             $table->string('dimensions')->nullable();
             $table->string('weight')->nullable();
@@ -38,7 +38,7 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('tax_id')->nullable();
             $table->unsignedBigInteger('shipping_id')->nullable();
             $table->integer('bulk_order_no')->nullable();
-            $table->string('tags')->nullable();
+            $table->longText('tags')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('image_id')->references('id')->on('product_images');
