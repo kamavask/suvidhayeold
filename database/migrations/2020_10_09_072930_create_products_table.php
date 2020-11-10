@@ -38,7 +38,7 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('tax_id')->nullable();
             $table->unsignedBigInteger('shipping_id')->nullable();
             $table->integer('bulk_order_no')->nullable();
-            $table->string('tags')->nullable();
+            $table->longText('tags')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('image_id')->references('id')->on('product_images');
