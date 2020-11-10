@@ -13,6 +13,8 @@ class ShoppingCart extends Model
         'id', 'user_id', 'product_id'
     ];
 
+    protected $table = 'shopping_cart';
+
     public function product()
     {
         return $this->belongsToMany('App\Models\Product');
