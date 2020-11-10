@@ -20,7 +20,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
-                    @foreach($cartitem as $item) $count++; @endforeach <h3>{{$count}} items in the cart</h3>
+                    @foreach($cartitem as $item)
+                    $count++;
+                    @endforeach
+                    <h3>{{$count}} items in the cart</h3>
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Order Summary</h4>
