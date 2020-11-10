@@ -20,49 +20,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
-                    @for($i=1;$i<=$cartitem;$i++) $count++; @endfor <h3>{{$count}} items in the cart</h3>
-                        <div class="pdpt-bg mt-0">
-                            <div class="pdpt-title">
-                                <h4>Order Summary</h4>
-                            </div>
-                            <div class="right-cart-dt-body">
-                                @foreach($cartitem as $item)
-                                <div class="cart-product-img">
-                                    <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
-                                        <img src="images/product/img-11.jpg" alt="">
-                                        <div style="text-align: center; padding-top: 10px;">
-                                            <div class="quantity buttons_added">
-                                                <input type="button" value="-" class="minus minus-btn">
-                                                <input type="number" step="1" name="quantity" value="1"
-                                                    class="input-text qty text">
-                                                <input type="button" value="+" class="plus plus-btn">
-                                                <button
-                                                    style="border: none; background: none; margin-left: 30px;padding: 10px; font-size: 16px; ">Save
-                                                    For Later</button>
+                    @foreach($cartitem as $item) $count++; @endforeach <h3>{{$count}} items in the cart</h3>
+                    <div class="pdpt-bg mt-0">
+                        <div class="pdpt-title">
+                            <h4>Order Summary</h4>
+                        </div>
+                        <div class="right-cart-dt-body">
+                            @foreach($cartitem as $item)
+                            <div class="cart-product-img">
+                                <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
+                                    <img src="images/product/img-11.jpg" alt="">
+                                    <div style="text-align: center; padding-top: 10px;">
+                                        <div class="quantity buttons_added">
+                                            <input type="button" value="-" class="minus minus-btn">
+                                            <input type="number" step="1" name="quantity" value="1"
+                                                class="input-text qty text">
+                                            <input type="button" value="+" class="plus plus-btn">
+                                            <button
+                                                style="border: none; background: none; margin-left: 30px;padding: 10px; font-size: 16px; ">Save
+                                                For Later</button>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-text">
-                                        <h2>{{$item->prod_name}}</h2>
-                                        <button type="button" class="cart-close-btn"><i
-                                                class="uil uil-multiply"></i></button>
-                                        <div class="cart-item-price">
-
-                                            <div class="cart-item-price">{{$item->s_price}}
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach
-                            </div>
+                                <div class="cart-text">
+                                    <h2>{{$item->prod_name}}</h2>
+                                    <button type="button" class="cart-close-btn"><i
+                                            class="uil uil-multiply"></i></button>
+                                    <div class="cart-item-price">
 
+                                        <div class="cart-item-price">{{$item->s_price}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
                         </div>
-                        {{-- <div>
+
+                    </div>
+                    {{-- <div>
                         @foreach($cartitem as $item)
                         <a href="{{route('product'),$item->product_id}}">{{$item->prod_name}}</a>
-                        <br>
-                        @endforeach
+                    <br>
+                    @endforeach
                 </div>
             </div> --}}
             {{-- <div class="col-lg-4 col-md-5">
