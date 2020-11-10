@@ -104,7 +104,9 @@
             {{-- @else
                 <h3>No items in the cart !</h3>
                 @endif --}}
+
         </div>
+        <a href="">BUY NOW</a>
     </div>
 </div>
 </div>
