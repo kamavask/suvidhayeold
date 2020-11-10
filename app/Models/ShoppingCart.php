@@ -9,11 +9,12 @@ class ShoppingCart extends Model
 {
     use HasFactory;
 
+    protected $table = 'shopping_cart';
+
     protected $fillable = [
         'id', 'user_id', 'product_id'
     ];
 
-    protected $table = 'shopping_cart';
 
     public function product()
     {
