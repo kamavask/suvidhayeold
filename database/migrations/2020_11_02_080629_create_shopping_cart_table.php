@@ -30,6 +30,6 @@ class CreateShoppingCartTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shopping_carts');
+        Schema::dropIfExists('shopping_cart');
     }
 }
