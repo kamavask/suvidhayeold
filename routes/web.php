@@ -33,6 +33,11 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', [StoreController::class, 'homepage'])->name('home');
 
+Route::get('/admin_homepage', [StoreController::class, 'homepage'])->name('home');
+
+Route::get('/user_homepage', [StoreController::class, 'homepage'])->name('home');
+
+
 /* Route::get('/emails', function () {
     Mail::to('kgmavask@gmail.com')->send(new WelcomeMail());
     return "Mail sent successfully";
@@ -43,6 +48,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageControll
 Route::get('/home', function () {
     return redirect('/');
 });
+
+
 
 Route::middleware(['auth:sanctum', 'verified', 'can:access-dashboard'])->get('/old-dashboard', function () {
     return view('dashboard');

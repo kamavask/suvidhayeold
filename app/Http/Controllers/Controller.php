@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -34,6 +35,28 @@ class Controller extends BaseController
         return view('search-test');
     }
 
-    
+    public function handle($request, Closure $next, $guard = null)
+    {
+        if (Auth::guard($guard)->check()) {
+            $role = Auth::user()->role;
+
+            switch ($role) {
+                case 'admin':
+                    return redirect('/admin_homepage');
+                    break;
+                case 'customer':
+                    return redirect('/user_homepage');
+                    break;
+
+                default:
+                    return redirect('/user_homepage');
+                    break;
+            }
+        }
+        return $next($request);
+    }
 
 }
+
+
+
