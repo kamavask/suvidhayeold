@@ -22,12 +22,6 @@ class StoreController extends Controller
         return view('store.pages.homepage')->with('featured',  $flag);
     }
 
-    public function user_homepage()
-    {
-       
-        return view('store.pages.user_homepage');
-    }
-
     public function single_product()
     {
         return view('store.pages.single_product');

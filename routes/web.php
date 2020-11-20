@@ -31,11 +31,11 @@ use Illuminate\Support\Facades\Mail;
     return view('store.pages.homepage');
 }); */
 
-Route::get('/', [StoreController::class, 'homepage'])->name('home');
+Route::get('/', [StoreController::class, 'user_homepage'])->name('home');
 
 Route::get('/homepage', [StoreController::class, 'homepage'])->name('home');
 
-Route::get('/user_homepage', [StoreController::class, 'user_homepage'])->name('home');
+/* Route::get('/user_homepage', [StoreController::class, 'user_homepage'])->name('home'); */
 
 
 /* Route::get('/emails', function () {
