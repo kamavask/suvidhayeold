@@ -35,7 +35,7 @@ Route::get('/', [StoreController::class, 'homepage'])->name('home');
 
 Route::get('/admin_homepage', [StoreController::class, 'homepage'])->name('home');
 
-Route::get('/user_homepage', [StoreController::class, 'homepage'])->name('home');
+Route::get('/user_homepage', [StoreController::class, 'user_homepage'])->name('home');
 
 
 /* Route::get('/emails', function () {
