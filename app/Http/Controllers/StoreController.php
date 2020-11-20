@@ -16,7 +16,7 @@ class StoreController extends Controller
         return view('store.pages.all_services');
     }
 
-    public function admin_homepage()
+    public function homepage()
     {
         $flag = flag::find(1)->Product;
         return view('store.pages.homepage')->with('featured',  $flag);

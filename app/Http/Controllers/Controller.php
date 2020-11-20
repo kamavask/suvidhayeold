@@ -42,7 +42,7 @@ class Controller extends BaseController
 
             switch ($role) {
                 case 'admin':
-                    return redirect('/admin_homepage');
+                    return redirect('/homepage');
                     break;
                 case 'customer':
                     return redirect('/user_homepage');
