@@ -5,7 +5,7 @@
 			<div class="blog-inner">
 				<div class="container">
             <div class="cart-product-img" >
-              <img src="images/product/img-11.jpg" alt="" style="margin-left: 525px">
+              <img src="store/images/logo/faicon.png" alt="" style="margin-left: 525px">
             </div>
             <br>
 					<div class="row">
