@@ -1,4 +1,4 @@
-@extends('customer.layout.app')
+@extends('store.layout.app')
 @section('content')
   <div class="wrapper">
 		<div class="blog-dt-vw banner-blog banner.visible parallax">
