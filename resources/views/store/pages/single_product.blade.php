@@ -24,35 +24,43 @@
 						<div class="product-dt-view">
 							<div class="row">
 								<div class="col-lg-4 col-md-4">
-									<div id="sync1" class="owl-carousel owl-theme">
-										<div class="item">
-											<img src="store/images/product/big-1.jpg" alt="">
-										</div>
-										<div class="item">
-											<img src="store/images/product/big-2.jpg" alt="">
-										</div>
-										<div class="item">
-											<img src="store/images/product/big-3.jpg" alt="">
-										</div>
-										<div class="item">
-											<img src="store/images/product/big-4.jpg" alt="">
-										</div>
-									</div>
-									<div id="sync2" class="owl-carousel owl-theme">
-										<div class="item">
-											<img src="store/images/product/big-1.jpg" alt="">
-										</div>
-										<div class="item">
-											<img src="store/images/product/big-2.jpg" alt="">
-										</div>
-										<div class="item">
-											<img src="store/images/product/big-3.jpg" alt="">
-										</div>
-										<div class="item">
-											<img src="store/images/product/big-4.jpg" alt="">
-										</div>
-									</div>
-								</div>
+                                    <div id="sync1" class="owl-carousel owl-theme owl-loaded owl-drag">
+                                        
+                                        
+                                        
+                                        
+                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-700px, 0px, 0px); transition: all 0s ease 0s; width: 2800px;"><div class="owl-item cloned" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-3.jpg" alt="">
+                                        </div></div><div class="owl-item cloned" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-4.jpg" alt="">
+                                        </div></div><div class="owl-item active" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-1.jpg" alt="">
+                                        </div></div><div class="owl-item" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-2.jpg" alt="">
+                                        </div></div><div class="owl-item" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-3.jpg" alt="">
+                                        </div></div><div class="owl-item" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-4.jpg" alt="">
+                                        </div></div><div class="owl-item cloned" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-1.jpg" alt="">
+                                        </div></div><div class="owl-item cloned" style="width: 350px;"><div class="item">
+                                            <img src="images/product/big-2.jpg" alt="">
+                                        </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="uil uil-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="uil uil-angle-right"></i></button></div><div class="owl-dots disabled"></div></div>
+                                    <div id="sync2" class="owl-carousel owl-theme owl-loaded owl-drag">
+                                        
+                                        
+                                        
+                                        
+                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 350px;"><div class="owl-item active current" style="width: 87.5px;"><div class="item">
+                                            <img src="images/product/big-1.jpg" alt="">
+                                        </div></div><div class="owl-item active" style="width: 87.5px;"><div class="item">
+                                            <img src="images/product/big-2.jpg" alt="">
+                                        </div></div><div class="owl-item active" style="width: 87.5px;"><div class="item">
+                                            <img src="images/product/big-3.jpg" alt="">
+                                        </div></div><div class="owl-item active" style="width: 87.5px;"><div class="item">
+                                            <img src="images/product/big-4.jpg" alt="">
+                                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">←</span></button><button type="button" role="presentation" class="owl-next disabled"><span aria-label="Next">→</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+                                </div>
 								<div class="col-lg-8 col-md-8">
 									<div class="product-dt-right">
 										<h2>Grape Fruit Turkey</h2>
