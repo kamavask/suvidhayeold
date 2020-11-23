@@ -69,8 +69,7 @@ Route::prefix('/admin/pages')->name('admin.pages.')
         ]);
     });
 
-Route::prefix('/customer/pages')->name('customer.pages.')
-    ->middleware('auth:sanctum', 'verified')
+Route::
     ->group(function () {
         Route::resources([
             'product' => ProductController::class,
@@ -95,7 +94,9 @@ Route::resources([
     'product' => ProductController::class,
     'category' => CategoryController::class,
     //'cart' => CartController::class,
-])->only(['show']);
+])->except([
+    'create', 'store', 'update', 'destroy'
+]);
 
 /* Route::resource('cart', CartController::class)->names([
     'cart' => 'cart.index'
