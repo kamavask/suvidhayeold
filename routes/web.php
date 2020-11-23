@@ -69,7 +69,8 @@ Route::prefix('/admin/pages')->name('admin.pages.')
         ]);
     });
 
-Route::
+Route::prefix('/customer/pages')->name('customer.pages.')
+    ->middleware('auth:sanctum', 'verified')
     ->group(function () {
         Route::resources([
             'product' => ProductController::class,
