@@ -239,8 +239,8 @@
                   <div class="pdpt-body scrollstyle_4">
                       <div class="pdct-dts-1">
                           <div class="pdct-dt-step">
-                              <h4>Description</h4>
-                              <p></p>
+                              <h4>Specification</h4>
+                              <p>{{$product->specification}}</p>
                           </div>
                       </div>
                   </div>
