@@ -75,8 +75,11 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         $prod = $product;
-        return view('store.pages.single_product')
-            ->with('product', $prod);
+        $secification = $prod->secification ;
+        //$secification_final = Str::of($secification)->explode(' ');
+        /* return view('store.pages.single_product')
+            ->with('product', $prod)->with('secification', $secification); */
+            dd($secification);
     }
 
     /**
