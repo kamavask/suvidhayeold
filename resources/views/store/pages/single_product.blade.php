@@ -55,36 +55,24 @@
                 </div>
 								<div class="col-lg-8 col-md-8">
 									<div class="product-dt-right">
-										<h2>Grape Fruit Turkey</h2>
+										<h2>{{$product->prod_name}}</h2>
 										<div class="no-stock">
-											<p class="pd-no">Product No.<span>12345</span></p>
+											<p class="pd-no">Product No.<span>{{$product->id}}</span></p>
 											<p class="stock-qty">Available<span>(Instock)</span></p>
 										</div>
 										<div class="product-radio">
 											<ul class="product-now">
 												<li>
 													<input type="radio" id="p1" name="product1">
-													<label for="p1">500g</label>
-												</li>
-												<li>
-													<input type="radio" id="p2" name="product1">
-													<label for="p2">1kg</label>
-												</li>
-												<li>
-													<input type="radio" id="p3" name="product1">
-													<label for="p3">2kg</label>
-												</li>
-												<li>
-													<input type="radio" id="p4" name="product1">
-													<label for="p4">3kg</label>
+													<label for="p1">{{$product->weight}}</label>
 												</li>
 											</ul>
 										</div>
-										<p class="pp-descp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate, purus at tempor blandit, nulla felis dictum eros, sed volutpat odio sapien id lectus. Cras mollis massa ac congue posuere. Fusce viverra mauris vel magna pretium aliquet. Nunc tincidunt, velit id tempus tristique, velit dolor hendrerit nibh, at scelerisque neque mauris sed ex.</p>
+										<p class="pp-descp">{{$product->short_description}}</p>
 										<div class="product-group-dt">
 											<ul>
-												<li><div class="main-price color-discount">Discount Price<span>$15</span></div></li>
-												<li><div class="main-price mrp-price">MRP Price<span>$18</span></div></li>
+												<li><div class="main-price color-discount">Discount Price<span>Rs. {{$product->s_price}}</span></div></li>
+												<li><div class="main-price mrp-price">MRP Price<span>Rs. {{$product->r_price}}</span></div></li>
 											</ul>
 											<ul class="gty-wish-share">
 												<li>
