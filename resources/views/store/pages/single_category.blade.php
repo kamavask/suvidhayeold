@@ -17,8 +17,8 @@
 
 @extends('store.layout.app')
 @section('content')
-  <div class="wrapper">
+
       @foreach($category as $cat)
       <h1>{{$cat->category_name}}</h1>
-  </div>  
+ 
 @endsection
