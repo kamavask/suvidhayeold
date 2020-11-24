@@ -90,6 +90,7 @@ Route::prefix('/customer/pages')->name('customer.pages.')
     Route::resource('/users', UsersController::class)->except(['show', 'create', 'store']);
 }); */
 
+Route::resource('product', ProductController::class)->only(['show']);
 
 Route::resources([
     'product' => ProductController::class,
