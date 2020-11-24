@@ -1,7 +1,7 @@
 @extends('store.layout.app')
 @section('content')
 
-  	<div class="wrapper">
+  <div class="wrapper">
 		<div class="gambo-Breadcrumb">
 			<div class="container">
 				<div class="row">
@@ -47,7 +47,7 @@
 				<div class="product-list-view">
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
-						 <div class="product-item mb-30">
+						 <div class="owl-carousel featured-slider owl-theme ">
                         @foreach ($featured as $item)
                         <div class="item ">
                             <div class="product-item ">
@@ -376,8 +376,8 @@
 							<div class="more-product-btn">
 								<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
 							</div>
-						</div> 
-					</div>--}}
+						</div> --}}
+					</div>
 				</div>
 			</div>
 		</div>
