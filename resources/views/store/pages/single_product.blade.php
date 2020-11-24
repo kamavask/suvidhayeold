@@ -240,7 +240,7 @@
                       <div class="pdct-dts-1">
                           <div class="pdct-dt-step">
                               <h4>Specification</h4>
-                              <p>{{$product->specification}}</p>
+                              <p>{{$secification->specification}}</p>
                           </div>
                       </div>
                   </div>
