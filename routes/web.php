@@ -89,6 +89,7 @@ Route::prefix('/customer/pages')->name('customer.pages.')
 /* Route::prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function () {
     Route::resource('/users', UsersController::class)->except(['show', 'create', 'store']);
 }); */
+Route::resource('category', CategoryController::class)->only(['show']);
 
 Route::resource('product', ProductController::class)->only(['show']);
 
@@ -166,7 +167,3 @@ Route::get('/edit', 'ProductController@edit');
 
 Route::post('/edit', 'ProductController@update');
 
-/* CATEGORY ROUTE START */
-Route::get('/show_category', [CategoryController::class, 'show_category']);
-
-/* CATEGORY ROUTE END */
