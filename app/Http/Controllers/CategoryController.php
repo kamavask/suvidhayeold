@@ -55,10 +55,10 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(/* Category $category */)
+    public function show(Category $category)
     {
-        $cat = Category::all();
-        return view('admin.pages.category.show_category', compact('$cat'));
+        $cat = Category::where('category', $category);
+        return view('admin.pages.category.show_category')->with('$cat');
     }
 
     /**
