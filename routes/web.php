@@ -165,3 +165,8 @@ Route::get('search', [SearchController::class, 'search']);
 Route::get('/edit', 'ProductController@edit');
 
 Route::post('/edit', 'ProductController@update');
+
+/* CATEGORY ROUTE START */
+Route::get('/show_category', [CategoryController::class, 'show_category']);
+
+/* CATEGORY ROUTE END */
