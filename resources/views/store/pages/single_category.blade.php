@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,4 +13,12 @@
   <h1>{{$cat->category_name}}</h1>
 </body>
 
-</html>
+</html> --}}
+
+@extends('store.layout.app')
+@section('content')
+  <div class="wrapper">
+      @foreach($category as $cat)
+      <h1>{{$cat->category_name}}</h1>
+  </div>  
+@endsection
