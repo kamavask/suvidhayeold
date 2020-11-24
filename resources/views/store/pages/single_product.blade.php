@@ -246,7 +246,7 @@
                                   $Specification_final = explode('/', $Specification);
 
                                   for ($i=0; $i <count($Specification_final); $i++) { 
-                                     echo "$Specification_final[$i]";
+                                     echo "$Specification_final[$i]<br>";
                                   }
                                                 
 
