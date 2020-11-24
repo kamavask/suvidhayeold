@@ -48,7 +48,7 @@
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
 						 <div class="owl-carousel featured-slider owl-theme ">
-                        @foreach ($featured as $item)
+                        @foreach ($category as $item)
                         <div class="item ">
                             <div class="product-item ">
                                 <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html "
