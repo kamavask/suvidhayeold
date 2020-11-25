@@ -1,7 +1,7 @@
 @extends('store.layout.app')
 @section('content')
 
-  <div class="wrapper">
+	<div class="wrapper">
 		<div class="gambo-Breadcrumb">
 			<div class="container">
 				<div class="row">
@@ -47,68 +47,30 @@
 				<div class="product-list-view">
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
-						 <div class="owl-carousel featured-slider owl-theme ">
-                        @foreach ($category as $item)
-                        <div class="item ">
-                            <div class="product-item ">
-                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html "
-                                    class="product-img ">
-                                    <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
-                                    <div class="product-absolute-options ">
-                                        <span class="offer-badge-1">
-                                            @php
-                                            $r_price = $item->r_price;
-                                            $s_price = $item->s_price;
-                                            $subtranct = $r_price - $s_price;
-                                            $multi = 100;
-                                            $percent = ( $subtranct / $r_price ) * $multi;
-                                            echo $percent . " %";
-                                            @endphp
-                                        </span>
-                                        <span class="like-icon " title="wishlist "></span>
-                                    </div>
-                                {{-- </a> --}}
-                                <div class="product-text-dt ">
-                                    <p>Available<span>(In Stock)</span></p>
-                                    <h4 class="title_name">{{$item->prod_name}}</h4>
-                                    @if($item->s_price = $item->r_price)
-                                    <div class="product-price ">₹ {{$item->s_price}}</div>
-                                    @else
-                                    <div class="product-price ">₹ {{$item->s_price}}<span>₹ {{$item->r_price}}</span>
-                                    </div>
-                                    @endif
-                                    <div class="qty-cart ">
-                                        <div class="quantity buttons_added ">
-                                            <input type="button " value="- " class="minus minus-btn ">
-                                            <input type="number " step="1 " name="quantity " value="1 "
-                                                class="input-text qty text ">
-                                            <input type="button " value="+ " class="plus plus-btn ">
-                                        </div>
-                                        <div class="cart-icon-div ">
-                                            <form action="{{route('customer.pages.cart.store')}}" method="POST">
-                                                {{ csrf_field() }}
-                                                <input type="hidden" name="prod_id" value="{{$item->id}}">
-                                                {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
-                                                {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
-                                                --}}
-                                                {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                --}}
-                                                <button class="cart-btn-short ">
-                                                    <span class="cart-icon ">
-                                                        <i class="uil uil-shopping-cart-alt "></i>
-                                                    </span>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
+							<div class="product-item mb-30">
+								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
+									<img src="images/product/img-1.jpg" alt="">
+									<div class="product-absolute-options">
+										<span class="offer-badge-1">6% off</span>
+										<span class="like-icon" title="wishlist"></span>
+									</div>
+								</a>
+								<div class="product-text-dt">
+									<p>Available<span>(In Stock)</span></p>
+									<h4>Product Title Here</h4>
+									<div class="product-price">$12 <span>$15</span></div>
+									<div class="qty-cart">
+										<div class="quantity buttons_added">
+											<input type="button" value="-" class="minus minus-btn">
+											<input type="number" step="1" name="quantity" value="1" class="input-text qty text">
+											<input type="button" value="+" class="plus plus-btn">
+										</div>
+										<span class="cart-icon"><i class="uil uil-shopping-cart-alt"></i></span>
+									</div>
+								</div>
+							</div>
 						</div>
-					{{-- 	<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
 									<img src="images/product/img-2.jpg" alt="">
@@ -376,11 +338,10 @@
 							<div class="more-product-btn">
 								<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
 							</div>
-						</div> --}}
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
- 
 @endsection
