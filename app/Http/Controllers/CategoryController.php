@@ -57,7 +57,8 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        $cat = $category;
+        $cat = Category::find($category)->Product;
+        //$cat = $category;
         /* return view('store.pages.single_category')
         ->with('category', $cat); */
         return $cat;
