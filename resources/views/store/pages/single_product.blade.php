@@ -240,7 +240,17 @@
                       <div class="pdct-dts-1">
                           <div class="pdct-dt-step">
                               <h4>Specification</h4>
-                              <p>
+															@php
+                                  $Specification = $product->specification;
+                                  $Specification_final = explode('/', $Specification);
+
+                                  for ($i=0; $i <count($Specification_final); $i++) { 
+                                     echo "<p>$Specification_final[$i]</p>";
+                                  }
+                                                
+
+                               @endphp
+															{{-- <p>
 																 @php
                                   $Specification = $product->specification;
                                   $Specification_final = explode('/', $Specification);
@@ -251,7 +261,7 @@
                                                 
 
                                @endphp
-															</p>
+															</p> --}}
                           </div>
                       </div>
                   </div>
