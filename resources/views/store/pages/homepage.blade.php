@@ -255,7 +255,7 @@
                                 </a>
                                 {{-- </a> --}}
                                 <div class="product-text-dt ">
-                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html " class="product-img ">
+                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html " >
                                     <p>Available<span>(In Stock)</span></p>
                                     <h4 class="title_name">{{$item->prod_name}}</h4>
                                     @if($item->s_price = $item->r_price)
