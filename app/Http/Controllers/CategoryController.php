@@ -59,9 +59,9 @@ class CategoryController extends Controller
     {
         $cat = Category::find($category->id)->Product;
         //$cat = $category;
-        /* return view('store.pages.single_category')
-        ->with('category', $cat); */
-        return $cat;
+        return view('store.pages.single_category')
+        ->with('category', $cat);
+        //return $cat;
     }
 
     /**
