@@ -49,7 +49,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-									<img src="images/product/img-1.jpg" alt="">
+									<img src="images/avatar/img-1.jpg" alt="">
 									<div class="product-absolute-options">
 										<span class="offer-badge-1">6% off</span>
 										<span class="like-icon" title="wishlist"></span>
@@ -73,7 +73,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-									<img src="images/product/img-2.jpg" alt="">
+									<img src="images/avatar/img-2.jpg" alt="">
 									<div class="product-absolute-options">
 										<span class="offer-badge-1">2% off</span>
 										<span class="like-icon" title="wishlist"></span>
@@ -97,7 +97,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-									<img src="images/product/img-3.jpg" alt="">
+									<img src="images/avatar/img-3.jpg" alt="">
 									<div class="product-absolute-options">
 										<span class="offer-badge-1">5% off</span>
 										<span class="like-icon" title="wishlist"></span>
@@ -121,7 +121,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-									<img src="images/product/img-4.jpg" alt="">
+									<img src="images/avatar/img-4.jpg" alt="">
 									<div class="product-absolute-options">
 										<span class="offer-badge-1">3% off</span>
 										<span class="like-icon" title="wishlist"></span>
@@ -145,7 +145,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-									<img src="images/product/img-5.jpg" alt="">
+									<img src="images/avatar/img-5.jpg" alt="">
 									<div class="product-absolute-options">
 										<span class="offer-badge-1">2% off</span>
 										<span class="like-icon" title="wishlist"></span>
