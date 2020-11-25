@@ -310,8 +310,9 @@
 								</div>
 							</div>
 						</div> --}}
-						@for ($i = 0; $i <=15; $i++)
+						
 						<div class="col-lg-3 col-md-6">
+							@for ($i = 0; $i <=15; $i++)
 							<div class="product-item mb-30">
 								
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
