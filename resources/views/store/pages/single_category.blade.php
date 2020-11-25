@@ -46,10 +46,10 @@
 				</div>
 				<div class="product-list-view">
 					<div class="row">
-						@for ($i = 0; $i < 20; $i++)
+						@foreach ($category as $item)
 						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
-								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
+								<a href="" class="product-img">
 									<img src="images/product/img-12.jpg" alt="">
 									<div class="product-absolute-options">
 										<span class="offer-badge-1">2% off</span>
@@ -58,8 +58,8 @@
 								</a>
 								<div class="product-text-dt">
 									<p>Available<span>(In Stock)</span></p>
-									<h4>Product Title Here</h4>
-									<div class="product-price">$10 <span>$13</span></div>
+								<h4>{{$item->prod_name}}</h4>
+									<div class="product-price"> Rs. {{$item->s_price}} <span>Rs. {{$item->r_price}}</span></div>
 									<div class="qty-cart">
 										<div class="quantity buttons_added">
 											<input type="button" value="-" class="minus minus-btn">
@@ -71,7 +71,7 @@
 								</div>
 							</div>
 						</div>
-						@endfor
+						@endforeach
 						<div class="col-md-12">
 							<div class="more-product-btn">
 								<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
