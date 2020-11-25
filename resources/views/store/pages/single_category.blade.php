@@ -47,7 +47,7 @@
 				<div class="product-list-view">
 					<div class="row">
 						@for ($i = 0; $i < 20; $i++)
-														<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3 col-md-6">
 							<div class="product-item mb-30">
 								<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
 									<img src="images/product/img-12.jpg" alt="">
@@ -72,7 +72,6 @@
 							</div>
 						</div>
 						@endfor
-
 						<div class="col-md-12">
 							<div class="more-product-btn">
 								<button class="show-more-btn hover-btn" onclick="window.location.href = '#';">Show More</button>
