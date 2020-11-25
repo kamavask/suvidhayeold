@@ -126,7 +126,7 @@
                 <div class="col-md-12 ">
                     <div class="owl-carousel cate-slider owl-theme ">
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category/" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-1.svg " alt=" ">
                                 </div>
@@ -134,7 +134,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-2.svg " alt=" ">
                                 </div>
@@ -142,7 +142,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-3.svg " alt=" ">
                                 </div>
@@ -158,7 +158,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-5.svg " alt=" ">
                                 </div>
@@ -166,7 +166,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-6.svg " alt=" ">
                                 </div>
@@ -174,7 +174,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-7.svg " alt=" ">
                                 </div>
@@ -198,7 +198,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-10.svg " alt=" ">
                                 </div>
@@ -206,7 +206,7 @@
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="product_category" class="category-item ">
+                            <a href="category/1" class="category-item ">
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-11.svg " alt=" ">
                                 </div>
