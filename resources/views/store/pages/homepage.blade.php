@@ -237,8 +237,7 @@
                         @foreach ($featured as $item)
                         <div class="item ">
                             <div class="product-item ">
-                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html "
-                                    class="product-img ">
+                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html " class="product-img ">
                                     <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
                                     <div class="product-absolute-options ">
                                         <span class="offer-badge-1">
@@ -253,8 +252,10 @@
                                         </span>
                                         <span class="like-icon " title="wishlist "></span>
                                     </div>
+                                </a>
                                 {{-- </a> --}}
                                 <div class="product-text-dt ">
+                                <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html " class="product-img ">
                                     <p>Available<span>(In Stock)</span></p>
                                     <h4 class="title_name">{{$item->prod_name}}</h4>
                                     @if($item->s_price = $item->r_price)
@@ -263,6 +264,7 @@
                                     <div class="product-price ">₹ {{$item->s_price}}<span>₹ {{$item->r_price}}</span>
                                     </div>
                                     @endif
+                                </a>
                                     <div class="qty-cart ">
                                         <div class="quantity buttons_added ">
                                             <input type="button " value="- " class="minus minus-btn ">
@@ -288,7 +290,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                </a>
+                                
                             </div>
                         </div>
                         @endforeach
