@@ -61,7 +61,7 @@ class CategoryController extends Controller
         //$cat = $category;
         /* return view('store.pages.single_category')
         ->with('category', $cat); */
-        return $category;
+        return $category->id ;
     }
 
     /**
