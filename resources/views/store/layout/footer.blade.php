@@ -93,7 +93,7 @@
                   <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-1.svg">
                 </li>
                 <li class="financial-institutes__logo">
-                  <img alt="MasterCard" title="MasterCard" src="store/images/footer-icons/pyicon-2.svg">
+                  <img alt="MasterCard" title="MasterCard" src="images/footer-icons/pyicon-2.svg">
                 </li>
                 <li class="financial-institutes__logo">
                   <img alt="American Express" title="American Express" src="images/footer-icons/pyicon-3.svg">
