@@ -130,7 +130,7 @@
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-1.svg " alt=" ">
                                 </div>
-                                <h4 class="title_name">Vegetables & Fruits</h4>
+                                <h4 class="title_name">Vegetables</h4>
                             </a>
                         </div>
                         <div class="item ">
@@ -138,7 +138,7 @@
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-2.svg " alt=" ">
                                 </div>
-                                <h4 class="title_name"> Grocery & Staples </h4>
+                                <h4 class="title_name">Fruits</h4>
                             </a>
                         </div>
                         <div class="item ">
@@ -146,7 +146,7 @@
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-3.svg " alt=" ">
                                 </div>
-                                <h4 class="title_name"> Dairy & Eggs </h4>
+                                <h4 class="title_name">Grocery</h4>
                             </a>
                         </div>
                         <div class="item ">
@@ -154,47 +154,7 @@
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-4.svg " alt=" ">
                                 </div>
-                                <h4 class="title_name"> Beverages </h4>
-                            </a>
-                        </div>
-                        <div class="item ">
-                            <a href="category/1001" class="category-item ">
-                                <div class="cate-img ">
-                                    <img src="store/images/category/icon-5.svg " alt=" ">
-                                </div>
-                                <h4 class="title_name"> Snacks </h4>
-                            </a>
-                        </div>
-                        <div class="item ">
-                            <a href="category" class="category-item ">
-                                <div class="cate-img ">
-                                    <img src="store/images/category/icon-6.svg " alt=" ">
-                                </div>
-                                <h4 class="title_name"> Home Care </h4>
-                            </a>
-                        </div>
-                        <div class="item ">
-                            <a href="category/1001" class="category-item ">
-                                <div class="cate-img ">
-                                    <img src="store/images/category/icon-7.svg " alt=" ">
-                                </div>
-                                <h4 class="title_name"> Noodles & Sauces </h4>
-                            </a>
-                        </div>
-                        <div class="item ">
-                            <a href="product_category" class="category-item ">
-                                <div class="cate-img ">
-                                    <img src="store/images/category/icon-8.svg " alt=" ">
-                                </div>
-                                <h4 class="title_name"> Personal Care </h4>
-                            </a>
-                        </div>
-                        <div class="item ">
-                            <a href="product_category" class="category-item ">
-                                <div class="cate-img ">
-                                    <img src="store/images/category/icon-9.svg " alt=" ">
-                                </div>
-                                <h4 class="title_name"> Pet Care </h4>
+                                <h4 class="title_name">Dairy</h4>
                             </a>
                         </div>
                         <div class="item ">
@@ -202,15 +162,47 @@
                                 <div class="cate-img ">
                                     <img src="store/images/category/icon-10.svg " alt=" ">
                                 </div>
-                                <h4 class="title_name"> Meat & Seafood </h4>
+                                <h4 class="title_name">Poojan Samagri</h4>
                             </a>
                         </div>
                         <div class="item ">
-                            <a href="category/1" class="category-item ">
+                            <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/icon-11.svg " alt=" ">
+                                    <img src="store/images/category/icon-5.svg " alt=" ">
                                 </div>
-                                <h4 class="title_name"> Electronics </h4>
+                                <h4 class="title_name">Plastic Ware</h4>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <a href="category" class="category-item ">
+                                <div class="cate-img ">
+                                    <img src="store/images/category/icon-6.svg " alt=" ">
+                                </div>
+                                <h4 class="title_name">Men's Ware</h4>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <a href="category/1001" class="category-item ">
+                                <div class="cate-img ">
+                                    <img src="store/images/category/icon-7.svg " alt=" ">
+                                </div>
+                                <h4 class="title_name">Stationary</h4>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <a href="product_category" class="category-item ">
+                                <div class="cate-img ">
+                                    <img src="store/images/category/icon-8.svg " alt=" ">
+                                </div>
+                                <h4 class="title_name">Deodorants</h4>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <a href="product_category" class="category-item ">
+                                <div class="cate-img ">
+                                    <img src="store/images/category/icon-9.svg " alt=" ">
+                                </div>
+                                <h4 class="title_name">Beauty Products</h4>
                             </a>
                         </div>
                     </div>
