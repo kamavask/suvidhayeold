@@ -238,8 +238,9 @@
                                             $s_price = $item->s_price;
                                             $subtranct = $r_price - $s_price;
                                             $multi = 100;
-                                            $percent = ( $subtranct / $r_price ) * $multi;
-                                            echo $percent . " %";
+                                            $percent_cal = ( $subtranct / $r_price ) * $multi;
+                                            $numberAsString = number_format($percent_cal, 2);
+                                            echo $numberAsString . " %";
                                             @endphp
                                         </span>
                                         <span class="like-icon " title="wishlist "></span>
