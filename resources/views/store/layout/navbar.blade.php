@@ -105,13 +105,13 @@
 						</a>
 						<div class="menu dropdown_account">
 						 <div class="night_mode_switch__btn">
-                  <a href="#" id="night-mode" class="btn-night-mode">
-                    <i class="uil uil-moon"></i> Night mode
-                      <span class="btn-night-mode-switch">
-											   <span class="uk-switch-button"></span>
-                      </span>
-                  </a>
-							</div>
+                <a href="#" id="night-mode" class="btn-night-mode">
+                  <i class="uil uil-moon"></i> Night mode
+                  <span class="btn-night-mode-switch">
+                    <span class="uk-switch-button"></span>
+                  </span>
+                </a>
+              </div>
 							@auth
 							{{-- <a href="dashboard_overview" class="item channel_item"><i class="uil uil-apps icon__1"></i>Dashbaord</a> --}}
 							<a href="dashboard_my_orders" class="item channel_item"><i class="uil uil-box icon__1"></i>My Orders</a>
