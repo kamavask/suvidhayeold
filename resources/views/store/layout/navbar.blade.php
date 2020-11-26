@@ -112,6 +112,7 @@
                       </span>
                   </a>
 							</div>
+							@auth
 							{{-- <a href="dashboard_overview" class="item channel_item"><i class="uil uil-apps icon__1"></i>Dashbaord</a> --}}
 							<a href="dashboard_my_orders" class="item channel_item"><i class="uil uil-box icon__1"></i>My Orders</a>
 							{{-- <a href="dashboard_my_wishlist" class="item channel_item"><i class="uil uil-heart icon__1"></i>My
@@ -122,7 +123,7 @@
 									class="uil uil-location-point icon__1"></i>My Address</a>
 							<a href="offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
 							{{-- <a href="faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a> --}}
-							@auth
+							
 							<a href="/logout" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
 							@else
 							<a href="/login" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
