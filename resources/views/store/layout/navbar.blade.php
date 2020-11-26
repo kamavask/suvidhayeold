@@ -6,7 +6,7 @@
 			</div>
 			<div class="main_logo" id="logo">
 				<a href="/"><img src="\store\images\logo\white.png" alt=""></a></a>
-				<a href="/"><img class="logo-inverse" src="\store\images\logo\black_title.jpg" alt=""></a>
+				<a href="/"><img class="logo-inverse" src="\store\images\logo\black.png" alt=""></a>
 			</div>
 			{{-- <div class="select_location">
 					<div class="ui inline dropdown loc-title">
