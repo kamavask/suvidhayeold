@@ -2,7 +2,7 @@
 @section('content')
   <div class="wrapper">
 		<div class="blog-dt-vw banner-blog banner.visible parallax" style="background-image: url(images/banners/info_background2.jpg);">
-			<div class="blog-inner" style="background-color: none;">
+			<div class="blog-inner" style="background-color: transparent; color: black;">
 				<div class="container">
             <div class="cart-product-img" >
               <img src="store/images/logo/faicon.png" alt="" style="margin-left: 525px">
