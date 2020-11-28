@@ -9,6 +9,7 @@
         </ol>
         <form method="POST" action="/admin/pages/product/{{$prod->id}}">
             @csrf
+            @method('PUT')
             {{-- <input type="hidden" name="id" value="{{$prod->id}}"> --}}
             <div class="row">
                 <div class="col-lg-12 col-md-12">
