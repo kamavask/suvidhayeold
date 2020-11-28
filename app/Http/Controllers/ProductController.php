@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $show_prod = Product::paginate(20);
+        $show_prod = Product::Paginator(20);
         return view('admin.pages.product.show_product' )->with('show_prod', $show_prod );
     }
 
