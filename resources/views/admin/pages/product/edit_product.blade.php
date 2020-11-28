@@ -7,7 +7,7 @@
             <li class="breadcrumb-item"><a href="products.html">Products</a></li>
             <li class="breadcrumb-item active">Edit Product</li>
         </ol>
-        <form method="POST" action="/admin/pages/product/{{$prod->id}}/edit">
+        <form method="POST" action="/admin/pages/product/{{$prod->id}}">
             @csrf
             {{-- <input type="hidden" name="id" value="{{$prod->id}}"> --}}
             <div class="row">
