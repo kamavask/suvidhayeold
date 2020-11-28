@@ -103,7 +103,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $prod = Product::find($product);
+        $prod = Product::find($product->id);
         $prod->prod_name = $request->prod_name; 
         $prod->virtual = $request->virtual;
         $prod->downloadable = $request->downloadable;
@@ -128,6 +128,7 @@ class ProductController extends Controller
         $prod->bulk_order_no = $request->bulk_no;
         $prod->tags = $request->tags;
         $prod->save();
+
         return redirect()->route('admin.pages.product')
         ->with('success', 'Data Updated' );
     }
