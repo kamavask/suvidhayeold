@@ -28,7 +28,7 @@
                         <div class="right-cart-dt-body">
                             <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
                                 <div class="cart-product-img">
-                                    <img src="store/images/product/img-11.jpg" alt="">
+                                    <img src="/store/images/product/img-11.jpg" alt="">
                                     <div class="offer-badge">% OFF</div>
                                     <div style="text-align: center; padding-top: 10px;">
                                         <div class="quantity buttons_added">

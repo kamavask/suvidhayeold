@@ -12,12 +12,14 @@ class CartController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * For a route with the following URI: profile/{id}
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('store.pages.cart');
+       $user_id = Auth::user()->id;
+       return redirect()->route('customer.pages.cart.show', ['cart' => $user_id]);
+       //return redirect('/customer/pages/cart/');
     }
 
     /**
@@ -41,8 +43,8 @@ class CartController extends Controller
             'user_id' => Auth::user()->id,
             'product_id' => $request->get('prod_id'),
         ]);
-
-        return redirect()->route('home')->with('success_message', "Item is added to your cart");
+        return back()->with('success_message', "Item is added to your cart");
+        /* return redirect()->route('home')->with('success_message', "Item is added to your cart"); */
     }
 
     /**
@@ -57,8 +59,7 @@ class CartController extends Controller
         // $cartitem = ShoppingCart::where('user_id', $id)->get();
         $cartitem = User::find($id)->Product_cart;
         ($cartitem);
-        return Redirect::back()->with('cart', $cartitem);
-       /*  return view('store.pages.cart'/* , compact('cartitem') */)->with('cart', $cartitem); */
+        return view('store.pages.cart'/* , compact('cartitem') */)->with('cart', $cartitem);
 
         //$flag = flag::find(1)->Product;
         //return view('cart')->compact('cartitem');
