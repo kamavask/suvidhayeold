@@ -64,7 +64,7 @@
                         @endforeach
                         </div> --}}
             
-            {{-- <div class="col-lg-4 col-md-5">
+                <div class="col-lg-4 col-md-5">
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
                             <h4>Cart total</h4>
@@ -99,7 +99,7 @@
                         <p><i class="uil uil-check-square"></i>100% Genuine Products</p>
                         <p><i class="uil uil-shield-check"></i>Secure Payments</p>
                     </div>
-                </div> --}}
+                </div> 
             {{-- @else
                 <h3>No items in the cart !</h3>
                 @endif --}}
