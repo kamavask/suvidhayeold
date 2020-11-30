@@ -63,6 +63,7 @@
                         <br>
                         @endforeach
                         </div> --}}
+                </div>
             
                 <div class="col-lg-4 col-md-5">
                     <div class="pdpt-bg mt-0">
@@ -100,15 +101,13 @@
                         <p><i class="uil uil-shield-check"></i>Secure Payments</p>
                     </div>
                 </div> 
-            {{-- @else
+                {{-- @else
                 <h3>No items in the cart !</h3>
                 @endif --}}
-
-        
-        <a href="{{url('/order')}}">BUY NOW</a>
+                <a href="{{url('/order')}}">BUY NOW</a>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 @endsection
