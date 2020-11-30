@@ -201,7 +201,7 @@
 						class="uil uil-apps"></i></a>
 			</div>
 			<div class="header_cart order-1">
-				<a href="{{route('customer.pages.cart')}}" class="cart__btn hover-btn" title="Cart">
+				<a href="customer/pages/cart" class="cart__btn hover-btn" title="Cart">
 					<i class="uil uil-shopping-cart-alt"></i>
 						<span>Cart</span>
 						<ins>{{-- add value is customer cart contain any and how many  --}}</ins>
