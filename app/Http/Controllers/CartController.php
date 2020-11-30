@@ -18,7 +18,7 @@ class CartController extends Controller
     public function index()
     {
        $user_id = Auth::user()->id;
-       return redirect()->route('/customer/pages/cart', $user_id);
+       return redirect()->route('customer/pages/cart', $user_id);
        //return redirect('/customer/pages/cart/');
     }
 
