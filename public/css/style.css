@@ -3368,10 +3368,16 @@ label.control-label {
 
 .payment-secure {
     text-align: center;
-    padding: 20px;
     font-weight: 500;
     font-size: 14px;
     color: #2b2f4c;
+}
+
+.payment-secure-btn {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f68619;
 }
 
 .checkout-safety-alerts {

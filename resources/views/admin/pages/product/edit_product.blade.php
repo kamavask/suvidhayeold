@@ -7,9 +7,10 @@
             <li class="breadcrumb-item"><a href="products.html">Products</a></li>
             <li class="breadcrumb-item active">Edit Product</li>
         </ol>
-        <form method="POST" action="{{route('admin.pages.product.{product}/edit')}}">
+        <form method="POST" action="/admin/pages/product/{{$prod->id}}">
             @csrf
-            <input type="hidden" name="_method" value="PATCH" />
+            @method('PUT')
+            {{-- <input type="hidden" name="id" value="{{$prod->id}}"> --}}
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="card card-static-2 mb-30">
