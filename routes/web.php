@@ -72,9 +72,9 @@ Route::prefix('/admin/pages')->name('admin.pages.')
 Route::prefix('/customer/pages')->name('customer.pages.')
     ->middleware('auth:sanctum', 'verified')
     ->group(function () {
-        Route::resources([
-            'cart' => CartController::class,
-        ]);
+        Route::resource('cart', CartController::class,);
+        Route::resource('product', ProductController::class)->only(['show']);
+
     });
 
 

@@ -20,13 +20,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7">
-                    @for($i=1;$i<=$cartitem;$i++) $count++; @endfor <h3>{{$count}} items in the cart</h3>
+                    {{-- @for($i=1;$i<=$cartitem;$i++) $count++; @endfor --}} <h3>{{$count}} items in the cart</h3>
                         <div class="pdpt-bg mt-0">
                             <div class="pdpt-title">
                                 <h4>Order Summary</h4>
                             </div>
                             <div class="right-cart-dt-body">
-                                @foreach($cartitem as $item)
+                                @foreach($cart as $item)
                                 <div class="cart-product-img">
                                     <div class="cart-item border_radius" style="border-bottom: 1px solid #e5e5e5;">
                                         <img src="images/product/img-11.jpg" alt="">
@@ -36,10 +36,9 @@
                                                 <input type="number" step="1" name="quantity" value="1"
                                                     class="input-text qty text">
                                                 <input type="button" value="+" class="plus plus-btn">
-                                                <button
-                                                    style="border: none; background: none; margin-left: 30px;padding: 10px; font-size: 16px; ">Save
-                                                    For Later</button>
-
+                                                <button style="border: none; background: none; margin-left: 30px;padding: 10px; font-size: 16px; ">
+                                                    Save For Later
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

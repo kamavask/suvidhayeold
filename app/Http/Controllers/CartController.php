@@ -57,7 +57,7 @@ class CartController extends Controller
         // $cartitem = ShoppingCart::where('user_id', $id)->get();
         $cartitem = User::find($id)->Product_cart;
         ($cartitem);
-        return view('store.pages.cart', compact('cartitem'));
+        return view('store.pages.cart'/* , compact('cartitem') */)->with('cart', $cartitem);
 
         //$flag = flag::find(1)->Product;
         //return view('cart')->compact('cartitem');
