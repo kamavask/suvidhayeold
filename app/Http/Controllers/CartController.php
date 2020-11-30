@@ -12,12 +12,14 @@ class CartController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * For a route with the following URI: profile/{id}
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('store.pages.cart');
+       $user_id => Auth::user()->id;
+       return redirect()->route('/customer/pages/cart', $user_id);
+       //return redirect('/customer/pages/cart/');
     }
 
     /**

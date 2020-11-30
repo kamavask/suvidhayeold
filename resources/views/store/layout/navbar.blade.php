@@ -152,8 +152,11 @@
 						class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu"
 						id="navbarSupportedContent">
 						<ul class="navbar-nav main_nav align-self-stretch">
-							<li class="nav-item"><a href="/" class="nav-link active" title="Home">Welcome To
-									<strong>Suvidhaye</strong></a></li>
+							<li class="nav-item">
+								<a href="/" class="nav-link active" title="Home">
+									Welcome To <strong>Suvidhaye</strong>
+								</a>
+							</li>
 							{{--<li class="nav-item"><a href="shop_grid" class="nav-link new_item" title="New Products">New Products</a></li>
 								<li class="nav-item"><a href="shop_grid" class="nav-link" title="Featured Products">Featured Products</a></li>
 								<li class="nav-item">
@@ -198,7 +201,7 @@
 						class="uil uil-apps"></i></a>
 			</div>
 			<div class="header_cart order-1">
-				<a href="{{-- {!!route('customer.pages.cart',Auth::user()->id)!!} --}}" class="cart__btn hover-btn" title="Cart">
+				<a href="{{route('customer.pages.cart')}}" class="cart__btn hover-btn" title="Cart">
 					<i class="uil uil-shopping-cart-alt"></i>
 						<span>Cart</span>
 						<ins>{{-- add value is customer cart contain any and how many  --}}</ins>
