@@ -3368,9 +3368,9 @@ label.control-label {
 
 .payment-secure {
     text-align: center;
-    padding: 20px;
     font-weight: 500;
     font-size: 14px;
+    background-color: #f68619;
     color: #2b2f4c;
 }
 
