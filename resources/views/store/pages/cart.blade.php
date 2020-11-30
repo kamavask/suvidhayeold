@@ -63,7 +63,7 @@
                         <br>
                         @endforeach
                         </div> --}}
-            </div>
+            
             {{-- <div class="col-lg-4 col-md-5">
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
@@ -104,8 +104,9 @@
                 <h3>No items in the cart !</h3>
                 @endif --}}
 
-        </div>
+        
         <a href="{{url('/order')}}">BUY NOW</a>
+        </div>
     </div>
 </div>
 </div>
