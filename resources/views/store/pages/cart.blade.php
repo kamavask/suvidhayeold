@@ -62,8 +62,8 @@
                         <a href="{{route('product'),$item->product_id}}">{{$item->prod_name}}</a>
                         <br>
                         @endforeach
-                </div>
-            </div> --}}
+                        </div> --}}
+            </div>
             {{-- <div class="col-lg-4 col-md-5">
                     <div class="pdpt-bg mt-0">
                         <div class="pdpt-title">
