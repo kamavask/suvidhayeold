@@ -160,7 +160,7 @@ Route::get('/main_public_search', [SearchController::class, 'main_public_search'
 
 Route::get('search', [SearchController::class, 'search']);
 
-
+Route::get('autocomplete', [SearchController::class, 'autocomplete'])->name('autocomplete');
 /* STORE ROUTE END */
 
 Route::get('/edit', 'ProductController@edit');
