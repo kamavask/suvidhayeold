@@ -127,7 +127,7 @@
                         <div class="item ">
                             <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/grocery.jpg " alt=" ">
+                                    <img src="store/images/category/grocery.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Grocery</h4>
                             </a>
@@ -143,7 +143,7 @@
                         <div class="item ">
                             <a href="category" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/pujan.jpg " alt=" ">
+                                    <img src="store/images/category/pujan.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Poojan Samagri</h4>
                             </a>
@@ -151,7 +151,7 @@
                         <div class="item ">
                             <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/plastic.jpg " alt=" ">
+                                    <img src="store/images/category/plastic.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Plastic Ware</h4>
                             </a>
@@ -159,7 +159,7 @@
                         <div class="item ">
                             <a href="category" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/clothes.jpg " alt=" ">
+                                    <img src="store/images/category/clothes.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Clothing</h4>
                             </a>
@@ -167,7 +167,7 @@
                         <div class="item ">
                             <a href="category/1001" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/stationary.jpg " alt=" ">
+                                    <img src="store/images/category/stationary.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Stationary</h4>
                             </a>
@@ -175,7 +175,7 @@
                         <div class="item ">
                             <a href="product_category" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/perfume.jpg " alt=" ">
+                                    <img src="store/images/category/perfume.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Deodorants & Perfumes</h4>
                             </a>
@@ -183,7 +183,7 @@
                         <div class="item ">
                             <a href="product_category" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/beauty.jpg " alt=" ">
+                                    <img src="store/images/category/beauty.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Beauty Products</h4>
                             </a>
@@ -191,7 +191,7 @@
                         <div class="item ">
                             <a href="product_category" class="category-item ">
                                 <div class="cate-img ">
-                                    <img src="store/images/category/footwear.jpg " alt=" ">
+                                    <img src="store/images/category/footwear.jpg" alt=" ">
                                 </div>
                                 <h4 class="title_name">Footwear</h4>
                             </a>
