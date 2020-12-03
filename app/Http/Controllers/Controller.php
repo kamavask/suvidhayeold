@@ -64,15 +64,15 @@ class Controller extends BaseController
 
     public function selectSearch(Request $request)
     {
-        $cat = [];
+        $movies = [];
 
         if ($request->has('q')) {
             $search = $request->q;
-            $cat = Category::select("id", "name")
-            ->where('name', 'LIKE', "%$search%")
-            ->get();
+            $movies = Category::select("id", "name")
+                ->where('name', 'LIKE', "%$search%")
+                ->get();
         }
-        return response()->json($cat);
+        return response()->json($movies);
     }
 
 }
