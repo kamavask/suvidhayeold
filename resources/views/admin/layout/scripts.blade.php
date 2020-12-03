@@ -70,32 +70,26 @@
                 });
 </script>
 
-<script>
-$(document).ready(function(){
-
- $('#country_name').keyup(function(){ 
-        var query = $(this).val();
-        if(query != '')
-        {
-         var _token = $('input[name="_token"]').val();
-         $.ajax({
-          url:"{{ route('admin.pages.autocomplete.fetch') }}",
-          method:"POST",
-          data:{query:query, _token:_token},
-          success:function(data){
-           $('#categoryList').fadeIn();  
-                    $('#categoryList').html(data);
-          }
-         });
+ <script type="text/javascript">
+    $('.livesearch').select2({
+        placeholder: 'Select Category',
+        ajax: {
+            url: '/ajax-autocomplete-search',
+            dataType: 'json',
+            delay: 250,
+            processResults: function (data) {
+                return {
+                    results: $.map(data, function (item) {
+                        return {
+                            text: item.name,
+                            id: item.id
+                        }
+                    })
+                };
+            },
+            cache: true
         }
     });
-
-    $(document).on('click', 'li', function(){  
-        $('#category_name').val($(this).text());  
-        $('#countryList').fadeOut();  
-    });  
-
-});
 </script>
 
 {{-- https://www.youtube.com/watch?v=-OpcPKI7_yE --}}
