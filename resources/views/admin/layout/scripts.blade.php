@@ -63,15 +63,3 @@
 <script src="{{asset('/admin/vendor/chart/accessibility.js')}}"></script>
 <script src="{{asset('/admin/js/scripts.js')}}"></script>
 <script src="{{asset('/admin/js/chart.js')}}"></script>
-<script type="text/javascript">
-    $("#select1").select2({
-                    placeholder: "Select",
-                    allowClear: true
-                });
-</script>
-
-
-
-{{-- https://www.youtube.com/watch?v=-OpcPKI7_yE --}}
-
-{{--  --}}

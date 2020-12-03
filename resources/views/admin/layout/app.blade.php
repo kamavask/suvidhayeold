@@ -19,7 +19,7 @@
     </div>
     @include('admin.layout.scripts') 
   </body>
-   <script type="text/javascript">
+  <script type="text/javascript">
     $('.livesearch').select2({
         placeholder: 'Select Category',
         ajax: {
