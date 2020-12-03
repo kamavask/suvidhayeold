@@ -126,6 +126,7 @@ Route::get('/add_offer', [AdminPageController::class, 'add_offer']);
 Route::get('/add_order', [AdminPageController::class, 'add_order']);
 
 Route::get('/add_product2', [Controller::class, 'add_product2']);
+Route::get('/ajax-autocomplete-search', [Controller::class, 'selectSearch']);
 
 Route::get('/add_services', [AdminPageController::class, 'add_services']);
 
