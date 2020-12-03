@@ -56,7 +56,10 @@ class Controller extends BaseController
         return $next($request);
     } */
 
-
+    public function add_product2()
+    {
+        return view('admin.pages.product.add_product2');
+    }
 
 }
 
