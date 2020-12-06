@@ -65,6 +65,8 @@ class CartController extends Controller
             echo $s . "<br>";
             $item_price = $cart_item->s_price;
             $item_price += $item_price;
+        echo "<hr>";
+
             echo $item_price;
         }
         echo "<hr>";
