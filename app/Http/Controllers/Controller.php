@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -56,7 +57,23 @@ class Controller extends BaseController
         return $next($request);
     } */
 
+    public function add_product2()
+    {
+        return view('admin.pages.product.add_product2');
+    }
 
+    public function selectSearch(Request $request)
+    {
+        $movies = [];
+
+        if ($request->has('q')) {
+            $search = $request->q;
+            $movies = Category::select("id", "name")
+                ->where('name', 'LIKE', "%$search%")
+                ->get();
+        }
+        return response()->json($movies);
+    }
 
 }
 
