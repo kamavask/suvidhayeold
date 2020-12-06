@@ -61,11 +61,11 @@ class CartController extends Controller
         $cart_item_cout = $cart_item->count();
         /* ($cart_item_cout); */
         foreach ($cart_item as $cart_item) {
-            // $item_price = $cart_item->s_price;
-            $subtatal += $cart_item->s_price;
+            $item_price = $cart_item->s_price;
+            $item_price += $item_price;
         }
         
-        dd($subtatal);
+        dd($item_price);
 
 
         //return view('store.pages.cart')->with('cart', $cartitem);
