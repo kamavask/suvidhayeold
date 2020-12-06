@@ -62,6 +62,7 @@ class CartController extends Controller
         /* ($cart_item_cout); */
         foreach ($cart_item as $cart_item) {
             $item_price = $cart_item->s_price;
+            $subtatal = 0;
             $subtatal +=  $item_price;
         }
         
