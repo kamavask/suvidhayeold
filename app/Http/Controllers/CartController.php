@@ -60,7 +60,7 @@ class CartController extends Controller
         $cart_item = User::find($id)->Product_cart;
         $cart_item_cout = $cart_item->count();
         /* ($cart_item_cout); */
-        foreach ( $cart_item => $s_price as $item_price) {
+        foreach ( $cart_item->$s_price as $item_price) {
             echo $item_price;
             $subtatal +=  $item_price;
         }
