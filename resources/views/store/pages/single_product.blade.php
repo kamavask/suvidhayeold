@@ -72,7 +72,7 @@
 										<div class="product-group-dt">
 											<ul>
 												<li><div class="main-price color-discount">Discount Price<span>Rs. {{$product->s_price}}</span></div></li>
-												<li><div class="main-price mrp-price">MRP Price<span>Rs. {{$product->r_price}}</span></div></li>
+												<li><div class="main-price mrp-price">MRP<span>Rs. {{$product->r_price}}</span></div></li>
 											</ul>
 											<ul class="gty-wish-share">
 												<li>

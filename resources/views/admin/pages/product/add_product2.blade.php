@@ -36,7 +36,7 @@
     $('.livesearch').select2({
         placeholder: 'Select movie',
         ajax: {
-            url: '/ajax-autocomplete-search',
+            url: '`e-search',
             dataType: 'json',
             delay: 250,
             processResults: function (data) {
