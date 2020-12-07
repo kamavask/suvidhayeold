@@ -64,9 +64,15 @@ class CartController extends Controller
             $s = $cart_item->s_price;
             echo "this is $ s: $s ". "<br>";
             echo "<hr>";
-            
+            foreach ($s as $key) {
+                $item_price = $key;
+                $item_price += $item_price;
+                echo "<hr>";
+
+                echo "this is total :- $item_price";
+            }
         }
-        dd($item_price);
+        //dd($item_price);
 
 
         //return view('store.pages.cart')->with('cart', $cartitem);
