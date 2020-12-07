@@ -43,13 +43,13 @@
                           <img src="/storage/images/products/{{$product->prod_name}}.jpg" alt="">
                       </div>
                       <div class="item">
-                          <img src="/store/images/product/big-2.jpg" alt="">
+											<img src="/images/products/{{$product->multi_img1}}" alt="">
                       </div>
                       <div class="item">
-                          <img src="/store/images/product/big-3.jpg" alt="">
+                          <img src="/images/products/{{$product->multi_img2}}" alt="">
                       </div>
                       <div class="item">
-                          <img src="/store/images/product/big-4.jpg" alt="">
+                          <img src="/images/products/{{$product->multi_img3}}" alt="">
                       </div>
                   </div>
                 </div>
