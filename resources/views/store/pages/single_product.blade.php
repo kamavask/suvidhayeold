@@ -43,13 +43,13 @@
                           <img src="/storage/images/products/{{$product->prod_name}}.jpg" alt="">
                       </div>
                       <div class="item">
-                          <img src="/store/images/product/big-2.jpg" alt="">
+											<img src="/images/products/{{$product->multi_img1}}" alt="">
                       </div>
                       <div class="item">
-                          <img src="/store/images/product/big-3.jpg" alt="">
+                          <img src="/images/products/{{$product->multi_img2}}" alt="">
                       </div>
                       <div class="item">
-                          <img src="/store/images/product/big-4.jpg" alt="">
+                          <img src="/images/products/{{$product->multi_img3}}" alt="">
                       </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@
 										<div class="product-group-dt">
 											<ul>
 												<li><div class="main-price color-discount">Discount Price<span>Rs. {{$product->s_price}}</span></div></li>
-												<li><div class="main-price mrp-price">MRP Price<span>Rs. {{$product->r_price}}</span></div></li>
+												<li><div class="main-price mrp-price">MRP<span>Rs. {{$product->r_price}}</span></div></li>
 											</ul>
 											<ul class="gty-wish-share">
 												<li>
