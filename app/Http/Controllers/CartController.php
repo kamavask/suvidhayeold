@@ -62,10 +62,12 @@ class CartController extends Controller
         /* ($cart_item_cout); */
         foreach ($cart_item as $cart_item) {
             $s = $cart_item->s_price;
-            echo $s . "<br>";
+            echo "this is $ s: $s ". "<br>";
             $item_price = $cart_item->s_price;
-            $item_price += $item_price;
-        echo "<hr>";
+            foreach ($cart_item as $cart_item) {
+                $item_price += $item_price;
+            }
+            echo "<hr>";
 
             echo $item_price;
         }
