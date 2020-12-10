@@ -58,25 +58,10 @@ class CartController extends Controller
         //dd($id);
         // $cartitem = ShoppingCart::where('user_id', $id)->get();
         $cart_item = User::find($id)->Product_cart;
-        $cart_item_cout = $cart_item->count();
+        //$cart_item_cout = $cart_item->count();
         /* ($cart_item_cout); */
-        foreach ($cart_item as $cart_item) {
-            $s = $cart_item->s_price;
-            echo "this is $ s: $s ". "<br>";
-            echo "<hr>";
-            foreach ($s as $key) {
-                $item_price = $key;
-                $item_price += $item_price;
-                echo "<hr>";
-
-                echo "this is total :- $item_price";
-            }
-        }
         //dd($item_price);
-
-
-        //return view('store.pages.cart')->with('cart', $cartitem);
-
+        return view('store.pages.cart')->with('cart', $cartitem);
         //$flag = flag::find(1)->Product;
         //return view('cart')->compact('cartitem');
     }
