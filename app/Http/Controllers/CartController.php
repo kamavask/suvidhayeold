@@ -61,7 +61,7 @@ class CartController extends Controller
         //$cart_item_cout = $cart_item->count();
         /* ($cart_item_cout); */
         //dd($item_price);
-        return view('store.pages.cart')->with('cart', $cartitem);
+        return view('store.pages.cart')->with('cart', $cart_item);
         //$flag = flag::find(1)->Product;
         //return view('cart')->compact('cartitem');
     }
