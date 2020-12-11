@@ -254,7 +254,7 @@
                                         {{ csrf_field() }}
                                             <div class="quantity buttons_added ">
                                                 <input type="button " value="- " class="minus minus-btn ">
-                                                <input type="number " step="1" name="quantity " value="1" class="input-text qty text ">
+                                                <input type="number " step="1" name="quantity" value="1" class="input-text qty text ">
                                                 <input type="button " value="+ " class="plus plus-btn ">
                                             </div>
                                             <div class="cart-icon-div ">
