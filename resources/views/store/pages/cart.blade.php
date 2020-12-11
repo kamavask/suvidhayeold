@@ -94,7 +94,6 @@
                 {{-- @else
                 <h3>No items in the cart !</h3>
                 @endif --}}
-                <a href="{{url('/order')}}">BUY NOW</a>
             </div>
         </div>
     </div>
