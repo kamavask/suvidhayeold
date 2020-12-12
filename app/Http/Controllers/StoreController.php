@@ -21,7 +21,7 @@ class StoreController extends Controller
     {
         $flag = flag::find(1)->Product;
         $veggiesid = Category::select('id')->where('category_name', 'Vegetables')->get();
-        dd($veggiesid);
+        dd($veggiesid->id);
         /* $veggies = Category::find(1)->Product;
         return view('store.pages.user_homepage')->with('featured',  $flag); */
     }
