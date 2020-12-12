@@ -250,28 +250,27 @@
                                     @endif
                                 </a>
                                     <div class="qty-cart ">
-                                        <div class="quantity buttons_added ">
-                                            <input type="button " value="- " class="minus minus-btn ">
-                                            <input type="number " step="1 " name="quantity " value="1 "
-                                                class="input-text qty text ">
-                                            <input type="button " value="+ " class="plus plus-btn ">
-                                        </div>
-                                        <div class="cart-icon-div ">
-                                            <form action="{{route('customer.pages.cart.store')}}" method="POST">
-                                                {{ csrf_field() }}
-                                                <input type="hidden" name="prod_id" value="{{$item->id}}">
-                                                {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
-                                                {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
-                                                --}}
-                                                {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
-                                                --}}
-                                                <button class="cart-btn-short ">
-                                                    <span class="cart-icon ">
-                                                        <i class="uil uil-shopping-cart-alt "></i>
-                                                    </span>
-                                                </button>
-                                            </form>
-                                        </div>
+                                        <form action="{{route('customer.pages.cart.store')}}" method="POST">
+                                        {{ csrf_field() }}
+                                            <div class="quantity buttons_added ">
+                                                <input type="button " value="- " class="minus minus-btn ">
+                                                <input type="number " step="1" name="quantity" value="1" class="input-text qty text ">
+                                                <input type="button " value="+ " class="plus plus-btn ">
+                                            </div>
+                                            <div class="cart-icon-div ">
+                                                    <input type="hidden" name="prod_id" value="{{$item->id}}">
+                                                    {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
+                                                    {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
+                                                    --}}
+                                                    {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                                    --}}
+                                                    <button class="cart-btn-short ">
+                                                        <span class="cart-icon ">
+                                                            <i class="uil uil-shopping-cart-alt "></i>
+                                                        </span>
+                                                    </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                                 

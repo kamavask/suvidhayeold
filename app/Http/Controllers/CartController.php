@@ -42,6 +42,7 @@ class CartController extends Controller
         ShoppingCart::updateOrCreate([
             'user_id' => Auth::user()->id,
             'product_id' => $request->get('prod_id'),
+            'quantity' => $request->get('quantity'),
         ]);
         return back()->with('success_message', "Item is added to your cart");
         /* return redirect()->route('home')->with('success_message', "Item is added to your cart"); */
@@ -58,25 +59,10 @@ class CartController extends Controller
         //dd($id);
         // $cartitem = ShoppingCart::where('user_id', $id)->get();
         $cart_item = User::find($id)->Product_cart;
-        $cart_item_cout = $cart_item->count();
+        //$cart_item_cout = $cart_item->count();
         /* ($cart_item_cout); */
-        foreach ($cart_item as $cart_item) {
-            $s = $cart_item->s_price;
-            echo "this is $ s: $s ". "<br>";
-            $item_price = $cart_item->s_price;
-            foreach ($cart_item as $cart_item) {
-                $item_price += $item_price;
-            }
-            echo "<hr>";
-
-            echo $item_price;
-        }
-        echo "<hr>";
-        dd($item_price);
-
-
-        //return view('store.pages.cart')->with('cart', $cartitem);
-
+        //dd($item_price);
+        return view('store.pages.cart')->with('cart', $cart_item);
         //$flag = flag::find(1)->Product;
         //return view('cart')->compact('cartitem');
     }
