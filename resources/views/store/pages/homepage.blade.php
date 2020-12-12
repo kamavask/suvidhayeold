@@ -369,9 +369,9 @@
                                     </div>
                                     @endif
                                 </a>
-                                    <div class="qty-cart ">
-                                        <form action="{{route('customer.pages.cart.store')}}" method="POST">
-                                        {{ csrf_field() }}
+                                    <form action="{{route('customer.pages.cart.store')}}" method="POST">
+                                    {{ csrf_field() }}
+                                        <div class="qty-cart ">
                                             <div class="quantity buttons_added ">
                                                 <input type="button " value="- " class="minus minus-btn ">
                                                 <input type="number " step="1" name="quantity" value="1" class="input-text qty text ">
@@ -390,13 +390,12 @@
                                                         </span>
                                                     </button>
                                             </div>
-                                        </form>
-                                    </div>
+                                        </div>
+                                    </form>            
                                 </div>
-                                
                             </div>
                         </div>
-                        @endforeach
+                    @endforeach
                     </div>
                 </div>
             </div>
