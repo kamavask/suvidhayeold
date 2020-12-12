@@ -75,17 +75,17 @@
 												<li><div class="main-price mrp-price">MRP<span>Rs. {{$product->r_price}}</span></div></li>
 											</ul>
 											<ul class="gty-wish-share">
-												<li>
-													<div class="qty-product">
-														<div class="quantity buttons_added">
-															<input type="button" value="-" class="minus minus-btn">
-															<input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-															<input type="button" value="+" class="plus plus-btn">
-														</div>
-													</div>
-												</li>
-												<li><span class="like-icon save-icon" title="wishlist"></span></li>
-											</ul>
+                          <li>
+                              <div class="qty-product">
+                                  <div class="quantity buttons_added">
+                                      <input type="button" value="-" class="minus minus-btn">
+                                      <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
+                                      <input type="button" value="+" class="plus plus-btn">
+                                  </div>
+                              </div>
+                          </li>
+                          <li><span class="like-icon save-icon" title="wishlist"></span></li>
+                      </ul>
 											<ul class="ordr-crt-share">
 												<li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>Add to Cart</button></li>
 												<li><button class="order-btn hover-btn">Order Now</button></li>
@@ -132,36 +132,36 @@
                               <div class="offer-badge">4% OFF</div>
                           </a>
                           <div class="cart-text">
-                              <h4>Product Title Here</h4>
-                              <div class="cart-radio">
-                                  <ul class="kggrm-now">
-                                      <li>
-                                          <input type="radio" id="k1" name="cart1">
-                                          <label for="k1">0.50</label>
-                                      </li>
-                                      <li>
-                                          <input type="radio" id="k2" name="cart1">
-                                          <label for="k2">1kg</label>
-                                      </li>
-                                      <li>
-                                          <input type="radio" id="k3" name="cart1">
-                                          <label for="k3">2kg</label>
-                                      </li>
-                                      <li>
-                                          <input type="radio" id="k4" name="cart1">
-                                          <label for="k4">3kg</label>
-                                      </li>
-                                  </ul>
-                              </div>
-                              <div class="qty-group">
-                                  <div class="quantity buttons_added">
-                                      <input type="button" value="-" class="minus minus-btn">
-                                      <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-                                      <input type="button" value="+" class="plus plus-btn">
-                                  </div>
-                                  <div class="cart-item-price">$12 <span>$15</span></div>
-                              </div>
-                          </div>
+                            <h4>Product Title Here</h4>
+                            <div class="cart-radio">
+                                <ul class="kggrm-now">
+                                    <li>
+                                        <input type="radio" id="k1" name="cart1">
+                                        <label for="k1">0.50</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="k2" name="cart1">
+                                        <label for="k2">1kg</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="k3" name="cart1">
+                                        <label for="k3">2kg</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="k4" name="cart1">
+                                        <label for="k4">3kg</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="qty-group">
+                                <div class="quantity buttons_added">
+                                    <input type="button" value="-" class="minus minus-btn">
+                                    <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
+                                    <input type="button" value="+" class="plus plus-btn">
+                                </div>
+                                <div class="cart-item-price">$12 <span>$15</span></div>
+                            </div>
+                        </div>
                       </div>
                       <div class="cart-item border_radius">
                           <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="cart-product-img">
