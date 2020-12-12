@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Flag;
+use App\Models\Category;
 
 
 class StoreController extends Controller
@@ -19,7 +20,11 @@ class StoreController extends Controller
     public function user_homepage()
     {
         $flag = flag::find(1)->Product;
-        return view('store.pages.user_homepage')->with('featured',  $flag);
+        $veggiesid = Category::select('id')->where('category_name', 'Root')->get();
+
+        dd($veggiesid);
+        /* $veggies = Category::find(1)->Product;
+        return view('store.pages.user_homepage')->with('featured',  $flag); */
     }
 
     public function homepage()
