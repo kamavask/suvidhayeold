@@ -87,19 +87,19 @@
             <div class="footer-payments">
               <ul id="paypal-gateway" class="financial-institutes">
                 <li class="financial-institutes__logo">
-                  <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-6.svg">
+                  <img alt="Visa" title="Visa" src="/images/footer-icons/pyicon-6.svg">
                 </li>
                 <li class="financial-institutes__logo">
-                  <img alt="Visa" title="Visa" src="images/footer-icons/pyicon-1.svg">
+                  <img alt="Visa" title="Visa" src="/images/footer-icons/pyicon-1.svg">
                 </li>
                 <li class="financial-institutes__logo">
-                  <img alt="MasterCard" title="MasterCard" src="images/footer-icons/pyicon-2.svg">
+                  <img alt="MasterCard" title="MasterCard" src="/images/footer-icons/pyicon-2.svg">
                 </li>
                 <li class="financial-institutes__logo">
-                  <img alt="American Express" title="American Express" src="images/footer-icons/pyicon-3.svg">
+                  <img alt="American Express" title="American Express" src="/images/footer-icons/pyicon-3.svg">
                 </li>
                 <li class="financial-institutes__logo">
-                  <img alt="Discover" title="Discover" src="images/footer-icons/pyicon-4.svg">
+                  <img alt="Discover" title="Discover" src="/images/footer-icons/pyicon-4.svg">
                 </li>
               </ul>
             </div>
