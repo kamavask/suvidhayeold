@@ -330,14 +330,14 @@
                     <div class="main-title-tt">
                         <div class="main-title-left">
                             <span>For You</span>
-                            <h2>Fresh Vegetables & Fruits</h2>
+                            <h2>Fresh Vegetables</h2>
                         </div>
                         <a href="#" class="see-more-btn">See All</a>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="owl-carousel featured-slider owl-theme">
-                        @for ($i = 0; $i <=15; $i++) <div class="item">
+                <div class="col-md-12 ">
+                    <div class="owl-carousel featured-slider owl-theme ">
+                       @foreach ($vegetables as $item)
                             <div class="product-item ">
                                 <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html"
                                     class="product-img">
@@ -361,8 +361,8 @@
                                     </div>
                                 </div>
                             </div>
+                        @endforeach
                     </div>
-                    @endfor
                 </div>
             </div>
         </div>
