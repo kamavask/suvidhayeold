@@ -8,7 +8,7 @@
 				<div class="col-lg-8">
 					<div class="bill-detail">
 						<div class="bill-dt-step">
-              <img src="store/images/logo/faicon.png" style="width:100px">
+             <button class="btn info">Info</button>
               <br>
               <br>
 							<div class="bill-title">
