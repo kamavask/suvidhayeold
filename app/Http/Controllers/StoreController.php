@@ -20,16 +20,15 @@ class StoreController extends Controller
     public function user_homepage()
     {
         $flag = flag::find(1)->Product;
-        $veggiesid = Category::select('id')->where('category_name', 'Vegetables')->first();
-        dd($veggiesid->id);
-        /* $veggies = Category::find(1)->Product;
-        return view('store.pages.user_homepage')->with('featured',  $flag); */
+        return view('store.pages.user_homepage')->with('featured',  $flag);
     }
 
     public function homepage()
     {
         $flag = flag::find(1)->Product;
-        return view('store.pages.homepage')->with('featured',  $flag);
+        $veggiesid = Category::select('id')->where('category_name', 'Vegetables')->first();
+        $veggies = Category::find($veggiesid->id)->Product;
+        return view('store.pages.homepage')->with('featured', $flag )->with('vegetables', $veggies );
     }
 
     public function single_product()
