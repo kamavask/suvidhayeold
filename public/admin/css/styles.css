@@ -978,7 +978,7 @@ body {
     background-color: #e9ecef;
 }
 
-.table-paginate{
+.table-paginate {
     border-top: solid;
     border-right: none;
     border-left: none;
@@ -991,7 +991,7 @@ body {
     padding: 15px 20px;
 }
 
-.table-description{
+.table-description {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
