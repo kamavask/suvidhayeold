@@ -63,7 +63,9 @@ class ProductController extends Controller
         $prod->tags = $request->tags;
         $prod->save();
 
-        return view('admin.pages.product.add_product');
+        $inserted_id = $prod->id;
+        return redirect()
+            ->route('admin.pages.productImage.create.show', [$inserted_id]);
   }
 
     /**

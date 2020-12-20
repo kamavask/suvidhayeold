@@ -62,7 +62,7 @@ Route::prefix('/admin/pages')->name('admin.pages.')
 
         Route::get('/Product_Image/create/show/{id}', 
             [ImageController::class, 'Upload_Product_image_show']
-        );
+        )->name('productImage.create.show');
         Route::post('/productImage/create', 
             [ImageController::class, 'Product_image_create']
         );
