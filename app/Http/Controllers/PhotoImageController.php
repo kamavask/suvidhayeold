@@ -23,7 +23,7 @@ class PhotoImageController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.product.add_product_image');
     }
 
     /**

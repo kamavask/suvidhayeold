@@ -60,6 +60,12 @@ Route::prefix('/admin/pages')->name('admin.pages.')
     ->group(function () {
         Route::get('/index', [ADashboardController::class, 'show_index']);
 
+        Route::get('/Product_Image/create/show/{id}', 
+            [ImageController::class, 'Upload_Product_image_show']
+        );
+        Route::post('/productImage/create', 
+            [ImageController::class, 'Product_image_create']
+        );
         Route::get('/test_add_product', [ADashboardController::class, 'test_add_product']);
 
         Route::post('/autocomplete/fetch', [ADashboardController::class, 'fetch'])->name('autocomplete.fetch');
