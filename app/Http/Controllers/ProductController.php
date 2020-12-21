@@ -76,7 +76,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $prod = $product::with('product_images')->take(5)->get();
+        $prod = $product::with('product_images')->take(5)->first();
         dd($prod);
         //$secification = $prod->secification ;
         //$secification_final = Str::of($secification)->explode(' ');
