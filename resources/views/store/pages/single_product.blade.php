@@ -35,34 +35,45 @@
                       </div>
 										@endif
 										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img1 != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img1}}" alt="">
 											</div>
 										@endif
 										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img2 != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img2}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img3 != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img3}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img4 != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img4}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img5 != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img5}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img6 != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img6}}" alt="">
 											</div>
+											@endif
 										@endif
                   </div>
                   <div id="sync2" class="owl-carousel owl-theme">
@@ -76,34 +87,46 @@
                       </div>
 										@endif
 										@if ($product->image_id != null)
-                      <div class="item">
+											@if ($product->product_images->multi_img1 != null)
+												<div class="item">
 													<img src="/{{$product->product_images->multi_img1}}" alt="">
-											</div>
+											</div>	
+											@endif
 										@endif
 										@if ($product->image_id != null)
-                      <div class="item">
+											@if ($product->product_images->multi_img2 != null)
+													<div class="item">
                           <img src="/{{$product->product_images->multi_img2}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
-                      <div class="item">
+											@if ($product->product_images->multi_img3 != null)
+													<div class="item">
                           <img src="/{{$product->product_images->multi_img3}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
-											<div class="item">
+											@if ($product->product_images->multi_img4 != null)
+													<div class="item">
                           <img src="/{{$product->product_images->multi_img4}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
-											<div class="item">
+											@if ($product->product_images->multi_img5 != null)
+													<div class="item">
                           <img src="/{{$product->product_images->multi_img5}}" alt="">
 											</div>
+											@endif
 										@endif
 										@if ($product->image_id != null)
-											<div class="item">
+											@if ($product->product_images->multi_img6 != null)
+												<div class="item">
                           <img src="/{{$product->product_images->multi_img6}}" alt="">
-											</div>
+											</div>	
+											@endif
 										@endif
                   </div>
                 </div>
