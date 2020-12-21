@@ -40,6 +40,7 @@
                           <img src="/{{$product->product_images->multi_img1}}" alt="">
 											</div>
 										@endif
+										@endif
 										@if ($product->image_id != null)
 										@if ($product->product_images->multi_img2 != null)
                       <div class="item">
