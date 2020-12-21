@@ -26,7 +26,7 @@
 								<div class="col-lg-4 col-md-4">
                   <div id="sync1" class="owl-carousel owl-theme">
                       <div class="item">
-                          <img src="/storage/images/products/{{$product->prod_name}}.jpg" alt="">
+                          <img src="/storage/{{$product->product_images->def_img}}" alt="">
                       </div>
                       <div class="item">
                           <img src="/store/images/product/big-2.jpg" alt="">
@@ -40,7 +40,7 @@
                   </div>
                   <div id="sync2" class="owl-carousel owl-theme">
                       <div class="item">
-                          <img src="/storage/images/products/{{$product->prod_name}}.jpg" alt="">
+                          <img src="/storage/{{$product->product_images->def_img}}" alt="">
                       </div>
                       <div class="item">
 											<img src="/images/products/{{$product->multi_img1}}" alt="">
