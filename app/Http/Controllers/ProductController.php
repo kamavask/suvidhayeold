@@ -76,7 +76,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $prod = find($product->id)->with('product_images')->first();
+        $prod = Product::find($product->id)->with('product_images')->first();
         //$secification = $prod->secification ;
         //$secification_final = Str::of($secification)->explode(' ');
         return view('store.pages.single_product')
