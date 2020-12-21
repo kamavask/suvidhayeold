@@ -1,7 +1,7 @@
-﻿@extends('store.layout.app')
+﻿{{-- @extends('store.layout.app')
 @section('content')
 
-
+ --}}
 @php
 		$test = $product->product_images->def_img;
 
@@ -9,8 +9,8 @@
 @endphp
 
 
+{{-- 
 
 
 
-
-@endsection
+@endsection --}}
