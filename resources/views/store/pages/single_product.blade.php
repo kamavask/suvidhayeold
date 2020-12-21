@@ -25,7 +25,7 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-4">
                   <div id="sync1" class="owl-carousel owl-theme">
-										@if ($product->product_images->def_img != null)
+										@if ($product->image_id != null)
 											<div class="item">
                         <img src="/{{$product->product_images->def_img}}" alt="">
 											</div>
@@ -34,39 +34,39 @@
                           <img src="/store/images/product/big-2.jpg" alt="">
                       </div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img1}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img2 != null)
+										@if ($product->image_id != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img2}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img3 != null)
+										@if ($product->image_id != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img3}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img4 != null)
+										@if ($product->image_id != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img4}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img5 != null)
+										@if ($product->image_id != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img5}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img6 != null)
+										@if ($product->image_id != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img6}}" alt="">
 											</div>
 										@endif
                   </div>
                   <div id="sync2" class="owl-carousel owl-theme">
-										@if ($product->product_images->def_img != null)
+										@if ($product->image_id != null)
                       <div class="item">
                           <img src="/{{$product->product_images->def_img}}" alt="">
 											</div>
@@ -75,32 +75,32 @@
                           <img src="/store/images/product/big-2.jpg" alt="">
                       </div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
                       <div class="item">
 													<img src="/{{$product->product_images->multi_img1}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img2}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
                       <div class="item">
                           <img src="/{{$product->product_images->multi_img3}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img4}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img5}}" alt="">
 											</div>
 										@endif
-										@if ($product->product_images->multi_img1 != null)
+										@if ($product->image_id != null)
 											<div class="item">
                           <img src="/{{$product->product_images->multi_img6}}" alt="">
 											</div>
