@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product_Image;
+use App\Models\Product_Images;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -77,7 +77,7 @@ class ImageController extends Controller
         * if statment to check if the img was selected on slot
         * insert when if statment passes.
         */
-        $prod_img = new Product_Image;
+        $prod_img = new Product_Images;
         if ($request->file('def_img') != null) {
             $prod_img->def_img      =   $cpath1;
         }
