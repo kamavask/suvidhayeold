@@ -35,7 +35,7 @@ class Product extends Model
 
     public function product_images()
     {
-        return $this->hasOne('App\Models\Product_Images');
+        return $this->belongsTo('App\Models\Product_Images', 'image_id');
     }
 
     public function flags()

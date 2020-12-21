@@ -13,6 +13,6 @@ class Product_Images extends Model
 
     public function product()
     {
-        return $this->hasOne('App\Models\Product');
+        return $this->hasMany('App\Models\Product');
     }
 }
