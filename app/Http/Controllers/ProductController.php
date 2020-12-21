@@ -76,7 +76,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return $product;
+        return $product->id;
         /* $prod = find($id)->with('product_images')->first();
         //$secification = $prod->secification ;
         //$secification_final = Str::of($secification)->explode(' ');
