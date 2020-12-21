@@ -76,11 +76,12 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $prod = $product;
+        $prod = $product::with('product_images')->take(5)->get();
+        dd($prod);
         //$secification = $prod->secification ;
         //$secification_final = Str::of($secification)->explode(' ');
-        return view('store.pages.single_product')
-            ->with('product', $prod);
+       /*  return view('store.pages.single_product')
+            ->with('product', $prod); */
     }
 
     /**

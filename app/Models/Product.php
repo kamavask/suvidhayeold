@@ -35,7 +35,7 @@ class Product extends Model
 
     public function product_images()
     {
-        return $this->hasOne('App\Models\ProductImage');
+        return $this->hasOne('App\Models\Product_Images');
     }
 
     public function flags()
