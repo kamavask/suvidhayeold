@@ -147,6 +147,18 @@
 											</ul>
 										</div>
 										<p class="pp-descp">{{$product->short_description}}</p>
+										
+											@php
+                                  $highlight = $product->highlight;
+                                  $highlight_final = explode('.', $highlight);
+
+                                  for ($i=0; $i <count($highlight_final); $i++) { 
+                                     echo "<p class="pp-descp">$Specification_final[$i]</p>";
+                                  }
+                                                
+
+                               @endphp
+		
 										<div class="product-group-dt">
 											<ul>
 												<li><div class="main-price color-discount">Discount Price<span>Rs. {{$product->s_price}}</span></div></li>
