@@ -7,9 +7,8 @@
             <li class="breadcrumb-item"><a href="products.html">Products</a></li>
             <li class="breadcrumb-item active">Edit Product</li>
         </ol>
-        <form method="POST" action="/admin/pages/product/{{$prod->id}}">
+        <form method="PUT" action="/admin/pages/product/{{$prod->id}}">
             @csrf
-            @method('PUT')
             {{-- <input type="hidden" name="id" value="{{$prod->id}}"> --}}
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -56,34 +55,34 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <input class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights " value="{{$prod->prod_name}}"></input>
+                                                    <input class="form-control" rows="2" placeholder="Enter Highlights" name="highlight" id="highlights" value="{{$prod->prod_name}}"></input>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
-                                                <div class="form-group ">
+                                                <div class="form-group">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <input class="form-control " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_description}}"></input>
+                                                    <input class="form-control" placeholder="Enter Description" name="short_desc" id="s_desc" value="{{$prod->short_description}}"></input>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
-                                                <div class="form-group ">
+                                                <div class="form-group">
                                                     <label class="form-label"><b>Specifications</b></label>
-                                                    <input class="form-control " placeholder="Enter Specifications " name="specification " id="speci " value="{{$prod->specification}}"></input>
+                                                    <input class="form-control" placeholder="Enter Specifications" name="specification" id="speci" value="{{$prod->specification}}"></input>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row" style="margin-bottom:1%">
                                             <div class="col-sm-12">
-                                                <div class="form-group ">
+                                                <div class="form-group">
                                                     <label class="form-label"><b>Brand</b></label>
-                                                    <input type="text " class="form-control " placeholder="Enter Provider Code " name="brand " id="pro " value="{{$prod->brand}}">
+                                                    <input type="text" class="form-control" placeholder="Enter Provider Code" name="brand" id="pro" value="{{$prod->brand}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -248,7 +247,7 @@
                                             </div>
 
                                         </div>
-                                        <button class="save-btn hover-btn " type="submit ">Edit</button>
+                                        <button class="save-btn hover-btn" type="submit">Edit</button>
                                     </div>
                                 </div>
                             </div>
