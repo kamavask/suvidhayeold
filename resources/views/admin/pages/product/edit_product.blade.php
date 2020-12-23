@@ -56,7 +56,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights " value="{{$prod->prod_name}}"></textarea>
+                                                    <input class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights " value="{{$prod->prod_name}}"></input>
                                                 </div>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_description}}"></textarea>
+                                                    <input class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_description}}"></input>
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Specifications</b></label>
-                                                    <textarea class="form-control " rows="4 " placeholder="Enter Specifications " name="specification " id="speci " value="{{$prod->specification}}"></textarea>
+                                                    <input class="form-control " rows="4 " placeholder="Enter Specifications " name="specification " id="speci " value="{{$prod->specification}}"></input>
                                                 </div>
                                             </div>
                                         </div>
