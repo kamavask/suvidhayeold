@@ -65,7 +65,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <input class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_description}}"></input>
+                                                    <input class="form-control " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_description}}"></input>
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Specifications</b></label>
-                                                    <input class="form-control " rows="4 " placeholder="Enter Specifications " name="specification " id="speci " value="{{$prod->specification}}"></input>
+                                                    <input class="form-control " placeholder="Enter Specifications " name="specification " id="speci " value="{{$prod->specification}}"></input>
                                                 </div>
                                             </div>
                                         </div>
