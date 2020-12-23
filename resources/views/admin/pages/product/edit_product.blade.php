@@ -56,7 +56,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights " value="{{$prod->highlight}}"></textarea>
+                                                    <textarea class="form-control " rows="2 " placeholder="Enter Highlights " name="highlight " id="highlights " value="{{$prod->prod_name}}"></textarea>
                                                 </div>
                                             </div>
                                         </div>
