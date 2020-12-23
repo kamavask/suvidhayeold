@@ -127,7 +127,7 @@ class ProductController extends Controller
         //$prod->sku = $request->sku;
         $prod->stock = $request->stock;
         $prod->stock_alert = $request->stock_alert; 
-        $prod->backorder = $request->backorder;
+        //$prod->backorder = $request->backorder;
         $prod->bulk_order_no = $request->bulk_no;
         $prod->tags = $request->tags;
         $prod->save();
