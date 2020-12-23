@@ -7,8 +7,9 @@
             <li class="breadcrumb-item"><a href="products.html">Products</a></li>
             <li class="breadcrumb-item active">Edit Product</li>
         </ol>
-        <form method="PUT" action="/admin/pages/product/{{$prod->id}}">
+        <form method="POST" action="/admin/pages/product/{{$prod->id}}">
             @csrf
+            @method('PUT')
             {{-- <input type="hidden" name="id" value="{{$prod->id}}"> --}}
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -55,7 +56,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label class="form-label"><b>Highlights</b></label>
-                                                    <input class="form-control" rows="2" placeholder="Enter Highlights" name="highlight" id="highlights" value="{{$prod->prod_name}}"></input>
+                                                    <input class="form-control" rows="2" placeholder="Enter Highlights" name="highlight" id="highlights" value="{{$prod->highlight}}"></input>
                                                 </div>
                                             </div>
                                         </div>
