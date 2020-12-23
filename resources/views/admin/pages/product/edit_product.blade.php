@@ -65,7 +65,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group ">
                                                     <label class="form-label"><b>Short Discription</b></label>
-                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_desc}}"></textarea>
+                                                    <textarea class="form-control " rows="3 " placeholder="Enter Description " name="short_desc " id="s_desc" value="{{$prod->short_description}}"></textarea>
                                                 </div>
                                             </div>
                                         </div>
