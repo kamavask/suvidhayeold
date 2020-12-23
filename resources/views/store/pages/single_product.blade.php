@@ -153,7 +153,7 @@
                                   $highlight_final = explode('.', $highlight);
 
                                   for ($i=0; $i <count($highlight_final); $i++) { 
-                                     echo "<p class="pp-descp">$Specification_final[$i]</p>";
+                                     echo "<p>$Specification_final[$i]</p>";
                                   }
                                                 
 
