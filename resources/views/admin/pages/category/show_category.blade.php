@@ -63,10 +63,10 @@
                                     @foreach ($show_cat as $item)
                                         <tr>
                                             <td>{{$item->id}}</td>
-											<td>{{$item->cat_name}}</td>
-											<td>{{$item->cat_type}}</td>
+											<td>{{$item->category_name}}</td>
+											<td>{{$item->category_type}}</td>
 											<td>{{$item->pent_cat_id}}</td>
-											<td>{{$item->cat_desc}}</td>
+											<td>{{$item->category_desc}}</td>
 											<td class="action-btns">
 												<a href="#" class="edit-btn"><i class="fas fa-edit"></i> Edit</a>
 											</td>
