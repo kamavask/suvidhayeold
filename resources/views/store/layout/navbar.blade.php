@@ -114,7 +114,7 @@
               </div>
 							@auth
 								@can('access-dashboard')
-									<a href="/admin-dashboard" class="item channel_item"><i class="uil uil-apps icon__1"></i>Admin Dashbaord</a>
+									<a href="admin/pages/admin-dashboard" class="item channel_item"><i class="uil uil-apps icon__1"></i>Admin Dashbaord</a>
 								@endcan
 
 								<a href="dashboard_my_orders" class="item channel_item"><i class="uil uil-box icon__1"></i>My Orders</a>
