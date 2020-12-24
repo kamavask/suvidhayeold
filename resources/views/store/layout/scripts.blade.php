@@ -1,15 +1,9 @@
 <!-- Javascripts -->
-<script src="{{asset('vendor/OwlCarousel/owl.carousel.js')}}"></script>
+
     <script src="{{asset('vendor/OwlCarousel/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('vendor/semantic/semantic.min.js')}}"></script>
-    <script src="{{asset('js/jquery.countdown.min.js')}}"></script>
-    <script src="{{asset('js/custom.js')}}"></script>
     <script src="{{asset('js/product.thumbnail.slider.js')}}"></script>
-    <script src="{{asset('js/offset_overlay.js')}}"></script>
-    <script src="{{asset('/storer/js/night-mode.js')}}"></script>
-
 {{-- <script src="/js/jquery-3.3.1.min.js"></script> --}}
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
@@ -36,5 +30,3 @@
     });
 
 </script> --}}
-
-  <!-- Javascripts -->

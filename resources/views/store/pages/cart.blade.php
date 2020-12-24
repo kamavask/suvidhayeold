@@ -46,7 +46,8 @@
 																	<span>$18</span></div> -->
                                     <button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
                                     <div class="cart-item-price">
-                                        <div class="cart-item-price">{{$item->s_price}}<span>{{$item->r_price}}</span></div>
+                                        <div class="cart-item-price s_price">{{$item->s_price}}</div>
+                                        <div class="cart-item-price r_price"><span>{{$item->r_price}}</span></div>
                                     </div>
                                 </div>
                             </div>
