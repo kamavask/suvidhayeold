@@ -82,6 +82,8 @@
 										<button class="user-avatar-ui">
 											<img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
 										</button>
+										<p class="title_name">{{ Auth::user()->name}}</p>
+									<i class="uil uil-angle-down"></i>
 										@else
 										<button class="user-avatar-ui">
 											<div>{{ Auth::user()->name }}</div>
