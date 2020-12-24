@@ -113,7 +113,9 @@
                 </a>
               </div>
 							@auth
-							{{-- <a href="dashboard_overview" class="item channel_item"><i class="uil uil-apps icon__1"></i>Dashbaord</a> --}}
+							@can('access-dashboard')
+								<a href="dashboard_overview" class="item channel_item"><i class="uil uil-apps icon__1"></i>Dashbaord</a>
+							@endcan
 							<a href="dashboard_my_orders" class="item channel_item"><i class="uil uil-box icon__1"></i>My Orders</a>
 							{{-- <a href="dashboard_my_wishlist" class="item channel_item"><i class="uil uil-heart icon__1"></i>My
 								Wishlist</a>
