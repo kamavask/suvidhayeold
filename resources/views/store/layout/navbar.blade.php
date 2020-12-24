@@ -83,11 +83,10 @@
 											<img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
 										</button>
 										<p class="title_name" style="vertical-align: middle; display: table-cell; padding-left: 5px;">{{ Auth::user()->name}}</p>
-									<i class="uil uil-angle-down"></i>
+										<i class="uil uil-angle-down"></i>
 										@else
 										<button class="user-avatar-ui">
 											<div>{{ Auth::user()->name }}</div>
-										
 											<div class="ml-1">
 												<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 													<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -95,19 +94,20 @@
 											</div>
 										</button>
 										<p class="title_name" style="vertical-align: middle; display: table-cell; padding-left: 5px;">{{ Auth::user()->name}}</p>
-									<i class="uil uil-angle-down"></i>
+										<i class="uil uil-angle-down"></i>
 									@endif
 									
 								@else
-									Login / signup
+									<p class="title_name" style="vertical-align: middle; display: table-cell; padding-left: 5px;">Login / signup</p>
 									<i class="uil uil-angle-down"></i>
 							@endauth
 						</a>
 						<div class="menu dropdown_account">
 						 <div class="night_mode_switch__btn">
                 <a href="#" id="night-mode" class="btn-night-mode">
-                  <i class="uil uil-moon"></i> Night mode
-                  <span class="btn-night-mode-switch">
+									<i class="uil uil-moon"></i> 
+									Night mode 
+									<span class="btn-night-mode-switch">
                     <span class="uk-switch-button"></span>
                   </span>
                 </a>
@@ -116,21 +116,18 @@
 								@can('access-dashboard')
 									<a href="/admin-dashboard" class="item channel_item"><i class="uil uil-apps icon__1"></i>Admin Dashbaord</a>
 								@endcan
-							<a href="dashboard_my_orders" class="item channel_item"><i class="uil uil-box icon__1"></i>My Orders</a>
-							{{-- <a href="dashboard_my_wishlist" class="item channel_item"><i class="uil uil-heart icon__1"></i>My
-								Wishlist</a>
-							<a href="dashboard_my_wallet" class="item channel_item"><i class="uil uil-usd-circle icon__1"></i>My
-								Wallet</a> --}}
-							<a href="dashboard_my_addresses" class="item channel_item"><i
-									class="uil uil-location-point icon__1"></i>My Address</a>
-							<a href="offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
-							{{-- <a href="faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a> --}}
-							
-							<a href="/logout" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
-							@else
-							<a href="/login" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
-							<a href="/register" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
 
+								<a href="dashboard_my_orders" class="item channel_item"><i class="uil uil-box icon__1"></i>My Orders</a>
+								<a href="dashboard_my_wishlist" class="item channel_item"><i class="uil uil-heart icon__1"></i>My Wishlist</a>
+								<a href="dashboard_my_wallet" class="item channel_item"><i class="uil uil-usd-circle icon__1"></i>My Wallet</a> 
+								<a href="dashboard_my_addresses" class="item channel_item"><i class="uil uil-location-point icon__1"></i>My Address</a>
+								<a href="offers" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
+								{{-- <a href="faq" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a> --}}
+								<a href="/logout" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
+								@else
+
+								<a href="/login" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Login</a>
+								<a href="/register" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Signup</a>
 							@endif
 						</div>
 					</li>
