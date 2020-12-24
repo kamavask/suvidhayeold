@@ -996,3 +996,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.alert-danger {
+    margin-bottom: 0px !important;
+}
