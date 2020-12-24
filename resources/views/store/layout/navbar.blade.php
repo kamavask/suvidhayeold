@@ -93,7 +93,7 @@
 											</div>
 										</button>
 									@endif
-									<h4 class="title_name">{{ Auth::user()->name}}</h4>
+									<p class="title_name">{{ Auth::user()->name}}</p>
 									<i class="uil uil-angle-down"></i>
 								@else
 									Login / signup
