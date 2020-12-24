@@ -3361,8 +3361,8 @@ label.control-label {
 }
 
 .total-checkout-group {
-    padding: 20px 20px 0;
-    border-top: 1px solid #efefef;
+    padding: 10px 20px 0;
+    border-top: 0px solid #efefef;
     margin-top: 10px;
 }
 
