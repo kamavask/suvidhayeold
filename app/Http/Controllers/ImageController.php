@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProductImage;
+use App\Models\Product_Images;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -46,51 +46,58 @@ class ImageController extends Controller
         );
         if ($request->file('def_img') != null) {
             $path1 = $request->file('def_img')->store('public/images/products');
+            $cpath1 = str_replace("public/", "storage/", $path1);
         }
         if ($request->file('Multi_File1') != null) {
             $path2 = $request->file('Multi_File1')->store('public/images/products');
+            $cpath2 = str_replace("public/", "storage/", $path2);
         }
         if ($request->file('Multi_File2') != null) {
             $path3 = $request->file('Multi_File2')->store('public/images/products');
+            $cpath3 = str_replace("public/", "storage/", $path3);
         }
         if ($request->file('Multi_File3') != null) {
             $path4 = $request->file('Multi_File3')->store('public/images/products');
+            $cpath4 = str_replace("public/", "storage/", $path4);
         }
         if ($request->file('Multi_File4') != null) {
             $path5 = $request->file('Multi_File4')->store('public/images/products');
+            $cpath5 = str_replace("public/", "storage/", $path5);
         }
         if ($request->file('Multi_File5') != null) {
             $path6 = $request->file('Multi_File5')->store('public/images/products');
+            $cpath6 = str_replace("public/", "storage/", $path6);
         }
         if ($request->file('Multi_File6') != null) {
             $path7 = $request->file('Multi_File6')->store('public/images/products');
+            $cpath7 = str_replace("public/", "storage/", $path7);
         }
         /* * Insrting Path 
         * Storing Path Of Stored File in Product_images Table
         * if statment to check if the img was selected on slot
         * insert when if statment passes.
         */
-        $prod_img = new ProductImage;
+        $prod_img = new Product_Images;
         if ($request->file('def_img') != null) {
-            $prod_img->def_img      =   $path1;
+            $prod_img->def_img      =   $cpath1;
         }
         if ($request->file('Multi_File1') != null) {
-            $prod_img->multi_img1   =   $path2;
+            $prod_img->multi_img1   =   $cpath2;
         }
         if ($request->file('Multi_File2') != null) {
-            $prod_img->multi_img2   =   $path3;
+            $prod_img->multi_img2   =   $cpath3;
         }
         if ($request->file('Multi_File3') != null) {
-            $prod_img->multi_img3   =   $path4;
+            $prod_img->multi_img3   =   $cpath4;
         }
         if ($request->file('Multi_File4') != null) {
-            $prod_img->multi_img4   =   $path5;
+            $prod_img->multi_img4   =   $cpath5;
         }
         if ($request->file('Multi_File5') != null) {
-            $prod_img->multi_img5   =   $path6;
+            $prod_img->multi_img5   =   $cpath6;
         }
         if ($request->file('Multi_File6') != null) {
-            $prod_img->multi_img6   =   $path7; 
+            $prod_img->multi_img6   =   $cpath7; 
         }
         $prod_img->save();
         

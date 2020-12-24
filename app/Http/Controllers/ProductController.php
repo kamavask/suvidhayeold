@@ -76,7 +76,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $prod = $product;
+        $id = $product->id;
+        $prod = Product::where('id', $id)->with('product_images')->first();
         //$secification = $prod->secification ;
         //$secification_final = Str::of($secification)->explode(' ');
         return view('store.pages.single_product')
@@ -105,8 +106,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $prod = Product:: find($product->id);
-        $prod->prod_name = $request->prod_name; 
+        $prod = Product::find($product->id);
+        $prod->prod_name = $request->prod_name;
         $prod->virtual = $request->virtual;
         $prod->downloadable = $request->downloadable;
         /* $prod->image_id = $request->image_id;  */

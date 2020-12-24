@@ -25,32 +25,110 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-4">
                   <div id="sync1" class="owl-carousel owl-theme">
-                      <div class="item">
-                          <img src="/storage/images/products/{{$product->prod_name}}.jpg" alt="">
-                      </div>
-                      <div class="item">
+										@if ($product->image_id != null)
+											<div class="item">
+                        <img src="/{{$product->product_images->def_img}}" alt="">
+											</div>
+											@else
+											<div class="item">
                           <img src="/store/images/product/big-2.jpg" alt="">
                       </div>
+										@endif
+										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img1 != null)
                       <div class="item">
-                          <img src="/store/images/product/big-3.jpg" alt="">
-                      </div>
+                          <img src="/{{$product->product_images->multi_img1}}" alt="">
+											</div>
+										@endif
+										@endif
+										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img2 != null)
                       <div class="item">
-                          <img src="/store/images/product/big-4.jpg" alt="">
-                      </div>
+                          <img src="/{{$product->product_images->multi_img2}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img3 != null)
+                      <div class="item">
+                          <img src="/{{$product->product_images->multi_img3}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img4 != null)
+											<div class="item">
+                          <img src="/{{$product->product_images->multi_img4}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img5 != null)
+											<div class="item">
+                          <img src="/{{$product->product_images->multi_img5}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+										@if ($product->product_images->multi_img6 != null)
+											<div class="item">
+                          <img src="/{{$product->product_images->multi_img6}}" alt="">
+											</div>
+											@endif
+										@endif
                   </div>
                   <div id="sync2" class="owl-carousel owl-theme">
+										@if ($product->image_id != null)
                       <div class="item">
-                          <img src="/storage/images/products/{{$product->prod_name}}.jpg" alt="">
+                          <img src="/{{$product->product_images->def_img}}" alt="">
+											</div>
+											@else
+											<div class="item">
+                          <img src="/store/images/product/big-2.jpg" alt="">
                       </div>
-                      <div class="item">
-											<img src="/images/products/{{$product->multi_img1}}" alt="">
-                      </div>
-                      <div class="item">
-                          <img src="/images/products/{{$product->multi_img2}}" alt="">
-                      </div>
-                      <div class="item">
-                          <img src="/images/products/{{$product->multi_img3}}" alt="">
-                      </div>
+										@endif
+										@if ($product->image_id != null)
+											@if ($product->product_images->multi_img1 != null)
+												<div class="item">
+													<img src="/{{$product->product_images->multi_img1}}" alt="">
+											</div>	
+											@endif
+										@endif
+										@if ($product->image_id != null)
+											@if ($product->product_images->multi_img2 != null)
+													<div class="item">
+                          <img src="/{{$product->product_images->multi_img2}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+											@if ($product->product_images->multi_img3 != null)
+													<div class="item">
+                          <img src="/{{$product->product_images->multi_img3}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+											@if ($product->product_images->multi_img4 != null)
+													<div class="item">
+                          <img src="/{{$product->product_images->multi_img4}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+											@if ($product->product_images->multi_img5 != null)
+													<div class="item">
+                          <img src="/{{$product->product_images->multi_img5}}" alt="">
+											</div>
+											@endif
+										@endif
+										@if ($product->image_id != null)
+											@if ($product->product_images->multi_img6 != null)
+												<div class="item">
+                          <img src="/{{$product->product_images->multi_img6}}" alt="">
+											</div>	
+											@endif
+										@endif
                   </div>
                 </div>
 								<div class="col-lg-8 col-md-8">
@@ -69,6 +147,18 @@
 											</ul>
 										</div>
 										<p class="pp-descp">{{$product->short_description}}</p>
+										
+											@php
+                                  $highlight = $product->highlight;
+                                  $highlight_final = explode('.', $highlight);
+
+                                  for ($i=0; $i <count($highlight_final); $i++) { 
+                                     echo "<p>$highlight_final[$i]</p>";
+                                  }
+                                                
+
+                               @endphp
+		
 										<div class="product-group-dt">
 											<ul>
 												<li><div class="main-price color-discount">Discount Price<span>Rs. {{$product->s_price}}</span></div></li>

@@ -17,6 +17,7 @@
 <script src="{{asset('js/custom.js')}}"></script>
 <script src="{{asset('js/offset_overlay.js')}}"></script>
 <script src="{{asset('js/night-mode.js')}}"></script>
+<script src="{{asset('js/cart_total.js')}}" async></script>
 
 {{-- <script>
     var path = "{{route('main_public_search')}}";
