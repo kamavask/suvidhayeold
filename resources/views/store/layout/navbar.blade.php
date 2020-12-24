@@ -92,9 +92,10 @@
 												</svg>
 											</div>
 										</button>
-									@endif
-									<p class="title_name">{{ Auth::user()->name}}</p>
+										<p class="title_name">{{ Auth::user()->name}}</p>
 									<i class="uil uil-angle-down"></i>
+									@endif
+									
 								@else
 									Login / signup
 									<i class="uil uil-angle-down"></i>
