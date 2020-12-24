@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class ADashboardController extends Controller
 {
-    public function show_index()
+    public function show_dashboard()
     {
-        return view('admin.pages.index');
+        return view('admin.pages.dashboard');
     }
 
     public function test_add_product()

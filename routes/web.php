@@ -59,7 +59,7 @@ Route::prefix('/admin/pages')->name('admin.pages.')
     ->middleware('auth:sanctum', 'verified', 'can:access-dashboard')
     ->group(
         function (){
-        Route::get('/index', [ADashboardController::class, 'show_index']);
+        Route::get('/admin-dashboard', [ADashboardController::class, 'show_dashboard']);
 
         Route::get('/Product_Image/create/show/{id}', 
             [ImageController::class, 'Upload_Product_image_show']

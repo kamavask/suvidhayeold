@@ -5,9 +5,8 @@
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
     </button>
-    <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/index.html" class="frnt-link">
-        <i class="fas fa-external-link-alt"></i>
-        <h3>Home</h3>
+    <a href="/admin/pages/admin-dashboard" class="frnt-link">
+        <h3><i class="fas fa-external-link-alt"></i>Home</h3>
     </a>
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
