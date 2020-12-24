@@ -78,7 +78,7 @@
 					</div>
         </div>
       	{{-- <div class="table-paginate"> --}}
-					{{ $show_prod->links() }}
+					{{ $show_prod->onEachSide(5)->links() }}
 				{{-- 	{{ $item->links() }} --}}
 				{{-- </div> --}}
 			</div>
