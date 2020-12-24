@@ -14,6 +14,24 @@
             <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user fa-fw"></i>
             </a>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    @if(session()->has('success_message'))
+                	    <div class="alert alert-success">
+                	        {{session()->get('success_message')}}
+                	    </div>
+                	@endif
+                	@if(count($errors) >0)
+                	    <div class="alert alert-danger">
+                	        <ul>
+                	            @foreach($errors->all() as $error)
+                	            <li>{{ $error }}</li>
+                	            @endforeach
+                	        </ul>
+                	    </div>
+                	@endif
+                </li>
+			</ol>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                 <a class="dropdown-item admin-dropdown-item" href="edit_profile.html">
                     Edit Profile
