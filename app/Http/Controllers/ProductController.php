@@ -15,8 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $show_prod = Product::simplePaginate(20);
-        return view('admin.pages.product.show_product' )->with('show_prod', $show_prod );
+        $show_prod = Product::paginate(20);
+        return view('admin.pages.product.show_product')
+        ->with('show_prod', $show_prod);
     }
 
     /**
