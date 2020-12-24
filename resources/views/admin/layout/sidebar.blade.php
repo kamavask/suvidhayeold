@@ -2,30 +2,26 @@
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
             <div class="sb-sidenav-menu">
                 <div class="nav">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="/admin/pages/admin-dashboard">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Dashboard
                     </a>
-                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
-                        aria-expanded="false" aria-controls="collapsProducts">
+                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts" aria-expanded="false" aria-controls="collapsProducts">
                         <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
-                        Products
+                            Products
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseProducts" aria-labelledby="headingOne"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseProducts" aria-labelledby="headingOne"data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="/admin/pages/product">All Products</a>
-                            <a class="nav-link sub_nav_link" href="add_employee">Add Product</a>
-                            <a class="nav-link sub_nav_link" href="edit_employee">Edit</a>
-                            <a class="nav-link sub_nav_link" href="delete_employee">Delete Product</a>
-                            {{-- <a class="nav-link sub_nav_link" href="post_tags.html">Tags</a> --}}
+                            <a class="nav-link sub_nav_link" href="/admin/pages/product/create">Add Product</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/product">Edit</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/product">Delete Product</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee"
-                        aria-expanded="false" aria-controls="collapsEmployee">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="false" aria-controls="collapsEmployee">
                         <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
-                        Employee
+                            Employee
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapseEmployee" aria-labelledby="headingOne"
@@ -38,56 +34,48 @@
                             {{-- <a class="nav-link sub_nav_link" href="post_tags.html">Tags</a> --}}
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServices"
-                        aria-expanded="false" aria-controls="collapseServices">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServices" aria-expanded="false" aria-controls="collapseServices">
                         <div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        Services
+                            Services
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseServices" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseServices" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_service">All Services</a>
                             <a class="nav-link sub_nav_link" href="add_service">Add New</a>
                             <a class="nav-link sub_nav_link" href="edit_service">Edit</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategories"
-                        aria-expanded="false" aria-controls="collapseCategories">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
                         <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
-                        Categories
+                            Categories
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseCategories" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseCategories" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="/admin/pages/category">All Categories</a>
-                            <a class="nav-link sub_nav_link" href="add_category">Add Category</a>
-                            <a class="nav-link sub_nav_link" href="edit_category">Edit Category</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/category/create">Add Category</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/category">Edit Category</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVendors"
-                        aria-expanded="false" aria-controls="collapseVendors">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVendors" aria-expanded="false" aria-controls="collapseVendors">
                         <div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
-                        Providers
+                            Providers
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseVendors" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseVendors" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_vendor">All Vendors</a>
                             <a class="nav-link sub_nav_link" href="add_vendor">Add vendors</a>
                             <a class="nav-link sub_nav_link" href="delete_vendor">Delete vendors</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDelieveryman"
-                        aria-expanded="false" aria-controls="collapseDelieveryman">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDelieveryman" aria-expanded="false" aria-controls="collapseDelieveryman">
                         <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
-                        Deliverymen
+                            Deliverymen
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseDelieveryman" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseDelieveryman" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_deliveryman">All Delivermen</a>
                             <a class="nav-link sub_nav_link" href="add_deliveryman">Add deliverymen</a>
@@ -95,14 +83,12 @@
                             <a class="nav-link sub_nav_link" href="edit_deliveryman">Edit deliverymen</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServicemen"
-                        aria-expanded="false" aria-controls="collapseServicemen">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServicemen" aria-expanded="false" aria-controls="collapseServicemen">
                         <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
-                        Servicemen
+                            Servicemen
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseServicemen" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseServicemen" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_servicemen">All servicemen</a>
                             <a class="nav-link sub_nav_link" href="add_servicemen">Add servicemen</a>
@@ -110,14 +96,12 @@
                             <a class="nav-link sub_nav_link" href="delete_servicemen">Delete servicemen</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomers"
-                        aria-expanded="false" aria-controls="collapseCustomers">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomers" aria-expanded="false" aria-controls="collapseCustomers">
                         <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
-                        Customers
+                            Customers
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseCustomers" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseCustomers" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_serviceman">All Customers</a>
                             <a class="nav-link sub_nav_link" href="add_serviceman">Add Customers</a>
@@ -125,14 +109,12 @@
                             <a class="nav-link sub_nav_link" href="delete_serviceman">Delete Customers</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOrder"
-                        aria-expanded="false" aria-controls="collapseOrder">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder">
                         <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
                         Orders
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseOrder" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseOrder" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_order">All orders</a>
                             <a class="nav-link sub_nav_link" href="ongoing_order">Ongoing orders</a>
@@ -142,28 +124,24 @@
                             <a class="nav-link sub_nav_link" href="edit_order">Edit orders</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOffers"
-                        aria-expanded="false" aria-controls="collapseOffers">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOffers" aria-expanded="false" aria-controls="collapseOffers">
                         <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
                         Offers
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseOffers" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseOffers" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_offer">All offers</a>
                             <a class="nav-link sub_nav_link" href="add_offer">Add offers</a>
                             <a class="nav-link sub_nav_link" href="edit_offer">Edit offers</a>
                         </nav>
                     </div>
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCoupons"
-                        aria-expanded="false" aria-controls="collapseCoupons">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCoupons" aria-expanded="false" aria-controls="collapseCoupons">
                         <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
                         Coupons
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseCoupons" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseCoupons" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="show_coupon">All coupons</a>
                             <a class="nav-link sub_nav_link" href="add_coupon">Add coupons</a>
@@ -171,14 +149,12 @@
                         </nav>
                     </div>
 
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSettings"
-                        aria-expanded="false" aria-controls="collapseSettings">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSettings" aria-expanded="false" aria-controls="collapseSettings">
                         <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
                         Settings
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapseSettings" aria-labelledby="headingTwo"
-                        data-parent="#sidenavAccordion">
+                    <div class="collapse" id="collapseSettings" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="general_setting.html">General Settings</a>
                             <a class="nav-link sub_nav_link" href="payment_setting.html">Payment Settings</a>
