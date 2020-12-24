@@ -132,8 +132,7 @@ class ProductController extends Controller
         $prod->tags = $request->tags;
         $prod->save();
 
-        return redirect()->route('admin.pages.product.index')
-        ->with('success', 'Data Updated' );
+        return back()->with('success', 'Data Updated' );
     }
 
     /**
