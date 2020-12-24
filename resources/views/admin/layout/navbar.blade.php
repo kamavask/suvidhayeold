@@ -7,7 +7,7 @@
     </button>
     <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/index.html" class="frnt-link">
         <i class="fas fa-external-link-alt"></i>
-        Home
+        <h3>Home</h3>
     </a>
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
