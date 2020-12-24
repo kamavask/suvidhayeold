@@ -79,10 +79,10 @@
 						<a href="#" class="opts_account">
 							@auth
 									@if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-										<button class="user-avatar-ui">
+										<button class="user-avatar-ui" style="display: table">
 											<img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
 										</button>
-										<p class="title_name">{{ Auth::user()->name}}</p>
+										<p class="title_name" style="vertical-align: middle; display: table-cell; padding-left: 5px;">{{ Auth::user()->name}}</p>
 									<i class="uil uil-angle-down"></i>
 										@else
 										<button class="user-avatar-ui">
@@ -94,7 +94,7 @@
 												</svg>
 											</div>
 										</button>
-										<p class="title_name">{{ Auth::user()->name}}</p>
+										<p class="title_name" style="vertical-align: middle; display: table-cell; padding-left: 5px;">{{ Auth::user()->name}}</p>
 									<i class="uil uil-angle-down"></i>
 									@endif
 									
