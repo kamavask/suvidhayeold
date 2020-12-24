@@ -76,10 +76,10 @@
 								class='uil uil-heart icon_wishlist'></i><span class="noti_count1">3</span></a>
 					</li>
 					<li class="ui dropdown">
-						<a href="#" class="opts_account">
+						<a href="#" class="opts_account" style="display: table">
 							@auth
 									@if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-										<button class="user-avatar-ui" style="display: table">
+										<button class="user-avatar-ui">
 											<img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
 										</button>
 										<p class="title_name" style="vertical-align: middle; display: table-cell; padding-left: 5px;">{{ Auth::user()->name}}</p>
