@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -15,7 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $show_prod = Product::paginate(15);
+        $show_prod = Product::Paginator(15);
         return view('admin.pages.product.show_product')
         ->with('show_prod', $show_prod);
     }
