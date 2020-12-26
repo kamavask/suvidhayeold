@@ -13,7 +13,7 @@
 					<div class="card-title-2">
 						<h4>Edit Using Id of product</h4>
                     </div>
-                    <form action="admin/pages/show/product/edit_by_id" method="post">
+                    <form action="/admin/pages/show/product/edit_by_id" method="post">
                         @csrf
 					    <div class="card-body-table">
 					    	<div class="news-content-right pd-20">
