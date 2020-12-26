@@ -59,7 +59,12 @@ Route::prefix('/admin/pages')->name('admin.pages.')
     ->middleware('auth:sanctum', 'verified', 'can:access-dashboard')
     ->group(
         function (){
+
         Route::get('/admin-dashboard', [ADashboardController::class, 'show_dashboard']);
+
+        Route::get('/load-product-edit-by_id', [ADashboardController::class, 'show_dashboard']);
+
+        Route::get('/product/show/edit/choices', [ADashboardController::class, 'show_prod_edit_choice']);
 
         Route::get('/Product_Image/create/show/{id}', 
             [ImageController::class, 'Upload_Product_image_show']
@@ -70,6 +75,7 @@ Route::prefix('/admin/pages')->name('admin.pages.')
         Route::get('/test_add_product', [ADashboardController::class, 'test_add_product']);
 
         Route::post('/autocomplete/fetch', [ADashboardController::class, 'fetch'])->name('autocomplete.fetch');
+        
         Route::resources([
             'product' => ProductController::class,
             'category' => CategoryController::class,

@@ -11,10 +11,19 @@ class ADashboardController extends Controller
         return view('admin.pages.dashboard');
     }
 
-    public function test_add_product()
+    public function show_prod_edit_choice()
     {
-        return view('admin.pages.product.test_add_product');
+        return view('admin.pages.product.show_edit_product');
     }
+
+    public function show_edit_page(Request $request)
+    {
+        $request->validate(['prod_id' => 'required',]);
+
+        return redirect()->route('admin.pages.product.edit', [$request->prod_id]);
+
+    }
+
 
     function fetch(Request $request)
     {
