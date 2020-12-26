@@ -62,7 +62,7 @@ Route::prefix('/admin/pages')->name('admin.pages.')
 
         Route::get('/admin-dashboard', [ADashboardController::class, 'show_dashboard']);
 
-        Route::get('/load-product-edit-by_id', [ADashboardController::class, 'show_dashboard']);
+        Route::post('/show/product/edit_by_id', [ADashboardController::class, 'show_dashboard']);;
 
         Route::get('/product/show/edit/choices', [ADashboardController::class, 'show_prod_edit_choice']);
 

@@ -36,7 +36,7 @@
 					</div>
 					<div class="card-body-table">
 						<div class="news-content-right pd-20" style="  margin: auto; width: 25%;">
-							<button class="save-btn hover-btn" type="submit">View List</button>
+							<button href="/admin/pages/product" class="save-btn hover-btn" type="submit">View List</button>
 						</div>
 					</div>
 				</div>

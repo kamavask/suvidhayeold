@@ -15,7 +15,7 @@
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link sub_nav_link" href="/admin/pages/product">All Products</a>
                             <a class="nav-link sub_nav_link" href="/admin/pages/product/create">Add Product</a>
-                            <a class="nav-link sub_nav_link" href="/admin/pages/product">Edit</a>
+                            <a class="nav-link sub_nav_link" href="/admin/pages/product/show/edit/choices">Edit</a>
                             <a class="nav-link sub_nav_link" href="/admin/pages/product">Delete Product</a>
                         </nav>
                     </div>
