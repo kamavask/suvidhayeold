@@ -14,6 +14,6 @@ class PurchaseController extends Controller
             'product_id' => $request->get('prod_id'),
             'quantity' => $request->get('quantity'),
         ]);
-         return redirect()->route('/customer/pages/cart'); 
+         return redirect()->route('customer.pages.cart.index'); 
     }
 }
