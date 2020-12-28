@@ -14,7 +14,6 @@ class PurchaseController extends Controller
             'product_id' => $request->get('prod_id'),
             'quantity' => $request->get('quantity'),
         ]);
-        return view('/customer/pages/cart')->with('cart', $cart_item);;
-        /* return redirect()->route('home')->with('success_message', "Item is added to your cart"); */
+         return redirect()->route('/customer/pages/cart'); 
     }
 }
