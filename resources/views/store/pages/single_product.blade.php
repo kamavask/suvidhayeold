@@ -183,11 +183,11 @@
 													@csrf
 													<div class="qty-cart ">
                                         <div class="cart-icon-div ">
-                                            <input type="hidden" name="prod_id" value="{{$item->id}}">
-                                            {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
+                                            <input type="hidden" name="prod_id" value="{{$product->id}}">
+                                            {{-- <input type="hidden" name="name" value="{{$product->prod_name}}"> --}}
                                             {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
                                             --}}
-                                            {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                            {{-- <input type="hidden" name="s_price" value="{{$product->s_price}}">
                                             --}}
                                           
                                         </div>
