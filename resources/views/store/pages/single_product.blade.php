@@ -178,7 +178,12 @@
                       </ul>
 											<ul class="ordr-crt-share">
 												<li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>Add to Cart</button></li>
-												<li><button class="order-btn hover-btn">Order Now</button></li>
+												<li>
+												  <form method="POST" action="/customer/pages/show-cart">
+													@csrf
+												     <button class="order-btn hover-btn">Order Now</button>
+												  </form>
+												</li>
 											</ul>
 										</div>
 										<div class="pdp-details">
