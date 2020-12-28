@@ -87,10 +87,11 @@ Route::prefix('/customer/pages')->name('customer.pages.')
     ->group(function () {
         Route::resource('cart', CartController::class,);
         Route::resource('product', ProductController::class)->only(['show']);
+        Route::post('/show-cart', [PurchaseController::class, 'show_cart']);
+
 
     });
 
- Route::post('/show-cart', [PurchaseController::class, 'show_cart']);
 /* Route::middleware(['auth:sanctum', 'verified', 'can:view_home'])->get('/home', function () {
     return view('store.pages.homepage');
 })->name('home'); */
