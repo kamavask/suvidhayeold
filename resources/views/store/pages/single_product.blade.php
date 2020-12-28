@@ -179,8 +179,19 @@
 											<ul class="ordr-crt-share">
 												<li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>Add to Cart</button></li>
 												<li>
-												  <form method="POST" action="/customer/pages/show-cart">
+												  <form method="POST" action="{{route('customer.pages.cart.store')}}">
 													@csrf
+													<div class="qty-cart ">
+                                        <div class="cart-icon-div ">
+                                            <input type="hidden" name="prod_id" value="{{$item->id}}">
+                                            {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
+                                            {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
+                                            --}}
+                                            {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                            --}}
+                                          
+                                        </div>
+                                    </div>
 												     <button class="order-btn hover-btn">Order Now</button>
 												  </form>
 												</li>
