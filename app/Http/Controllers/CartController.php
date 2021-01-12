@@ -57,15 +57,66 @@ class CartController extends Controller
      */
     public function show($id)
     {
-        //dd($id);
-        // $cartitem = ShoppingCart::where('user_id', $id)->get();
         $cart_item = User::find($id)->Product_cart;
-        //$cart_item_cout = $cart_item->count();
-        /* ($cart_item_cout); */
-        //dd($item_price);
-        return view('store.pages.cart')->with('cart', $cart_item);
-        //$flag = flag::find(1)->Product;
-        //return view('cart')->compact('cartitem');
+        $cart_item_cout = $cart_item->count();
+
+        if ($cart_item_cout == 0) {
+            
+            return view('store.pages.cart_blank');
+        
+        } elseif ($cart_item_cout >= 1) {
+
+            $sale_price_cal =\ DB::select(
+                \ DB::raw(
+                    "select sc.*,p.s_price from shopping_cart as 
+                    sc inner join products as 
+                    p on p.id = sc.product_id where sc.user_id=".$id.""
+                )
+            );
+
+            $real_price_cal =\ DB::select(
+                \ DB::raw(
+                    "select sc.*,p.r_price from shopping_cart as 
+                    sc inner join products as 
+                    p on p.id = sc.product_id where sc.user_id=".$id.""
+                )
+            );
+
+            $sale_total_array =array();
+            foreach ($sale_price_cal as  $p) {
+                $total_perproduct =$p->quantity * $p->s_price;
+                $sale_total_array[]=$total_perproduct;
+            }
+
+            $s_total = array_sum($sale_total_array);
+
+            $real_total_array =array();
+            foreach ($real_price_cal as  $p) {
+                $total_perproduct = $p->quantity * $p->r_price;
+                $real_total_array[]=$total_perproduct;
+            }
+
+            $r_total = array_sum($real_total_array);
+
+            $discount = $r_total - $s_total;
+
+
+            if ($s_total>= 700) {
+                $delivery_charge = 0 ;
+            } elseif ($s_total< 700 &&  $s_total> 500 ) {
+                $delivery_charge = 15; 
+            } elseif ($s_total< 500  && $s_total> 400) {
+                $delivery_charge = 30; 
+            } elseif ($s_total> 0 && $s_total< 400) {
+                $delivery_charge = 60; 
+            }
+
+            $f_total = $s_total + $delivery_charge;
+
+            $cal_data = array('delivery_charge' => $delivery_charge, 'discount' => $discount, 'f_total' => $f_total, 'r_total' => $r_total);
+            
+            return view('store.pages.cart')->with('cart', $cart_item)->with('cal_data', $cal_data );
+        }
     }
 
     /**
