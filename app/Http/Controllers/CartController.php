@@ -115,7 +115,8 @@ class CartController extends Controller
 
             $cal_data = array('delivery_charge' => $delivery_charge, 'discount' => $discount, 'f_total' => $f_total, 'r_total' => $r_total);
             
-            return view('store.pages.cart')->with('cart', $cart_item)->with('cal_data', $cal_data );
+            return view('store.pages.cart')
+                ->with('cart', $cart_item)->with('cal_data', $cal_data );
         }
     }
 
