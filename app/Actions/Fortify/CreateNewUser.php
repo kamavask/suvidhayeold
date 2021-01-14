@@ -58,7 +58,7 @@ class CreateNewUser implements CreatesNewUsers
     {
         $user_id = $user->id;   
         User::updateOrCreate([
-            'user_id' => $input['username'],
+            'user_id' => $user_id,
             'role_id' => 7,
         ]);
     }
