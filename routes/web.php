@@ -36,10 +36,6 @@ Route::get('/', [StoreController::class, 'user_homepage'])->name('home');
 
 Route::get('/homepage', [StoreController::class, 'homepage'])->name('home');
 
-Route::post('/add-new-customer-details', 
-    [AuthController::class, 'add_new_customer_details']
-)->name('add_new_customer_details');
-
 /* Route::get('/user_homepage', [StoreController::class, 'user_homepage'])->name('home'); */
 
 
@@ -170,7 +166,7 @@ Route::post('upload_prod_image', [ImageController::class, 'store_prod_images']);
 
 Route::get('/main_public_search', [SearchController::class, 'main_public_search'])->name('main_public_search');
 
-Route::get('test', [Controller::class, 'test']);
+Route::get('search', [SearchController::class, 'search']);
 
 Route::get('autocomplete', [SearchController::class, 'autocomplete'])->name('autocomplete');
 /* STORE ROUTE END */

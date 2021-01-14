@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Contracts\Encryption\DecryptException;
-use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -21,6 +19,9 @@ class Controller extends BaseController
 
     public  function test()
     {
+        //$features = Product::all();
+        $flag = flag::find(1)->Product;
+        return view('test')->with('featured',  $flag);
     }
 
     public  function product_category()
