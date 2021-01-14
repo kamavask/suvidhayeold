@@ -25,7 +25,7 @@ class CreateNewUser implements CreatesNewUsers
     public function create(array $input)
     {
         Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
+            'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => $this->passwordRules(),
         ])->validate();
@@ -33,26 +33,16 @@ class CreateNewUser implements CreatesNewUsers
         return DB::transaction(function () use ($input) {
             return tap(
                 User::create([
-                    'name' => $input['name'],
+                    'username' => $input['username'],
                     'email' => $input['email'],
                     'password' => Hash::make($input['password']),
-                ]), /* function (User $user) {
-                $this->createTeam($user);
-            } */
+                ]),
                 function (User $user) {
                     $this->role_user($user);
                 },
-                /* function (User $user) {
-                    Mail::to($user->email)->send(new WelcomeMail());
-                }, */
-                /* function (User $user) {
-                    return redirect()->action(
-                        [AdminPageController::class, 'checkauth'],
-                    );
-                }, */
             );
         });
-    }
+    } 
 
     public function role_user(User $user)
     {

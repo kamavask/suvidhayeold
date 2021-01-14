@@ -14,14 +14,16 @@ class CreateCustomersTable extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
-            $table->unsignedBigInteger('user_id')->nullable();
-            $table->string('customer_code');
-            $table->string('f_name')->nullable();
-            $table->string('s_name')->nullable();
+            $table->id();
+            $table->unsignedBigInteger('user_id')->unique();
+            $table->string('customer_code')->unique()->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('middle_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('gender')->nullable();
             $table->string('dob')->nullable();
             $table->string('phoneno')->nullable();
-            $table->string('profile_pic')->nullable();
-            $table->string('coupon_used')->nullable();
+            $table->string('Refer_code')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
         });
