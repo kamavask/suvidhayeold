@@ -57,7 +57,7 @@ class CreateNewUser implements CreatesNewUsers
     public function role_user(User $user)
     {
         $user_id = $user->id;   
-        User::updateOrCreate([
+        Role_user::updateOrCreate([
             'user_id' => $user_id,
             'role_id' => 7,
         ]);
