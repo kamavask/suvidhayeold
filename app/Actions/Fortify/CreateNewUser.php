@@ -56,10 +56,11 @@ class CreateNewUser implements CreatesNewUsers
 
     public function role_user(User $user)
     {
-        $r_u = new Role_user();
-        $r_u->user_id = $user->id;
-        $r_u->role_id = 7;
-        $r_u->save();
+        $user_id = $user->id;   
+        User::updateOrCreate([
+            'user_id' => $input['username'],
+            'role_id' => 7,
+        ]);
     }
 
     /**
