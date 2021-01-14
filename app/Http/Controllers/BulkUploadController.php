@@ -85,7 +85,7 @@ class BulkUploadController extends Controller
                 'highlight'    => $row['highlight'],
                 'short_description'    => $row['short_description'],
                 //'specification'    => $row['specification'],
-                'image_id' => $row['image_id'],
+                //'image_id' => $row['image_id'],
                 //'dimensions' => $row['dimensions'],
                 'weight' => $row['weight'],
                 //'size' => $row['size'],
