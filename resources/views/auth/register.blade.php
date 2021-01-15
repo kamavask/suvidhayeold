@@ -10,11 +10,7 @@
             @csrf
 
             <div>
-<<<<<<< HEAD
                 <x-jet-label value="{{ __('Name') }}" />
-=======
-                <x-jet-label value="{{ __('username') }}" />
->>>>>>> 5507910f39c1531aa4aac07f418364d851dfa11f
                 <x-jet-input class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
