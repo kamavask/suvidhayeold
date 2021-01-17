@@ -31,14 +31,26 @@ class CreateNewUser implements CreatesNewUsers
         ])->validate();
 
         return DB::transaction(function () use ($input) {
-            return tap(User::create(
-                [
-                'name' => $input['name'],
-                'email' => $input['email'],
-                'password' => Hash::make($input['password']),
-                ]), function (User $user) {
-                $this->role_user($user);
-            });
+            return tap(
+                User::create([
+                    'name' => $input['name'],
+                    'email' => $input['email'],
+                    'password' => Hash::make($input['password']),
+                ]), /* function (User $user) {
+                $this->createTeam($user);
+            } */
+                function (User $user) {
+                    $this->role_user($user);
+                },
+                /* function (User $user) {
+                    Mail::to($user->email)->send(new WelcomeMail());
+                }, */
+                /* function (User $user) {
+                    return redirect()->action(
+                        [AdminPageController::class, 'checkauth'],
+                    );
+                }, */
+            );
         });
     }
 
