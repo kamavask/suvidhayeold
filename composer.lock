@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "e53f371ced4f708740f62d403795a7ef",
+=======
+    "content-hash": "409b7b92852c45983e2470feb5926003",
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -410,6 +414,7 @@
         },
         {
             "name": "doctrine/dbal",
+<<<<<<< HEAD
             "version": "3.0.0",
             "source": {
                 "type": "git",
@@ -427,12 +432,34 @@
                 "doctrine/cache": "^1.0",
                 "doctrine/event-manager": "^1.0",
                 "php": "^7.3 || ^8.0"
+=======
+            "version": "2.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "adce7a954a1c2f14f85e94aed90c8489af204086"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/adce7a954a1c2f14f85e94aed90c8489af204086",
+                "reference": "adce7a954a1c2f14f85e94aed90c8489af204086",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/cache": "^1.0",
+                "doctrine/event-manager": "^1.0",
+                "ext-pdo": "*",
+                "php": "^7.3 || ^8"
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
             },
             "require-dev": {
                 "doctrine/coding-standard": "^8.1",
                 "jetbrains/phpstorm-stubs": "^2019.1",
                 "phpstan/phpstan": "^0.12.40",
+<<<<<<< HEAD
                 "phpstan/phpstan-strict-rules": "^0.12.2",
+=======
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
                 "phpunit/phpunit": "^9.4",
                 "psalm/plugin-phpunit": "^0.10.0",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
@@ -452,7 +479,11 @@
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "Doctrine\\DBAL\\": "src"
+=======
+                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -495,13 +526,21 @@
                 "queryobject",
                 "sasql",
                 "sql",
+<<<<<<< HEAD
+=======
+                "sqlanywhere",
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
                 "sqlite",
                 "sqlserver",
                 "sqlsrv"
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/dbal/tree/3.0.0"
+=======
+                "source": "https://github.com/doctrine/dbal/tree/2.12.1"
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
             },
             "funding": [
                 {
@@ -517,7 +556,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2020-11-15T18:20:41+00:00"
+=======
+            "time": "2020-11-14T20:26:58+00:00"
+>>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
         },
         {
             "name": "doctrine/event-manager",
