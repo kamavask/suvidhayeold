@@ -9,11 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
-<<<<<<< HEAD
-        "doctrine/dbal": "^3.0",
-=======
-        "doctrine/dbal": "2.*",
->>>>>>> 1b19c5c88e66e0996cb8993ea099360c541fc632
+        "doctrine/dbal": "2.12.1",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
