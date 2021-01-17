@@ -41,6 +41,7 @@ class AuthController extends Controller
         $new_customaer->first_name  =   $request->fname;
         $new_customaer->middle_name  =   $request->mname;
         $new_customaer->last_name   =   $request->lname;
+        $new_customaer->gender   =   $request->gender;
         $new_customaer->dob         =   $request->dob;
         $new_customaer->phoneno     =   $request->Phoneno;
         $new_customaer->save();
