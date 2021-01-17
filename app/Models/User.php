@@ -25,7 +25,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password',
+        'username
+        
+        +
+        ', 'email', 'password',
     ];
 
     /**
@@ -99,5 +102,10 @@ class User extends Authenticatable
     public function product_cart()
     {
         return $this->belongsToMany('App\Models\Product', 'shopping_cart');
+    }
+
+    public function customer()
+    {
+        return $this->hasOne('App\Models\Customer');
     }
 }

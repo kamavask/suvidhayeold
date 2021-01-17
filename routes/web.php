@@ -36,6 +36,10 @@ Route::get('/', [StoreController::class, 'user_homepage'])->name('home');
 
 Route::get('/homepage', [StoreController::class, 'homepage'])->name('home');
 
+Route::post('/add-new-customer-details', 
+    [AuthController::class, 'add_new_customer_details']
+)->name('add_new_customer_details');
+
 /* Route::get('/user_homepage', [StoreController::class, 'user_homepage'])->name('home'); */
 
 
@@ -46,7 +50,7 @@ Route::get('/homepage', [StoreController::class, 'homepage'])->name('home');
 /* 
 Route::middleware(['auth:sanctum', 'verified'])->get('/home', [AdminPageController::class], 'checkauth')->name('home'); */
 
-Route::get('/home', function () {
+Route::get('/welcome', function () {
     return redirect('/');
 });
 
