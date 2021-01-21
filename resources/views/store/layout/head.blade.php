@@ -25,10 +25,10 @@
 	<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
-  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{asset('vendor/semantic/semantic.min.css')}}">
   <script src="https://kit.fontawesome.com/d25269cf83.js" crossorigin="anonymous"></script>
 
