@@ -1,5 +1,7 @@
 <!-- Javascripts -->
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+  integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  
     <script src="{{asset('vendor/OwlCarousel/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -17,7 +19,6 @@
 <script src="{{asset('js/custom.js')}}"></script>
 <script src="{{asset('js/offset_overlay.js')}}"></script>
 <script src="{{asset('js/night-mode.js')}}"></script>
-<script src="{{asset('js/cart_total.js')}}" async></script>
 
 {{-- <script>
     var path = "{{route('main_public_search')}}";
