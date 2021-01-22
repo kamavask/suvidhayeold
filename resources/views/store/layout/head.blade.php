@@ -13,28 +13,23 @@
   <!-- Favicon Icon -->
   <link rel="icon" type="image/png" href="{{asset('store/main_images/logo/suvidhaye_logo.png')}}">
 
+  <script src="https://kit.fontawesome.com/d25269cf83.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link href='{{asset('vendor/unicons-2.0.1/css/unicons.css')}}' rel='stylesheet'>
+  <link href="{{asset('css/style.css')}}" rel="stylesheet">
   <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
   <link href="{{asset('css/night-mode.css')}}" rel="stylesheet">
-  <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
   <!-- Vendor Stylesheets -->
 	<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
-  <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
   <link href="{{asset('vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{asset('vendor/semantic/semantic.min.css')}}">
-  <script src="https://kit.fontawesome.com/d25269cf83.js" crossorigin="anonymous"></script>
-
-  {{-- <style>
-    @media{
-      width: 
-    }
-  </style> --}}	
+	
 </head>
