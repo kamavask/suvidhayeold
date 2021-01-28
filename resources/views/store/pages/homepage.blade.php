@@ -14,17 +14,17 @@
 		
 		<!-- Stylesheets -->
 		<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<link href='{{asset('vendor/unicons-2.0.1/css/unicons.css')}}' rel='stylesheet'>
-		<link href="{{asset('css/style.css')}}" rel="stylesheet">
-		<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
-		<link href="{{asset('css/night-mode.css')}}" rel="stylesheet">
+		<link href='{{asset('store/vendor/unicons-2.0.1/css/unicons.css')}}' rel='stylesheet'>
+		<link href="{{asset('store/css/style.css')}}" rel="stylesheet">
+		<link href="{{asset('store/css/responsive.css')}}" rel="stylesheet">
+		<link href="{{asset('store/css/night-mode.css')}}" rel="stylesheet">
 		
 		<!-- Vendor Stylesheets -->
-		<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-		<link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
-		<link href="{{asset('vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
-		<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="{{asset('vendor/semantic/semantic.min.css')}}">	
+		<link href="{{asset('store/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+		<link href="{{asset('store/vendor/OwlCarousel/assets/owl.carousel.css')}}" rel="stylesheet">
+		<link href="{{asset('store/vendor/OwlCarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
+		<link href="{{asset('store/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{asset('store/vendor/semantic/semantic.min.css')}}">	
 		
 	</head>
 
@@ -1501,14 +1501,14 @@
 	<!-- Footer End -->
 
 	<!-- Javascripts -->
-	<script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-	<script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{asset('vendor/OwlCarousel/owl.carousel.js')}}"></script>
-	<script src="{{asset('vendor/semantic/semantic.min.js')}}"></script>
-	<script src="{{asset('js/jquery.countdown.min.js')}}"></script>
-	<script src="{{asset('js/custom.js')}}"></script>
-	<script src="{{asset('js/offset_overlay.js')}}"></script>
-	<script src="{{asset('js/night-mode.js')}}"></script>
+	<script src="{{asset('store/js/jquery-3.3.1.min.js')}}"></script>
+	<script src="{{asset('store/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{asset('store/vendor/OwlCarousel/owl.carousel.js')}}"></script>
+	<script src="{{asset('store/vendor/semantic/semantic.min.js')}}"></script>
+	<script src="{{asset('store/js/jquery.countdown.min.js')}}"></script>
+	<script src="{{asset('store/js/custom.js')}}"></script>
+	<script src="{{asset('store/js/offset_overlay.js')}}"></script>
+	<script src="{{asset('store/js/night-mode.js')}}"></script>
 	
 	
 </body>
