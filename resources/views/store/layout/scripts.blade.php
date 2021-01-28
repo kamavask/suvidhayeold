@@ -20,6 +20,17 @@
 <script src="{{asset('js/offset_overlay.js')}}"></script>
 <script src="{{asset('js/night-mode.js')}}"></script>
 
+<!-- Javascripts -->
+	<script src="{{asset('store/js/jquery-3.3.1.min.js')}}"></script>
+	<script src="{{asset('store/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{asset('store/vendor/OwlCarousel/owl.carousel.js')}}"></script>
+	<script src="{{asset('store/vendor/semantic/semantic.min.js')}}"></script>
+	<script src="{{asset('store/js/jquery.countdown.min.js')}}"></script>
+	<script src="{{asset('store/js/custom.js')}}"></script>
+	<script src="{{asset('store/js/offset_overlay.js')}}"></script>
+	<script src="{{asset('store/js/night-mode.js')}}"></script>
+	
+
 {{-- <script>
     var path = "{{route('main_public_search')}}";
 
