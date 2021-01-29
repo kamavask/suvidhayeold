@@ -6736,3 +6736,19 @@ textarea {
     font-weight: 500;
     display: inline-block;
 }
+
+/* CUSTOM EDITED SECTION START */
+
+.title_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-avatar-ui {
+    border: none;
+    background: transparent;
+}
+
+
+/* CUSTOM EDITED SECTION END */
