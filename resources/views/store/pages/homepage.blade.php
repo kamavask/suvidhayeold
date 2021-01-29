@@ -257,19 +257,19 @@
             		                <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
             		                <input type="button" value="+ " class="plus plus-btn ">
             		            </div>
-            		            <div class="cart-icon-div ">
-            		                <input type="hidden" name="prod_id" value="{{$item->id}}">
+												</div>
+												<div class="cart-icon-div ">
+            		          <input type="hidden" name="prod_id" value="{{$item->id}}">
             		                {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
             		                {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
             		                --}}
             		                {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
             		                --}}
-            		                <button class="cart-btn-short">
-            		                    <span class="cart-icon">
-            		                        <i class="fas fa-shopping-cart"></i>
-            		                    </span>
-            		                </button>
-            		            </div>
+            		            <button class="cart-btn-short">
+            		                <span class="cart-icon">
+            		                    <i class="fas fa-shopping-cart"></i>
+            		                </span>
+            		            </button>
             		        </div>
             		      </form>
             		    </div>
