@@ -220,8 +220,8 @@
 							@foreach ($featured as $item)
             		<div class="item ">
             		  <div class="product-item ">
-            		    <a href="/product/{{$item->id}}" class="product-img ">
-            		      <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
+            		    <a href="/product/{{$item->id}}" class="product-img">
+            		      <img class="product_img" src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
             		      <div class="product-absolute-options">
             		          <span class="offer-badge-1">
             		              @php

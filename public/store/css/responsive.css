@@ -314,6 +314,11 @@ ul.signup-code-list input {
 .contact-title h2 {
     margin-top: 44px !important;
 }
+/* custom section */
+.product_img{
+    width: 470px;
+    height: 470px;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -539,6 +544,11 @@ img.download-btn {
 .contact-title h2 {
     margin-top: 44px !important;
 }
+/* custom section */
+.product_img{
+    width: 180px;
+    height: 180px;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -675,6 +685,11 @@ img.download-btn {
 .sign-inup {
     padding: 50px 0 !important;
 }
+/* custom section */
+.product_img{
+    width: 270px;
+    height: 270px;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -718,6 +733,11 @@ body {
 .menu.dropdown_account {
    z-index: 9999 !important;
 }
+/* custom section */
+.product_img{
+    width: 108px;
+    height: 108px;
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -741,5 +761,9 @@ body {
 .menu.dropdown_account {
    z-index: 9999 !important;
 }
-
+/* custom section */
+.product_img{
+    width: 156px;
+    height: 156px;
+}
 }
