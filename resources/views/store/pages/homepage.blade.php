@@ -249,16 +249,16 @@
             		    	    	</div>
             		    	    @endif
             		    	</a>
-            		      <form action="{{route('customer.pages.cart.store')}}" method="POST">
+            		      <form action="{{route('customer.pages.cart.store')}}" method="POST" class="d-flex">
             		        {{ csrf_field() }}
-            		        <div class="qty-cart ">
+            		        <div class="qty-cart justify-content-start">
             		            <div class="quantity buttons_added">
             		                <input type="button" value="-" class="minus minus-btn">
             		                <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
             		                <input type="button" value="+ " class="plus plus-btn ">
             		            </div>
 												</div>
-												<div class="cart-icon-div ">
+												<div class="cart-icon-div justify-content-end d-flex align-items-end">
             		          <input type="hidden" name="prod_id" value="{{$item->id}}">
             		                {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
             		                {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
