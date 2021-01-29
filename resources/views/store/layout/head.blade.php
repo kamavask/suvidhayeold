@@ -20,7 +20,7 @@
   <link href="{{asset('vendor/OwlCarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
   
 		<!-- Favicon Icon -->
-		<link rel="icon" type="image/png" href="images/fav.png">
+		<link rel="icon" type="image/png" href="{{asset('store/main_images/logo/suvidhaye_logo.png')}}">
 		
 		<!-- Stylesheets -->
 		<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
