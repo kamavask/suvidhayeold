@@ -217,64 +217,64 @@
 					</div>
 					<div class="col-md-12">
 						<div class="owl-carousel featured-slider owl-theme">
-							@foreach ($featured as $item)	                        @foreach ($featured as $item)
-                        <div class="item ">	                            <div class="item">
-                            <div class="product-item ">									<div class="product-item">
-                                <a href="/product/{{$item->id}}" class="product-img ">										<a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/single_product_view.html" class="product-img">
-                                    <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">											<img src="images/product/img-1.jpg" alt="">
-                                    <div class="product-absolute-options">											<div class="product-absolute-options">
-                                        <span class="offer-badge-1">												<span class="offer-badge-1">6% off</span>
-                                            @php												<span class="like-icon" title="wishlist"></span>
-                                            $r_price = $item->r_price;											</div>
-                                            $s_price = $item->s_price;										</a>
-                                            $subtranct = $r_price - $s_price;										<div class="product-text-dt">
-                                            $multi = 100;											<p>Available<span>(In Stock)</span></p>
-                                            $percent_cal = ( $subtranct / $r_price ) * $multi;											<h4>Product Title Here</h4>
-                                            $numberAsString = number_format($percent_cal, 2);											<div class="product-price">$12 <span>$15</span></div>
-                                            echo $numberAsString . " %";											<div class="qty-cart">
-                                            @endphp												<div class="quantity buttons_added">
-                                        </span>													<input type="button" value="-" class="minus minus-btn">
-                                        <span class="like-icon" title="wishlist"></span>													<input type="number" step="1" name="quantity" value="1" class="input-text qty text">
-                                    </div>													<input type="button" value="+" class="plus plus-btn">
-                                </a>												</div>
-                                {{-- </a> --}}												<span class="cart-icon"><i class="uil uil-shopping-cart-alt"></i></span>
-                                <div class="product-text-dt">											</div>
-                                <a href="/product/{{$item->id}}" >										</div>
-                                    <p>Available<span>(In Stock)</span></p>									</div>
-                                    <h4 class="title_name">{{$item->prod_name}}</h4>								</div>
-                                    @if($item->s_price = $item->r_price)	
-                                    <div class="product-price">₹ {{$item->s_price}}</div>	
-                                    @else	
-                                    <div class="product-price">₹ {{$item->s_price}}<span>₹ {{$item->r_price}}</span>	
-                                    </div>	
-                                    @endif	
-                                </a>	
-                                <form action="{{route('customer.pages.cart.store')}}" method="POST">	
-                                        {{ csrf_field() }}	
-                                    <div class="qty-cart ">	
-                                        <div class="quantity buttons_added">	
-                                            <input type="button" value="-" class="minus minus-btn">	
-                                            <input type="number" step="1" name="quantity" value="1" class="input-text qty text">	
-                                            <input type="button" value="+ " class="plus plus-btn ">	
-                                        </div>	
-                                        <div class="cart-icon-div ">	
-                                            <input type="hidden" name="prod_id" value="{{$item->id}}">	
-                                            {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}	
-                                            {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">	
-                                            --}}	
-                                            {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">	
-                                            --}}	
-                                            <button class="cart-btn-short">	
-                                                <span class="cart-icon">	
-                                                    <i class="uil uil-shopping-cart-alt"></i>	
-                                                </span>	
-                                            </button>	
-                                        </div>	
-                                    </div>	
-                                </form>	
-                                </div>	
-                            </div>	
-                        </div>	
+							@foreach ($featured as $item)
+                        <div class="item ">
+                            <div class="product-item ">
+                                <a href="/product/{{$item->id}}" class="product-img ">
+                                    <img src="/storage/images/products/{{$item->prod_name}}.jpg" alt=" ">
+                                    <div class="product-absolute-options">
+                                        <span class="offer-badge-1">
+                                            @php
+                                            $r_price = $item->r_price;
+                                            $s_price = $item->s_price;
+                                            $subtranct = $r_price - $s_price;
+                                            $multi = 100;
+                                            $percent_cal = ( $subtranct / $r_price ) * $multi;
+                                            $numberAsString = number_format($percent_cal, 2);
+                                            echo $numberAsString . " %";
+                                            @endphp
+                                        </span>
+                                        <span class="like-icon" title="wishlist"></span>
+                                    </div>
+                                </a>
+                                {{-- </a> --}}
+                                <div class="product-text-dt">
+                                <a href="/product/{{$item->id}}" >
+                                    <p>Available<span>(In Stock)</span></p>
+                                    <h4 class="title_name">{{$item->prod_name}}</h4>
+                                    @if($item->s_price = $item->r_price)
+                                    <div class="product-price">₹ {{$item->s_price}}</div>
+                                    @else
+                                    <div class="product-price">₹ {{$item->s_price}}<span>₹ {{$item->r_price}}</span>
+                                    </div>
+                                    @endif
+                                </a>
+                                <form action="{{route('customer.pages.cart.store')}}" method="POST">
+                                        {{ csrf_field() }}
+                                    <div class="qty-cart ">
+                                        <div class="quantity buttons_added">
+                                            <input type="button" value="-" class="minus minus-btn">
+                                            <input type="number" step="1" name="quantity" value="1" class="input-text qty text">
+                                            <input type="button" value="+ " class="plus plus-btn ">
+                                        </div>
+                                        <div class="cart-icon-div ">
+                                            <input type="hidden" name="prod_id" value="{{$item->id}}">
+                                            {{-- <input type="hidden" name="name" value="{{$item->prod_name}}"> --}}
+                                            {{-- <input type="hidden" name="rprice" value="{{$product->r_price}}">
+                                            --}}
+                                            {{-- <input type="hidden" name="s_price" value="{{$item->s_price}}">
+                                            --}}
+                                            <button class="cart-btn-short">
+                                                <span class="cart-icon">
+                                                    <i class="uil uil-shopping-cart-alt"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
                         @endforeach
 						</div>
 					</div>
